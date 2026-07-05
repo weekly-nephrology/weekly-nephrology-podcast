@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Weekly Nephrology</title>
     <link>https://minatomouth.github.io/weekly-nephrology-podcast</link>
     <description>腎臓内科の週次文献レビュー。最新論文をバイリンガル会話で紹介（教育・英語学習目的）。</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 05 Jul 2026 09:28:19 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 12:01:06 +0000</lastBuildDate>
     <atom:link href="https://minatomouth.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://minatomouth.github.io/weekly-nephrology-podcast/cover.png"/>
     <image><url>https://minatomouth.github.io/weekly-nephrology-podcast/cover.png</url><title>Weekly Nephrology</title><link>https://minatomouth.github.io/weekly-nephrology-podcast</link></image>
@@ -13,9 +13,14 @@
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
     <item>
       <title>Weekly Nephrology 2026-07-05</title>
+      <link>https://minatomouth.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html</link>
       <description>2026-07-05配信。今週の主要論文: 免疫介在性糸球体腎炎に対する抗炎症性バイオ製剤の総説（J Inflamm Res）、慢性人工関節感染を背景とした感染関連IgA血管炎の症例（Cureus）。
 高浸透圧高血糖状態（HHS）の系統的レビュー・メタ解析（63,935例, BMJ Open Diab Res Care）、PGNMIDに対するBCD療法 vs リツキシマブのパイロットRCT（Nephrol Dial Transplant）。
-さらに、自己免疫性糸球体疾患における抗リツキシマブ抗体の頻度（Nephrol Dial Transplant）。抄録ベースの教育・英語学習向けバイリンガル解説です。</description>
+さらに、自己免疫性糸球体疾患における抗リツキシマブ抗体の頻度（Nephrol Dial Transplant）。抄録ベースの教育・英語学習向けバイリンガル解説です。
+
+▼ 原稿スクリプト（英語表現の確認に）:
+https://minatomouth.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html</description>
+      <content:encoded><![CDATA[<p>2026-07-05配信。今週の主要論文: 免疫介在性糸球体腎炎に対する抗炎症性バイオ製剤の総説（J Inflamm Res）、慢性人工関節感染を背景とした感染関連IgA血管炎の症例（Cureus）。</p><p><a href="https://minatomouth.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
       <enclosure url="https://minatomouth.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3" length="7141485" type="audio/mpeg"/>
       <guid isPermaLink="true">https://minatomouth.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3</guid>
       <pubDate>Sun, 05 Jul 2026 07:00:00 +0900</pubDate>
