@@ -5,12 +5,27 @@
     <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link>
     <description>腎臓内科の週次文献レビュー。最新論文をバイリンガル会話で紹介（教育・英語学習目的）。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Jul 2026 11:15:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 15:25:23 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png</url><title>Weekly Nephrology</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology — Deep Read 2026-07-07</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html</link>
+      <description>2026-07-07配信【Deep Read・深掘り】。NELL-1関連膜性腎症の臨床病理学的研究——中国人単施設コホート68例（Kidney Int Rep）を、full text（Methods/Results/Limitations）まで踏み込んで約20分で読み解きます。
+NELL-1はPLA2R陰性・THSD7A陰性の膜性腎症で2番目に多い抗原。若年女性と高齢男性という2つの顔を持ち、悪性腫瘍（全例が60歳以上男性・多くが肺癌）を除けば96.1%が寛解・自然寛解33.3%と良好な一方、癌合併例は1年以内死亡57.1%。診断時の悪性腫瘍スクリーニング、とくに高齢男性での重要性を論じます。
+冒頭にERA 2026（グラスゴー）のTURING試験やWCN 2026の話題を添えた、教育・英語学習向けバイリンガル解説です。
+
+▼ 原稿スクリプト（英語表現の確認に）:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html</description>
+      <content:encoded><![CDATA[<p>2026-07-07配信【Deep Read・深掘り】。NELL-1関連膜性腎症の臨床病理学的研究——中国人単施設コホート68例（Kidney Int Rep）を、full text（Methods/Results/Limitations）まで踏み込んで約20分で読み解きます。</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3" length="10377984" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3</guid>
+      <pubDate>Tue, 07 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology — Weekly Summary 2026-07-06</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html</link>
