@@ -5,12 +5,27 @@
     <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link>
     <description>腎臓内科の週次文献レビュー。最新論文をバイリンガル会話で紹介（教育・英語学習目的）。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Jul 2026 11:01:40 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 11:15:46 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png</url><title>Weekly Nephrology</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology — Weekly Summary 2026-07-06</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html</link>
+      <description>2026-07-06配信。今週の主要論文: 小児IgA血管炎腎炎における尿中可溶性CD163と管内増殖・線維素様壊死の関連（Pediatr Nephrol）、学校検尿で早期発見されIgA沈着を伴う小児ANCA関連腎炎の症例（CEN Case Rep）。
+Delphi法による保存期CKD・透析・移植のエビデンス優先課題の特定（Kidney Int Rep）、CKD進行評価のための多パラメトリック腎MRI前向きコホートAFiRMのベースライン報告（Kidney Int Rep）。
+さらに、小児C3腎症・免疫複合体性MPGNの自然経過（CJASN）。冒頭にERA 2026（グラスゴー）やIgA腎症の新規生物学的製剤の話題を添えた、抄録ベースの教育・英語学習向けバイリンガル解説です。
+
+▼ 原稿スクリプト（英語表現の確認に）:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html</description>
+      <content:encoded><![CDATA[<p>2026-07-06配信。今週の主要論文: 小児IgA血管炎腎炎における尿中可溶性CD163と管内増殖・線維素様壊死の関連（Pediatr Nephrol）、学校検尿で早期発見されIgA沈着を伴う小児ANCA関連腎炎の症例（CEN Case Rep）。</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3" length="5545344" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3</guid>
+      <pubDate>Mon, 06 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology — Weekly Summary 2026-07-05</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html</link>
