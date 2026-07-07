@@ -6,43 +6,95 @@
 <title>Weekly Nephrology</title>
 <meta name="description" content="腎臓内科の週次文献レビュー。最新論文をバイリンガル会話で紹介（教育・英語学習目的）。"/>
 <style>
-  :root { --a:#0f766e; --b:#0b2545; --bg:#f7fafc; --ink:#1a2b3c; --muted:#5b6b7b; }
+  :root {
+    --green:#4a6048; --green-deep:#33452f; --gold:#d7ab52; --cream:#f3ebd2;
+    --bg:#f5f1e3; --card:#fdfbf2; --ink:#26301f; --muted:#6f7863;
+    --line:rgba(38,48,31,.1);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#161b12; --card:#20271a; --ink:#ece7d4; --muted:#a4ac93;
+      --line:rgba(236,231,212,.1);
+    }
+  }
   * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink); line-height:1.7;
-    font-family:-apple-system,"Hiragino Sans","Noto Sans JP",system-ui,sans-serif; }
-  header { background:linear-gradient(135deg,var(--b),var(--a)); color:#fff; padding:36px 20px; }
+  body { margin:0; background:var(--bg); color:var(--ink); line-height:1.8;
+    font-size:15.5px; -webkit-font-smoothing:antialiased;
+    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+      system-ui,sans-serif; }
   .wrap { max-width:820px; margin:0 auto; padding:0 20px; }
-  .top { display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
-  .cover { width:120px; height:120px; border-radius:16px; object-fit:cover;
-    box-shadow:0 4px 16px rgba(0,0,0,.25); }
-  h1 { margin:0 0 8px; font-size:1.6rem; }
-  .desc { opacity:.9; font-size:.95rem; max-width:560px; }
-  .bar { margin-top:18px; display:flex; gap:12px; flex-wrap:wrap; }
-  .btn { color:#fff; background:rgba(255,255,255,.16); text-decoration:none;
-    padding:9px 16px; border-radius:9px; font-size:.9rem; font-weight:600;
-    border:none; cursor:pointer; font-family:inherit; }
-  .btn.primary { background:#fff; color:#0b2545; }
+
+  header { color:var(--cream); padding:46px 0 38px; position:relative;
+    overflow:hidden;
+    background:
+      radial-gradient(120% 170% at 88% -25%, #5d7a58 0%, transparent 55%),
+      linear-gradient(150deg,#2c3a28 15%, var(--green-deep) 130%); }
+  .top { display:flex; gap:26px; align-items:center; flex-wrap:wrap; }
+  .cover { width:132px; height:132px; border-radius:22px; object-fit:cover;
+    box-shadow:0 14px 34px -14px rgba(0,0,0,.55);
+    border:1px solid rgba(243,235,210,.25); }
+  h1 { margin:0 0 8px; font-size:1.85rem; font-weight:650;
+    letter-spacing:.005em;
+    font-family:Georgia,"Times New Roman","Hiragino Mincho ProN",
+      "Noto Serif JP",serif; }
+  .desc { opacity:.82; font-size:.92rem; max-width:560px; }
+  .bar { margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; }
+  .btn { color:var(--cream); background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:9px 18px; border-radius:999px; font-size:.88rem; font-weight:600;
+    cursor:pointer; font-family:inherit; transition:background .15s; }
+  .btn:hover { background:rgba(243,235,210,.24); }
+  .btn.primary { background:var(--cream); color:var(--green-deep);
+    border-color:var(--cream); }
+  .btn.primary:hover { background:#fff; }
   .btn:active { transform:translateY(1px); }
-  .hint { margin-top:12px; font-size:.82rem; opacity:.9; max-width:560px; }
-  .hint .rawlink { color:#fff; opacity:.7; margin-left:6px; }
-  main { padding:28px 0 64px; }
-  .about { background:#fff; border-radius:14px; padding:18px 20px; margin-bottom:26px;
-    box-shadow:0 1px 3px rgba(0,0,0,.06); }
-  .about h2 { margin:0 0 8px; font-size:1.05rem; }
-  .about p { margin:6px 0; font-size:.92rem; color:var(--ink); }
+  .hint { margin-top:13px; font-size:.8rem; opacity:.75; max-width:560px; }
+  .hint .rawlink { color:var(--cream); margin-left:6px; }
+
+  main { padding:30px 0 64px; }
+  .about { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; padding:20px 24px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); margin-bottom:30px; }
+  .about h2 { margin:0 0 8px; font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .about h2::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--gold); display:inline-block; }
+  .about p { margin:6px 0; font-size:.9rem; }
   .about .tag { font-weight:700; }
-  h2.section { font-size:1.1rem; margin:0 0 12px; }
+  h2.section { font-size:1.05rem; margin:0 0 12px; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  h2.section::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--green); display:inline-block; }
+  @media (prefers-color-scheme: dark) {
+    h2.section::before { background:var(--gold); }
+  }
+
   ul.eps { list-style:none; padding:0; margin:0; }
-  .ep { background:#fff; border-radius:12px; padding:14px 16px; margin:10px 0;
-    box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  .ep { background:var(--card); border:1px solid var(--line);
+    border-left:4px solid var(--sc, var(--green));
+    border-radius:14px; padding:15px 19px; margin:12px 0;
+    box-shadow:0 6px 22px -16px rgba(0,0,0,.3);
+    transition:transform .12s, box-shadow .12s; }
+  .ep:hover { transform:translateY(-1px);
+    box-shadow:0 10px 26px -16px rgba(0,0,0,.38); }
   .ep-head { display:flex; gap:10px; align-items:center; }
-  .badge { color:#fff; font-size:.72rem; font-weight:700; padding:3px 9px;
-    border-radius:999px; letter-spacing:.02em; }
-  .ep-date { color:var(--muted); font-size:.9rem; font-weight:600; }
-  .ep-desc { margin:8px 0 6px; font-size:.92rem; }
-  .ep-links { display:flex; gap:14px; }
-  .ep-link { color:var(--a); text-decoration:none; font-size:.88rem; font-weight:600; }
-  footer { color:var(--muted); font-size:.8rem; text-align:center; padding:24px 0 48px; }
+  .badge { color:#fdfbf2; background:var(--sc, var(--green));
+    font-size:.7rem; font-weight:700; padding:3px 11px;
+    border-radius:999px; letter-spacing:.06em; text-transform:uppercase; }
+  .ep-date { color:var(--muted); font-size:.88rem; font-weight:600;
+    font-variant-numeric:tabular-nums; }
+  .ep-desc { margin:8px 0 6px; font-size:.9rem; }
+  .ep-links { display:flex; gap:16px; }
+  .ep-link { color:var(--sc, var(--green)); text-decoration:none;
+    font-size:.86rem; font-weight:650; }
+  @media (prefers-color-scheme: dark) {
+    .ep-link { filter:brightness(1.5); }
+    .about .tag { filter:brightness(1.6); }
+  }
+  .ep-link:hover { text-decoration:underline; }
+
+  footer { color:var(--muted); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
 </style>
 </head>
 <body>
@@ -68,16 +120,16 @@
   <div class="about">
     <h2>番組について</h2>
     <p>腎臓内科の最新文献を、日本語主導のバイリンガル会話で紹介する教育・英語学習向けの番組です。3つのシリーズを配信しています。</p>
-    <p><span class="tag" style="color:#0f766e">Weekly Summary</span> … 今週の臨床研究5本を抄録ベースで紹介（月曜）。</p>
-    <p><span class="tag" style="color:#0b3a5c">Deep Read</span> … OA論文1本を full text まで踏み込んで深読み（木曜）。</p>
-    <p><span class="tag" style="color:#7c3f00">Case Reports</span> … OAケースレポートを抄録3本＋深読み1本で紹介（土曜）。</p>
+    <p><span class="tag" style="color:#4a6048">Weekly Summary</span> … 今週の臨床研究5本を抄録ベースで紹介（月曜）。</p>
+    <p><span class="tag" style="color:#a97f2f">Deep Read</span> … OA論文1本を full text まで踏み込んで深読み（木曜）。</p>
+    <p><span class="tag" style="color:#6b7a4b">Case Reports</span> … OAケースレポートを抄録3本＋深読み1本で紹介（土曜）。</p>
   </div>
   <h2 class="section">エピソード</h2>
   <ul class="eps">
-<li class="ep"><div class="ep-head"><span class="badge" style="background:#0b3a5c">Deep Read</span><span class="ep-date">2026-07-07</span></div><div class="ep-desc">2026-07-07配信【Deep Read・深掘り】。NELL-1関連膜性腎症の臨床病理学的研究——中国人単施設コホート68例（Kidney Int Rep）を、full text（Methods/Results/Limitations）まで踏み込んで約20分で読み解きます。</div><div class="ep-links"><a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3">▶ 音声</a> <a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html">原稿スクリプト</a></div></li>
-<li class="ep"><div class="ep-head"><span class="badge" style="background:#7c3f00">Case Reports</span><span class="ep-date">2026-07-07</span></div><div class="ep-desc">2026-07-07配信【Case Reports・症例カンファ】。腎臓内科のケースレポートを、抄録で3症例紹介＋1症例をfull textまで深読みするバイリンガル回（教育・英語学習目的）。症例報告はn=1であり一般化はできません。</div><div class="ep-links"><a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-07.mp3">▶ 音声</a> <a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-07.html">原稿スクリプト</a></div></li>
-<li class="ep"><div class="ep-head"><span class="badge" style="background:#0f766e">Weekly Summary</span><span class="ep-date">2026-07-06</span></div><div class="ep-desc">2026-07-06配信。今週の主要論文: 小児IgA血管炎腎炎における尿中可溶性CD163と管内増殖・線維素様壊死の関連（Pediatr Nephrol）、学校検尿で早期発見されIgA沈着を伴う小児ANCA関連腎炎の症例（CEN Case Rep）。</div><div class="ep-links"><a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3">▶ 音声</a> <a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html">原稿スクリプト</a></div></li>
-<li class="ep"><div class="ep-head"><span class="badge" style="background:#0f766e">Weekly Summary</span><span class="ep-date">2026-07-05</span></div><div class="ep-desc">2026-07-05配信。今週の主要論文: 免疫介在性糸球体腎炎に対する抗炎症性バイオ製剤の総説（J Inflamm Res）、慢性人工関節感染を背景とした感染関連IgA血管炎の症例（Cureus）。</div><div class="ep-links"><a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3">▶ 音声</a> <a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html">原稿スクリプト</a></div></li>
+<li class="ep" style="--sc:#a97f2f"><div class="ep-head"><span class="badge">Deep Read</span><span class="ep-date">2026-07-07</span></div><div class="ep-desc">2026-07-07配信【Deep Read・深掘り】。NELL-1関連膜性腎症の臨床病理学的研究——中国人単施設コホート68例（Kidney Int Rep）を、full text（Methods/Results/Limitations）まで踏み込んで約20分で読み解きます。</div><div class="ep-links"><a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3">▶ 音声</a> <a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html">原稿スクリプト</a></div></li>
+<li class="ep" style="--sc:#6b7a4b"><div class="ep-head"><span class="badge">Case Reports</span><span class="ep-date">2026-07-07</span></div><div class="ep-desc">2026-07-07配信【Case Reports・症例カンファ】。腎臓内科のケースレポートを、抄録で3症例紹介＋1症例をfull textまで深読みするバイリンガル回（教育・英語学習目的）。症例報告はn=1であり一般化はできません。</div><div class="ep-links"><a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-07.mp3">▶ 音声</a> <a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-07.html">原稿スクリプト</a></div></li>
+<li class="ep" style="--sc:#4a6048"><div class="ep-head"><span class="badge">Weekly Summary</span><span class="ep-date">2026-07-06</span></div><div class="ep-desc">2026-07-06配信。今週の主要論文: 小児IgA血管炎腎炎における尿中可溶性CD163と管内増殖・線維素様壊死の関連（Pediatr Nephrol）、学校検尿で早期発見されIgA沈着を伴う小児ANCA関連腎炎の症例（CEN Case Rep）。</div><div class="ep-links"><a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3">▶ 音声</a> <a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html">原稿スクリプト</a></div></li>
+<li class="ep" style="--sc:#4a6048"><div class="ep-head"><span class="badge">Weekly Summary</span><span class="ep-date">2026-07-05</span></div><div class="ep-desc">2026-07-05配信。今週の主要論文: 免疫介在性糸球体腎炎に対する抗炎症性バイオ製剤の総説（J Inflamm Res）、慢性人工関節感染を背景とした感染関連IgA血管炎の症例（Cureus）。</div><div class="ep-links"><a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3">▶ 音声</a> <a class="ep-link" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html">原稿スクリプト</a></div></li>
   </ul>
 </div></main>
 <footer><div class="wrap">
