@@ -4,103 +4,171 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex"/>
+<meta name="theme-color" content="#0f766e"/>
 <title>Weekly Nephrology 2026-07-05 — 原稿スクリプト</title>
 <style>
-  :root { --a:#0f766e; --b:#0b3a5c; --bg:#f7fafc; --ink:#1a2b3c; }
+  :root {
+    --accent:#0d9488; --accent-deep:#0f766e;
+    --bg:#f5f7fa; --card:#ffffff; --ink:#111826; --sub:#5b6b7b;
+    --line:rgba(17,24,38,.08); --bubble-b:#eef2ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#0d1117; --card:#161c26; --ink:#e6ebf2; --sub:#94a3b3;
+      --line:rgba(230,235,242,.09); --bubble-b:#1c2436;
+    }
+  }
   * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
   body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:-apple-system,"Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
-    line-height:1.7; }
-  header { background:linear-gradient(135deg,#0b2545,#0f766e); color:#fff;
-    padding:28px 20px; }
-  .wrap { max-width:760px; margin:0 auto; padding:0 20px; }
-  header .wrap { padding:0 20px; }
-  h1 { margin:0 0 6px; font-size:1.35rem; }
-  .sub { opacity:.85; font-size:.9rem; }
-  .bar { margin-top:16px; display:flex; gap:12px; flex-wrap:wrap; }
-  .bar a { color:#fff; background:rgba(255,255,255,.15); text-decoration:none;
-    padding:8px 14px; border-radius:8px; font-size:.85rem; }
-  main { padding:24px 0 60px; }
-  .turn { margin:14px 0; padding:12px 16px; border-radius:12px;
-    background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.06); }
-  .turn.a { border-left:4px solid var(--a); }
-  .turn.b { border-left:4px solid var(--b); }
-  .who { display:block; font-size:.72rem; font-weight:700; letter-spacing:.03em;
-    color:#5b6b7b; margin-bottom:3px; }
-  .turn.a .who { color:var(--a); }
-  .turn.b .who { color:var(--b); }
-  .turn.b .text { color:#0b3a5c; }
-  .note { color:#5b6b7b; font-size:.9rem; }
-  .empty { color:#8a97a5; text-align:center; padding:40px 0; }
-  footer { color:#8a97a5; font-size:.8rem; text-align:center; padding:24px 0 48px; }
-  footer a { color:#0f766e; }
+    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+      system-ui,sans-serif;
+    line-height:1.85; font-size:15.5px;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+
+  header { color:#fff; padding:44px 0 34px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 160% at 85% -20%, #0d9488 0%, transparent 55%),
+      linear-gradient(150deg,#101828 20%, #0f766e 130%); }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:#fff;
+    background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25);
+    padding:4px 12px; border-radius:999px; margin-bottom:14px;
+    backdrop-filter:blur(4px); }
+  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:750;
+    letter-spacing:-.01em; }
+  .sub { opacity:.78; font-size:.88rem; }
+  audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:#fff; background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.22); text-decoration:none;
+    padding:7px 15px; border-radius:999px; font-size:.82rem;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(255,255,255,.26); }
+
+  main { padding:30px 0 60px; }
+
+  .papers { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; padding:22px 24px 16px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); margin-bottom:34px; }
+  .papers h2 { margin:0 0 2px; font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .papers h2::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--accent); display:inline-block; }
+  .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
+  .plist { list-style:none; margin:0; padding:0; }
+  .plist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .pnum { flex:none; width:26px; height:26px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; margin-top:2px; }
+  .pbody { min-width:0; }
+  .ptitle { font-weight:650; font-size:.92rem; line-height:1.55;
+    color:var(--ink); text-decoration:none; }
+  a.ptitle:hover { color:var(--accent); text-decoration:underline; }
+  .pmeta { font-size:.76rem; color:var(--sub); margin-top:3px;
+    overflow-wrap:anywhere; }
+  .pmeta a { color:var(--accent); text-decoration:none; }
+  .pmeta a:hover { text-decoration:underline; }
+
+  .turn { margin:18px 0; max-width:88%; }
+  .turn.b { margin-left:auto; }
+  .who { display:block; font-size:.7rem; font-weight:700;
+    letter-spacing:.08em; color:var(--sub); margin:0 6px 4px; }
+  .turn.a .who { color:var(--accent); }
+  .turn.b { text-align:right; }
+  .turn.b .bubble { text-align:left; }
+  .bubble { display:inline-block; background:var(--card);
+    border:1px solid var(--line); padding:12px 17px;
+    border-radius:4px 18px 18px 18px;
+    box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
+  .turn.b .bubble { background:var(--bubble-b);
+    border-radius:18px 4px 18px 18px; }
+  .note { color:var(--sub); font-size:.88rem; }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+
+  footer { color:var(--sub); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
+  footer a { color:var(--accent); }
 </style>
 </head>
 <body>
 <header><div class="wrap">
+  <span class="badge">Weekly</span>
   <h1>Weekly Nephrology</h1>
-  <div class="sub">2026-07-05 配信・原稿スクリプト（教育・英語学習用）</div>
+  <div class="sub">2026-07-05 配信 · 原稿スクリプト（教育・英語学習用）</div>
+  <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3"></audio>
   <div class="bar">
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3">▶ 音声を聴く</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3">⬇ MP3</a>
     <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">RSS を購読</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">エピソード一覧</a>
   </div>
 </div></header>
 <main><div class="wrap">
+<section class="papers"><h2>取り上げた論文</h2><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.2147/JIR.S594416" target="_blank" rel="noopener">Mechanistic Insights and Therapeutic Advances of Anti-Inflammatory Biologics in Immune-Mediated Glomerulonephritis: A Narrative Review</a><div class="pmeta"><span>J Inflamm Res (2026)</span> · <a href="https://doi.org/10.2147/JIR.S594416" target="_blank" rel="noopener">DOI: 10.2147/JIR.S594416</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42371495/" target="_blank" rel="noopener">PMID: 42371495</a></div></div></li>
+<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.7759/cureus.109968" target="_blank" rel="noopener">From the Hip to the Kidney: Suspected Infection-Associated Immunoglobulin A Vasculitis in the Setting of Chronic Methicillin-Sensitive Staphylococcus aureus Prosthetic Joint Infection</a><div class="pmeta"><span>Cureus (2026 May)</span> · <a href="https://doi.org/10.7759/cureus.109968" target="_blank" rel="noopener">DOI: 10.7759/cureus.109968</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42382882/" target="_blank" rel="noopener">PMID: 42382882</a></div></div></li>
+<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1136/bmjdrc-2025-005765" target="_blank" rel="noopener">Hyperosmolar hyperglycaemic state: a systematic review and meta-analysis</a><div class="pmeta"><span>BMJ Open Diabetes Res Care (2026 Jun 29)</span> · <a href="https://doi.org/10.1136/bmjdrc-2025-005765" target="_blank" rel="noopener">DOI: 10.1136/bmjdrc-2025-005765</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42373194/" target="_blank" rel="noopener">PMID: 42373194</a></div></div></li>
+<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ndt/gfag146" target="_blank" rel="noopener">Bortezomib-Cyclophosphamide-Dexamethasone versus Rituximab in PGNMID</a><div class="pmeta"><span>Nephrol Dial Transplant (2026 Jun 23)</span> · <a href="https://doi.org/10.1093/ndt/gfag146" target="_blank" rel="noopener">DOI: 10.1093/ndt/gfag146</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42343619/" target="_blank" rel="noopener">PMID: 42343619</a></div></div></li>
+<li><span class="pnum">5</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ndt/gfag137" target="_blank" rel="noopener">Prevalence of anti-rituximab antibodies in autoimmune forms of glomerulonephritis and podocytopathies</a><div class="pmeta"><span>Nephrol Dial Transplant (2026 Jun 24)</span> · <a href="https://doi.org/10.1093/ndt/gfag137" target="_blank" rel="noopener">DOI: 10.1093/ndt/gfag137</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42340364/" target="_blank" rel="noopener">PMID: 42340364</a></div></div></li>
+</ol></section>
 
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">こんにちは、Weekly Nephrology へようこそ。今週も腎臓内科の新着論文を、日本語と英語のバイリンガルでご紹介していきます。今日はよろしくお願いします。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Hi everyone, and welcome back. As always, a quick disclaimer before we start: today&#x27;s discussion is based on the published abstracts only — we haven&#x27;t read the full texts — and this is for education and English-learning purposes. Please don&#x27;t take anything here as direct clinical advice.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">大事な前提ですね。今回は抄録ベースでの紹介です。数値や結論は原文どおりにお伝えして、そこから踏み込んだ断定はしないようにします。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Exactly. So let&#x27;s warm up with a couple of recent topics in the nephrology world before we get into the papers.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">はい。まず学会の話題です。6月の頭に、第63回のERA Congress、ヨーロッパ腎臓学会がイギリスのグラスゴーで開かれました。6月3日から6日ですね。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Right. The ERA Congress in Glasgow was one of the big meetings this season. One theme that got a lot of attention was B-cell–targeted therapy in glomerular disease — rituximab in particular kept coming up in the discussions around primary glomerular disease. That&#x27;s a nice segue, because a couple of today&#x27;s papers are also about rituximab and clone-directed therapy.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">そうなんです。今日の論文にもリツキシマブが何度も出てきます。学会の流れとつながっていて面白いですね。もう一つ、移植の話題も少しだけ。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Yes — xenotransplantation keeps making headlines. One widely reported milestone was a gene-edited pig kidney that functioned in a human recipient for a record of around 271 days before it had to be removed, reportedly because of persistent proteinuria. It&#x27;s still early days, and these are very selected cases, but it&#x27;s a striking sign of how fast this field is moving.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">271日というのはこれまでで最長クラスですよね。ただ、蛋白尿で摘出に至ったという点も含めて、まだ課題が多い段階だという理解でいいと思います。では、ここから今週の論文に入りましょう。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Let&#x27;s do it. Four papers today.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">1本目は、免疫介在性の糸球体腎炎に対する抗炎症性バイオ製剤のナラティブレビューです。J Inflammation Research の総説で、PMIDは42371495です。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">So this is a narrative review — a conceptual overview rather than new trial data. The authors frame immune-mediated glomerulonephritis as a three-step cascade: first, aberrant activation of innate immunity — pattern-recognition receptors, inflammasomes, and complement; second, adaptive immune dysregulation, with imbalanced B- and T-cell responses and pathogenic autoantibodies; and third, terminal effector injury — complement-mediated damage and progressive fibrosis.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">3段階のカスケードとして整理しているんですね。自然免疫の異常活性化、獲得免疫の破綻、そして終末効果器の障害。その各段階に、どんなバイオ製剤が介入できるかを疾患横断的にまとめています。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">And they cover a wide spectrum — IgA nephropathy, membranous nephropathy, lupus nephritis, FSGS, minimal change, anti-GBM disease, ANCA-associated vasculitis, and C3 glomerulopathy. The review says that for IgAN, MN, and LN, there&#x27;s randomized controlled trial evidence supporting agents like anti-CD20 B-cell depletion, plasma-cell–directed drugs, and complement blockers against C5 or Factor B — with benefits in reducing proteinuria and preserving renal function.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">一方で、FSGSや微小変化型、抗GBM病、C3腎症では、まだ根拠が症例報告や前臨床モデル、早期相試験どまりで予備的だと。ここは疾患ごとにエビデンスの強さがかなり違う、という点が大事ですね。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">A fair point on limitations: because it&#x27;s a narrative review, we don&#x27;t get pooled effect sizes or a systematic search protocol from the abstract, so the specifics need the full text. The authors also flag ongoing challenges — variable efficacy, infection risk, and cost.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">限界も率直に書かれていますね。今後の方向性として、マルチオミクスによる層別化や、二重特異性抗体・遺伝子治療といった次世代バイオ製剤を挙げています。臨床的な意義としては、糸球体疾患の治療標的の「地図」として俯瞰できるのが便利だと思います。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">For the English learning note: a key phrase here is &quot;disease-modifying treatment&quot; — 疾患修飾治療 — meaning therapy that changes the underlying disease course, not just symptoms. And &quot;B-cell–depleting antibody,&quot; 抗CD20のようなB細胞を除去する抗体。</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">なるほど。ではまとめると、この総説は「補体・B細胞・形質細胞・サイトカイン」という複数の標的を、疾患横断で整理してくれる一本、ということですね。次にいきましょう。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Paper two — and it&#x27;s a case report.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">2本目はケースレポートです。Cureus の症例報告で、PMIDは42382882。タイトルは「From the Hip to the Kidney」、股関節から腎臓へ、という印象的なものです。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Great title. The case is a 56-year-old man with alcoholic cirrhosis and a chronic methicillin-sensitive Staph aureus — MSSA — prosthetic joint infection. He presented with progressive anasarca — severe generalized edema — and a diffuse non-blanching petechial rash.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">検査では急性腎障害があって、血清クレアチニンが1.9 mg/dL、約1か月前のベースラインが1.0くらいだったと。尿は3+の蛋白尿と顕微鏡的血尿でした。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">And here&#x27;s the interesting part: the serologic workup was essentially negative — ANA, ANCA, anti-GBM, complement, cryoglobulins, hepatitis panel, HIV, rheumatoid factor — all negative or non-reactive. So the usual autoimmune screen didn&#x27;t point anywhere.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">それでも腎生検で診断がついたんですね。腎生検ではIgA優位の糸球体腎炎、メサンギウム細胞増多と半月体形成。皮膚生検では白血球破砕性血管炎。そして人工股関節の膿瘍培養からMSSAが検出された。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Putting it together, the authors diagnosed suspected infection-associated IgA vasculitis — IgAV — in the setting of that chronic prosthetic joint infection. Note the word &quot;suspected.&quot; A big teaching point from the abstract is the need to differentiate systemic IgAV from infection-associated IgA-dominant glomerulonephritis — they can look very similar.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">限界としては、単一症例なので一般化はできないこと、そして「疑い」の診断であること。治療経過の詳細は抄録では乏しいので本文参照ですね。ただ、教育的にはとても示唆に富む症例だと思います。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">For the English note: &quot;non-blanching rash&quot; — 圧迫しても消えない皮疹で、血管性を示唆します。And &quot;leukocytoclastic vasculitis,&quot; 白血球破砕性血管炎 — a classic small-vessel finding on skin biopsy.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">血清学が全部陰性でも、慢性感染巣の検索と生検が鍵になる、という点が臨床的な学びですね。成人のIgAVは腎病変が重くなりやすいとされるので、見逃さないようにしたいところです。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Well summarized. Let&#x27;s move to something with big numbers — a meta-analysis.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">3本目は高浸透圧高血糖状態、HHSの系統的レビューとメタ解析です。BMJ Open Diabetes Research and Care、PMIDは42373194。電解質や浸透圧の管理に関わるので、腎臓内科にも関係が深いテーマです。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">This one aggregates a lot of data. Twenty-seven studies, and a total of 63,935 cases. The median age was 63.8 years. The motivation is that, until now, most HHS knowledge came from case series and small cohorts, so large-scale data on triggers and mortality were lacking.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">誘因を見ると、非感染性の疾患が49.5%、感染が44.0%、そして新規の糖尿病診断が31.7%。かなりの割合で、それまで糖尿病と分かっていなかった人が含まれるんですね。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">And the outcomes are sobering. Overall mortality was 21.1%. But it varied enormously by region — highest in Africa at 40 percent, Asia around 18 percent, and lowest in North America at about 4.8 percent. ICU admission was 40.8 percent overall, and highest in North America at 70 percent. Complications included acute kidney injury in 7.6 percent, pulmonary oedema in 4.8 percent, and acute coronary syndrome in 3.9 percent.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">生化学的な所見は世界的に似ているのに、転帰は地域で大きく違う、という結論ですね。入院期間も、アジアが最長で17.5日、南北アメリカが最短で4.0日と差があります。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">On limitations — and this is important — most of the included studies are observational, so we should talk about association, not causation. The regional differences likely reflect differences in resources, reporting, and diagnostic criteria, which the abstract doesn&#x27;t fully unpack. It is PROSPERO-registered, which is a plus.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">そうですね。因果は断定せず、あくまで関連として読む。腎臓内科的には、HHSが高度の高浸透圧・脱水・電解質異常を伴い、AKIも7.6%に合併している点が実務的に重要です。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">English note: &quot;precipitating factor,&quot; or &quot;precipitant&quot; — 誘因、引き金。And &quot;harmonised protocols&quot; — 標準化された、統一されたプロトコル。The authors argue that reducing mortality needs better diabetes diagnosis and resource-adapted management.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">誘因を早くつかんで、地域の資源に合わせた管理と予防につなげる、というメッセージですね。では最後の1本にいきましょう。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Paper four — a small but interesting randomized trial.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">4本目はPGNMID、単クローン性免疫グロブリン沈着を伴う増殖性糸球体腎炎に対する治療の比較です。Nephrology Dialysis Transplantation、PMIDは42343619。形質細胞を標的にするBCD療法と、B細胞を標的にするリツキシマブを比べています。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Right. BCD stands for bortezomib, cyclophosphamide, and dexamethasone — a plasma-cell–directed regimen — versus rituximab, which is B-cell–directed. PGNMID is rare, and prospective controlled data are really limited, so even a small randomized trial is valuable. This was a single-center, open-label pilot RCT.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">20例を1対1で無作為化して、BCDを6サイクル、あるいはリツキシマブを375 mg/m²で週1回4回。B細胞が再構築してきたら6か月時に500mgのブースターを事前規定で追加、という設計です。年齢中央値は57歳、平均の蛋白尿は4.1 g/日でした。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">The primary endpoint was overall renal response at 12 months. In the intention-to-treat analysis, it was 60 percent — six of ten — in the BCD group, and 70 percent — seven of ten — in the rituximab group, with a p-value of 1.0. So no significant difference between the two. Treatment failure occurred in two BCD patients and none in the rituximab group.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">6か月時の完全奏効はBCDが5例、リツキシマブが3例。BCD群では6か月時に一過性のeGFR低下がみられて、12か月までに回復したとあります。重篤な有害事象はBCD群の肺炎が1件で、安全性は管理可能と。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">And the authors are appropriately careful. They call the findings &quot;hypothesis-generating,&quot; because of the small sample size — ten per arm — the open-label design, and differences in the treatment exposure structure. A p-value of 1.0 with twenty patients does not prove the treatments are equivalent; it may just reflect limited power.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">そこは大事ですね。「差がない」の証明ではなく、検出力不足の可能性がある。限界としては単施設、非盲検、追跡12か月と短め。最適治療の結論には、より大規模で多施設・長期の研究が要る、という位置づけです。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">English note: &quot;intention-to-treat analysis,&quot; 治療企図解析 — analyzing patients by the group they were randomized to. And &quot;hypothesis-generating,&quot; 仮説生成的 — findings that suggest a direction but need confirmation.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">希少疾患で、形質細胞標的とB細胞標的という2つのクローン指向治療を前向きに直接比較したこと自体が貴重ですね。結果の解釈には慎重さが要りますが、今後の多施設試験の土台になりそうです。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">That&#x27;s a nice place to wrap up. Four papers today: a narrative review mapping biologics across immune-mediated glomerulonephritis; an instructive case of suspected infection-associated IgA vasculitis; a large meta-analysis of hyperosmolar hyperglycaemic state; and a pilot RCT comparing BCD and rituximab in PGNMID.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">どれもリツキシマブや糸球体疾患、電解質と、腎臓内科の実務に近いテーマでしたね。冒頭のERA Congressや異種移植の話題とも、どこかでつながっていた気がします。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">And remember — everything today was abstract-based, for education and English learning. For clinical decisions, please go to the full texts and the relevant guidelines.</span></div>
-<div class="turn a"><span class="who">Speaker A・日本語</span><span class="text">はい。今週もお聞きいただきありがとうございました。また来週、Weekly Nephrology でお会いしましょう。</span></div>
-<div class="turn b"><span class="who">Speaker B・English</span><span class="text">Thanks everyone — see you next week. Take care.</span></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">こんにちは、Weekly Nephrology へようこそ。今週も腎臓内科の新着論文を、日本語と英語のバイリンガルでご紹介していきます。今日はよろしくお願いします。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Hi everyone, and welcome back. As always, a quick disclaimer before we start: today&#x27;s discussion is based on the published abstracts only — we haven&#x27;t read the full texts — and this is for education and English-learning purposes. Please don&#x27;t take anything here as direct clinical advice.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">大事な前提ですね。今回は抄録ベースでの紹介です。数値や結論は原文どおりにお伝えして、そこから踏み込んだ断定はしないようにします。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Exactly. So let&#x27;s warm up with a couple of recent topics in the nephrology world before we get into the papers.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">はい。まず学会の話題です。6月の頭に、第63回のERA Congress、ヨーロッパ腎臓学会がイギリスのグラスゴーで開かれました。6月3日から6日ですね。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Right. The ERA Congress in Glasgow was one of the big meetings this season. One theme that got a lot of attention was B-cell–targeted therapy in glomerular disease — rituximab in particular kept coming up in the discussions around primary glomerular disease. That&#x27;s a nice segue, because a couple of today&#x27;s papers are also about rituximab and clone-directed therapy.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうなんです。今日の論文にもリツキシマブが何度も出てきます。学会の流れとつながっていて面白いですね。もう一つ、移植の話題も少しだけ。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Yes — xenotransplantation keeps making headlines. One widely reported milestone was a gene-edited pig kidney that functioned in a human recipient for a record of around 271 days before it had to be removed, reportedly because of persistent proteinuria. It&#x27;s still early days, and these are very selected cases, but it&#x27;s a striking sign of how fast this field is moving.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">271日というのはこれまでで最長クラスですよね。ただ、蛋白尿で摘出に至ったという点も含めて、まだ課題が多い段階だという理解でいいと思います。では、ここから今週の論文に入りましょう。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Let&#x27;s do it. Four papers today.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">1本目は、免疫介在性の糸球体腎炎に対する抗炎症性バイオ製剤のナラティブレビューです。J Inflammation Research の総説で、PMIDは42371495です。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">So this is a narrative review — a conceptual overview rather than new trial data. The authors frame immune-mediated glomerulonephritis as a three-step cascade: first, aberrant activation of innate immunity — pattern-recognition receptors, inflammasomes, and complement; second, adaptive immune dysregulation, with imbalanced B- and T-cell responses and pathogenic autoantibodies; and third, terminal effector injury — complement-mediated damage and progressive fibrosis.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">3段階のカスケードとして整理しているんですね。自然免疫の異常活性化、獲得免疫の破綻、そして終末効果器の障害。その各段階に、どんなバイオ製剤が介入できるかを疾患横断的にまとめています。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">And they cover a wide spectrum — IgA nephropathy, membranous nephropathy, lupus nephritis, FSGS, minimal change, anti-GBM disease, ANCA-associated vasculitis, and C3 glomerulopathy. The review says that for IgAN, MN, and LN, there&#x27;s randomized controlled trial evidence supporting agents like anti-CD20 B-cell depletion, plasma-cell–directed drugs, and complement blockers against C5 or Factor B — with benefits in reducing proteinuria and preserving renal function.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">一方で、FSGSや微小変化型、抗GBM病、C3腎症では、まだ根拠が症例報告や前臨床モデル、早期相試験どまりで予備的だと。ここは疾患ごとにエビデンスの強さがかなり違う、という点が大事ですね。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">A fair point on limitations: because it&#x27;s a narrative review, we don&#x27;t get pooled effect sizes or a systematic search protocol from the abstract, so the specifics need the full text. The authors also flag ongoing challenges — variable efficacy, infection risk, and cost.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">限界も率直に書かれていますね。今後の方向性として、マルチオミクスによる層別化や、二重特異性抗体・遺伝子治療といった次世代バイオ製剤を挙げています。臨床的な意義としては、糸球体疾患の治療標的の「地図」として俯瞰できるのが便利だと思います。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">For the English learning note: a key phrase here is &quot;disease-modifying treatment&quot; — 疾患修飾治療 — meaning therapy that changes the underlying disease course, not just symptoms. And &quot;B-cell–depleting antibody,&quot; 抗CD20のようなB細胞を除去する抗体。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">なるほど。ではまとめると、この総説は「補体・B細胞・形質細胞・サイトカイン」という複数の標的を、疾患横断で整理してくれる一本、ということですね。次にいきましょう。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Paper two — and it&#x27;s a case report.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">2本目はケースレポートです。Cureus の症例報告で、PMIDは42382882。タイトルは「From the Hip to the Kidney」、股関節から腎臓へ、という印象的なものです。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Great title. The case is a 56-year-old man with alcoholic cirrhosis and a chronic methicillin-sensitive Staph aureus — MSSA — prosthetic joint infection. He presented with progressive anasarca — severe generalized edema — and a diffuse non-blanching petechial rash.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">検査では急性腎障害があって、血清クレアチニンが1.9 mg/dL、約1か月前のベースラインが1.0くらいだったと。尿は3+の蛋白尿と顕微鏡的血尿でした。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">And here&#x27;s the interesting part: the serologic workup was essentially negative — ANA, ANCA, anti-GBM, complement, cryoglobulins, hepatitis panel, HIV, rheumatoid factor — all negative or non-reactive. So the usual autoimmune screen didn&#x27;t point anywhere.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">それでも腎生検で診断がついたんですね。腎生検ではIgA優位の糸球体腎炎、メサンギウム細胞増多と半月体形成。皮膚生検では白血球破砕性血管炎。そして人工股関節の膿瘍培養からMSSAが検出された。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Putting it together, the authors diagnosed suspected infection-associated IgA vasculitis — IgAV — in the setting of that chronic prosthetic joint infection. Note the word &quot;suspected.&quot; A big teaching point from the abstract is the need to differentiate systemic IgAV from infection-associated IgA-dominant glomerulonephritis — they can look very similar.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">限界としては、単一症例なので一般化はできないこと、そして「疑い」の診断であること。治療経過の詳細は抄録では乏しいので本文参照ですね。ただ、教育的にはとても示唆に富む症例だと思います。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">For the English note: &quot;non-blanching rash&quot; — 圧迫しても消えない皮疹で、血管性を示唆します。And &quot;leukocytoclastic vasculitis,&quot; 白血球破砕性血管炎 — a classic small-vessel finding on skin biopsy.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">血清学が全部陰性でも、慢性感染巣の検索と生検が鍵になる、という点が臨床的な学びですね。成人のIgAVは腎病変が重くなりやすいとされるので、見逃さないようにしたいところです。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Well summarized. Let&#x27;s move to something with big numbers — a meta-analysis.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">3本目は高浸透圧高血糖状態、HHSの系統的レビューとメタ解析です。BMJ Open Diabetes Research and Care、PMIDは42373194。電解質や浸透圧の管理に関わるので、腎臓内科にも関係が深いテーマです。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">This one aggregates a lot of data. Twenty-seven studies, and a total of 63,935 cases. The median age was 63.8 years. The motivation is that, until now, most HHS knowledge came from case series and small cohorts, so large-scale data on triggers and mortality were lacking.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">誘因を見ると、非感染性の疾患が49.5%、感染が44.0%、そして新規の糖尿病診断が31.7%。かなりの割合で、それまで糖尿病と分かっていなかった人が含まれるんですね。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">And the outcomes are sobering. Overall mortality was 21.1%. But it varied enormously by region — highest in Africa at 40 percent, Asia around 18 percent, and lowest in North America at about 4.8 percent. ICU admission was 40.8 percent overall, and highest in North America at 70 percent. Complications included acute kidney injury in 7.6 percent, pulmonary oedema in 4.8 percent, and acute coronary syndrome in 3.9 percent.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">生化学的な所見は世界的に似ているのに、転帰は地域で大きく違う、という結論ですね。入院期間も、アジアが最長で17.5日、南北アメリカが最短で4.0日と差があります。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">On limitations — and this is important — most of the included studies are observational, so we should talk about association, not causation. The regional differences likely reflect differences in resources, reporting, and diagnostic criteria, which the abstract doesn&#x27;t fully unpack. It is PROSPERO-registered, which is a plus.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうですね。因果は断定せず、あくまで関連として読む。腎臓内科的には、HHSが高度の高浸透圧・脱水・電解質異常を伴い、AKIも7.6%に合併している点が実務的に重要です。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">English note: &quot;precipitating factor,&quot; or &quot;precipitant&quot; — 誘因、引き金。And &quot;harmonised protocols&quot; — 標準化された、統一されたプロトコル。The authors argue that reducing mortality needs better diabetes diagnosis and resource-adapted management.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">誘因を早くつかんで、地域の資源に合わせた管理と予防につなげる、というメッセージですね。では最後の1本にいきましょう。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Paper four — a small but interesting randomized trial.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">4本目はPGNMID、単クローン性免疫グロブリン沈着を伴う増殖性糸球体腎炎に対する治療の比較です。Nephrology Dialysis Transplantation、PMIDは42343619。形質細胞を標的にするBCD療法と、B細胞を標的にするリツキシマブを比べています。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Right. BCD stands for bortezomib, cyclophosphamide, and dexamethasone — a plasma-cell–directed regimen — versus rituximab, which is B-cell–directed. PGNMID is rare, and prospective controlled data are really limited, so even a small randomized trial is valuable. This was a single-center, open-label pilot RCT.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">20例を1対1で無作為化して、BCDを6サイクル、あるいはリツキシマブを375 mg/m²で週1回4回。B細胞が再構築してきたら6か月時に500mgのブースターを事前規定で追加、という設計です。年齢中央値は57歳、平均の蛋白尿は4.1 g/日でした。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">The primary endpoint was overall renal response at 12 months. In the intention-to-treat analysis, it was 60 percent — six of ten — in the BCD group, and 70 percent — seven of ten — in the rituximab group, with a p-value of 1.0. So no significant difference between the two. Treatment failure occurred in two BCD patients and none in the rituximab group.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">6か月時の完全奏効はBCDが5例、リツキシマブが3例。BCD群では6か月時に一過性のeGFR低下がみられて、12か月までに回復したとあります。重篤な有害事象はBCD群の肺炎が1件で、安全性は管理可能と。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">And the authors are appropriately careful. They call the findings &quot;hypothesis-generating,&quot; because of the small sample size — ten per arm — the open-label design, and differences in the treatment exposure structure. A p-value of 1.0 with twenty patients does not prove the treatments are equivalent; it may just reflect limited power.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そこは大事ですね。「差がない」の証明ではなく、検出力不足の可能性がある。限界としては単施設、非盲検、追跡12か月と短め。最適治療の結論には、より大規模で多施設・長期の研究が要る、という位置づけです。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">English note: &quot;intention-to-treat analysis,&quot; 治療企図解析 — analyzing patients by the group they were randomized to. And &quot;hypothesis-generating,&quot; 仮説生成的 — findings that suggest a direction but need confirmation.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">希少疾患で、形質細胞標的とB細胞標的という2つのクローン指向治療を前向きに直接比較したこと自体が貴重ですね。結果の解釈には慎重さが要りますが、今後の多施設試験の土台になりそうです。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">That&#x27;s a nice place to wrap up. Four papers today: a narrative review mapping biologics across immune-mediated glomerulonephritis; an instructive case of suspected infection-associated IgA vasculitis; a large meta-analysis of hyperosmolar hyperglycaemic state; and a pilot RCT comparing BCD and rituximab in PGNMID.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">どれもリツキシマブや糸球体疾患、電解質と、腎臓内科の実務に近いテーマでしたね。冒頭のERA Congressや異種移植の話題とも、どこかでつながっていた気がします。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">And remember — everything today was abstract-based, for education and English learning. For clinical decisions, please go to the full texts and the relevant guidelines.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">はい。今週もお聞きいただきありがとうございました。また来週、Weekly Nephrology でお会いしましょう。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Thanks everyone — see you next week. Take care.</div></div>
 </div></main>
 <footer><div class="wrap">
   抄録ベースの自動生成です。医学的最終判断は各自で行ってください。<br/>
