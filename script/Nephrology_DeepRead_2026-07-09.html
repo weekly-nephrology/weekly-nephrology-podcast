@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<meta name="theme-color" content="#7d5c1e"/>
+<title>Weekly Nephrology Deep Read 2026-07-09 — 原稿スクリプト</title>
+<style>
+  :root {
+    --accent:#a97f2f; --accent-deep:#7d5c1e;
+    --bg:#f5f1e3; --card:#fdfbf2; --ink:#26301f; --sub:#6f7863;
+    --line:rgba(38,48,31,.1); --bubble-b:#ecf0dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#161b12; --card:#20271a; --ink:#ece7d4; --sub:#a4ac93;
+      --line:rgba(236,231,212,.1); --bubble-b:#2a3321;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+      system-ui,sans-serif;
+    line-height:1.85; font-size:15.5px;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+
+  header { color:#f3ebd2; padding:44px 0 34px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 160% at 85% -20%, #a97f2f 0%, transparent 55%),
+      linear-gradient(150deg,#2c3a28 20%, #7d5c1e 130%); }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:#f3ebd2;
+    background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
+    padding:4px 12px; border-radius:999px; margin-bottom:14px;
+    backdrop-filter:blur(4px); }
+  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:650;
+    letter-spacing:.005em;
+    font-family:Georgia,"Times New Roman","Hiragino Mincho ProN",
+      "Noto Serif JP",serif; }
+  .sub { opacity:.78; font-size:.88rem; }
+  audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:7px 15px; border-radius:999px; font-size:.82rem;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(243,235,210,.24); }
+
+  main { padding:30px 0 60px; }
+
+  .papers { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; padding:22px 24px 16px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); margin-bottom:34px; }
+  .papers h2 { margin:0 0 2px; font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .papers h2::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--accent); display:inline-block; }
+  .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
+  .plist { list-style:none; margin:0; padding:0; }
+  .plist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .pnum { flex:none; width:26px; height:26px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; margin-top:2px; }
+  .pbody { min-width:0; }
+  .ptitle { font-weight:650; font-size:.92rem; line-height:1.55;
+    color:var(--ink); text-decoration:none; }
+  a.ptitle:hover { color:var(--accent); text-decoration:underline; }
+  .pmeta { font-size:.76rem; color:var(--sub); margin-top:3px;
+    overflow-wrap:anywhere; }
+  .pmeta a { color:var(--accent); text-decoration:none; }
+  .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .turn { margin:18px 0; max-width:88%; }
+  .turn.b { margin-left:auto; }
+  .who { display:block; font-size:.7rem; font-weight:700;
+    letter-spacing:.08em; color:var(--sub); margin:0 6px 4px; }
+  .turn.a .who { color:var(--accent); }
+  .turn.b { text-align:right; }
+  .turn.b .bubble { text-align:left; }
+  .bubble { display:inline-block; background:var(--card);
+    border:1px solid var(--line); padding:12px 17px;
+    border-radius:4px 18px 18px 18px;
+    box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
+  .turn.b .bubble { background:var(--bubble-b);
+    border-radius:18px 4px 18px 18px; }
+  .note { color:var(--sub); font-size:.88rem; }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+
+  footer { color:var(--sub); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="badge">Deep Read</span>
+  <h1>Weekly Nephrology Deep Read</h1>
+  <div class="sub">2026-07-09 配信 · 原稿スクリプト（教育・英語学習用）</div>
+  <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-09.mp3"></audio>
+  <div class="bar">
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-09.mp3">⬇ MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">RSS を購読</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">エピソード一覧</a>
+  </div>
+</div></header>
+<main><div class="wrap">
+<section class="papers"><h2>取り上げた論文</h2><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.kint.2026.03.020" target="_blank" rel="noopener">A MEF2C transcription factor network regulates proliferation of glomerular endothelial cells in diabetic kidney disease</a><div class="pmeta"><span>Kidney Int （2026 Jul, Vol 110 Issue 1）</span> · <a href="https://doi.org/10.1016/j.kint.2026.03.020" target="_blank" rel="noopener">DOI: 10.1016/j.kint.2026.03.020</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42055320/" target="_blank" rel="noopener">PMID: 42055320</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
+</ol></section>
+
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">こんにちは。Weekly Nephrology 深掘り版、Deep Read の時間です。配信は2026年7月9日、Deep Read シリーズの通算第1回になります。この番組は3つのシリーズで動いていて、月曜の Weekly Summary が今週の臨床研究5本を抄録で紹介する回、木曜のこの Deep Read が OA論文を1本だけ full text まで踏み込んで深く読む回、そして土曜の Case Reports が症例報告を紹介する回です。今日は木曜なので、腰を据えて論文を1本、じっくり読み込みます。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Hello, and welcome. Today we read just one paper, but we read it slowly and in depth.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">今回の論文の選び方も簡単に説明しますね。深掘り版は毎週「当番の雑誌」が決まっていて、今週は Kidney International が当番でした。その最新号から臨床研究の原著論文を候補として拾い、そのうち PMC で本文がきちんと取れたものが対象になります。今回は本文の取れた原著が1本だったので、その1本を読みます。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">本編の前に、ここ最近の腎臓内科のニュースを2つだけ短く触れておきます。1つ目は、6月にグラスゴーで開かれた ERA、ヨーロッパ腎臓学会の年次総会です。ここで FIND-CKD という第3相試験の結果が発表されて、フィネレノンが「糖尿病のない」慢性腎臓病でも腎機能の低下を緩やかにした、と報告されました。フィネレノンはこれまで糖尿病性腎臓病が主戦場でしたから、非糖尿病 CKD に広がるかどうかは注目点です。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">So finerenone may help even when the patient does not have diabetes. That is new.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうなんです。2つ目は、同じ ERA で、IgA 腎症に対するアトラセンタン、商品名ヴァンラフィアの2年半のデータが出て、The Lancet にも報告されました。腎機能の低下をプラセボより緩やかにして、しかもその効果は SGLT2 阻害薬を併用していても一貫していた、という点が実務的に大事なところです。CKD の治療が「1剤」ではなく「複数の柱を重ねる」時代になってきた、という流れを象徴するニュースですね。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">さて、この2つのニュースはどちらも「腎臓を守る薬」の話でした。今日読む論文も、実はその延長線上にあります。今日のテーマは糖尿病性腎臓病、DKD の糸球体で何が起きているのかを、分子のレベルで、しかも組織のどこで起きているかという空間情報つきで解剖した研究です。そして最後に SGLT2 阻害薬が出てきます。なぜこの1本を選んだかというと、私の関心が CKD や糖尿病性腎臓病に寄っていることに加えて、基礎寄りの研究なのに SGLT2 阻害薬という実際の薬とつながっている点が面白いと思ったからです。タイトルは「A MEF2C transcription factor network regulates proliferation of glomerular endothelial cells in diabetic kidney disease」、掲載は Kidney International です。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">では、まず要点を先に押さえましょう。最初に Speaker B に英語で短くまとめてもらって、そのあと私が日本語で同じ内容を言い直します。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Here is the short version. In diabetic kidneys, the tiny blood vessels of the glomerulus change. This study found a new, growing type of endothelial cell in those vessels. It also found a small group of control genes, called transcription factors, that decide the fate of these cells. And a diabetes drug, an SGLT2 inhibitor, seemed to push the cells back toward a healthy state.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">今の英語を日本語でまとめ直します。糖尿病の腎臓では、糸球体という毛細血管の塊の中で、内皮細胞、つまり血管の内張りの細胞に変化が起きます。この研究は、その中に「増殖しようとしている内皮細胞」という新しいタイプの細胞を見つけました。さらに、その細胞の運命を決めるスイッチのような遺伝子、転写因子のセットを特定しました。そして糖尿病の薬である SGLT2 阻害薬を使うと、その分子のパターンが健康な方向に戻って見えた、という話です。ここはあくまで「見出し」なので、細かい根拠はこれから本文を追いながら見ていきます。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">では背景です。なぜこの研究が必要だったのか。糖尿病性腎臓病は、慢性腎臓病の原因として一番多い病気です。進行すると、糸球体の基底膜が厚くなり、メサンギウムという支持組織が広がり、キンメルスティール・ウィルソン結節と呼ばれる結節ができてきます。ここまでは古くから知られています。ただ本文が指摘しているのは、「結節状のメサンギウム硬化」と「新しい血管ができること、つまり新生血管」の関係が、実はよく分かっていない、というギャップです。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">We know a lot about the podocyte in diabetes. We know less about why new vessels grow, and how that links to the scarring.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうですね。ポドサイト、足細胞の傷害はよく研究されているけれど、内皮細胞側で新生血管がなぜ増えるのか、そしてそれが硬化とどう結びつくのかは手薄だった。さらに、糸球体の反応は場所によってバラバラで、同じ腎臓の中でも傷んでいる糸球体とそうでない糸球体がある。だから「どの細胞が」「どこで」変化しているかという空間の情報が要る、というのがこの研究の出発点です。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここからが今日の主役、方法です。ここはしっかり時間をかけます。まず、この研究のデザインの「型」から確認しましょう。これは、患者さんを2群に分けて薬を試すようなランダム化比較試験ではありません。ヒトの腎臓の組織を、複数の最新技術で分子レベルまで読み解いていく、いわゆるトランスレーショナル、橋渡し研究です。ですから、後で出てくる数字も「介入の効果」ではなく、多くが「関連」や「パターン」を表すものだ、という前提で聞いてください。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">This is not a drug trial. It is a deep look at human kidney tissue, using many methods at once.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">対象集団を見ましょう。本文によると、解析したヒト腎臓検体は全部で132、のべ96人分です。これらは KPMP や HuBMAP といった腎臓の大規模プロジェクト、それからインディアナのバイオバンクなどから集められています。検体は、生検時の臨床診断に基づいて「糖尿病性腎臓病 DKD」か「リファレンス、つまり参照・健常寄り」に分類されています。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">使った技術がこの研究の肝なので、少し噛み砕きます。大きく2種類あります。1つは、細胞をバラバラにして1個ずつ読む技術。核のRNAを読む snRNA-seq、それに、遺伝子のスイッチの開き具合を見る ATAC、この2つを合わせた「マルチオーム」です。もう1つは、組織の切片の上で、位置を保ったまま遺伝子発現を読む「空間トランスクリプトミクス」。これを4種類も使っています。Visium の凍結、Visium の FFPE、つまりパラフィン包埋、それに高解像度の Visium HD、そして Xenium という1細胞レベルの技術です。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Why use so many methods? Because each one is strong in one way. Together, they check each other.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">まさにそこがポイントです。1つの技術には必ず弱点がある。たとえば Visium の1スポットは複数の細胞をまたいでしまう。だから解像度の高い Xenium や Visium HD で裏を取る。バラバラにして読む技術と、位置を保って読む技術、両方を突き合わせる。この「複数の直交する技術で同じ結論に行き着けるか」を確かめる設計は、この研究の大きな強みです。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">解析、統計の面も少しだけ。細胞のかたまり、ニッチが糖尿病の検体に偏っているかどうかはフィッシャーの正確検定で見ています。細胞の状態がどう移り変わるかは「トラジェクトリー」という軌跡のモデルで表現し、さらに CellOracle というツールで、特定の転写因子を「もし消したら」という in silico、コンピュータ上のノックアウトをシミュレーションしています。そしてそのコンピュータ予測を、実際に培養したヒト血管内皮細胞で siRNA を使って遺伝子を抑える実験でも確かめています。予測と実験、両輪でやっているわけですね。ここでデザインの弱点も先に言っておくと、あくまでヒト組織の横断的な観察が土台なので、「原因と結果」を証明する研究ではありません。時間を追って同じ細胞を見たわけではなく、多くは「ある時点のスナップショット」です。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">では結果に入ります。数字は本文にあるものだけを使います。まず、糖尿病の糸球体には特徴的な「ニッチ」、細胞のご近所グループがありました。そこには「増殖型の内皮細胞」、論文では prEC と略される細胞が多く、血管平滑筋の細胞も変化していました。健常の糸球体では、ちゃんとした糸球体毛細血管の内皮細胞が主役なのに、糖尿病では、その素性がはっきりしない内皮細胞が増えていた、という違いです。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">In the diabetic glomerulus, the healthy vessel cells go down. A new, growing cell type goes up.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">次が細胞どうしの会話、シグナルの話です。細胞は受容体とリガンドのペアでやり取りします。健康な血管を保つのに大事な VEGFA の経路は、糖尿病でも参照でも保たれていました。ところが、血管が増えすぎるのを抑える方向のペア、SEMA6A と PLXNA2 という組み合わせが、糖尿病の一部の内皮細胞で失われていたんです。つまり「アクセル」は踏まれたまま、「ブレーキ」の一部が外れていた、というイメージですね。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そして、そのブレーキを制御していたのが、今日のタイトルにもなっている転写因子のネットワークです。MEF2C、MEF2A、TRPS1 という3つの転写因子が、さっきの SEMA6A と PLXNA2 を制御していると予測されました。しかも MEF2C が実際にそこに結合することを、既存の ChIP-seq のデータで確認しています。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">So these three switches control the brake genes. That is the core finding.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここで、さっきの in silico ノックアウトが効いてきます。コンピュータ上でこの3つの転写因子を一緒に消すと、健康な内皮細胞から「変性した、傷んだ内皮細胞」へ向かう変化が加速しました。一方で、健康な細胞から「増殖型」へ向かう軌跡のほうは、加速ではなく、むしろ乱れて崩れた、と本文は書いています。そして、この予測を裏づけるように、培養したヒト血管内皮細胞で MEF2A・MEF2C・TRPS1 を siRNA で抑えると、PLXNA2、PDGFB、FZD4 という遺伝子の発現が下がりました。コンピュータの予測と実験の結果が同じ方向を向いた、ということです。なお SEMA6A は、この培養細胞ではもともと発現していなかった、とも正直に書かれています。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">組織との対応も見ています。訓練を受けた病理医が、糸球体を1つずつ、新生血管や結節性のメサンギウム硬化といった所見でスコア化しました。すると、MEF2C の活性は糖尿病の糸球体で高く、しかも結節性メサンギウム硬化、つまりキンメルスティール・ウィルソン結節のある糸球体と関連していました。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">The switch called MEF2C was more active where the classic diabetic nodules were.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そして臨床とのつながりです。MEF2C の平均活性は、尿蛋白クレアチニン比、つまり尿の蛋白の量と相関していました。本文の数字では、スピアマンの相関係数 ρ が0.73、p 値が 8かける10のマイナス4乗です。ただし eGFR、腎機能の指標とは相関しませんでした。ここは「蛋白尿とは関連したが、その時点の腎機能とは関連しなかった」と、事実として押さえておきます。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">いよいよ SGLT2 阻害薬です。研究チームは、別の独立したデータセットを使いました。12歳から21歳の若い、2型糖尿病で腎臓の障害がまだごく軽い人たちの腎生検です。3群あって、健常が6人、糖尿病で SGLT2 阻害薬を使っている人が10人、糖尿病だが使っていない人が6人でした。糸球体の内皮細胞で、MEF2C が制御する遺伝子が226個見つかり、そのうち糖尿病で有意に変化していたのが、ボンフェローニ補正後で66個。64個が上がり、2個が下がっていました。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">And here is the interesting part. With the SGLT2 inhibitor, most of those genes moved back toward normal.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうなんです。SGLT2 阻害薬を使っている群では、その66個のうち64個が、健常に近い方向へ戻っていました。補正後の p 値で見ても43個が有意でした。つまり、糖尿病でずれていた分子のパターンが、薬を使っている人では健常方向に寄っていた、という関連が見えたわけです。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここで一度、冷静になりましょう。限界とバイアスの話です。まず著者自身が挙げている限界。1つ目は、これだけ大きな空間トランスクリプトミクスのデータでも、サンプルサイズの制約で、糖尿病性腎臓病の患者さんを臨床的な特徴でサブグループに分けることはできなかった、という点。2つ目は、Visium のスポットが複数の細胞をまたぐ問題。これは1細胞レベルの Xenium や Visium HD で補ったと説明されています。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">The authors are honest about the limits. The sample is large for this kind of study, but still small for clinical subgroups.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">私が脚本家として付け加えたい点もあります。1つは、さっき言ったように、これは横断的な観察が土台なので、因果関係を証明したものではないということ。「トラジェクトリー」も、本当に細胞が A から B へ変わっていく過程を捉えたのか、それとも単にいろんな状態の細胞が並んでいるだけなのか、本文自身が「両方の可能性がある」と慎重に書いています。もう1つ大事なのは、あの印象的な SGLT2 阻害薬のデータが、腎障害がごく軽い「若い」患者さんのコホートから来ている、という点です。処方の有無であって、割り付けたランダム化ではありません。ですから「SGLT2 阻害薬が MEF2C を戻した」と因果で言い切ることはできず、「そういう関連が観察された」までにとどめるべきです。そもそも新生血管が体にとって良い適応なのか、悪い方向なのかも、まだ決着がついていない、と本文も認めています。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">では臨床的な意義、この研究がどこに位置づくかです。ここは特に控えめに言います。これは明日からの処方を変える研究では、ありません。ランダム化試験でもないし、直接アウトカムを見たわけでもない。ただ、意義がないわけでは全くありません。SGLT2 阻害薬が糖尿病性腎臓病でなぜ効くのか、その「なぜ」の一つの分子メカニズムの候補を、ヒトの組織で、しかも早期であれば元に戻りうる、可塑性があるかもしれない、という形で示した点に価値があります。将来的に、この MEF2C ネットワークや SEMA6A・PLXNA2 の軸が、新しい治療標的になる可能性もある。冒頭のフィネレノンやアトラセンタンのニュースと同じで、「腎臓を守る」ための引き出しを増やす、その基礎の部分を固める仕事だと理解するとよいと思います。</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">最後に英語学習のワンポイントを1つだけ。今日のキーワードは receptor-ligand pair、受容体とリガンドのペア、でした。医学英語では、細胞のシグナルを説明するときにこの言い方が本当によく出てきます。もう1つ、in silico という表現。in vitro が試験管の中、in vivo が生体内、そして in silico はコンピュータ上、シリコン、つまり半導体の上で、という意味のラテン語風の言い回しです。論文で in silico knockout と出てきたら「あ、実験じゃなくてシミュレーションだな」と切り替えられると、読むスピードが上がりますよ。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">In silico means in the computer. In vitro means in the dish. In vivo means in the living body. Three little words, very different meanings.</div></div>
+<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">では今日のまとめです。糖尿病の糸球体では、増殖型の内皮細胞が増え、血管の増えすぎを抑えるブレーキが弱くなっていて、その背後には MEF2C を含む転写因子ネットワークがあった。そして SGLT2 阻害薬を使っている人では、そのずれが健常方向に戻って見えた、という関連が示されました。あくまで観察に基づく機序の研究ですが、私たちが日常で使う SGLT2 阻害薬の「効く理由」を、ヒトの組織のレベルで覗いた、面白い1本でした。Deep Read、また次回もどうぞよろしくお願いします。</div></div>
+<div class="turn b"><span class="who">B · English</span><div class="bubble">Thanks for reading this one slowly with us. See you next time.</div></div>
+</div></main>
+<footer><div class="wrap">
+  抄録ベースの自動生成です。医学的最終判断は各自で行ってください。<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
+</div></footer>
+</body>
+</html>

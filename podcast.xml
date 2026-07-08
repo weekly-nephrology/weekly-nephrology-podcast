@@ -5,12 +5,27 @@
     <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link>
     <description>腎臓内科の週次文献レビュー。最新論文をバイリンガル会話で紹介（教育・英語学習目的）。</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 07 Jul 2026 09:12:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 20:22:47 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png</url><title>Weekly Nephrology</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology — Deep Read 2026-07-09</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-09.html</link>
+      <description>2026-07-09配信【Deep Read・深掘り】。糖尿病性腎臓病（DKD）の糸球体における内皮細胞の増殖を制御するMEF2C転写因子ネットワーク（Kidney International）を、full text（Methods/Results/Limitations）まで踏み込んで約20分で読み解きます。
+ヒト腎検体132（96人分）を単核RNA・ATAC・4種の空間トランスクリプトミクスで解析。糖尿病糸球体に増殖型内皮細胞（prEC）ニッチを同定し、抗血管新生に働くSEMA6A–PLXNA2を制御するMEF2C/MEF2A/TRPS1ネットワークを見出しました。MEF2C活性は結節性メサンギウム硬化・尿蛋白量（Spearman ρ=0.73）と関連し、SGLT2阻害薬治療でその分子シグネチャが健常方向へ戻る関連が観察されています。
+観察・in silico中心の機序研究として因果は慎重に扱いつつ、SGLT2阻害薬の腎保護作用の一端を組織レベルで覗きます。冒頭にERA 2026（グラスゴー）のFIND-CKD／ALIGN試験の話題を添えた、教育・英語学習向けバイリンガル解説です。
+
+▼ 原稿スクリプト（英語表現の確認に）:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-09.html</description>
+      <content:encoded><![CDATA[<p>2026-07-09配信【Deep Read・深掘り】。糖尿病性腎臓病（DKD）の糸球体における内皮細胞の増殖を制御するMEF2C転写因子ネットワーク（Kidney International）を、full text（Methods/Results/Limitations）まで踏み込んで約20分で読み解きます。</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-09.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-09.mp3" length="7364736" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-09.mp3</guid>
+      <pubDate>Thu, 09 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology — Deep Read 2026-07-07</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html</link>
