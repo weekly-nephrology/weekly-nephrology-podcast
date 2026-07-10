@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<meta name="description" content="2026-07-10 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
+<meta name="theme-color" content="#33452f"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-07-10 — 原稿スクリプト"/>
+<meta property="og:description" content="2026-07-10 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-10.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-10 — 原稿スクリプト"/>
+<meta name="twitter:description" content="2026-07-10 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
+<title>Weekly Nephrology AI 2026-07-10 — 原稿スクリプト</title>
+<style>
+  :root {
+    --accent:#4a6048; --accent-deep:#33452f;
+    --bg:#f5f1e3; --card:#fdfbf2; --ink:#26301f; --sub:#6f7863;
+    --line:rgba(38,48,31,.1); --bubble-b:#ecf0dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#161b12; --card:#20271a; --ink:#ece7d4; --sub:#a4ac93;
+      --line:rgba(236,231,212,.1); --bubble-b:#2a3321;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+      system-ui,sans-serif;
+    line-height:1.85; font-size:15.5px;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+
+  header { color:#f3ebd2; padding:44px 0 34px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 160% at 85% -20%, #4a6048 0%, transparent 55%),
+      linear-gradient(150deg,#2c3a28 20%, #33452f 130%); }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:#f3ebd2;
+    background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
+    padding:4px 12px; border-radius:999px; margin-bottom:14px;
+    backdrop-filter:blur(4px); }
+  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:650;
+    letter-spacing:.005em;
+    font-family:Georgia,"Times New Roman","Hiragino Mincho ProN",
+      "Noto Serif JP",serif; }
+  .sub { opacity:.78; font-size:.88rem; }
+  audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:7px 15px; border-radius:999px; font-size:.82rem;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(243,235,210,.24); }
+
+  main { padding:30px 0 60px; }
+
+  .papers { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; padding:22px 24px 16px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); margin-bottom:34px; }
+  .models { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; padding:18px 22px; margin-bottom:22px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers h2, .models h2 { margin:0 0 2px; font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .papers h2::before, .models h2::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--accent); display:inline-block; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
+  .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
+  .plist { list-style:none; margin:0; padding:0; }
+  .plist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .pnum { flex:none; width:26px; height:26px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; margin-top:2px; }
+  .pbody { min-width:0; }
+  .ptitle { font-weight:650; font-size:.92rem; line-height:1.55;
+    color:var(--ink); text-decoration:none; }
+  a.ptitle:hover { color:var(--accent); text-decoration:underline; }
+  .pmeta { font-size:.76rem; color:var(--sub); margin-top:3px;
+    overflow-wrap:anywhere; }
+  .pmeta a { color:var(--accent); text-decoration:none; }
+  .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .turn { margin:18px 0; max-width:88%; }
+  .turn.b { margin-left:auto; }
+  .who { display:block; font-size:.7rem; font-weight:700;
+    letter-spacing:.08em; color:var(--sub); margin:0 6px 4px; }
+  .turn.a .who { color:var(--accent); }
+  .turn.b { text-align:right; }
+  .turn.b .bubble { text-align:left; }
+  .bubble { display:inline-block; background:var(--card);
+    border:1px solid var(--line); padding:12px 17px;
+    border-radius:4px 18px 18px 18px;
+    box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
+  .turn.b .bubble { background:var(--bubble-b);
+    border-radius:18px 4px 18px 18px; }
+  .note { color:var(--sub); font-size:.88rem; }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+
+  footer { color:var(--sub); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="badge">Weekly</span>
+  <h1>Weekly Nephrology AI</h1>
+  <div class="sub">2026-07-10 配信 · 原稿スクリプト（教育・英語学習用）</div>
+  <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-10.mp3"></audio>
+  <div class="bar">
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-10.mp3">⬇ MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">RSS を購読</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">エピソード一覧</a>
+  </div>
+</div></header>
+<main><div class="wrap">
+<section class="models"><h2>使用したAIモデル・音声</h2><ul class="mlist">
+<li><span>オーケストレーション</span><b>Claude Opus 4.8（Claude Routine）</b></li>
+<li><span>エージェント構成</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer（Editorial Reviewerは条件付き）</b></li>
+<li><span>候補抽出</span><b>PubMed取得＋ルールベース候補スコアリング</b></li>
+<li><span>音声モデル</span><b>Gemini 2.5 Flash TTS</b></li>
+<li><span>スピーカー</span><b>Leda / Puck</b></li>
+</ul></section>
+<section class="papers"><h2>取り上げた論文</h2><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.4285/ctr.25.0102" target="_blank" rel="noopener">Prophylactic interventions for focal segmental glomerulosclerosis recurrence after kidney transplantation: a systematic review and network meta-analysis</a><div class="pmeta"><span>Clin Transplant Res (2026 Jul 09)</span> · <a href="https://doi.org/10.4285/ctr.25.0102" target="_blank" rel="noopener">DOI: 10.4285/ctr.25.0102</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42421428/" target="_blank" rel="noopener">PMID: 42421428</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
+<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1097/FJC.0000000000001857" target="_blank" rel="noopener">Safety and Efficacy of Lorundrostat in Uncontrolled Hypertension: A Systematic Review and Meta-Analysis</a><div class="pmeta"><span>J Cardiovasc Pharmacol (2026 Jul 06)</span> · <a href="https://doi.org/10.1097/FJC.0000000000001857" target="_blank" rel="noopener">DOI: 10.1097/FJC.0000000000001857</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42407042/" target="_blank" rel="noopener">PMID: 42407042</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
+<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ero.2025.07.006" target="_blank" rel="noopener">Management of systemic lupus erythematosus with kidney involvement: systematic literature review to inform the 2025 update of EULAR recommendations</a><div class="pmeta"><span>EULAR Rheumatol Open (2025 Oct)</span> · <a href="https://doi.org/10.1016/j.ero.2025.07.006" target="_blank" rel="noopener">DOI: 10.1016/j.ero.2025.07.006</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42368611/" target="_blank" rel="noopener">PMID: 42368611</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
+<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12872-026-06248-z" target="_blank" rel="noopener">Renal and cardiovascular outcomes and safety of SGLT2 inhibitors in patients aged ≥ 65 years with non-dialysis chronic kidney disease: a systematic review and meta-analysis of subgroup-level estimates derived from randomized trials</a><div class="pmeta"><span>BMC Cardiovasc Disord (2026 Jul 09)</span> · <a href="https://doi.org/10.1186/s12872-026-06248-z" target="_blank" rel="noopener">DOI: 10.1186/s12872-026-06248-z</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42420866/" target="_blank" rel="noopener">PMID: 42420866</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
+<li><span class="pnum">5</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/joneph/aajaf049" target="_blank" rel="noopener">Clinicopathological features and risk factor analysis of pediatric IgA vasculitis with nephritis associated with acute kidney injury</a><div class="pmeta"><span>J Nephrol (2026 Jul 07)</span> · <a href="https://doi.org/10.1093/joneph/aajaf049" target="_blank" rel="noopener">DOI: 10.1093/joneph/aajaf049</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42412588/" target="_blank" rel="noopener">PMID: 42412588</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
+</ol></section>
+
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">みなさん、こんにちは。Weekly Nephrology へようこそ。配信は2026年7月10日、Weekly Summary シリーズの第4回です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Hi everyone. I am Puck, your English cohost. Leda will explain everything in Japanese.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ありがとう。Puck が英語で短くまとめて、私が日本語で詳しく解説していきます。英語が聞き取れなくても、日本語だけで内容が分かるように進めますね。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">この番組には3つのシリーズがあります。今回の Weekly Summary は、月曜配信で、臨床研究5本を抄録ベースで紹介する回です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">There are two other series too. Let me name them in English.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Deep Read comes on Thursday. We read one full paper very closely.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Case Reports comes on Saturday. We cover a few patient cases.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">補足します。木曜の Deep Read は、オープンアクセスの原著を1本、フルテキストまで深読みする回です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">土曜の Case Reports は、症例報告を抄録3本と深読み1本で扱う回です。今日はそのうちの Weekly Summary ですね。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">今回の5本の選び方も簡単にお話しします。まず過去14日のPubMedを、腎臓内科の主要トピックで横断検索しました。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">That search found many papers. Over a thousand of them.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">そうなんです。1014本を取得し、スコアリングにかけました。臨床研究だけに絞り、RCTやメタ解析を優先し、重複を除いて、上位5本を選んでいます。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">大事な前提です。今日はどれも抄録、つまりアブストラクトだけを読んでの紹介です。本文まで踏み込んだ深読みではない点をご承知おきください。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">本編の前に、今週の腎臓内科まわりのニュースを一つ、短く取り上げます。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Here is some drug news. It is about a phosphate binder for dialysis patients.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">はい。透析患者さんの高リン血症、つまり血液中のリンが高くなる状態の治療薬に関するニュースです。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">The drug is called oxylanthanum carbonate. People shorten it to O-L-C.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">It is a new oral binder. The goal is fewer and smaller pills.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">そうですね。OLCは、飲む錠数や錠剤のサイズを減らすことを狙った、開発中の新しい経口リン吸着薬です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">この薬の再提出された新薬承認申請について、2026年6月30日に、開発企業のUnicyciveが、FDAから2度目のCRLを受け取ったと発表しました。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">A C-R-L means the FDA cannot approve the drug as it stands.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">そのとおりです。CRLは、FDAが「今の形では承認できない」と会社に返す通知のことですね。適応は、透析を受けているCKD患者さんの高リン血症の治療です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">But the reason was not the drug itself. It was a manufacturing problem.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ここが要点です。今回のCRLの理由は、第三者の製造委託先での製造上の不備でした。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">会社の説明では、FDAは薬の臨床的な有効性や安全性への懸念は示しておらず、追加の臨床データも求めていない、とのことです。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">The company says this is the same issue as before. It matches the first letter in June 2025.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">そうです。今回の理由は、2025年6月の初回CRLと同じ製造上の問題だと会社は説明しています。承認時期の見通しや効き目の評価には、ここでは踏み込みません。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">事実関係だけを押さえておく、というスタンスですね。ではニュースはここまでにして、論文に入りましょう。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">1本目です。移植腎の話題から始めます。Puck、まとめをお願いします。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">This paper is about kidney transplant. Some patients have a disease called F-S-G-S.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">This disease often comes back after the transplant. Doctors want to prevent that.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">The study checked many prevention methods. None clearly worked better than control.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ありがとう。まとめますね。原発性のFSGS、日本語では巣状分節性糸球体硬化症という病気があります。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">このFSGSは、腎移植のあとに移植した腎臓で再発しやすく、グラフトが早く駄目になる大きな原因になります。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">結論から言うと、はっきり効くと言える予防法は見つかりませんでした。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">出典です。これは2026年7月に Clinical Transplantation Research という雑誌に出た、ギリシャのパトラス大学病院、腎臓内科からの論文です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Let me give the background. FSGS coming back is a big cause of graft loss.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Many prevention ideas exist. But no single standard has been agreed on.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">そこが問題意識です。予防法はいろいろ提案されてきたのに、標準的なやり方が定まっていない。そこを整理しようとした研究です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">デザインを説明します。ランダム化研究と非ランダム化研究を含めた、システマティックレビューとネットワークメタ解析です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">PubMedとEmbaseを2025年7月まで検索し、25の研究、6つの介入を評価しています。主要アウトカムは移植後のFSGS再発です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Here is the key result. No prevention strategy beat the control group.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">一番の結果はそこです。どの予防的介入も、対照と比べて再発を有意には減らせませんでした。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">よく使われるリツキシマブと血漿交換の併用は、単独よりも効果の推定値は低めでした。ただし、その差は統計的に有意にはなりませんでした。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ベラタセプトやブレセルマブといった薬は、根拠が単一の研究に限られていて、今後の検討が必要とされています。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">What does this mean for doctors? We cannot yet recommend one prevention plan with confidence.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">臨床的な意味はまさにそこです。現時点で、自信を持って勧められる予防戦略はない、ということですね。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">限界も大事です。有害事象の報告は乏しく、安全性の比較は限定的でした。研究デザインも混在しています。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ですので著者は、結論は不確定だ、十分な検出力を持つRCTが必要だ、とまとめています。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ここで英語のワンポイントです。「recurrence」、再発という単語ですね。動詞は「recur」で、アクセントは後ろ、リカーと伸ばします。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">それから結論でよく出た「inconclusive」。「決定的でない、はっきりしない」という意味で、歯切れの悪い結論を上品に言うときの定番表現です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">For example. The results were inconclusive. We need bigger trials.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">今の例文、「結果ははっきりしなかった、もっと大きな試験が必要だ」ですね。まさにこの論文そのものです。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">1本目のまとめです。FSGS再発予防は、今ある予防法のどれかを自信を持って勧める段階にはない、という現実を確認した論文でした。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">では2本目、今度は治療に近い話題、血圧の薬です。Puck。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">This paper is about high blood pressure. It looks at a new drug called lorundrostat.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">The drug blocks a hormone called aldosterone. This study pooled three trials.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">The drug lowered blood pressure well. But it raised the risk of some side effects.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ありがとう。整理します。コントロール不良の高血圧、つまりお薬を使ってもなかなか下がらない高血圧が対象です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ロルンドロスタットは、新しいアルドステロン合成酵素阻害薬です。アルドステロンというホルモンが作られるのを直接抑える薬ですね。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">出典です。2026年7月に Journal of Cardiovascular Pharmacology に出た、パキスタン・カラチのダウ健康科学大学からの論文です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Some background. Aldosterone plays a big role in resistant hypertension.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">This drug targets that hormone directly. That is the main idea.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">補足します。治療抵抗性の高血圧では、アルドステロンの調節異常が大きな役割を果たします。だからその産生を直接抑える、という発想の薬なんですね。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">デザインです。PRISMAに沿って、PROSPEROにプロトコルを登録して行われています。組み入れは3件のRCT、合わせて1568例です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">内訳は、ロルンドロスタット群が1165例、プラセボ群が403例で、いずれもバイアスのリスクは低いと評価されています。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">効果の結果です。プラセボと比べて、収縮期血圧をマイナス8.5mmHg有意に下げました。95%信頼区間はマイナス11.63からマイナス5.36です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">拡張期血圧もマイナス3.53mmHg下げていて、こちらも有意でした。統合したときに異質性は見られなかった、とされています。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Now the safety side. There were more cases of high potassium.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ここが臨床的に一番大事なところです。安全性では、高カリウム血症のリスクが上がりました。相対リスクは5.84と、かなり大きい数字です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ほかにも、症候性の低血圧、重篤な有害事象、そして低ナトリウム血症のリスク増加と関連していました。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">So it lowers pressure, but it can upset the electrolytes.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">まさにそこです。一方で、中等度や重度の有害事象、腎機能の低下については、プラセボと有意な差はありませんでした。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">So the message is caution. The drug works, but it needs close monitoring.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">まさにその通りで、慎重に、というメッセージですね。効果と電解質異常のリスクは、必ずセットで考える薬です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">限界です。3件・1568例と規模は小さく、拡張期血圧や一部の安全性アウトカムでは出版バイアスも指摘されています。著者も、もっと大きく長期の試験が要る、と述べています。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">英語のワンポイントです。「hyperkalemia」、高カリウム血症。ハイパーカリーミアと、真ん中を伸ばして読みます。低い方は「hypokalemia」で、接頭辞だけが変わります。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">もう一つ、「warrant」という動詞。「〜が必要だ」という意味で、「close monitoring is warranted」で「厳重なモニタリングが必要だ」となります。論文の締めで頻出です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">For example. This drug warrants close monitoring of potassium.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">「この薬はカリウムの厳重なモニタリングを必要とする」ですね。warrant は日常英語の「保証」とは少しニュアンスが違うので、覚えておくと便利です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">では3本目です。ここで免疫の話題に切り替えます。ループス腎炎です。Puck。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">This paper is about lupus. Lupus can attack the kidneys.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">A group reviewed the evidence for the 2025 EULAR update. It covers biopsy and treatment.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Combining two immune drugs seems to give better response. Stopping treatment can bring the disease back.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ありがとう。まとめます。全身性エリテマトーデス、SLEという自己免疫の病気があり、腎臓を侵すとループス腎炎になります。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">これは、2025年のEULAR、ヨーロッパリウマチ学会の推奨を改訂するために行われた、系統的文献レビューです。診断の生検から治療まで、幅広くエビデンスを集めています。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">出典です。2025年10月に EULAR Rheumatology Open に出た、ギリシャ・アテネのゲンニマタス総合病院、腎臓内科からの論文です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Some background on the method. They wrote eleven research questions.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Then they ran a separate review for each one. It was very structured.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">補足します。11のリサーチクエスチョンを6つのセクションに分け、それぞれに系統的レビューを行っています。検索期間は2019年1月から2024年3月です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">結果を見ていきます。まず、蛋白尿が1日500から1000mg未満と軽度でも、あるいは血尿だけでも、組織学的には活動性の病変があり得る、とされています。根拠の質は中等度です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">次に、治療開始から最初の6から12か月以内に、完全または部分的な腎反応が得られることは、長期の腎生存と関連していました。質の良い観察研究による関連です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ここは念を押します。これは観察研究に基づく「関連」であって、因果関係を証明したものではありません。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">併用療法の話です。ベリムマブとMMFやシクロホスファミド、ボクロスポリンとMMF、オビヌツズマブとMMFといった2剤併用が、より高い反応率と関連していました。こちらは質の高いRCTが根拠です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">One more point. Kidney biopsy is still needed to make the diagnosis.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">そうですね。腎生検は診断に必須である、と結論づけています。一方で、治療中の再生検の役割は、まだより質の高い研究による確認待ち、とされています。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Careful here. This paper informs the update. It is not the final guideline itself.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">大事な注意です。これはあくまで推奨を作るための文献レビューで、2025年EULAR推奨の最終的な文言や推奨度がここで確定したわけではありません。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ですので、この論文をもって「ガイドラインがこう変わった」と断定するのは避けたいところです。エビデンスの質も、セクションによって混在しています。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">英語のワンポイントです。「essential」。「必須の、欠かせない」という強い語です。「biopsy is essential for diagnosis」で「診断に生検は欠かせない」。important より強いニュアンスです。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">もう一つ、「relapse」と「flare」。どちらも再燃・再発を指しますが、膠原病では病気の勢いがぶり返す急性の悪化を「flare」とよく呼びます。読み分けられると論文が読みやすくなります。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">3本目のまとめです。ループス腎炎では、2剤併用と早期の反応が鍵になりそうだ、ただし推奨としての最終判断はこれから、という整理でした。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">次は4本目、高齢者の腎臓とSGLT2阻害薬の話です。実務に直結しますよ。Puck。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">This paper is about older patients with kidney disease. They are not on dialysis.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">It studied SGLT2 inhibitors in people aged sixty-five and over. It pooled three trials.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">The drugs protected the kidneys and the heart. Genital infections were more common.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ありがとう。まとめます。対象は、透析をしていない、65歳以上のCKD患者さんです。高齢のCKDでは、腎臓と心臓の両方のリスクが高いですね。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">結論を先に言うと、腎臓にも心臓にも良い効果が示され、副作用は概ね管理可能、という内容です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">出典です。2026年7月に BMC Cardiovascular Disorders に出た、中国・杭州の浙江中医薬大学附属杭州TCM病院、腎臓内科からの論文です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">A note on the design. They pooled only the older subgroup from each trial.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">They used random-effects models. They also graded the certainty with GRADE.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">補足します。各試験の65歳以上のサブグループの推定値を統合し、ランダム効果モデルで解析、確実性はGRADEで評価しています。組み入れは二重盲検の3試験、65歳以上が5831例です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">効果の結果です。SGLT2阻害薬は、腎複合エンドポイントのリスクを下げました。ハザード比は0.68、95%信頼区間は0.52から0.89です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">さらに、心血管死または心不全による入院の複合エンドポイントも下げていて、ハザード比は0.74、信頼区間は0.64から0.86でした。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Now safety. Genital fungal infections went up clearly. Low fluid and low pressure went up a little.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">安全性です。性器の真菌感染症のリスクははっきり増えていて、相対リスクは2.40でした。体液が減ることや低血圧のリスクも、わずかに増えて相対リスク1.28でした。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">一方で、急性腎障害、AKIが増えるというシグナルは見られず、糖尿病性ケトアシドーシス、DKAは非常にまれでした。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">And the confidence was high for the kidney result. It was moderate for the heart result.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">そこも紹介したい点です。GRADEでは、腎アウトカムの確実性は「高い」、心不全関連のアウトカムは「中等度」と評価されています。腎臓の効果はかなり確からしい、ということですね。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">限界です。組み入れは3試験のみで、しかも試験全体ではなく65歳以上のサブグループの推定値を統合しています。サブグループ解析ならではの限界があります。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">また、AKIやDKAは定量的な解析ではなく記述的な要約にとどまります。この結果を透析患者さんや65歳未満に、そのまま広げないよう注意が要ります。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Now two useful English phrases from this paper.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">英語のワンポイントです。「composite endpoint」、複合エンドポイント。複数のアウトカムを一つにまとめた指標のことです。composite は「複合の」という形容詞ですね。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">もう一つ、「certainty of evidence」。エビデンスの確実性、という言い回しです。GRADEでは high、moderate、low、very low と段階で表します。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">For example. The certainty of evidence was high for the kidney outcome.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">「腎アウトカムについて、エビデンスの確実性は高かった」ですね。数字の大きさだけでなく、この確実性の評価もセットで見る癖をつけたいところです。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">4本目のまとめです。高齢の非透析CKDでも、SGLT2阻害薬は腎・心の利益が期待でき、副作用に気をつけながら使う、という実務的な一本でした。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">いよいよ最後、5本目です。小児の話題に移ります。IgA血管炎による腎炎です。Puck。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">The last paper is about children. They have IgA vasculitis with nephritis.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Some children also have acute kidney injury at the start. This study followed them for years.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Children with that early injury had worse kidney outcomes over time.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ありがとう。まとめます。小児のIgA血管炎性腎炎、IgAVNは、子どもにおける二次性の糸球体腎炎で最も多いものです。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">そのうち、発症したときに急性腎障害、この論文では急性腎臓病、AKDと呼んでいますが、それを合併している子がいます。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">出典です。2026年7月に Journal of Nephrology に出た、中国・南京医科大学、金陵臨床医学院の小児科からの論文です。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">The design in short. Five centers in China shared their patient data.</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">All children had a biopsy. They split them by injury at onset.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">補足します。中国5施設の、生検で確認された小児IgAVNのデータを使った、多施設の後方視的コホート研究です。発症時のAKDの有無で2群に分けています。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">数字を見ます。生検で確認された1862例のうち、213例、11.44%が発症時にAKDを呈していました。追跡期間の中央値は66か月です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">AKD群は、非AKD群と比べて、臨床的にも病理学的にもより重症な所見を示していました。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">The survival curves showed a clear gap. Kidney survival was lower in the injury group.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">カプランマイヤー解析でも、はっきり差が出ました。AKDの3つの病期の間で腎生存に有意差があり、AKD群の腎生存は非AKD群より有意に低かった、という結果です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">さらに、AKDは短期の6か月でも、長期の5年・10年でも、CKDステージ5への進行の独立した危険因子として同定されました。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Important reminder. This is an observational study. It shows a link, not a cause.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">大事な念押しをありがとう。これは観察研究なので、AKDが予後悪化を「引き起こす」という因果関係を示したものではありません。あくまで強い「関連」です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">限界も同じ文脈です。後方視的であること、中国5施設のデータなので他の地域や人種の子どもへの一般化には注意が要ること。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">また抄録だけでは、AKDの定義基準や、多変量解析で調整した因子、具体的なハザード比までは分かりません。ここは本文が要るところです。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">英語のワンポイントです。「risk factor」、危険因子。「an independent risk factor for progression」で「進行の独立した危険因子」。independent は「ほかの因子で調整しても効く」という統計的な意味合いです。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">For example. Early kidney injury was an independent risk factor here.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">「発症時の腎障害が独立した危険因子だった」ですね。もう一つ、「kidney survival」。腎生存、つまり腎臓が末期腎不全に至らずに保たれている状態を指します。「patient survival」患者生存と区別して使う言葉です。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">5本目のまとめです。小児IgAVNで発症時にAKDがあると、その後の腎予後が悪い方向と関連する。予後の層別化に役立つ、しっかりした観察研究でした。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">では、今日の5本を振り返ります。移植後FSGS再発の予防は決定打なし、ロルンドロスタットは降圧効果と電解質リスクがセット。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ループス腎炎は2剤併用と早期反応が鍵、高齢CKDのSGLT2阻害薬は腎・心に有益、そして小児IgAVNの発症時AKDは予後不良と関連。こういう5本でした。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">And remember. Every paper today was read from the abstract only.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">そうですね。すべて抄録ベースの紹介です。気になった論文は、ぜひご自身で原著にあたってみてください。</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">次回、木曜の Deep Read では、原著1本をフルテキストまで深く読んでいきます。Puck、最後に一言お願いします。</div></div>
+<div class="turn b"><span class="who">Puck · English</span><div class="bubble">Thanks for listening, everyone. Take care, and see you next time.</div></div>
+<div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">ありがとうございました。Weekly Nephrology、また次回お会いしましょう。</div></div>
+</div></main>
+<footer><div class="wrap">
+  抄録ベースの自動生成です。医学的最終判断は各自で行ってください。<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
+</div></footer>
+</body>
+</html>

@@ -5,12 +5,25 @@
     <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link>
     <description>AIが生成する腎臓内科の週次文献レビューです。最新論文を日本語と英語のバイリンガル会話で紹介します。（教育・英語学習目的）。</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 10 Jul 2026 13:04:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 13:10:13 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Weekly Summary 2026-07-10</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-10.html</link>
+      <description>【Weekly Summary】腎移植／ロルンドロスタット・治療抵抗性高血圧／ループス腎炎／SGLT2阻害薬・高齢CKD／IgA血管炎性腎炎・AKI
+
+▼ 原稿スクリプト（英語表現の確認に）:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-10.html</description>
+      <content:encoded><![CDATA[<p>【Weekly Summary】腎移植／ロルンドロスタット・治療抵抗性高血圧／ループス腎炎／SGLT2阻害薬・高齢CKD／IgA血管炎性腎炎・AKI</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-10.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-10.mp3" length="10012608" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-10.mp3</guid>
+      <pubDate>Fri, 10 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-07-09</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-09.html</link>
