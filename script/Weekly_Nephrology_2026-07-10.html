@@ -18,6 +18,9 @@
 <meta name="twitter:title" content="Weekly Nephrology AI 2026-07-10 — 原稿スクリプト"/>
 <meta name="twitter:description" content="2026-07-10 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
 <title>Weekly Nephrology AI 2026-07-10 — 原稿スクリプト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
 <style>
   :root {
     --accent:#4a6048; --accent-deep:#33452f;
@@ -48,9 +51,9 @@
     background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
     padding:4px 12px; border-radius:999px; margin-bottom:14px;
     backdrop-filter:blur(4px); }
-  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:650;
+  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:400;
     letter-spacing:.005em;
-    font-family:Georgia,"Times New Roman","Hiragino Mincho ProN",
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
   .sub { opacity:.78; font-size:.88rem; }
   audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
@@ -63,16 +66,24 @@
 
   main { padding:30px 0 60px; }
 
-  .papers { background:var(--card); border:1px solid var(--line);
-    border-radius:16px; padding:22px 24px 16px;
-    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); margin-bottom:34px; }
-  .models { background:var(--card); border:1px solid var(--line);
-    border-radius:16px; padding:18px 22px; margin-bottom:22px;
-    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
-  .papers h2, .models h2 { margin:0 0 2px; font-size:1.02rem; letter-spacing:.02em;
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
     display:flex; align-items:center; gap:8px; }
-  .papers h2::before, .models h2::before { content:""; width:9px; height:9px; border-radius:3px;
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
     background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
   .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
   .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
     align-items:start; font-size:.82rem; border-top:1px solid var(--line);
@@ -139,20 +150,20 @@
   </div>
 </div></header>
 <main><div class="wrap">
-<section class="models"><h2>使用したAIモデル・音声</h2><ul class="mlist">
-<li><span>オーケストレーション</span><b>Claude Opus 4.8（Claude Routine）</b></li>
-<li><span>エージェント構成</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer（Editorial Reviewerは条件付き）</b></li>
-<li><span>候補抽出</span><b>PubMed取得＋ルールベース候補スコアリング</b></li>
+<details class="collapsible models"><summary><span class="section-title">使用したAIモデル・音声</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AIモデル</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>サブエージェント構成</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>候補論文</span><b>1014本</b></li>
 <li><span>音声モデル</span><b>Gemini 2.5 Flash TTS</b></li>
 <li><span>スピーカー</span><b>Leda / Puck</b></li>
-</ul></section>
-<section class="papers"><h2>取り上げた論文</h2><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">取り上げた論文</span></summary><div class="collapsible-body"><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
 <li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.4285/ctr.25.0102" target="_blank" rel="noopener">Prophylactic interventions for focal segmental glomerulosclerosis recurrence after kidney transplantation: a systematic review and network meta-analysis</a><div class="pmeta"><span>Clin Transplant Res (2026 Jul 09)</span> · <a href="https://doi.org/10.4285/ctr.25.0102" target="_blank" rel="noopener">DOI: 10.4285/ctr.25.0102</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42421428/" target="_blank" rel="noopener">PMID: 42421428</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
 <li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1097/FJC.0000000000001857" target="_blank" rel="noopener">Safety and Efficacy of Lorundrostat in Uncontrolled Hypertension: A Systematic Review and Meta-Analysis</a><div class="pmeta"><span>J Cardiovasc Pharmacol (2026 Jul 06)</span> · <a href="https://doi.org/10.1097/FJC.0000000000001857" target="_blank" rel="noopener">DOI: 10.1097/FJC.0000000000001857</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42407042/" target="_blank" rel="noopener">PMID: 42407042</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
 <li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ero.2025.07.006" target="_blank" rel="noopener">Management of systemic lupus erythematosus with kidney involvement: systematic literature review to inform the 2025 update of EULAR recommendations</a><div class="pmeta"><span>EULAR Rheumatol Open (2025 Oct)</span> · <a href="https://doi.org/10.1016/j.ero.2025.07.006" target="_blank" rel="noopener">DOI: 10.1016/j.ero.2025.07.006</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42368611/" target="_blank" rel="noopener">PMID: 42368611</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
 <li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12872-026-06248-z" target="_blank" rel="noopener">Renal and cardiovascular outcomes and safety of SGLT2 inhibitors in patients aged ≥ 65 years with non-dialysis chronic kidney disease: a systematic review and meta-analysis of subgroup-level estimates derived from randomized trials</a><div class="pmeta"><span>BMC Cardiovasc Disord (2026 Jul 09)</span> · <a href="https://doi.org/10.1186/s12872-026-06248-z" target="_blank" rel="noopener">DOI: 10.1186/s12872-026-06248-z</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42420866/" target="_blank" rel="noopener">PMID: 42420866</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
 <li><span class="pnum">5</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/joneph/aajaf049" target="_blank" rel="noopener">Clinicopathological features and risk factor analysis of pediatric IgA vasculitis with nephritis associated with acute kidney injury</a><div class="pmeta"><span>J Nephrol (2026 Jul 07)</span> · <a href="https://doi.org/10.1093/joneph/aajaf049" target="_blank" rel="noopener">DOI: 10.1093/joneph/aajaf049</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42412588/" target="_blank" rel="noopener">PMID: 42412588</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
-</ol></section>
+</ol></div></details>
 
 <div class="turn a"><span class="who">Leda · 日本語</span><div class="bubble">みなさん、こんにちは。Weekly Nephrology へようこそ。配信は2026年7月10日、Weekly Summary シリーズの第4回です。</div></div>
 <div class="turn b"><span class="who">Puck · English</span><div class="bubble">Hi everyone. I am Puck, your English cohost. Leda will explain everything in Japanese.</div></div>

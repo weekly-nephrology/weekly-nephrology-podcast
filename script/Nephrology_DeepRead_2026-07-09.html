@@ -18,6 +18,9 @@
 <meta name="twitter:title" content="Weekly Nephrology AI 2026-07-09 — 原稿スクリプト"/>
 <meta name="twitter:description" content="2026-07-09 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
 <title>Weekly Nephrology AI 2026-07-09 — 原稿スクリプト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
 <style>
   :root {
     --accent:#a97f2f; --accent-deep:#7d5c1e;
@@ -48,9 +51,9 @@
     background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
     padding:4px 12px; border-radius:999px; margin-bottom:14px;
     backdrop-filter:blur(4px); }
-  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:650;
+  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:400;
     letter-spacing:.005em;
-    font-family:Georgia,"Times New Roman","Hiragino Mincho ProN",
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
   .sub { opacity:.78; font-size:.88rem; }
   audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
@@ -63,16 +66,24 @@
 
   main { padding:30px 0 60px; }
 
-  .papers { background:var(--card); border:1px solid var(--line);
-    border-radius:16px; padding:22px 24px 16px;
-    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); margin-bottom:34px; }
-  .models { background:var(--card); border:1px solid var(--line);
-    border-radius:16px; padding:18px 22px; margin-bottom:22px;
-    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
-  .papers h2, .models h2 { margin:0 0 2px; font-size:1.02rem; letter-spacing:.02em;
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
     display:flex; align-items:center; gap:8px; }
-  .papers h2::before, .models h2::before { content:""; width:9px; height:9px; border-radius:3px;
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
     background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
   .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
   .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
     align-items:start; font-size:.82rem; border-top:1px solid var(--line);
@@ -139,16 +150,16 @@
   </div>
 </div></header>
 <main><div class="wrap">
-<section class="models"><h2>使用したAIモデル・音声</h2><ul class="mlist">
-<li><span>オーケストレーション</span><b>Claude Opus 4.8（Claude Routine）</b></li>
-<li><span>エージェント構成</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer（Editorial Reviewerは条件付き）</b></li>
-<li><span>候補抽出</span><b>PubMed取得＋ルールベース候補スコアリング</b></li>
+<details class="collapsible models"><summary><span class="section-title">使用したAIモデル・音声</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AIモデル</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>サブエージェント構成</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>候補論文</span><b>1本</b></li>
 <li><span>音声モデル</span><b>Gemini 2.5 Flash TTS</b></li>
 <li><span>スピーカー</span><b>Rasalgethi / Schedar</b></li>
-</ul></section>
-<section class="papers"><h2>取り上げた論文</h2><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">取り上げた論文</span></summary><div class="collapsible-body"><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
 <li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.kint.2026.03.020" target="_blank" rel="noopener">A MEF2C transcription factor network regulates proliferation of glomerular endothelial cells in diabetic kidney disease</a><div class="pmeta"><span>Kidney Int （2026 Jul, Vol 110 Issue 1）</span> · <a href="https://doi.org/10.1016/j.kint.2026.03.020" target="_blank" rel="noopener">DOI: 10.1016/j.kint.2026.03.020</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42055320/" target="_blank" rel="noopener">PMID: 42055320</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
-</ol></section>
+</ol></div></details>
 
 <div class="turn a"><span class="who">Rasalgethi · 日本語</span><div class="bubble">こんにちは。Weekly Nephrology 深掘り版、Deep Read の時間です。配信は2026年7月9日、Deep Read シリーズの通算第1回になります。この番組は3つのシリーズで動いていて、月曜の Weekly Summary が今週の臨床研究5本を抄録で紹介する回、木曜のこの Deep Read が OA論文を1本だけ full text まで踏み込んで深く読む回、そして土曜の Case Reports が症例報告を紹介する回です。今日は木曜なので、腰を据えて論文を1本、じっくり読み込みます。</div></div>
 <div class="turn b"><span class="who">Schedar · English</span><div class="bubble">Hello, and welcome. Today we read just one paper, but we read it slowly and in depth.</div></div>
