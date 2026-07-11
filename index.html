@@ -52,8 +52,11 @@
     letter-spacing:.005em; line-height:1.15;
     font-family:"DM Serif Display",Georgia,"Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
-  h1 .ai { font-family:"DM Sans","Avenir Next","Hiragino Sans","Noto Sans JP",
-      -apple-system,system-ui,sans-serif; font-weight:500; font-size:1em;
+  /* "AI" is DM Sans by design, but its fallback chain mirrors the serif title's
+     so that if the web fonts fail to load, both render in the SAME fallback font
+     and stay identical in size (no cap-height mismatch between two faces). */
+  h1 .ai { font-family:"DM Sans",Georgia,"Hiragino Mincho ProN","Noto Serif JP",
+      serif; font-weight:500; font-size:1em;
     letter-spacing:.01em; margin-left:.18em; vertical-align:baseline; }
   .desc { opacity:.82; font-size:.92rem; max-width:560px; }
   .bar { margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; }
