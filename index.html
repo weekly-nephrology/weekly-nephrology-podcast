@@ -17,6 +17,9 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Weekly Nephrology AI"/>
 <meta name="twitter:description" content="AIエージェントが生成する腎臓内科分野の週次文献Podcastです。最新論文を日本語と英語のバイリンガル会話で紹介します。（教育・英語学習目的）。"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
 <style>
   :root {
     --green:#4a6048; --green-deep:#33452f; --gold:#d7ab52; --cream:#f3ebd2;
@@ -45,10 +48,13 @@
   .cover { width:132px; height:132px; border-radius:22px; object-fit:cover;
     box-shadow:0 14px 34px -14px rgba(0,0,0,.55);
     border:1px solid rgba(243,235,210,.25); }
-  h1 { margin:0 0 8px; font-size:1.85rem; font-weight:650;
-    letter-spacing:.005em;
-    font-family:Georgia,"Times New Roman","Hiragino Mincho ProN",
+  h1 { margin:0 0 8px; font-size:2.15rem; font-weight:400;
+    letter-spacing:.005em; line-height:1.15;
+    font-family:"DM Serif Display",Georgia,"Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
+  h1 .ai { font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",
+      -apple-system,system-ui,sans-serif; font-weight:600; font-size:.72em;
+    letter-spacing:.02em; margin-left:.16em; vertical-align:.06em; }
   .desc { opacity:.82; font-size:.92rem; max-width:560px; }
   .bar { margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; }
   .btn { color:var(--cream); background:rgba(243,235,210,.12);
@@ -114,7 +120,7 @@
   <div class="top">
     <img class="cover" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png" alt="Weekly Nephrology AI"/>
     <div>
-      <h1>Weekly Nephrology AI</h1>
+      <h1>Weekly Nephrology<span class="ai">AI</span></h1>
       <div class="desc">AIエージェントが生成する腎臓内科分野の週次文献Podcastです。最新論文を日本語と英語のバイリンガル会話で紹介します。（教育・英語学習目的）。</div>
       <div class="bar">
         <a class="btn primary" href="podcast://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Apple Podcasts で購読</a>
