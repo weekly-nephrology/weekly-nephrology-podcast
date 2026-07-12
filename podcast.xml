@@ -3,14 +3,30 @@
   <channel>
     <title>Weekly Nephrology AI</title>
     <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link>
-    <description>AIエージェントが生成する腎臓内科分野の週次文献Podcastです。最新論文を日本語と英語のバイリンガル会話で紹介します。（教育・英語学習目的）。</description>
+    <description>腎臓内科分野の最新論文をAIエージェントが日本語と英語のバイリンガル会話で紹介します。</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 10 Jul 2026 20:36:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 20:39:39 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Weekly Summary 2026-07-13</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-13.html</link>
+      <description>【Weekly Summary】2026年7月13日配信。今回は最新の腎臓内科論文5本を抄録ベースで紹介します。
+早期腎臓内科コンサルトによるAKI予防の単施設RCT、膜性腎症の標的抗原診断パスウェイの最適化。
+小児IgA腎症の蛋白尿寛解と長期腎予後の観察研究、ループス腎炎のEULAR質指標の開発・検証。
+2型糖尿病の高カリウム血症に対するSZC対カリウム制限食の非劣性RCT（SILVERSTAR）。
+
+▼ 原稿スクリプト（英語表現の確認に）:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-13.html</description>
+      <content:encoded><![CDATA[<p>【Weekly Summary】2026年7月13日配信。今回は最新の腎臓内科論文5本を抄録ベースで紹介します。</p><p>早期腎臓内科コンサルトによるAKI予防の単施設RCT、膜性腎症の標的抗原診断パスウェイの最適化。</p><p>小児IgA腎症の蛋白尿寛解と長期腎予後の観察研究、ループス腎炎のEULAR質指標の開発・検証。</p><p>2型糖尿病の高カリウム血症に対するSZC対カリウム制限食の非劣性RCT（SILVERSTAR）。</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-13.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-13.mp3" length="7406400" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-13.mp3</guid>
+      <pubDate>Mon, 13 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-07-11</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-11.html</link>
