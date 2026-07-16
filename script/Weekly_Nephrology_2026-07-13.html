@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex"/>
-<meta name="description" content="2026-07-13 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
+<meta name="description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-13."/>
 <meta name="theme-color" content="#33452f"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Weekly Nephrology AI"/>
-<meta property="og:title" content="Weekly Nephrology AI 2026-07-13 — 原稿スクリプト"/>
-<meta property="og:description" content="2026-07-13 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-07-13 — Transcript"/>
+<meta property="og:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-13."/>
 <meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-13.html"/>
 <meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
 <meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
 <meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-13 — 原稿スクリプト"/>
-<meta name="twitter:description" content="2026-07-13 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
-<title>Weekly Nephrology AI 2026-07-13 — 原稿スクリプト</title>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-13 — Transcript"/>
+<meta name="twitter:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-13."/>
+<title>Weekly Nephrology AI 2026-07-13 — Transcript</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
@@ -36,7 +36,7 @@
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+    font-family:"Avenir Next",-apple-system,
       system-ui,sans-serif;
     line-height:1.85; font-size:15.5px;
     -webkit-font-smoothing:antialiased; }
@@ -70,6 +70,7 @@
     border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
   .papers { margin-bottom:34px; }
   .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
   .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
     position:relative; user-select:none; }
   .collapsible > summary::-webkit-details-marker { display:none; }
@@ -116,6 +117,21 @@
   .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
     border-color:rgba(150,120,40,.30); }
 
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
+
   .turn { margin:18px 0; max-width:88%; }
   .turn.b { margin-left:auto; }
   .who { display:block; font-size:.7rem; font-weight:700;
@@ -141,137 +157,140 @@
 <header><div class="wrap">
   <span class="badge">Weekly Summary</span>
   <h1>Weekly Nephrology AI</h1>
-  <div class="sub">2026-07-13 配信 · 原稿スクリプト（教育・英語学習用）</div>
+  <div class="sub">2026-07-13 · Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-13.mp3"></audio>
   <div class="bar">
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-13.mp3">⬇ MP3</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">RSS を購読</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">エピソード一覧</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-13.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
   </div>
 </div></header>
 <main><div class="wrap">
-<details class="collapsible models"><summary><span class="section-title">使用したAIモデル・音声</span></summary><div class="collapsible-body"><ul class="mlist">
-<li><span>AIモデル</span><b>Opus 4.8 (Claude)</b></li>
-<li><span>サブエージェント構成</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
-<li><span>候補論文</span><b>1023本</b></li>
-<li><span>音声モデル</span><b>Gemini 2.5 Flash TTS</b></li>
-<li><span>スピーカー</span><b>Zephyr / Achird</b></li>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>1023 papers</b></li>
+<li><span>TTS model</span><b>Gemini 2.5 Flash TTS</b></li>
+<li><span>Speakers</span><b>Zephyr — Host, gender not set voice (Zephyr); Achird — Co-host, gender not set voice (Achird)</b></li>
 </ul></div></details>
-<details class="collapsible papers"><summary><span class="section-title">取り上げた論文</span></summary><div class="collapsible-body"><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
-<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ndt/gfag153" target="_blank" rel="noopener">Proteinuria remission and long-term kidney outcome in children with IgA nephropathy</a><div class="pmeta"><span>Nephrol Dial Transplant (2026 Jul 11)</span> · <a href="https://doi.org/10.1093/ndt/gfag153" target="_blank" rel="noopener">DOI: 10.1093/ndt/gfag153</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42435039/" target="_blank" rel="noopener">PMID: 42435039</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ndt/gfag153" target="_blank" rel="noopener">Proteinuria remission and long-term kidney outcome in children with IgA nephropathy</a><div class="pmeta"><span>Nephrol Dial Transplant (2026 Jul 11)</span> · <a href="https://doi.org/10.1093/ndt/gfag153" target="_blank" rel="noopener">DOI: 10.1093/ndt/gfag153</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42435039/" target="_blank" rel="noopener">PMID: 42435039</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
 <li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1001/jamanetworkopen.2026.22554" target="_blank" rel="noopener">Early Nephrology Consultation and Acute Kidney Injury in Hospitalized Patients: A Randomized Clinical Trial</a><div class="pmeta"><span>JAMA Netw Open (2026 Jul 01)</span> · <a href="https://doi.org/10.1001/jamanetworkopen.2026.22554" target="_blank" rel="noopener">DOI: 10.1001/jamanetworkopen.2026.22554</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42430171/" target="_blank" rel="noopener">PMID: 42430171</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
 <li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ekir.2026.106582" target="_blank" rel="noopener">Optimization of a Target Antigen Diagnostic Pathway for Membranous Nephropathy</a><div class="pmeta"><span>Kidney Int Rep (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.ekir.2026.106582" target="_blank" rel="noopener">DOI: 10.1016/j.ekir.2026.106582</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42305256/" target="_blank" rel="noopener">PMID: 42305256</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span></div></li>
-<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ard.2026.05.030" target="_blank" rel="noopener">Development and validation of EULAR quality indicators for lupus nephritis: adherence trends and impact on clinical outcomes</a><div class="pmeta"><span>Ann Rheum Dis (2026 Jul 10)</span> · <a href="https://doi.org/10.1016/j.ard.2026.05.030" target="_blank" rel="noopener">DOI: 10.1016/j.ard.2026.05.030</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42431783/" target="_blank" rel="noopener">PMID: 42431783</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
-<li><span class="pnum">5</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1111/jdi.70388" target="_blank" rel="noopener">Sodium zirconium cyclosilicate compared with potassium restriction for hyperkalemia management in type 2 diabetes: The SILVERSTAR trial</a><div class="pmeta"><span>J Diabetes Investig (2026 Jul 09)</span> · <a href="https://doi.org/10.1111/jdi.70388" target="_blank" rel="noopener">DOI: 10.1111/jdi.70388</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42423524/" target="_blank" rel="noopener">PMID: 42423524</a></div><span class="plicense unknown">License: 不明（要確認・出版社/著者に帰属の可能性）</span></div></li>
+<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ard.2026.05.030" target="_blank" rel="noopener">Development and validation of EULAR quality indicators for lupus nephritis: adherence trends and impact on clinical outcomes</a><div class="pmeta"><span>Ann Rheum Dis (2026 Jul 10)</span> · <a href="https://doi.org/10.1016/j.ard.2026.05.030" target="_blank" rel="noopener">DOI: 10.1016/j.ard.2026.05.030</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42431783/" target="_blank" rel="noopener">PMID: 42431783</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
+<li><span class="pnum">5</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1111/jdi.70388" target="_blank" rel="noopener">Sodium zirconium cyclosilicate compared with potassium restriction for hyperkalemia management in type 2 diabetes: The SILVERSTAR trial</a><div class="pmeta"><span>J Diabetes Investig (2026 Jul 09)</span> · <a href="https://doi.org/10.1111/jdi.70388" target="_blank" rel="noopener">DOI: 10.1111/jdi.70388</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42423524/" target="_blank" rel="noopener">PMID: 42423524</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
 </ol></div></details>
 
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">こんにちは。腎臓内科の論文を、日本語を中心に、英語も少し学びながら紹介する番組です。配信は2026年7月13日です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">この番組には3つのシリーズがあります。最新論文を抄録ベースで複数まとめるWeekly Summary、オープンアクセス論文1本を全文まで深読みするDeep Read、そして症例報告を紹介するCase Reportsです。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">今回はWeekly Summaryの回です。過去90日のPublication Dateで、PubMedを腎臓内科の主要トピック横断で検索しました。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">1023本を取得してスコアリングし、臨床研究だけに絞りました。RCTと、聞いて興味深い原著を優先し、メタ解析やシステマティックレビューは優先せず、直近採択済みを除いて上位5本を選びました。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">大事な前提として、今回はすべて抄録、つまりアブストラクトだけに基づく紹介です。全文は読んでいません。それでは1本目です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">1本目は、急性腎障害と早期の腎臓内科コンサルトのランダム化試験です。まずはAchirdに、要点を英語でお願いします。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">This trial tested an early nephrology consult. It was triggered by a machine-learning AKI risk score.</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">The consult did not improve kidney outcomes. And most of the consult&#x27;s advice was not followed.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">今の内容を日本語で整理します。機械学習のAKIリスクスコアをきっかけに、早期の腎臓内科コンサルトを行う試験です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">結果として腎機能の転帰は改善せず、しかもコンサルトの推奨の多くが実際には守られなかった、ということです。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">出典です。これは2026年7月にJAMA Network Openに出た、米国University of Chicagoからのランダム化比較試験です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">ここから中身を見ます。まず背景をAchirdに短く聞きます。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">AKI is common in the hospital. Doctors hope that earlier kidney experts can help.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">入院中のAKIは頻度が高く、腎臓内科が早く関わればアウトカムが良くなるのでは、という期待が背景にあります。この研究はそれを実際に検証しました。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">デザインです。SCrによるAKIがまだない、高リスクの入院患者180例を、早期コンサルト群89例と通常ケア群91例に割り付けました。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">主要評価項目は7日間の血清クレアチニンの最大変化、ΔSCrです。ここで一度、数字を分けて見ます。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">ΔSCrは、コンサルト群が0.04、通常ケア群がマイナス0.03 mg/dL。P値は0.30で、有意差はありませんでした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">AKIの発症も同様です。stage 1以上はコンサルト群42%対通常ケア36%、stage 2以上は19%対13%で、いずれも差はありません。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">90日の死亡や再入院にも差はありませんでした。ここで印象的なのが遵守率です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">薬剤や輸液、昇圧薬の推奨が完全に守られた割合は、通常ケア群の68%に対し、コンサルト群では41%にとどまりました。推奨の過半数が守られなかったのです。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">臨床的な意味を、Achirdに短くまとめてもらいます。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">A prediction alert is only the first step. If the advice is not followed, outcomes may not change.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">予測アラートはあくまで最初の一歩で、そのあとの推奨が守られなければ転帰は変わらない、ということですね。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">限界です。単施設で180例と小規模、そして抄録のみに基づきます。遵守率が低かったため、早期コンサルトそのものが無効、とは断定できません。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">英語のTipsを一つ。結論で使われた &quot;deserves further study&quot; は、「さらなる検討に値する」という控えめな締めの定番表現です。断定を避けたいときに便利です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">まとめます。アラートを出すこと自体は転帰改善に十分ではなく、いかに推奨を実行につなげるかが課題、という陰性の重要な結果でした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">2本目にいきます。膜性腎症の、標的抗原を使った診断パスウェイの最適化です。Achird、お願いします。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">This study looked at membranous nephropathy. It asked which antigen to test after a negative PLA2R result.</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">In this Chinese cohort, EXT1/2 and NELL1 were the most common next antigens. Testing them in order of local prevalence was efficient.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">日本語で整理します。膜性腎症でPLA2Rが陰性だったとき、次にどの抗原を調べるか、という診断の順番の話です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">この中国のコホートでは、次に多い抗原はEXT1/2とNELL1でした。地域の有病率が高い順に調べていくのが効率的だった、ということです。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">出典です。これは2026年7月にKidney International Reportsに出た、中国の二施設からの後ろ向き研究です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">背景を短く。Achird、お願いします。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">The Mayo Clinic suggested testing NELL1 after a negative PLA2R. This study tried to refine that pathway.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">Mayo Clinicは、PLA2R陰性のあとにNELL1を調べることを提案しました。この研究は、その道筋を実際のデータで最適化しようとしたわけです。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">デザインと結果です。腎生検でPLA2R染色を行った816例が対象です。まず全体のPLA2R陽性率は73.90%でした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">PLA2R陰性で完全なデータのある159例では、EXT1/2が9.43%、NELL1が7.55%で最多。この2つはほぼ同時には陽性にならない、相互排他的な関係でした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">興味深いのは、Mayo提案の順番と、このコホート由来の順番の、どちらの逐次検査でも、最終的な累積診断率は同じ83.33%だったことです。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">そして7抗原すべて陰性の患者の64.29%は二次性膜性腎症で、多くはループス腎炎でした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">臨床的意義を、Achirdに短く。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">You can save resources by testing antigens in order of how common they are. This is a practical framework.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">抗原を有病率の高い順に調べれば、検査資源を節約できる、実務的な枠組みだ、ということですね。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">限界です。二施設の後ろ向き研究で、診断が難しい症例を多く含む中国人コホートです。抄録のみで、抗原の頻度をそのまま他集団へ当てはめるのは注意が必要です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">英語のTipsです。&quot;diagnostic yield&quot; は「検査で診断がつく収率」のこと。ここでは &quot;cumulative diagnostic yield&quot; で累積の診断率を表しています。yield は検査効率を語るときの必須単語です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">まとめます。新しい標的抗原が増えるなか、地域の有病率に応じて検査順を組むという発想が、日常の腎生検診断に役立ちそうです。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">3本目です。小児IgA腎症の、蛋白尿の寛解と長期の腎予後についてです。Achird、要点を。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">This study followed children with IgA nephropathy. It asked if reaching proteinuria remission protects the kidney later.</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">Children who reached complete, sustained remission had less eGFR decline at four and five years. But this is an association, not proof of cause.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">日本語で整理します。小児のIgA腎症で、蛋白尿が寛解に達すると、その後の腎機能が守られるのか、を調べた研究です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">完全で持続的な寛解に達した子どもは、4年後・5年後のeGFR低下が少なかった。ただしこれは関連であって、因果の証明ではありません。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">出典です。これは2026年7月にNephrology Dialysis Transplantationに出た、White・中国・日本を含む多民族コホートの観察研究です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">背景を短く。Achird、お願いします。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">Guidelines set a proteinuria target below 0.2 grams per day. But the long-term value of reaching it was unclear in children.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">ガイドラインは蛋白尿を1日0.2グラム未満に下げる目標を掲げていますが、そこに達することの長期的な意味は、小児では十分わかっていませんでした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">デザインと結果です。生検時に蛋白尿があった709例が対象で、生検時の年齢中央値は12.9歳です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">90日以上続く完全かつ持続的な寛解、CSRは、395例、55.7%で達成されました。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">感度解析では、CSRに達した子どもは4年時点、5年時点でeGFR低下から有意に保護されていました。P値はそれぞれ0.026と0.004です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">寛解と関連した因子は、若い年齢、高いeGFR、分節性硬化がないこと、そしてRAS阻害薬の使用でした。あくまで関連です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">臨床的意義を、Achirdに短く。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">Reaching proteinuria remission is linked to a better kidney outcome. It supports using remission as a treatment goal.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">蛋白尿の寛解に達することは、より良い腎予後と関連していて、寛解を治療目標にする考え方を後押しします。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">限界です。後ろ向きの観察研究なので因果は示せません。eGFR保護は感度解析に基づき、民族構成も限られます。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">英語のTipsです。観察研究の要となる表現 &quot;was associated with&quot;。「関連していた」であって、&quot;caused&quot;、つまり「引き起こした」とは違います。ここを混同しないのが論文読解の基本です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">まとめます。小児IgA腎症で蛋白尿をしっかり下げることの意義を、長期eGFRという実のあるアウトカムで裏づけた研究でした。ただし治療効果の証明ではない点に注意です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">4本目です。ループス腎炎のEULAR質指標、クオリティ・インジケーターの開発と検証です。Achird、お願いします。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">This study built quality indicators for lupus nephritis, based on the 2025 EULAR recommendations.</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">Patients whose care followed the indicators well had less long-term damage. The link with renal flares was not statistically significant.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">日本語で整理します。2025年のEULAR推奨をもとに、ループス腎炎の診療の質を測る指標を作った研究です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">指標をよく守れた患者ほど、長期の障害の蓄積が少なかった。ただし腎フレアとの関連は統計的に有意ではありませんでした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">出典です。これは2026年7月にAnnals of the Rheumatic Diseasesに出た、単一の三次医療機関のコホートを使った研究です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">背景を短く。Achird、お願いします。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">Guidelines tell us what good care is. Quality indicators turn that into things we can actually measure.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">ガイドラインは良い診療を示しますが、質指標はそれを「実際に測れる項目」に落とし込むものです。そこが指標の価値です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">デザインと結果です。専門家の投票で、診断・治療・モニタリング・妊娠の4領域にわたり17項目の質指標を作りました。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">腎生検やヒドロキシクロロキンの使用などは高遵守、80%以上でした。一方、初期治療としての併用免疫抑制療法は10.7%と低く、推奨が出る前の診療を反映しています。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">そして患者単位で遵守が高いことは、障害蓄積のオッズ低下と関連しました。オッズ比は0.29、95%信頼区間は0.13から0.62です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">臨床的意義を、Achirdに短く。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">These indicators give a way to check the quality of lupus nephritis care in your own clinic.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">これらの指標は、自分の施設のループス腎炎診療の質を点検する手立てになる、ということですね。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">限界です。関連は単施設130例に基づく探索的なもので、因果は示せません。腎フレアとの関連は有意でなく、多様な環境での検証が必要です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">英語のTipsです。&quot;damage accrual&quot;。accrual は「時間とともに積み重なること」で、慢性疾患の不可逆的なダメージの蓄積を指す定番語です。SLICC damage index などと一緒に覚えたい表現です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">まとめます。診療の質を感覚でなく指標で測る発想が広がるなか、遵守と転帰の関連を示した一歩ですが、単施設・探索的である点は割り引いて読む必要があります。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">最後、5本目です。2型糖尿病の高カリウム血症に対する、SZCと食事制限のランダム化試験、SILVERSTARです。Achird、お願いします。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">This trial compared a potassium binder, SZC, with a low-potassium diet, in type 2 diabetes.</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">In the main analysis, SZC did not prove noninferior to the diet. So the trial did not meet its primary endpoint.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">日本語で整理します。2型糖尿病の高カリウム血症で、カリウム吸着薬のSZCと、カリウム制限食を比べた試験です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">主要な解析では、SZCは食事制限に非劣性であると示せませんでした。つまり主要評価項目は未達です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">出典です。これは2026年7月にJournal of Diabetes Investigationに出た、多施設・非盲検のランダム化試験です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">背景を短く。Achird、お願いします。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">For high potassium, we can use a binder or restrict potassium in food. This trial asked if the binder is not worse than the diet.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">高カリウム血症には、吸着薬を使うか、食事でカリウムを制限する方法があります。この試験は、吸着薬が食事制限に劣らないかを問いました。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">デザインと結果です。主要解析のfull analysis setは、SZC群37例、食事群39例です。ここから数字を分けて見ます。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">正常カリウム血症の達成は、SZC群77.8%、食事群68.4%。リスク差はプラス9.4ポイントでした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">ただし95%信頼区間はマイナス11.1からプラス29.8と広く、非劣性マージンのマイナス10ポイントを満たせませんでした。one-sidedのP値は0.032です。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">補助的なper-protocol解析では非劣性基準を満たしましたが、これは探索的な位置づけです。平均血清KはSZC群でやや低めでした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">安全性です。有害事象の頻度は低かったのですが、SZC群で1例の突然死がありました。因果は断定できません。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">臨床的意義を、Achirdに短く。</div></div>
-<div class="turn b"><span class="who">Achird · English</span><div class="bubble">The result warns us not to simply replace diet advice with the drug. The sample was small, so read it with care.</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">この結果は、食事指導を薬で単純に置き換えないよう戒めています。サンプルも小さいので慎重に読むべき、ということですね。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">限界です。非盲検で、full analysis setは各群40例弱と小規模。信頼区間も広く、非劣性を満たしたのは探索的な解析だけでした。抄録のみに基づきます。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">英語のTipsです。&quot;failing to demonstrate noninferiority&quot;。これは「非劣性を示せなかった」であって、「劣っていた」とは意味が違います。陰性の非劣性試験を正確に語る、重要な言い回しです。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">まとめます。食事制限との直接比較という貴重な試験ですが、主要評価項目は未達。「薬があるから食事はいらない」とは言えない、という結果でした。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">今日はここまでです。今回は抄録ベースで、AKIの早期コンサルト、膜性腎症の抗原診断、小児IgA腎症の蛋白尿寛解、ループス腎炎の質指標、そして高カリウム血症のSZC試験の5本を紹介しました。</div></div>
-<div class="turn a"><span class="who">Zephyr · 日本語</span><div class="bubble">いずれも詳細は原著でご確認ください。次回もまた、腎臓内科の論文を日本語で、英語も少しずつ学びながらお届けします。ありがとうございました。</div></div>
+
+<section class="script"><h2 class="section-heading">Script</h2><div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">こんにちは。腎臓内科の論文を、日本語を中心に、英語も少し学びながら紹介する番組です。配信は2026年7月13日です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">この番組には3つのシリーズがあります。最新論文を抄録ベースで複数まとめるWeekly Summary、オープンアクセス論文1本を全文まで深読みするDeep Read、そして症例報告を紹介するCase Reportsです。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">今回はWeekly Summaryの回です。過去90日のPublication Dateで、PubMedを腎臓内科の主要トピック横断で検索しました。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">1023本を取得してスコアリングし、臨床研究だけに絞りました。RCTと、聞いて興味深い原著を優先し、メタ解析やシステマティックレビューは優先せず、直近採択済みを除いて上位5本を選びました。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">大事な前提として、今回はすべて抄録、つまりアブストラクトだけに基づく紹介です。全文は読んでいません。それでは1本目です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">1本目は、急性腎障害と早期の腎臓内科コンサルトのランダム化試験です。まずはAchirdに、要点を英語でお願いします。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">This trial tested an early nephrology consult. It was triggered by a machine-learning AKI risk score.</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">The consult did not improve kidney outcomes. And most of the consult&#x27;s advice was not followed.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">今の内容を日本語で整理します。機械学習のAKIリスクスコアをきっかけに、早期の腎臓内科コンサルトを行う試験です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">結果として腎機能の転帰は改善せず、しかもコンサルトの推奨の多くが実際には守られなかった、ということです。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">出典です。これは2026年7月にJAMA Network Openに出た、米国University of Chicagoからのランダム化比較試験です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">ここから中身を見ます。まず背景をAchirdに短く聞きます。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">AKI is common in the hospital. Doctors hope that earlier kidney experts can help.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">入院中のAKIは頻度が高く、腎臓内科が早く関わればアウトカムが良くなるのでは、という期待が背景にあります。この研究はそれを実際に検証しました。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">デザインです。SCrによるAKIがまだない、高リスクの入院患者180例を、早期コンサルト群89例と通常ケア群91例に割り付けました。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">主要評価項目は7日間の血清クレアチニンの最大変化、ΔSCrです。ここで一度、数字を分けて見ます。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">ΔSCrは、コンサルト群が0.04、通常ケア群がマイナス0.03 mg/dL。P値は0.30で、有意差はありませんでした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">AKIの発症も同様です。stage 1以上はコンサルト群42%対通常ケア36%、stage 2以上は19%対13%で、いずれも差はありません。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">90日の死亡や再入院にも差はありませんでした。ここで印象的なのが遵守率です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">薬剤や輸液、昇圧薬の推奨が完全に守られた割合は、通常ケア群の68%に対し、コンサルト群では41%にとどまりました。推奨の過半数が守られなかったのです。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">臨床的な意味を、Achirdに短くまとめてもらいます。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">A prediction alert is only the first step. If the advice is not followed, outcomes may not change.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">予測アラートはあくまで最初の一歩で、そのあとの推奨が守られなければ転帰は変わらない、ということですね。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">限界です。単施設で180例と小規模、そして抄録のみに基づきます。遵守率が低かったため、早期コンサルトそのものが無効、とは断定できません。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">英語のTipsを一つ。結論で使われた &quot;deserves further study&quot; は、「さらなる検討に値する」という控えめな締めの定番表現です。断定を避けたいときに便利です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">まとめます。アラートを出すこと自体は転帰改善に十分ではなく、いかに推奨を実行につなげるかが課題、という陰性の重要な結果でした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">2本目にいきます。膜性腎症の、標的抗原を使った診断パスウェイの最適化です。Achird、お願いします。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">This study looked at membranous nephropathy. It asked which antigen to test after a negative PLA2R result.</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">In this Chinese cohort, EXT1/2 and NELL1 were the most common next antigens. Testing them in order of local prevalence was efficient.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">日本語で整理します。膜性腎症でPLA2Rが陰性だったとき、次にどの抗原を調べるか、という診断の順番の話です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">この中国のコホートでは、次に多い抗原はEXT1/2とNELL1でした。地域の有病率が高い順に調べていくのが効率的だった、ということです。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">出典です。これは2026年7月にKidney International Reportsに出た、中国の二施設からの後ろ向き研究です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">背景を短く。Achird、お願いします。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">The Mayo Clinic suggested testing NELL1 after a negative PLA2R. This study tried to refine that pathway.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">Mayo Clinicは、PLA2R陰性のあとにNELL1を調べることを提案しました。この研究は、その道筋を実際のデータで最適化しようとしたわけです。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">デザインと結果です。腎生検でPLA2R染色を行った816例が対象です。まず全体のPLA2R陽性率は73.90%でした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">PLA2R陰性で完全なデータのある159例では、EXT1/2が9.43%、NELL1が7.55%で最多。この2つはほぼ同時には陽性にならない、相互排他的な関係でした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">興味深いのは、Mayo提案の順番と、このコホート由来の順番の、どちらの逐次検査でも、最終的な累積診断率は同じ83.33%だったことです。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">そして7抗原すべて陰性の患者の64.29%は二次性膜性腎症で、多くはループス腎炎でした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">臨床的意義を、Achirdに短く。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">You can save resources by testing antigens in order of how common they are. This is a practical framework.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">抗原を有病率の高い順に調べれば、検査資源を節約できる、実務的な枠組みだ、ということですね。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">限界です。二施設の後ろ向き研究で、診断が難しい症例を多く含む中国人コホートです。抄録のみで、抗原の頻度をそのまま他集団へ当てはめるのは注意が必要です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">英語のTipsです。&quot;diagnostic yield&quot; は「検査で診断がつく収率」のこと。ここでは &quot;cumulative diagnostic yield&quot; で累積の診断率を表しています。yield は検査効率を語るときの必須単語です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">まとめます。新しい標的抗原が増えるなか、地域の有病率に応じて検査順を組むという発想が、日常の腎生検診断に役立ちそうです。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">3本目です。小児IgA腎症の、蛋白尿の寛解と長期の腎予後についてです。Achird、要点を。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">This study followed children with IgA nephropathy. It asked if reaching proteinuria remission protects the kidney later.</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">Children who reached complete, sustained remission had less eGFR decline at four and five years. But this is an association, not proof of cause.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">日本語で整理します。小児のIgA腎症で、蛋白尿が寛解に達すると、その後の腎機能が守られるのか、を調べた研究です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">完全で持続的な寛解に達した子どもは、4年後・5年後のeGFR低下が少なかった。ただしこれは関連であって、因果の証明ではありません。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">出典です。これは2026年7月にNephrology Dialysis Transplantationに出た、White・中国・日本を含む多民族コホートの観察研究です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">背景を短く。Achird、お願いします。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">Guidelines set a proteinuria target below 0.2 grams per day. But the long-term value of reaching it was unclear in children.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">ガイドラインは蛋白尿を1日0.2グラム未満に下げる目標を掲げていますが、そこに達することの長期的な意味は、小児では十分わかっていませんでした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">デザインと結果です。生検時に蛋白尿があった709例が対象で、生検時の年齢中央値は12.9歳です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">90日以上続く完全かつ持続的な寛解、CSRは、395例、55.7%で達成されました。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">感度解析では、CSRに達した子どもは4年時点、5年時点でeGFR低下から有意に保護されていました。P値はそれぞれ0.026と0.004です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">寛解と関連した因子は、若い年齢、高いeGFR、分節性硬化がないこと、そしてRAS阻害薬の使用でした。あくまで関連です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">臨床的意義を、Achirdに短く。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">Reaching proteinuria remission is linked to a better kidney outcome. It supports using remission as a treatment goal.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">蛋白尿の寛解に達することは、より良い腎予後と関連していて、寛解を治療目標にする考え方を後押しします。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">限界です。後ろ向きの観察研究なので因果は示せません。eGFR保護は感度解析に基づき、民族構成も限られます。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">英語のTipsです。観察研究の要となる表現 &quot;was associated with&quot;。「関連していた」であって、&quot;caused&quot;、つまり「引き起こした」とは違います。ここを混同しないのが論文読解の基本です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">まとめます。小児IgA腎症で蛋白尿をしっかり下げることの意義を、長期eGFRという実のあるアウトカムで裏づけた研究でした。ただし治療効果の証明ではない点に注意です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">4本目です。ループス腎炎のEULAR質指標、クオリティ・インジケーターの開発と検証です。Achird、お願いします。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">This study built quality indicators for lupus nephritis, based on the 2025 EULAR recommendations.</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">Patients whose care followed the indicators well had less long-term damage. The link with renal flares was not statistically significant.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">日本語で整理します。2025年のEULAR推奨をもとに、ループス腎炎の診療の質を測る指標を作った研究です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">指標をよく守れた患者ほど、長期の障害の蓄積が少なかった。ただし腎フレアとの関連は統計的に有意ではありませんでした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">出典です。これは2026年7月にAnnals of the Rheumatic Diseasesに出た、単一の三次医療機関のコホートを使った研究です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">背景を短く。Achird、お願いします。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">Guidelines tell us what good care is. Quality indicators turn that into things we can actually measure.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">ガイドラインは良い診療を示しますが、質指標はそれを「実際に測れる項目」に落とし込むものです。そこが指標の価値です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">デザインと結果です。専門家の投票で、診断・治療・モニタリング・妊娠の4領域にわたり17項目の質指標を作りました。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">腎生検やヒドロキシクロロキンの使用などは高遵守、80%以上でした。一方、初期治療としての併用免疫抑制療法は10.7%と低く、推奨が出る前の診療を反映しています。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">そして患者単位で遵守が高いことは、障害蓄積のオッズ低下と関連しました。オッズ比は0.29、95%信頼区間は0.13から0.62です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">臨床的意義を、Achirdに短く。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">These indicators give a way to check the quality of lupus nephritis care in your own clinic.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">これらの指標は、自分の施設のループス腎炎診療の質を点検する手立てになる、ということですね。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">限界です。関連は単施設130例に基づく探索的なもので、因果は示せません。腎フレアとの関連は有意でなく、多様な環境での検証が必要です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">英語のTipsです。&quot;damage accrual&quot;。accrual は「時間とともに積み重なること」で、慢性疾患の不可逆的なダメージの蓄積を指す定番語です。SLICC damage index などと一緒に覚えたい表現です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">まとめます。診療の質を感覚でなく指標で測る発想が広がるなか、遵守と転帰の関連を示した一歩ですが、単施設・探索的である点は割り引いて読む必要があります。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">最後、5本目です。2型糖尿病の高カリウム血症に対する、SZCと食事制限のランダム化試験、SILVERSTARです。Achird、お願いします。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">This trial compared a potassium binder, SZC, with a low-potassium diet, in type 2 diabetes.</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">In the main analysis, SZC did not prove noninferior to the diet. So the trial did not meet its primary endpoint.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">日本語で整理します。2型糖尿病の高カリウム血症で、カリウム吸着薬のSZCと、カリウム制限食を比べた試験です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">主要な解析では、SZCは食事制限に非劣性であると示せませんでした。つまり主要評価項目は未達です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">出典です。これは2026年7月にJournal of Diabetes Investigationに出た、多施設・非盲検のランダム化試験です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">背景を短く。Achird、お願いします。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">For high potassium, we can use a binder or restrict potassium in food. This trial asked if the binder is not worse than the diet.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">高カリウム血症には、吸着薬を使うか、食事でカリウムを制限する方法があります。この試験は、吸着薬が食事制限に劣らないかを問いました。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">デザインと結果です。主要解析のfull analysis setは、SZC群37例、食事群39例です。ここから数字を分けて見ます。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">正常カリウム血症の達成は、SZC群77.8%、食事群68.4%。リスク差はプラス9.4ポイントでした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">ただし95%信頼区間はマイナス11.1からプラス29.8と広く、非劣性マージンのマイナス10ポイントを満たせませんでした。one-sidedのP値は0.032です。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">補助的なper-protocol解析では非劣性基準を満たしましたが、これは探索的な位置づけです。平均血清KはSZC群でやや低めでした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">安全性です。有害事象の頻度は低かったのですが、SZC群で1例の突然死がありました。因果は断定できません。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">臨床的意義を、Achirdに短く。</div></div>
+<div class="turn b"><span class="who">Achird · Co-host</span><div class="bubble">The result warns us not to simply replace diet advice with the drug. The sample was small, so read it with care.</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">この結果は、食事指導を薬で単純に置き換えないよう戒めています。サンプルも小さいので慎重に読むべき、ということですね。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">限界です。非盲検で、full analysis setは各群40例弱と小規模。信頼区間も広く、非劣性を満たしたのは探索的な解析だけでした。抄録のみに基づきます。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">英語のTipsです。&quot;failing to demonstrate noninferiority&quot;。これは「非劣性を示せなかった」であって、「劣っていた」とは意味が違います。陰性の非劣性試験を正確に語る、重要な言い回しです。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">まとめます。食事制限との直接比較という貴重な試験ですが、主要評価項目は未達。「薬があるから食事はいらない」とは言えない、という結果でした。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">今日はここまでです。今回は抄録ベースで、AKIの早期コンサルト、膜性腎症の抗原診断、小児IgA腎症の蛋白尿寛解、ループス腎炎の質指標、そして高カリウム血症のSZC試験の5本を紹介しました。</div></div>
+<div class="turn a"><span class="who">Zephyr · Host</span><div class="bubble">いずれも詳細は原著でご確認ください。次回もまた、腎臓内科の論文を日本語で、英語も少しずつ学びながらお届けします。ありがとうございました。</div></div></section>
 </div></main>
 <footer><div class="wrap">
-  抄録ベースの自動生成です。医学的最終判断は各自で行ってください。<br/>
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
   <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
 </div></footer>
 </body>

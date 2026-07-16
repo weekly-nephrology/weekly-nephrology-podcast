@@ -1,3 +1,1 @@
-【Deep Read】NELL-1関連膜性腎症の臨床病理
-中国人単施設コホート68例をfull textで検討
-年齢・性別・悪性腫瘍合併と予後の特徴
+[Deep Read] A Clinicopathologic Study of Neural Epiderma

@@ -1,3 +1,2 @@
-【Weekly Summary】小児IgAVNの尿中sCD163／学校検尿で見つかった小児ANCA関連腎炎
-CKD・透析・移植領域の研究優先課題／CKD進行評価の多パラメトリック腎MRI
-小児C3腎症・免疫複合体性MPGNの自然経過
+[Weekly Summary] IgA vasculitis nephritis
+Glomerulonephritis / CKD

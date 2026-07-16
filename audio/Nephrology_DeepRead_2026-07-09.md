@@ -1,3 +1,1 @@
-【Deep Read】糖尿病性腎臓病における糸球体内皮細胞のMEF2Cネットワーク
-単核RNA・ATACと空間トランスクリプトミクスをfull textで検討
-蛋白尿・メサンギウム硬化との関連とSGLT2阻害薬治療後の変化
+[Deep Read] A MEF2C transcription factor network regulat

@@ -1,4 +1,3 @@
-【Weekly Summary】2026年7月13日配信。今回は最新の腎臓内科論文5本を抄録ベースで紹介します。
-早期腎臓内科コンサルトによるAKI予防の単施設RCT、膜性腎症の標的抗原診断パスウェイの最適化。
-小児IgA腎症の蛋白尿寛解と長期腎予後の観察研究、ループス腎炎のEULAR質指標の開発・検証。
-2型糖尿病の高カリウム血症に対するSZC対カリウム制限食の非劣性RCT（SILVERSTAR）。
+[Weekly Summary] Proteinuria remission and long-term kidney o
+AKI / Optimization of a Target Antigen Diagnostic
+Lupus nephritis evidence review / Hyperkalemia

@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex"/>
-<meta name="theme-color" content="#4c5a33"/>
-<title>Weekly Nephrology AI Case Reports 2026-07-07 — 原稿スクリプト</title>
+<meta name="description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-07."/>
+<meta name="theme-color" content="#33452f"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-07-07 — Transcript"/>
+<meta property="og:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-07."/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-07.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-07 — Transcript"/>
+<meta name="twitter:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-07."/>
+<title>Weekly Nephrology AI 2026-07-07 — Transcript</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
 <style>
   :root {
     --accent:#6b7a4b; --accent-deep:#4c5a33;
@@ -21,7 +36,7 @@
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+    font-family:"Avenir Next",-apple-system,
       system-ui,sans-serif;
     line-height:1.85; font-size:15.5px;
     -webkit-font-smoothing:antialiased; }
@@ -36,9 +51,9 @@
     background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
     padding:4px 12px; border-radius:999px; margin-bottom:14px;
     backdrop-filter:blur(4px); }
-  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:650;
+  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:400;
     letter-spacing:.005em;
-    font-family:Georgia,"Times New Roman","Hiragino Mincho ProN",
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
   .sub { opacity:.78; font-size:.88rem; }
   audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
@@ -51,13 +66,32 @@
 
   main { padding:30px 0 60px; }
 
-  .papers { background:var(--card); border:1px solid var(--line);
-    border-radius:16px; padding:22px 24px 16px;
-    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); margin-bottom:34px; }
-  .papers h2 { margin:0 0 2px; font-size:1.02rem; letter-spacing:.02em;
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
     display:flex; align-items:center; gap:8px; }
-  .papers h2::before { content:""; width:9px; height:9px; border-radius:3px;
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
     background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
   .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
   .plist { list-style:none; margin:0; padding:0; }
   .plist li { display:flex; gap:13px; padding:12px 0;
@@ -74,6 +108,29 @@
     overflow-wrap:anywhere; }
   .pmeta a { color:var(--accent); text-decoration:none; }
   .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
 
   .turn { margin:18px 0; max-width:88%; }
   .turn.b { margin-left:auto; }
@@ -99,114 +156,123 @@
 <body>
 <header><div class="wrap">
   <span class="badge">Case Reports</span>
-  <h1>Weekly Nephrology AI Case Reports</h1>
-  <div class="sub">2026-07-07 配信 · 原稿スクリプト（教育・英語学習用）</div>
+  <h1>Weekly Nephrology AI</h1>
+  <div class="sub">2026-07-07 · Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-07.mp3"></audio>
   <div class="bar">
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-07.mp3">⬇ MP3</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">RSS を購読</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">エピソード一覧</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-07.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
   </div>
 </div></header>
 <main><div class="wrap">
-<section class="papers"><h2>取り上げた論文</h2><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
-<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101377" target="_blank" rel="noopener">Early Tonsillectomy for Dual Remission of PFAPA Syndrome and IgA Nephropathy: A Case Report</a><div class="pmeta"><span>Kidney Med (2026)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101377" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101377</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42369267/" target="_blank" rel="noopener">PMID: 42369267</a></div></div></li>
-<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101405" target="_blank" rel="noopener">When Atypical Becomes Typical: A Fulminant Seronegative Anti-GBM Disease</a><div class="pmeta"><span>Kidney Med (2026)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101405" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101405</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42305860/" target="_blank" rel="noopener">PMID: 42305860</a></div></div></li>
-<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101402" target="_blank" rel="noopener">Serine Protease HTRA1 Membranous Nephropathy With Polytypic IgG Concurrent With Plasma Cell Dyscrasia</a><div class="pmeta"><span>Kidney Med (2026)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101402" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101402</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42290670/" target="_blank" rel="noopener">PMID: 42290670</a></div></div></li>
-<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101373" target="_blank" rel="noopener">【深読み】Kidney Biopsy of a Patient With Double Positive Anti-GBM and MPO-ANCA</a><div class="pmeta"><span>Kidney Med (2026)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101373" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101373</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42369269/" target="_blank" rel="noopener">PMID: 42369269</a></div></div></li>
-</ol></section>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>Not available</b></li>
+<li><span>TTS model</span><b>Gemini 2.5 Flash TTS</b></li>
+<li><span>Speakers</span><b>Speaker A — Host, gender not set voice (Speaker A); Speaker B — Co-host, gender not set voice (Speaker B)</b></li>
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101373" target="_blank" rel="noopener">Kidney Biopsy of a Patient With Double Positive Antiglomerular Basement Membrane and Myeloperoxidase-antineutrophil Cytoplasmic Antibodies</a><div class="pmeta"><span>Kidney Medicine (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101373" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101373</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42369269/" target="_blank" rel="noopener">PMID: 42369269</a></div></div></li>
+<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101377" target="_blank" rel="noopener">Early Tonsillectomy for Dual Remission of Periodic Fever, Aphthous Stomatitis, Pharyngitis, and Adenitis Syndrome and Immunoglobulin A Nephropathy: A Case Report</a><div class="pmeta"><span>Kidney Medicine (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101377" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101377</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42369267/" target="_blank" rel="noopener">PMID: 42369267</a></div></div></li>
+<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101405" target="_blank" rel="noopener">When Atypical Becomes Typical: A Fulminant Seronegative Anti-GBM Disease</a><div class="pmeta"><span>Kidney Medicine (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101405" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101405</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42305860/" target="_blank" rel="noopener">PMID: 42305860</a></div></div></li>
+<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101402" target="_blank" rel="noopener">Serine Protease HTRA1 Membranous Nephropathy With Polytypic IgG Concurrent With Plasma Cell Dyscrasia</a><div class="pmeta"><span>Kidney Medicine (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101402" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101402</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42290670/" target="_blank" rel="noopener">PMID: 42290670</a></div></div></li>
+</ol></div></details>
 
 
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">こんにちは、そして Weekly Nephrology Case Reports へようこそ。この番組は、腎臓内科のオープンアクセスのケースレポートを、日本語と英語のバイリンガルでご紹介する回です。今日はよろしくお願いします。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Hi everyone, and welcome. Before we start, a quick disclaimer. This is for education and for English learning. It is not medical advice. And remember: every case today is a single patient — just one person. So we cannot generalize, and we cannot prove cause and effect.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">大事な前提ですね。今日お話しするのは「症例報告」、つまり n がイコール1の話です。ですから「こうすれば必ずこうなる」とは言えません。あくまで一例から何を学べるか、という視点で聞いていただければと思います。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">まず、定型のご案内から。今日は2026年7月7日、この Case Reports シリーズとしては記念すべき第1回です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The very first Case Reports episode. Nice.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">この番組には全部で3つのシリーズがあります。月曜の Weekly Summary は、今週の臨床研究を5本、抄録で手短に紹介する回。木曜の Deep Read は、オープンアクセスの論文を1本、full text までじっくり読み込む回。そして今日の土曜の Case Reports は、ケースレポートを抄録で3本さっと紹介して、1本を full text まで深読みする回です。同じポッドキャストのフィードに、3系統が並んで配信されます。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Three flavors, one feed. Today is the case-report flavor: three short cases, and one deep dive.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">今日の症例の選び方も簡単にご説明します。対象にしたのは、オープンアクセスの腎臓ケース誌6誌の、直近90日に出たケースレポートです。そこから抄録のあるものを集めて、重複や最近すでに取り上げたものを除くと、候補は89本ありました。その中から、抄録で紹介する3本と、full text まで読む深読み1本を選んでいます。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">So it is a curated handful out of about ninety recent case reports.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうです。では本題の前に、直近の腎臓内科まわりのニュースを、短く2つだけ。今日はちょうど話題にぴったりの日なんです。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Oh? Why today?</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">1つ目の話題が、まさに今日が節目なんです。IgA 腎症の新しい薬、atacicept という注射薬について、アメリカの FDA が優先審査を進めていて、その審査の目標期日、いわゆる PDUFA デートが、報じられている範囲で2026年7月7日、つまり今日なんですね。atacicept は APRIL と BLyS という、B細胞を刺激する二つの因子を抑えるお薬です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Atacicept blocks two signals that B-cells need. In the phase 3 trial called ORIGIN, it lowered protein in the urine by about forty percent compared with placebo. Those results were published in the New England Journal of Medicine last November.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">補足すると、ORIGIN 試験では、24時間の尿蛋白が、プラセボと比べておよそ42%減った、と報告されています。これは加速承認、accelerated approval という枠組みでの審査で、最終的な腎機能そのものへの効果は、これからのデータ待ちという段階です。IgA 腎症の治療薬が次々に出てきていて、今日の抄録の1本目も、実は IgA 腎症の話なので、ちょうどつながっているんです。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">A nice link to today&#x27;s cases.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">2つ目の話題は、透析まわりです。透析患者さんの高リン血症に使う新しいリン吸着薬、oxylanthanum carbonate という薬について、6月の末に FDA が、いわゆる Complete Response Letter、承認を一旦保留する通知を出しました。理由は薬の効果そのものではなく、委託先の製造上の問題だと報じられています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">So the science was not the problem — it was a manufacturing issue at a third-party site. The drug is not rejected forever; the company can fix it and refile.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうなんです。新薬が世に出るまでには、こういう製造の壁もあるという一例ですね。さて、ここからが本編です。今日はケースレポートの回。まず3症例を抄録ベースで手短に、そして1症例を full text でじっくり読み込みます。抄録の3本は、あくまで抄録に書かれた範囲のお話だという点を、先にお断りしておきます。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Let&#x27;s meet the first patient.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">1例目です。テーマは、子どもの PFAPA 症候群と IgA 腎症が一緒に出てきたケース。PFAPA というのは、周期性発熱、口内炎、咽頭炎、頸部リンパ節炎を繰り返す、小児の自己炎症性の病気です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The patient is a six-year-old boy. For three years he had PFAPA — periods of fever, again and again. Then something new appeared: visible blood in the urine, gross hematuria, and it came together with the fever episodes.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここがひとつの手がかりですね。発熱の波に一致して、肉眼で分かる血尿、gross hematuria が出た。それで腎臓を調べたところ、腎生検で IgA 腎症と確認されました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Here is an English tip. &quot;Gross hematuria&quot; means blood you can see with your eyes. &quot;Microscopic hematuria&quot; means blood you can only see under the microscope. Same word, hematuria, but &quot;gross&quot; versus &quot;microscopic&quot; — very different pictures.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">この gross と microscopic の使い分けは、英語のカルテでもよく出てきます。gross は「肉眼的」、microscopic は「顕微鏡的」。覚えておくと便利です。さて、この子の治療ですが、最初はシメチジンという薬を使ったものの、反応が今ひとつで、しかも発熱で学校を休みがちになっていた。そこで7歳のときに、口蓋扁桃の摘出、tonsillectomy を行いました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">And after the surgery — the PFAPA attacks stopped completely, and the blood in the urine went away.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">しかも、それだけではないんです。手術から11か月後にもう一度腎生検をしたところ、組織学的にもはっきり良くなっていた。メサンギウム細胞増多が消えて、管内の増殖も減っていた、と。臨床的にも組織的にも良くなった、というのがこの報告のポイントです。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The authors say this is the first pediatric case where early tonsillectomy alone — without adding immunosuppressive drugs — treated both PFAPA and IgA nephropathy at the same time.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">なぜ学びになるかというと、扁桃という共通の場所での免疫の乱れが、両方の病気の背景にあるのかもしれない、という仮説を、一人の患者さんの経過が示している点です。ただ、繰り返しになりますが、これは n=1。扁桃摘出をしたから治った、と因果を断定はできません。IgA 腎症は自然に良くなることもある病気ですから、そこは慎重にみる必要があります。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">One patient, one story. Interesting, but not proof.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">では2例目にいきましょう。今度は一転して、とても重い経過の話です。若い男性の、劇症型の抗GBM病、しかも血清が「陰性」だった、という症例です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The patient is a twenty-four-year-old man. He came in with severe kidney failure. His creatinine was seventeen. No lung symptoms.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">クレアチニンが17というのは、相当に高い数字です。ふつう抗GBM病というと、血液の中に抗GBM抗体が出てくるのが特徴なんですが、この方は、抗GBM抗体も、ANCA も、抗核抗体も、全部「陰性」だった。補体も正常。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Everything in the blood was negative. So on paper, it did not look like classic anti-GBM disease. But the kidney biopsy told a different story.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうなんです。腎生検では、55%に細胞性半月体を伴う半月体形成性糸球体腎炎。そして、糸球体基底膜、GBM に沿って、線状に IgG と C3 が染まっていた。これは、まさに古典的な抗GBM病の顔つきなんですね。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Blood tests: negative. Biopsy: looks like anti-GBM disease. That is the puzzle. Doctors call this &quot;seronegative&quot; — sero means blood serum, negative means the test is negative.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">この seronegative という言葉、覚えておきたいですね。「血清が陰性」という意味です。治療は、標準的な抗GBM病のプロトコルに沿って、血液透析、高用量ステロイド、シクロホスファミド、そして血漿交換まで、しっかり行われました。それでも抗体価は最後まで検出されず、そして残念ながら腎機能は回復せず、透析依存になってしまった。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Even with aggressive treatment, the kidneys did not come back. He remained dialysis-dependent.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">著者らは、こういう血清陰性のケースは、むしろ「線状 IgG 染色を伴う半月体形成性腎炎」と呼ぶ方が正確かもしれない、と述べています。学びとしては、抗体が陰性でも、臨床像と病理が抗GBM病に合致することがある、という点。そして、抗体価という「ものさし」が使えないと、治療の効果判定や、移植のタイミングの判断が難しくなる、という難しさです。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The antibody number usually guides you. Here, there was no number to follow.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">これも n=1 ですから、血清陰性がなぜ起きるのか、その機序までは、この一例からは分かりません。ただ、今日の深読み症例が、実はこの抗GBM病と地続きの話なので、あとで思い出してください。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">A little foreshadowing. Let&#x27;s keep going.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">3例目です。膜性腎症、membranous nephropathy の話ですが、少し新しい切り口です。HTRA1 という、比較的珍しい標的抗原による膜性腎症が、形質細胞の異常症と一緒に見つかった、という症例です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The patient is a sixty-two-year-old man with nephrotic syndrome — a lot of protein in the urine. In his bone marrow, there was a plasma cell problem: an IgA monoclonal gammopathy, with about twenty percent of the marrow taken over by abnormal plasma cells.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">補足すると、膜性腎症では近年、次々に「標的抗原」が見つかっています。一番有名なのは PLA2R ですが、この方の抗原は HTRA1。全体の1〜2%くらいと稀なタイプで、しかも最近、悪性腫瘍との関連も一部で示唆されている抗原です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Here is another English tip. &quot;Target antigen.&quot; In membranous nephropathy, the target antigen is the protein the antibodies attack. Finding the target antigen can point you toward the cause — sometimes even toward a hidden cancer.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">この target antigen、標的抗原という考え方は、膜性腎症を理解するうえでの鍵ですね。さて経過ですが、最初の生検では早期の膜性腎症を疑うにとどまった。形質細胞をたたく、ダラツムマブという薬を中心とした治療で、いったんは部分的に反応して、尿蛋白が下がりました。ところが、また蛋白尿が増えてきて、もう一度生検をしたら、今度ははっきり HTRA1 膜性腎症だと分かった、と。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">But the story does not end well so far. The protein in the urine kept climbing — up to twelve grams — even with ongoing treatment.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">著者らは、形質細胞の異常症に合併した HTRA1 膜性腎症としては2例目、多発性骨髄腫では初めての報告だとしています。時間的な近さと、抗形質細胞治療への部分反応から、傍腫瘍性、つまり血液のがんが腎臓の病気を引き起こしている関係かもしれない、と示唆しています。ただ、これも因果は証明されていません。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Temporal proximity is a clue, not a proof. The authors are careful about that.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">学びとしては、膜性腎症で抗原を調べることが、診断だけでなく、背景に血液のがんが隠れていないかという「探索」につながりうる、という点ですね。3例、駆け足でしたが、いずれも「一例から何を考えるか」というお話でした。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">And now, the deep dive. This is where we read the full text, not just the abstract.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">はい。ここからが今日のメインディッシュ、深読み症例です。テーマは、抗GBM抗体と MPO-ANCA が「両方陽性」だった、ダブルポジティブの症例。full text を根拠に、発症から亡くなるまで、そして剖検でわかったことまで、時系列で追っていきます。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The patient is an eighty-two-year-old woman. It started quietly — at a routine health check, her kidney numbers were a little off. Creatinine one point four six, some protein and some blood in the urine.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">最初はごく軽い異常だったんですね。健診でクレアチニン1.46、尿蛋白が2+、尿潜血が1+。ところがその後、食欲が落ちて、足がむくんで、尿の量がだんだん減っていった。そして3週間後には、クレアチニンが9.5まで跳ね上がって、入院になります。わずか3週間で、です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Three weeks. From nearly normal to needing admission. That is what &quot;rapidly progressive&quot; really means.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">この rapidly progressive、急速進行性という言葉が、まさに実感できる経過ですね。入院時の検査では、eGFR は3.4、CRP が13.1と炎症が高く、貧血もあって、アルブミンは2.1。そして決め手になったのが抗体です。抗GBM抗体が136、MPO-ANCA が161と、どちらもはっきり陽性でした。PR3-ANCA は陰性です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Both antibodies, strongly positive. This is what we call &quot;double positive&quot; — anti-GBM and MPO-ANCA together. Here is a quick English tip: &quot;double positive&quot; simply means two tests are positive at the same time.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">この double positive、二重陽性という状態が、この症例の主役です。さて、腎生検です。ここが本当に読みどころで、著者らは「一つの腎臓の中に、二つの病気の顔が同居している」ことを、丁寧に描き出しています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Let&#x27;s take it slowly. First, the glomeruli. Twenty-eight out of thirty-three glomeruli showed necrotizing crescentic glomerulonephritis with fibrin. And along the capillary wall, there was linear IgG and C3. That linear pattern is the signature of anti-GBM disease.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうなんです。33個中28個の糸球体に、壊死性の半月体形成性腎炎とフィブリン。そして毛細血管の壁に沿って、線状に IgG と C3。この「線状」というのが、抗GBM病の指紋のようなものです。ここまでなら、抗GBM病の像です。でも、話はここで終わらない。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">There was more. In the small arteries, there were concentric necrotizing lesions — damage going right through the vessel wall, with loss of the elastic layer. And in between the tubules, there was inflammation: tubulitis, plasma cells, even giant cells, peritubular capillaritis, and iron deposits called hemosiderin.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">この血管の炎症、そして尿細管の間の広い範囲に及ぶ炎症、これらは抗GBM病だけでは説明しにくい。むしろ MPO-ANCA 陽性の顕微鏡的多発血管炎、MPA の特徴なんです。さらに、すでに硬化してしまった糸球体が5個あって、尿細管の萎縮や間質の線維化もあった。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">So here is the key idea. Anti-GBM disease is usually all &quot;acute&quot; — sudden damage. But this biopsy had acute damage and chronic, older damage together. The chronic part points to MPA.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここが著者らの考察の中心です。抗GBM病は基本的に「急性」の病変だけ。一方 MPA は、急性と慢性が混ざる。この症例では、その両方が見えた。だから、抗GBM病と MPA が、本当に一つの腎臓の中で共存していたのではないか、と論じています。ただし著者ら自身、「これは決定的ではない」と、きちんと留保をつけています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">An English tip from the pathology report: &quot;consistent with.&quot; When they write &quot;the findings were consistent with anti-GBM disease,&quot; it means the findings fit that diagnosis — but it is softer than saying &quot;this proves it.&quot; &quot;Consistent with&quot; is a careful phrase. You will see it everywhere in case reports.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">この consistent with、「〜に矛盾しない」「〜に合致する」という表現、まさに症例報告の頻出フレーズです。断定を避けつつ、方向性を示す、便利な言い回しですね。さて、治療と経過です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Soon after admission, she made almost no urine — anuria — so hemodialysis was started. She was also given prednisolone. And within a few weeks, both antibody levels came down.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">無尿になったので透析を導入し、ステロイド、プレドニゾロンを開始。すると、抗GBM抗体も MPO-ANCA も、数字の上では下がってきた。ここまでは、治療が効いているように見えたんです。ところが。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Six months later, she developed loss of appetite and a large fluid collection around the lungs that dialysis could not control. And then she died.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">抗体は下がっていたのに、6か月後に食欲不振と、透析でもコントロールできない胸水が出て、亡くなってしまった。抗体が陰性化しても予後が悪いことがある、というのは、抗GBM病の怖いところでもあります。そして、この症例が特別なのは、剖検、autopsy が行われたことです。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">And the autopsy changed the whole story. She was found to have metastatic endometrial cancer — cancer that had spread to the uterus, lungs, esophagus, liver, spleen, and both ovaries.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここが一番のどんでん返しです。剖検で、転移した子宮体がんが全身に広がっているのが見つかった。腎臓の方は、治療後で、血管炎の「痕跡」が残る程度。一方、肺では肺胞出血が見つかって、これは血管炎の再燃を示唆する所見でした。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">An English tip here: &quot;found at autopsy to have.&quot; This phrase — &quot;she was found at autopsy to have cancer&quot; — is the standard way to report what an autopsy reveals. A useful pattern for reading and writing case reports.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">この found at autopsy to have、「剖検で〜が判明した」という言い方、結果を述べる定型ですね。さて、では著者らは、この症例をどう位置づけたのか。考察を読んでいきましょう。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The authors bring up a large study by McAdoo and colleagues. It found that &quot;double positive&quot; patients — anti-GBM plus ANCA — behave differently from patients with anti-GBM alone. They tend to have more chronic changes, and more disease that comes back.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">McAdoo らの、これまでで最大のコホート研究では、ダブルポジティブの患者さんは、抗GBM病単独の人とは違って、より慢性的な変化が多く、再発も経験しやすい、と報告されています。今回の症例で、急性と慢性が混ざっていたのも、これと合っているのかもしれない、という議論ですね。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">And then the cancer. The authors ask a careful question: could the double-positive antibodies and the cancer be related? Maybe a paraneoplastic syndrome — where a hidden cancer drives the immune disease. But they are very clear: this is a hypothesis, not proven.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここは本当に慎重に扱うべきところです。著者らは、二重陽性の抗体と、悪性腫瘍とが関連していた可能性、いわゆる傍腫瘍性症候群の可能性を提起しています。過去にも、ANCA 関連血管炎の患者さんで悪性腫瘍のリスクが高いという報告や、がんの既往のある方が抗GBM抗体陽性の腎炎を発症した報告がある、と。ただ、抗GBM抗体と MPO-ANCA の両方が陽性の人で悪性腫瘍が見つかった報告は、著者らの知る限りこれが初めてで、関連を「証明」するにはまだデータが足りない、とはっきり書いています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">So the takeaway is not &quot;cancer causes this.&quot; The takeaway is a question worth remembering: in a treatment-resistant vasculitis, could there be a hidden malignancy? Especially when the disease does not behave as expected.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうですね。学びをまとめると、まず、抗GBM病と MPA という二つの血管炎が、一つの腎臓の中で共存しうること。そして、治療に抵抗する、あるいは予想外の経過をたどる血管炎では、背景に悪性腫瘍が隠れている可能性を、頭の片隅に置いておく価値がある、ということ。剖検があってはじめて全体像が見えた、というのも重要な点です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">And the limits. This is one patient. n equals one. The cancer link is a hypothesis. We cannot turn this single story into a rule for everyone.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">おっしゃる通りです。これは一例。傍腫瘍性という解釈も仮説の域を出ません。ですから、「二重陽性を見たら必ずがんを疑え」という一般化は、この症例だけからはできない。あくまで、こういうことが起こりうる、という一つの教訓として受け止めるのがよいと思います。それでも、二つの病気の病理を丁寧に対比し、剖検まで踏み込んだ、記憶に残る症例でした。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">A rich case. Let&#x27;s wrap up.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">今日のまとめです。抄録では、扁桃摘出で寛解した小児の PFAPA と IgA 腎症、血清陰性でも劇症の経過をとった抗GBM病、そして形質細胞異常症に合併した HTRA1 膜性腎症、という3例。そして深読みでは、抗GBM抗体と MPO-ANCA の二重陽性で、剖検で悪性腫瘍が見つかった一例を読み込みました。いずれも n=1、一般化はできませんが、一例だからこそ立ち止まって考えられることが、たくさんありました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Thanks for listening. Take care, and see you next time.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ご清聴ありがとうございました。また次回、お会いしましょう。</div></div>
+<section class="script"><h2 class="section-heading">Script</h2><div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">こんにちは、そして Weekly Nephrology Case Reports へようこそ。この番組は、腎臓内科のオープンアクセスのケースレポートを、日本語と英語のバイリンガルでご紹介する回です。今日はよろしくお願いします。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Hi everyone, and welcome. Before we start, a quick disclaimer. This is for education and for English learning. It is not medical advice. And remember: every case today is a single patient — just one person. So we cannot generalize, and we cannot prove cause and effect.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">大事な前提ですね。今日お話しするのは「症例報告」、つまり n がイコール1の話です。ですから「こうすれば必ずこうなる」とは言えません。あくまで一例から何を学べるか、という視点で聞いていただければと思います。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">まず、定型のご案内から。今日は2026年7月7日、この Case Reports シリーズとしては記念すべき第1回です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The very first Case Reports episode. Nice.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">この番組には全部で3つのシリーズがあります。月曜の Weekly Summary は、今週の臨床研究を5本、抄録で手短に紹介する回。木曜の Deep Read は、オープンアクセスの論文を1本、full text までじっくり読み込む回。そして今日の土曜の Case Reports は、ケースレポートを抄録で3本さっと紹介して、1本を full text まで深読みする回です。同じポッドキャストのフィードに、3系統が並んで配信されます。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Three flavors, one feed. Today is the case-report flavor: three short cases, and one deep dive.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">今日の症例の選び方も簡単にご説明します。対象にしたのは、オープンアクセスの腎臓ケース誌6誌の、直近90日に出たケースレポートです。そこから抄録のあるものを集めて、重複や最近すでに取り上げたものを除くと、候補は89本ありました。その中から、抄録で紹介する3本と、full text まで読む深読み1本を選んでいます。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">So it is a curated handful out of about ninety recent case reports.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうです。では本題の前に、直近の腎臓内科まわりのニュースを、短く2つだけ。今日はちょうど話題にぴったりの日なんです。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Oh? Why today?</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">1つ目の話題が、まさに今日が節目なんです。IgA 腎症の新しい薬、atacicept という注射薬について、アメリカの FDA が優先審査を進めていて、その審査の目標期日、いわゆる PDUFA デートが、報じられている範囲で2026年7月7日、つまり今日なんですね。atacicept は APRIL と BLyS という、B細胞を刺激する二つの因子を抑えるお薬です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Atacicept blocks two signals that B-cells need. In the phase 3 trial called ORIGIN, it lowered protein in the urine by about forty percent compared with placebo. Those results were published in the New England Journal of Medicine last November.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">補足すると、ORIGIN 試験では、24時間の尿蛋白が、プラセボと比べておよそ42%減った、と報告されています。これは加速承認、accelerated approval という枠組みでの審査で、最終的な腎機能そのものへの効果は、これからのデータ待ちという段階です。IgA 腎症の治療薬が次々に出てきていて、今日の抄録の1本目も、実は IgA 腎症の話なので、ちょうどつながっているんです。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">A nice link to today&#x27;s cases.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">2つ目の話題は、透析まわりです。透析患者さんの高リン血症に使う新しいリン吸着薬、oxylanthanum carbonate という薬について、6月の末に FDA が、いわゆる Complete Response Letter、承認を一旦保留する通知を出しました。理由は薬の効果そのものではなく、委託先の製造上の問題だと報じられています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">So the science was not the problem — it was a manufacturing issue at a third-party site. The drug is not rejected forever; the company can fix it and refile.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうなんです。新薬が世に出るまでには、こういう製造の壁もあるという一例ですね。さて、ここからが本編です。今日はケースレポートの回。まず3症例を抄録ベースで手短に、そして1症例を full text でじっくり読み込みます。抄録の3本は、あくまで抄録に書かれた範囲のお話だという点を、先にお断りしておきます。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Let&#x27;s meet the first patient.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">1例目です。テーマは、子どもの PFAPA 症候群と IgA 腎症が一緒に出てきたケース。PFAPA というのは、周期性発熱、口内炎、咽頭炎、頸部リンパ節炎を繰り返す、小児の自己炎症性の病気です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The patient is a six-year-old boy. For three years he had PFAPA — periods of fever, again and again. Then something new appeared: visible blood in the urine, gross hematuria, and it came together with the fever episodes.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ここがひとつの手がかりですね。発熱の波に一致して、肉眼で分かる血尿、gross hematuria が出た。それで腎臓を調べたところ、腎生検で IgA 腎症と確認されました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Here is an English tip. &quot;Gross hematuria&quot; means blood you can see with your eyes. &quot;Microscopic hematuria&quot; means blood you can only see under the microscope. Same word, hematuria, but &quot;gross&quot; versus &quot;microscopic&quot; — very different pictures.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">この gross と microscopic の使い分けは、英語のカルテでもよく出てきます。gross は「肉眼的」、microscopic は「顕微鏡的」。覚えておくと便利です。さて、この子の治療ですが、最初はシメチジンという薬を使ったものの、反応が今ひとつで、しかも発熱で学校を休みがちになっていた。そこで7歳のときに、口蓋扁桃の摘出、tonsillectomy を行いました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">And after the surgery — the PFAPA attacks stopped completely, and the blood in the urine went away.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">しかも、それだけではないんです。手術から11か月後にもう一度腎生検をしたところ、組織学的にもはっきり良くなっていた。メサンギウム細胞増多が消えて、管内の増殖も減っていた、と。臨床的にも組織的にも良くなった、というのがこの報告のポイントです。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The authors say this is the first pediatric case where early tonsillectomy alone — without adding immunosuppressive drugs — treated both PFAPA and IgA nephropathy at the same time.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">なぜ学びになるかというと、扁桃という共通の場所での免疫の乱れが、両方の病気の背景にあるのかもしれない、という仮説を、一人の患者さんの経過が示している点です。ただ、繰り返しになりますが、これは n=1。扁桃摘出をしたから治った、と因果を断定はできません。IgA 腎症は自然に良くなることもある病気ですから、そこは慎重にみる必要があります。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">One patient, one story. Interesting, but not proof.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">では2例目にいきましょう。今度は一転して、とても重い経過の話です。若い男性の、劇症型の抗GBM病、しかも血清が「陰性」だった、という症例です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The patient is a twenty-four-year-old man. He came in with severe kidney failure. His creatinine was seventeen. No lung symptoms.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">クレアチニンが17というのは、相当に高い数字です。ふつう抗GBM病というと、血液の中に抗GBM抗体が出てくるのが特徴なんですが、この方は、抗GBM抗体も、ANCA も、抗核抗体も、全部「陰性」だった。補体も正常。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Everything in the blood was negative. So on paper, it did not look like classic anti-GBM disease. But the kidney biopsy told a different story.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうなんです。腎生検では、55%に細胞性半月体を伴う半月体形成性糸球体腎炎。そして、糸球体基底膜、GBM に沿って、線状に IgG と C3 が染まっていた。これは、まさに古典的な抗GBM病の顔つきなんですね。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Blood tests: negative. Biopsy: looks like anti-GBM disease. That is the puzzle. Doctors call this &quot;seronegative&quot; — sero means blood serum, negative means the test is negative.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">この seronegative という言葉、覚えておきたいですね。「血清が陰性」という意味です。治療は、標準的な抗GBM病のプロトコルに沿って、血液透析、高用量ステロイド、シクロホスファミド、そして血漿交換まで、しっかり行われました。それでも抗体価は最後まで検出されず、そして残念ながら腎機能は回復せず、透析依存になってしまった。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Even with aggressive treatment, the kidneys did not come back. He remained dialysis-dependent.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">著者らは、こういう血清陰性のケースは、むしろ「線状 IgG 染色を伴う半月体形成性腎炎」と呼ぶ方が正確かもしれない、と述べています。学びとしては、抗体が陰性でも、臨床像と病理が抗GBM病に合致することがある、という点。そして、抗体価という「ものさし」が使えないと、治療の効果判定や、移植のタイミングの判断が難しくなる、という難しさです。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The antibody number usually guides you. Here, there was no number to follow.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">これも n=1 ですから、血清陰性がなぜ起きるのか、その機序までは、この一例からは分かりません。ただ、今日の深読み症例が、実はこの抗GBM病と地続きの話なので、あとで思い出してください。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">A little foreshadowing. Let&#x27;s keep going.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">3例目です。膜性腎症、membranous nephropathy の話ですが、少し新しい切り口です。HTRA1 という、比較的珍しい標的抗原による膜性腎症が、形質細胞の異常症と一緒に見つかった、という症例です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The patient is a sixty-two-year-old man with nephrotic syndrome — a lot of protein in the urine. In his bone marrow, there was a plasma cell problem: an IgA monoclonal gammopathy, with about twenty percent of the marrow taken over by abnormal plasma cells.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">補足すると、膜性腎症では近年、次々に「標的抗原」が見つかっています。一番有名なのは PLA2R ですが、この方の抗原は HTRA1。全体の1〜2%くらいと稀なタイプで、しかも最近、悪性腫瘍との関連も一部で示唆されている抗原です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Here is another English tip. &quot;Target antigen.&quot; In membranous nephropathy, the target antigen is the protein the antibodies attack. Finding the target antigen can point you toward the cause — sometimes even toward a hidden cancer.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">この target antigen、標的抗原という考え方は、膜性腎症を理解するうえでの鍵ですね。さて経過ですが、最初の生検では早期の膜性腎症を疑うにとどまった。形質細胞をたたく、ダラツムマブという薬を中心とした治療で、いったんは部分的に反応して、尿蛋白が下がりました。ところが、また蛋白尿が増えてきて、もう一度生検をしたら、今度ははっきり HTRA1 膜性腎症だと分かった、と。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">But the story does not end well so far. The protein in the urine kept climbing — up to twelve grams — even with ongoing treatment.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">著者らは、形質細胞の異常症に合併した HTRA1 膜性腎症としては2例目、多発性骨髄腫では初めての報告だとしています。時間的な近さと、抗形質細胞治療への部分反応から、傍腫瘍性、つまり血液のがんが腎臓の病気を引き起こしている関係かもしれない、と示唆しています。ただ、これも因果は証明されていません。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Temporal proximity is a clue, not a proof. The authors are careful about that.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">学びとしては、膜性腎症で抗原を調べることが、診断だけでなく、背景に血液のがんが隠れていないかという「探索」につながりうる、という点ですね。3例、駆け足でしたが、いずれも「一例から何を考えるか」というお話でした。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">And now, the deep dive. This is where we read the full text, not just the abstract.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">はい。ここからが今日のメインディッシュ、深読み症例です。テーマは、抗GBM抗体と MPO-ANCA が「両方陽性」だった、ダブルポジティブの症例。full text を根拠に、発症から亡くなるまで、そして剖検でわかったことまで、時系列で追っていきます。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The patient is an eighty-two-year-old woman. It started quietly — at a routine health check, her kidney numbers were a little off. Creatinine one point four six, some protein and some blood in the urine.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">最初はごく軽い異常だったんですね。健診でクレアチニン1.46、尿蛋白が2+、尿潜血が1+。ところがその後、食欲が落ちて、足がむくんで、尿の量がだんだん減っていった。そして3週間後には、クレアチニンが9.5まで跳ね上がって、入院になります。わずか3週間で、です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Three weeks. From nearly normal to needing admission. That is what &quot;rapidly progressive&quot; really means.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">この rapidly progressive、急速進行性という言葉が、まさに実感できる経過ですね。入院時の検査では、eGFR は3.4、CRP が13.1と炎症が高く、貧血もあって、アルブミンは2.1。そして決め手になったのが抗体です。抗GBM抗体が136、MPO-ANCA が161と、どちらもはっきり陽性でした。PR3-ANCA は陰性です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Both antibodies, strongly positive. This is what we call &quot;double positive&quot; — anti-GBM and MPO-ANCA together. Here is a quick English tip: &quot;double positive&quot; simply means two tests are positive at the same time.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">この double positive、二重陽性という状態が、この症例の主役です。さて、腎生検です。ここが本当に読みどころで、著者らは「一つの腎臓の中に、二つの病気の顔が同居している」ことを、丁寧に描き出しています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Let&#x27;s take it slowly. First, the glomeruli. Twenty-eight out of thirty-three glomeruli showed necrotizing crescentic glomerulonephritis with fibrin. And along the capillary wall, there was linear IgG and C3. That linear pattern is the signature of anti-GBM disease.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうなんです。33個中28個の糸球体に、壊死性の半月体形成性腎炎とフィブリン。そして毛細血管の壁に沿って、線状に IgG と C3。この「線状」というのが、抗GBM病の指紋のようなものです。ここまでなら、抗GBM病の像です。でも、話はここで終わらない。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">There was more. In the small arteries, there were concentric necrotizing lesions — damage going right through the vessel wall, with loss of the elastic layer. And in between the tubules, there was inflammation: tubulitis, plasma cells, even giant cells, peritubular capillaritis, and iron deposits called hemosiderin.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">この血管の炎症、そして尿細管の間の広い範囲に及ぶ炎症、これらは抗GBM病だけでは説明しにくい。むしろ MPO-ANCA 陽性の顕微鏡的多発血管炎、MPA の特徴なんです。さらに、すでに硬化してしまった糸球体が5個あって、尿細管の萎縮や間質の線維化もあった。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">So here is the key idea. Anti-GBM disease is usually all &quot;acute&quot; — sudden damage. But this biopsy had acute damage and chronic, older damage together. The chronic part points to MPA.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ここが著者らの考察の中心です。抗GBM病は基本的に「急性」の病変だけ。一方 MPA は、急性と慢性が混ざる。この症例では、その両方が見えた。だから、抗GBM病と MPA が、本当に一つの腎臓の中で共存していたのではないか、と論じています。ただし著者ら自身、「これは決定的ではない」と、きちんと留保をつけています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">An English tip from the pathology report: &quot;consistent with.&quot; When they write &quot;the findings were consistent with anti-GBM disease,&quot; it means the findings fit that diagnosis — but it is softer than saying &quot;this proves it.&quot; &quot;Consistent with&quot; is a careful phrase. You will see it everywhere in case reports.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">この consistent with、「〜に矛盾しない」「〜に合致する」という表現、まさに症例報告の頻出フレーズです。断定を避けつつ、方向性を示す、便利な言い回しですね。さて、治療と経過です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Soon after admission, she made almost no urine — anuria — so hemodialysis was started. She was also given prednisolone. And within a few weeks, both antibody levels came down.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">無尿になったので透析を導入し、ステロイド、プレドニゾロンを開始。すると、抗GBM抗体も MPO-ANCA も、数字の上では下がってきた。ここまでは、治療が効いているように見えたんです。ところが。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Six months later, she developed loss of appetite and a large fluid collection around the lungs that dialysis could not control. And then she died.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">抗体は下がっていたのに、6か月後に食欲不振と、透析でもコントロールできない胸水が出て、亡くなってしまった。抗体が陰性化しても予後が悪いことがある、というのは、抗GBM病の怖いところでもあります。そして、この症例が特別なのは、剖検、autopsy が行われたことです。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">And the autopsy changed the whole story. She was found to have metastatic endometrial cancer — cancer that had spread to the uterus, lungs, esophagus, liver, spleen, and both ovaries.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ここが一番のどんでん返しです。剖検で、転移した子宮体がんが全身に広がっているのが見つかった。腎臓の方は、治療後で、血管炎の「痕跡」が残る程度。一方、肺では肺胞出血が見つかって、これは血管炎の再燃を示唆する所見でした。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">An English tip here: &quot;found at autopsy to have.&quot; This phrase — &quot;she was found at autopsy to have cancer&quot; — is the standard way to report what an autopsy reveals. A useful pattern for reading and writing case reports.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">この found at autopsy to have、「剖検で〜が判明した」という言い方、結果を述べる定型ですね。さて、では著者らは、この症例をどう位置づけたのか。考察を読んでいきましょう。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The authors bring up a large study by McAdoo and colleagues. It found that &quot;double positive&quot; patients — anti-GBM plus ANCA — behave differently from patients with anti-GBM alone. They tend to have more chronic changes, and more disease that comes back.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">McAdoo らの、これまでで最大のコホート研究では、ダブルポジティブの患者さんは、抗GBM病単独の人とは違って、より慢性的な変化が多く、再発も経験しやすい、と報告されています。今回の症例で、急性と慢性が混ざっていたのも、これと合っているのかもしれない、という議論ですね。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">And then the cancer. The authors ask a careful question: could the double-positive antibodies and the cancer be related? Maybe a paraneoplastic syndrome — where a hidden cancer drives the immune disease. But they are very clear: this is a hypothesis, not proven.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ここは本当に慎重に扱うべきところです。著者らは、二重陽性の抗体と、悪性腫瘍とが関連していた可能性、いわゆる傍腫瘍性症候群の可能性を提起しています。過去にも、ANCA 関連血管炎の患者さんで悪性腫瘍のリスクが高いという報告や、がんの既往のある方が抗GBM抗体陽性の腎炎を発症した報告がある、と。ただ、抗GBM抗体と MPO-ANCA の両方が陽性の人で悪性腫瘍が見つかった報告は、著者らの知る限りこれが初めてで、関連を「証明」するにはまだデータが足りない、とはっきり書いています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">So the takeaway is not &quot;cancer causes this.&quot; The takeaway is a question worth remembering: in a treatment-resistant vasculitis, could there be a hidden malignancy? Especially when the disease does not behave as expected.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうですね。学びをまとめると、まず、抗GBM病と MPA という二つの血管炎が、一つの腎臓の中で共存しうること。そして、治療に抵抗する、あるいは予想外の経過をたどる血管炎では、背景に悪性腫瘍が隠れている可能性を、頭の片隅に置いておく価値がある、ということ。剖検があってはじめて全体像が見えた、というのも重要な点です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">And the limits. This is one patient. n equals one. The cancer link is a hypothesis. We cannot turn this single story into a rule for everyone.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">おっしゃる通りです。これは一例。傍腫瘍性という解釈も仮説の域を出ません。ですから、「二重陽性を見たら必ずがんを疑え」という一般化は、この症例だけからはできない。あくまで、こういうことが起こりうる、という一つの教訓として受け止めるのがよいと思います。それでも、二つの病気の病理を丁寧に対比し、剖検まで踏み込んだ、記憶に残る症例でした。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">A rich case. Let&#x27;s wrap up.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">今日のまとめです。抄録では、扁桃摘出で寛解した小児の PFAPA と IgA 腎症、血清陰性でも劇症の経過をとった抗GBM病、そして形質細胞異常症に合併した HTRA1 膜性腎症、という3例。そして深読みでは、抗GBM抗体と MPO-ANCA の二重陽性で、剖検で悪性腫瘍が見つかった一例を読み込みました。いずれも n=1、一般化はできませんが、一例だからこそ立ち止まって考えられることが、たくさんありました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Thanks for listening. Take care, and see you next time.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ご清聴ありがとうございました。また次回、お会いしましょう。</div></div></section>
 </div></main>
 <footer><div class="wrap">
-  抄録ベースの自動生成です。医学的最終判断は各自で行ってください。<br/>
-  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
 </div></footer>
 </body>
 </html>

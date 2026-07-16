@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex"/>
-<meta name="description" content="2026-07-16 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
+<meta name="description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-16."/>
 <meta name="theme-color" content="#33452f"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Weekly Nephrology AI"/>
-<meta property="og:title" content="Weekly Nephrology AI 2026-07-16 — 原稿スクリプト"/>
-<meta property="og:description" content="2026-07-16 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-07-16 — Transcript"/>
+<meta property="og:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-16."/>
 <meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-16.html"/>
 <meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
 <meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
 <meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-16 — 原稿スクリプト"/>
-<meta name="twitter:description" content="2026-07-16 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
-<title>Weekly Nephrology AI 2026-07-16 — 原稿スクリプト</title>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-16 — Transcript"/>
+<meta name="twitter:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-16."/>
+<title>Weekly Nephrology AI 2026-07-16 — Transcript</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
@@ -36,7 +36,7 @@
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+    font-family:"Avenir Next",-apple-system,
       system-ui,sans-serif;
     line-height:1.85; font-size:15.5px;
     -webkit-font-smoothing:antialiased; }
@@ -70,6 +70,7 @@
     border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
   .papers { margin-bottom:34px; }
   .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
   .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
     position:relative; user-select:none; }
   .collapsible > summary::-webkit-details-marker { display:none; }
@@ -116,6 +117,21 @@
   .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
     border-color:rgba(150,120,40,.30); }
 
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
+
   .turn { margin:18px 0; max-width:88%; }
   .turn.b { margin-left:auto; }
   .who { display:block; font-size:.7rem; font-weight:700;
@@ -141,212 +157,215 @@
 <header><div class="wrap">
   <span class="badge">Deep Read</span>
   <h1>Weekly Nephrology AI</h1>
-  <div class="sub">2026-07-16 配信 · 原稿スクリプト（教育・英語学習用）</div>
+  <div class="sub">2026-07-16 · Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-16.mp3"></audio>
   <div class="bar">
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-16.mp3">⬇ MP3</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">RSS を購読</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">エピソード一覧</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-16.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
   </div>
 </div></header>
 <main><div class="wrap">
-<details class="collapsible models"><summary><span class="section-title">使用したAIモデル・音声</span></summary><div class="collapsible-body"><ul class="mlist">
-<li><span>AIモデル</span><b>Opus 4.8 (Claude)</b></li>
-<li><span>サブエージェント構成</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
-<li><span>候補論文</span><b>1本</b></li>
-<li><span>音声モデル</span><b>Gemini 2.5 Flash TTS</b></li>
-<li><span>スピーカー</span><b>Orus / Algieba</b></li>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>1 papers</b></li>
+<li><span>TTS model</span><b>Gemini 2.5 Flash TTS</b></li>
+<li><span>Speakers</span><b>Orus — Host, gender not set voice (Orus); Algieba — Co-host, gender not set voice (Algieba)</b></li>
 </ul></div></details>
-<details class="collapsible papers"><summary><span class="section-title">取り上げた論文</span></summary><div class="collapsible-body"><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
 <li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ekir.2026.106636" target="_blank" rel="noopener">PREDICT Tool for Pregnancy-Associated CKD Progression</a><div class="pmeta"><span>Kidney Int Rep （2026 Sep, Vol 11 Issue 9）</span> · <a href="https://doi.org/10.1016/j.ekir.2026.106636" target="_blank" rel="noopener">DOI: 10.1016/j.ekir.2026.106636</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42438723/" target="_blank" rel="noopener">PMID: 42438723</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
 </ol></div></details>
 
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">This podcast is generated by AI and may contain errors. Before using this information in clinical practice or research, please review the full text of the original paper.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Welcome to Weekly Nephrology. This episode is published on July 16, 2026.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Our show has three formats each week. Weekly Summary on Monday, Deep Read on Thursday, and Case Reports on Saturday.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Today is Thursday, so this is a Deep Read. We look closely at one paper and its full text.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It is a slower, more careful format. We spend time on methods, results, and limitations.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Let me explain how we chose today&#x27;s paper. This week the on-duty journal was Kidney International Reports.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">We used it as a fallback, because we could not get the full text from the primary duty journal.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">From its latest issue, we screened Original Articles that had verified open-access full text.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Only one paper met all the rules. So that single full-text candidate was selected.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">And it was worth the deeper look. It is the first individual pregnancy risk tool for CKD, with external validation.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">We have no verified news item this week, so we go straight to the paper.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">The paper is about pregnancy in women with chronic kidney disease. Why does this matter so much?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Pregnancy counselling is recommended for women with CKD. But clinicians had no tool to estimate one woman&#x27;s own risk.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">This study developed and externally validated two prediction models. They estimate the risk of bad kidney and newborn outcomes.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The important point is the outcomes were chosen by patients and health care professionals, not only by researchers.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">They used a modified pregnancy-risk questionnaire, with 90 women who had CKD and 73 professionals.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">So the outcomes reflect what patients themselves worry about, not only lab-based endpoints.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So in simple terms, this is the first individual risk tool for pregnancy in CKD, and it was tested outside its home data.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Let me state the source. This paper is in Kidney International Reports, in September 2026.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">The primary affiliation is King&#x27;s College London in the United Kingdom. The tool is called PREDICT.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Let me pause on one phrase. You said &quot;external validation.&quot; What does that mean?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">External validation means testing a model on new, separate data. Data the model did not learn from.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">A model can look strong on its own data. It must prove itself on outside patients.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">That is a useful expression in papers and conferences. Now let&#x27;s look at the methods.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">First, who was in the study?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The women had CKD, with an eGFR below 90 within 24 months before pregnancy.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">eGFR is a number for kidney function. A lower number means weaker kidney work.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">None were on dialysis at conception. So this is early to moderate kidney disease, not kidney failure.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">How many women, and where did the data come from?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The development cohort had 746 women from linked UK records, with deliveries from 1997 to 2021.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Their median prepregnancy eGFR was 58, and about 49% had a kidney transplant.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">That is a high transplant share. Nearly half. Let me note that for later. Where was the model tested?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">In two external cohorts. The first was an Ontario pregnancy cohort in Canada, with 6974 women.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Their median eGFR was 84, so their kidney function was much better on average.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The second was three UK studies combined, with 380 women, and a median eGFR of 53.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So the three groups were quite different. Let&#x27;s keep that in mind for the results.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Now, what exactly did the models try to predict?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">There were two outcomes. The primary outcome was about the kidney.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It was a 25% or larger drop in median eGFR, or starting kidney replacement therapy.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">That was measured between 6 weeks and 12 months after birth.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">One technical note. Was eGFR calculated the same way in every cohort?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Almost. The UK cohorts used the CKD-EPI 2009 formula, and Ontario used the 2021 version.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Both were used without ethnicity adjustment. That keeps the kidney number consistent in spirit.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Let me restate the outcome simply. The primary outcome is real loss of kidney function after pregnancy.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Yes. The secondary outcome was about the baby.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It combined preterm birth before 34 weeks and a very small baby, below the third percentile.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The small-baby size used the INTERGROWTH-21 growth charts, an international newborn standard.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Good. Now how did they build the models?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">They started from risk factors already known from earlier studies and meta-analyses.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Then they used backwards elimination to keep only the useful predictors.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Backwards elimination is another phrase worth knowing. Can you define it?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">You start with many variables, then remove the weak ones step by step.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">You keep the variables that still help the model. Here they used a liberal cut-off for keeping them.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">They also started with single-variable tests, then a full multivariable model.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">And they checked for collinearity, so two predictors would not carry the same signal twice.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So which predictors stayed in the end?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The kidney model kept four predictors. Maternal age, kidney transplant, preconception eGFR, and proteinuria.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Proteinuria means protein leaking into the urine, a sign of kidney damage.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">And the baby model?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It kept five predictors. Maternal age, transplant, preconception eGFR, plus diabetes and parity.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Parity means how many times a woman has given birth before.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">One variable was dropped early. Which one, and why?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Body mass index, or BMI. It was missing for 77% of the development cohort.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">With so much missing data, and no clear link seen, they left it out as a candidate.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Let&#x27;s pause there. Missing data is a real problem in this kind of study. How did they handle it?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">For the kidney model, they used multiple imputation. That fills missing values with statistical estimates.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">They made 200 imputations and combined them with a standard rule.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The baby model used complete cases only, on 567 women, because imputation added almost nothing.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Was the sample large enough for this kind of model?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Yes. This was a secondary analysis, so the sample size was already fixed.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">But the full model reached 44.2 events per parameter. That is well above the recommended target.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The calculation said they needed at least 382 pregnancies with 176 outcome events. They exceeded that.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">That target assumed a moderate model fit and an outcome prevalence near 46%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">They also followed a reporting standard. Can you name it briefly?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">They followed the TRIPOD statement. It is a checklist for prediction model studies.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It asks authors to report design, predictors, performance, and validation clearly.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Now let&#x27;s look at the results. Let me start with how common the outcomes were.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The kidney outcome was much more common in the development cohort. It occurred in 221 women, or 29.6%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">And in the two validation cohorts?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">In Ontario, only 201 women, or 2.9%. In the UK external group, 74 women, or 19.5%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">That is a very big gap. Ontario had far fewer kidney events.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Right, and that fits their better baseline kidney function. Event rate shapes what the model can do.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Let me make that concrete. When events are rare, even a good model gives many false alarms.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Exactly. The math of a rare outcome pushes the positive predictive value down.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">What about the baby outcome?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The baby outcome occurred in 26.4% of the development cohort, and 7.1% in Ontario.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">In the UK external group it was 23.9%. So again, Ontario had a lower rate.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Now, how well did the model separate high risk from low risk?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The authors measured overall discrimination and calibration in the usual ways.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">But here I must be careful. The supplied full text does not give the numeric AUC or calibration values.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It shows ROC curves in a figure, and it gives numbers at each cut-point instead.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">That is an honest and important point. So we will not state an AUC number.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Let me ask about the cut-point. What is a cut-point?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">A cut-point is the risk threshold where you call someone high risk.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Above the line is high risk, below it is low risk. Where you set it changes the trade-off.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">And how did they choose it?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">They chose it with stakeholders, including five women with a range of kidney function.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Two of those women had experienced adverse outcomes themselves. They aimed for high sensitivity and high NPV.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Please define sensitivity and NPV simply.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Sensitivity is how often the model catches the women who truly have the outcome.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">NPV, or negative predictive value, is the chance that a low-risk label is truly reassuring.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So the design goal was to reassure safely, and to miss very few real cases.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Exactly. For the kidney model, the chosen cut-point was 0.15.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">At that point, sensitivity was 90% and NPV was 85%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">And the cost of that choice?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Specificity was only 23%, and PPV was 33%.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Low specificity means many women with normal outcomes are still flagged as high risk.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So the tool is good at reassuring, but it over-flags. Let me hold that thought.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">For the baby model, the cut-point was 0.10. Sensitivity 90%, NPV 80%.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">But specificity was just 17%, and PPV was 32%. The same pattern appears.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Now the key test. How did the models do in the external cohorts?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The kidney model kept high sensitivity and NPV, but specificity and PPV stayed low.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">In Ontario, at the same cut-point, sensitivity was 82% and NPV was 99%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">A 99% NPV sounds very reassuring. But what was the PPV?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Only 4%. And specificity was 38%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">PPV, or positive predictive value, is the chance a high-risk label is truly correct. Is that right?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Yes, exactly. A 4% PPV means most high-risk flags did not end in the outcome.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">That low PPV comes from the very low event rate in Ontario. It is expected math.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">And in the UK external cohort?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">There, sensitivity was 96% and NPV was 85%. Specificity was 8% and PPV was 26%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">What about the baby model in validation?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It was validated only in Ontario, not in the UK external cohort, because there were too few cases.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">In Ontario, sensitivity was 100% and NPV was 90%. But specificity was 1% and PPV was 10%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So across the board, these models catch cases and reassure, but they do not confirm high risk.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">That is the honest summary. High sensitivity and NPV are not the same as high PPV.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Which predictors pointed which way? Let me ask for direction only.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Younger age, proteinuria, and lower preconception eGFR predicted the kidney outcome.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">A working kidney transplant was protective for both outcomes, reported here for the first time.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">That transplant finding is interesting. It fits the high transplant share in the development cohort.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It does, though we must stay careful. Protective here means an adjusted association, not proven cause.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Higher parity and preexisting diabetes added to the risk of the baby outcome.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">One caution here. These are predictors, not proven causes, correct?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Correct. These are adjusted associations inside a prediction model. We cannot call them causal.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The exact odds ratios sit in a supplement and are not in the supplied text.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Now let&#x27;s move to limitations and bias. This is where honesty matters most.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The first limitation is the low specificity and PPV we discussed.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Many women with normal outcomes are labelled high risk. That could lead to extra, unneeded monitoring.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So the tool could cause worry, not only comfort.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Yes. The second limitation is the setting. These were high-income countries with universal health coverage.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">We cannot generalize these results to low-resource settings or the general population.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">What about the BMI problem we mentioned?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">BMI was 77% missing and was dropped. Complete BMI data might have improved the model.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Other data were also incomplete, such as the cause of kidney disease, lab values, and other illnesses.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Incomplete data like this can quietly shape a prediction model&#x27;s results.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">And there was a comparison with another tool, the KFRE. Tell me carefully.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">KFRE is the Kidney Failure Risk Equation, a general tool for kidney failure risk.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The authors compared it, but the comparison is confounded. The endpoints and time horizons differ.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Please give the numbers, but keep the caution.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">In 25 women who reached kidney replacement within two years, the median KFRE risk was 1.4%.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">The PREDICT kidney model gave a median of 48% for its own endpoint within 12 months.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So KFRE looked far too low. But we must not equate the two tools.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Exactly. Different endpoints, different horizons, and only 25 women. It is not a fair head-to-head.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Two more honest points before we finish this section.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Chronic hypertension differed widely across cohorts, from 6% in Ontario to 60% in the UK development cohort.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Adding it to the model did not improve performance. And again, the overall AUC numbers are not in the text.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">There is also a reassuring finding worth stating plainly.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Yes. Most women with eGFR below 90 in these cohorts had favorable outcomes.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">70% of the development cohort had no major eGFR decline and no kidney replacement.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">In the validation cohorts, that figure was 97.1% and 80.5%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So many women with reduced kidney function still did well. That is an encouraging message.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">And 74% of the development cohort delivered after 34 weeks without a very small baby.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">In the validation cohorts, that figure was 92.9% and 76.1%.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So for many women with CKD, the news around pregnancy is not as dark as feared.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Yes, and that is exactly why a reassurance-focused tool can help these conversations.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Let&#x27;s move to clinical meaning. What might this tool change, and what can it not do?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It could support prepregnancy counselling by giving an individual risk estimate, not just a group average.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Its main strength is safe reassurance, because of the high sensitivity and negative predictive value.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">A low-risk result should give real comfort, because the model rarely misses a true case.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">And the clear limits?</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">It cannot confirm who will have a bad outcome. The PPV is too low for that.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Very importantly, this study did not test whether the tool improves real outcomes.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Impact on care was not evaluated. The authors call that future work.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">So it should not be used to push a woman toward or away from pregnancy.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Right. It is one input for a careful, shared conversation, not a command.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Let me close with two take-home messages. Here is the first.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">PREDICT is the first individualized, externally validated risk tool for pregnancy in CKD.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">It is built to reassure safely, with high sensitivity and high negative predictive value.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">Here is the second take-home message. The same tool has low specificity and low PPV.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">It over-flags many normal-outcome women, it comes from high-income cohorts, and its effect on outcomes was not tested.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">So read it as a counselling aid, not a verdict, and keep its limits in view.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">And remember the useful phrases today: external validation, cut-point, and negative predictive value.</div></div>
-<div class="turn b"><span class="who">Algieba · English</span><div class="bubble">Those three ideas explain why a model can reassure well and still over-flag risk.</div></div>
-<div class="turn a"><span class="who">Orus · 日本語</span><div class="bubble">That is our Deep Read for this week. Thank you for listening, and take care.</div></div>
+
+<section class="script"><h2 class="section-heading">Script</h2><div class="turn a"><span class="who">Orus · Host</span><div class="bubble">This podcast is generated by AI and may contain errors. Before using this information in clinical practice or research, please review the full text of the original paper.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Welcome to Weekly Nephrology. This episode is published on July 16, 2026.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Our show has three formats each week. Weekly Summary on Monday, Deep Read on Thursday, and Case Reports on Saturday.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Today is Thursday, so this is a Deep Read. We look closely at one paper and its full text.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It is a slower, more careful format. We spend time on methods, results, and limitations.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Let me explain how we chose today&#x27;s paper. This week the on-duty journal was Kidney International Reports.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">We used it as a fallback, because we could not get the full text from the primary duty journal.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">From its latest issue, we screened Original Articles that had verified open-access full text.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Only one paper met all the rules. So that single full-text candidate was selected.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">And it was worth the deeper look. It is the first individual pregnancy risk tool for CKD, with external validation.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">We have no verified news item this week, so we go straight to the paper.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">The paper is about pregnancy in women with chronic kidney disease. Why does this matter so much?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Pregnancy counselling is recommended for women with CKD. But clinicians had no tool to estimate one woman&#x27;s own risk.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">This study developed and externally validated two prediction models. They estimate the risk of bad kidney and newborn outcomes.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The important point is the outcomes were chosen by patients and health care professionals, not only by researchers.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">They used a modified pregnancy-risk questionnaire, with 90 women who had CKD and 73 professionals.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">So the outcomes reflect what patients themselves worry about, not only lab-based endpoints.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So in simple terms, this is the first individual risk tool for pregnancy in CKD, and it was tested outside its home data.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Let me state the source. This paper is in Kidney International Reports, in September 2026.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">The primary affiliation is King&#x27;s College London in the United Kingdom. The tool is called PREDICT.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Let me pause on one phrase. You said &quot;external validation.&quot; What does that mean?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">External validation means testing a model on new, separate data. Data the model did not learn from.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">A model can look strong on its own data. It must prove itself on outside patients.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">That is a useful expression in papers and conferences. Now let&#x27;s look at the methods.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">First, who was in the study?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The women had CKD, with an eGFR below 90 within 24 months before pregnancy.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">eGFR is a number for kidney function. A lower number means weaker kidney work.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">None were on dialysis at conception. So this is early to moderate kidney disease, not kidney failure.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">How many women, and where did the data come from?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The development cohort had 746 women from linked UK records, with deliveries from 1997 to 2021.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Their median prepregnancy eGFR was 58, and about 49% had a kidney transplant.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">That is a high transplant share. Nearly half. Let me note that for later. Where was the model tested?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">In two external cohorts. The first was an Ontario pregnancy cohort in Canada, with 6974 women.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Their median eGFR was 84, so their kidney function was much better on average.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The second was three UK studies combined, with 380 women, and a median eGFR of 53.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So the three groups were quite different. Let&#x27;s keep that in mind for the results.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Now, what exactly did the models try to predict?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">There were two outcomes. The primary outcome was about the kidney.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It was a 25% or larger drop in median eGFR, or starting kidney replacement therapy.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">That was measured between 6 weeks and 12 months after birth.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">One technical note. Was eGFR calculated the same way in every cohort?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Almost. The UK cohorts used the CKD-EPI 2009 formula, and Ontario used the 2021 version.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Both were used without ethnicity adjustment. That keeps the kidney number consistent in spirit.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Let me restate the outcome simply. The primary outcome is real loss of kidney function after pregnancy.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Yes. The secondary outcome was about the baby.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It combined preterm birth before 34 weeks and a very small baby, below the third percentile.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The small-baby size used the INTERGROWTH-21 growth charts, an international newborn standard.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Good. Now how did they build the models?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">They started from risk factors already known from earlier studies and meta-analyses.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Then they used backwards elimination to keep only the useful predictors.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Backwards elimination is another phrase worth knowing. Can you define it?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">You start with many variables, then remove the weak ones step by step.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">You keep the variables that still help the model. Here they used a liberal cut-off for keeping them.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">They also started with single-variable tests, then a full multivariable model.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">And they checked for collinearity, so two predictors would not carry the same signal twice.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So which predictors stayed in the end?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The kidney model kept four predictors. Maternal age, kidney transplant, preconception eGFR, and proteinuria.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Proteinuria means protein leaking into the urine, a sign of kidney damage.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">And the baby model?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It kept five predictors. Maternal age, transplant, preconception eGFR, plus diabetes and parity.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Parity means how many times a woman has given birth before.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">One variable was dropped early. Which one, and why?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Body mass index, or BMI. It was missing for 77% of the development cohort.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">With so much missing data, and no clear link seen, they left it out as a candidate.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Let&#x27;s pause there. Missing data is a real problem in this kind of study. How did they handle it?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">For the kidney model, they used multiple imputation. That fills missing values with statistical estimates.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">They made 200 imputations and combined them with a standard rule.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The baby model used complete cases only, on 567 women, because imputation added almost nothing.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Was the sample large enough for this kind of model?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Yes. This was a secondary analysis, so the sample size was already fixed.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">But the full model reached 44.2 events per parameter. That is well above the recommended target.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The calculation said they needed at least 382 pregnancies with 176 outcome events. They exceeded that.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">That target assumed a moderate model fit and an outcome prevalence near 46%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">They also followed a reporting standard. Can you name it briefly?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">They followed the TRIPOD statement. It is a checklist for prediction model studies.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It asks authors to report design, predictors, performance, and validation clearly.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Now let&#x27;s look at the results. Let me start with how common the outcomes were.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The kidney outcome was much more common in the development cohort. It occurred in 221 women, or 29.6%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">And in the two validation cohorts?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">In Ontario, only 201 women, or 2.9%. In the UK external group, 74 women, or 19.5%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">That is a very big gap. Ontario had far fewer kidney events.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Right, and that fits their better baseline kidney function. Event rate shapes what the model can do.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Let me make that concrete. When events are rare, even a good model gives many false alarms.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Exactly. The math of a rare outcome pushes the positive predictive value down.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">What about the baby outcome?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The baby outcome occurred in 26.4% of the development cohort, and 7.1% in Ontario.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">In the UK external group it was 23.9%. So again, Ontario had a lower rate.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Now, how well did the model separate high risk from low risk?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The authors measured overall discrimination and calibration in the usual ways.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">But here I must be careful. The supplied full text does not give the numeric AUC or calibration values.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It shows ROC curves in a figure, and it gives numbers at each cut-point instead.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">That is an honest and important point. So we will not state an AUC number.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Let me ask about the cut-point. What is a cut-point?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">A cut-point is the risk threshold where you call someone high risk.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Above the line is high risk, below it is low risk. Where you set it changes the trade-off.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">And how did they choose it?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">They chose it with stakeholders, including five women with a range of kidney function.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Two of those women had experienced adverse outcomes themselves. They aimed for high sensitivity and high NPV.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Please define sensitivity and NPV simply.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Sensitivity is how often the model catches the women who truly have the outcome.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">NPV, or negative predictive value, is the chance that a low-risk label is truly reassuring.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So the design goal was to reassure safely, and to miss very few real cases.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Exactly. For the kidney model, the chosen cut-point was 0.15.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">At that point, sensitivity was 90% and NPV was 85%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">And the cost of that choice?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Specificity was only 23%, and PPV was 33%.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Low specificity means many women with normal outcomes are still flagged as high risk.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So the tool is good at reassuring, but it over-flags. Let me hold that thought.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">For the baby model, the cut-point was 0.10. Sensitivity 90%, NPV 80%.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">But specificity was just 17%, and PPV was 32%. The same pattern appears.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Now the key test. How did the models do in the external cohorts?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The kidney model kept high sensitivity and NPV, but specificity and PPV stayed low.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">In Ontario, at the same cut-point, sensitivity was 82% and NPV was 99%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">A 99% NPV sounds very reassuring. But what was the PPV?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Only 4%. And specificity was 38%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">PPV, or positive predictive value, is the chance a high-risk label is truly correct. Is that right?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Yes, exactly. A 4% PPV means most high-risk flags did not end in the outcome.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">That low PPV comes from the very low event rate in Ontario. It is expected math.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">And in the UK external cohort?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">There, sensitivity was 96% and NPV was 85%. Specificity was 8% and PPV was 26%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">What about the baby model in validation?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It was validated only in Ontario, not in the UK external cohort, because there were too few cases.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">In Ontario, sensitivity was 100% and NPV was 90%. But specificity was 1% and PPV was 10%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So across the board, these models catch cases and reassure, but they do not confirm high risk.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">That is the honest summary. High sensitivity and NPV are not the same as high PPV.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Which predictors pointed which way? Let me ask for direction only.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Younger age, proteinuria, and lower preconception eGFR predicted the kidney outcome.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">A working kidney transplant was protective for both outcomes, reported here for the first time.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">That transplant finding is interesting. It fits the high transplant share in the development cohort.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It does, though we must stay careful. Protective here means an adjusted association, not proven cause.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Higher parity and preexisting diabetes added to the risk of the baby outcome.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">One caution here. These are predictors, not proven causes, correct?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Correct. These are adjusted associations inside a prediction model. We cannot call them causal.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The exact odds ratios sit in a supplement and are not in the supplied text.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Now let&#x27;s move to limitations and bias. This is where honesty matters most.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The first limitation is the low specificity and PPV we discussed.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Many women with normal outcomes are labelled high risk. That could lead to extra, unneeded monitoring.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So the tool could cause worry, not only comfort.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Yes. The second limitation is the setting. These were high-income countries with universal health coverage.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">We cannot generalize these results to low-resource settings or the general population.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">What about the BMI problem we mentioned?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">BMI was 77% missing and was dropped. Complete BMI data might have improved the model.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Other data were also incomplete, such as the cause of kidney disease, lab values, and other illnesses.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Incomplete data like this can quietly shape a prediction model&#x27;s results.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">And there was a comparison with another tool, the KFRE. Tell me carefully.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">KFRE is the Kidney Failure Risk Equation, a general tool for kidney failure risk.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The authors compared it, but the comparison is confounded. The endpoints and time horizons differ.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Please give the numbers, but keep the caution.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">In 25 women who reached kidney replacement within two years, the median KFRE risk was 1.4%.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">The PREDICT kidney model gave a median of 48% for its own endpoint within 12 months.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So KFRE looked far too low. But we must not equate the two tools.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Exactly. Different endpoints, different horizons, and only 25 women. It is not a fair head-to-head.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Two more honest points before we finish this section.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Chronic hypertension differed widely across cohorts, from 6% in Ontario to 60% in the UK development cohort.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Adding it to the model did not improve performance. And again, the overall AUC numbers are not in the text.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">There is also a reassuring finding worth stating plainly.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Yes. Most women with eGFR below 90 in these cohorts had favorable outcomes.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">70% of the development cohort had no major eGFR decline and no kidney replacement.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">In the validation cohorts, that figure was 97.1% and 80.5%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So many women with reduced kidney function still did well. That is an encouraging message.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">And 74% of the development cohort delivered after 34 weeks without a very small baby.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">In the validation cohorts, that figure was 92.9% and 76.1%.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So for many women with CKD, the news around pregnancy is not as dark as feared.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Yes, and that is exactly why a reassurance-focused tool can help these conversations.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Let&#x27;s move to clinical meaning. What might this tool change, and what can it not do?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It could support prepregnancy counselling by giving an individual risk estimate, not just a group average.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Its main strength is safe reassurance, because of the high sensitivity and negative predictive value.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">A low-risk result should give real comfort, because the model rarely misses a true case.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">And the clear limits?</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">It cannot confirm who will have a bad outcome. The PPV is too low for that.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Very importantly, this study did not test whether the tool improves real outcomes.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Impact on care was not evaluated. The authors call that future work.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">So it should not be used to push a woman toward or away from pregnancy.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Right. It is one input for a careful, shared conversation, not a command.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Let me close with two take-home messages. Here is the first.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">PREDICT is the first individualized, externally validated risk tool for pregnancy in CKD.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">It is built to reassure safely, with high sensitivity and high negative predictive value.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">Here is the second take-home message. The same tool has low specificity and low PPV.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">It over-flags many normal-outcome women, it comes from high-income cohorts, and its effect on outcomes was not tested.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">So read it as a counselling aid, not a verdict, and keep its limits in view.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">And remember the useful phrases today: external validation, cut-point, and negative predictive value.</div></div>
+<div class="turn b"><span class="who">Algieba · Co-host</span><div class="bubble">Those three ideas explain why a model can reassure well and still over-flag risk.</div></div>
+<div class="turn a"><span class="who">Orus · Host</span><div class="bubble">That is our Deep Read for this week. Thank you for listening, and take care.</div></div></section>
 </div></main>
 <footer><div class="wrap">
-  抄録ベースの自動生成です。医学的最終判断は各自で行ってください。<br/>
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
   <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
 </div></footer>
 </body>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex"/>
-<meta name="description" content="2026-07-11 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
+<meta name="description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-11."/>
 <meta name="theme-color" content="#33452f"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Weekly Nephrology AI"/>
-<meta property="og:title" content="Weekly Nephrology AI 2026-07-11 — 原稿スクリプト"/>
-<meta property="og:description" content="2026-07-11 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-07-11 — Transcript"/>
+<meta property="og:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-11."/>
 <meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-11.html"/>
 <meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
 <meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
 <meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-11 — 原稿スクリプト"/>
-<meta name="twitter:description" content="2026-07-11 配信の原稿スクリプト、取り上げた論文、使用AIモデル・音声情報。"/>
-<title>Weekly Nephrology AI 2026-07-11 — 原稿スクリプト</title>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-11 — Transcript"/>
+<meta name="twitter:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-11."/>
+<title>Weekly Nephrology AI 2026-07-11 — Transcript</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
@@ -36,7 +36,7 @@
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+    font-family:"Avenir Next",-apple-system,
       system-ui,sans-serif;
     line-height:1.85; font-size:15.5px;
     -webkit-font-smoothing:antialiased; }
@@ -70,6 +70,7 @@
     border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
   .papers { margin-bottom:34px; }
   .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
   .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
     position:relative; user-select:none; }
   .collapsible > summary::-webkit-details-marker { display:none; }
@@ -116,6 +117,21 @@
   .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
     border-color:rgba(150,120,40,.30); }
 
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
+
   .turn { margin:18px 0; max-width:88%; }
   .turn.b { margin-left:auto; }
   .who { display:block; font-size:.7rem; font-weight:700;
@@ -141,148 +157,151 @@
 <header><div class="wrap">
   <span class="badge">Case Reports</span>
   <h1>Weekly Nephrology AI</h1>
-  <div class="sub">2026-07-11 配信 · 原稿スクリプト（教育・英語学習用）</div>
+  <div class="sub">2026-07-11 · Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-11.mp3"></audio>
   <div class="bar">
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-11.mp3">⬇ MP3</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">RSS を購読</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">エピソード一覧</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-11.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
   </div>
 </div></header>
 <main><div class="wrap">
-<details class="collapsible models"><summary><span class="section-title">使用したAIモデル・音声</span></summary><div class="collapsible-body"><ul class="mlist">
-<li><span>AIモデル</span><b>Opus 4.8 (Claude)</b></li>
-<li><span>サブエージェント構成</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
-<li><span>候補論文</span><b>87本</b></li>
-<li><span>音声モデル</span><b>Gemini 2.5 Flash TTS</b></li>
-<li><span>スピーカー</span><b>Umbriel / Charon</b></li>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>87 papers</b></li>
+<li><span>TTS model</span><b>Gemini 2.5 Flash TTS</b></li>
+<li><span>Speakers</span><b>Umbriel — Host, gender not set voice (Umbriel); Charon — Co-host, gender not set voice (Charon)</b></li>
 </ul></div></details>
-<details class="collapsible papers"><summary><span class="section-title">取り上げた論文</span></summary><div class="collapsible-body"><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
-<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101405" target="_blank" rel="noopener">When Atypical Becomes Typical: A Fulminant Seronegative Anti-GBM Disease</a><div class="pmeta"><span>Kidney Medicine (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101405" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101405</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42305860/" target="_blank" rel="noopener">PMID: 42305860</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span></div></li>
-<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101401" target="_blank" rel="noopener">A Rare Case of Fabry Disease Combined With Idiopathic Multicentric Castleman Disease and Membranous Nephropathy</a><div class="pmeta"><span>Kidney Medicine (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101401" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101401</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42290669/" target="_blank" rel="noopener">PMID: 42290669</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
-<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12882-026-05015-8" target="_blank" rel="noopener">X-Linked immune dysregulation, polyendocrinopathy, and enteropathy (IPEX) syndrome with concurrent membranous and IgA nephropathy: a case report</a><div class="pmeta"><span>BMC Nephrology (2026 May 06)</span> · <a href="https://doi.org/10.1186/s12882-026-05015-8" target="_blank" rel="noopener">DOI: 10.1186/s12882-026-05015-8</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42092823/" target="_blank" rel="noopener">PMID: 42092823</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
-<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12882-026-04952-8" target="_blank" rel="noopener">A near-miss: case of pseudo-foreign body in End Stage Renal Disease</a><div class="pmeta"><span>BMC Nephrology (2026 Apr 29)</span> · <a href="https://doi.org/10.1186/s12882-026-04952-8" target="_blank" rel="noopener">DOI: 10.1186/s12882-026-04952-8</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42056932/" target="_blank" rel="noopener">PMID: 42056932</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span></div></li>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101401" target="_blank" rel="noopener">A Rare Case of Fabry Disease Combined With Idiopathic Multicentric Castleman Disease and Membranous Nephropathy</a><div class="pmeta"><span>Kidney Medicine (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101401" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101401</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42290669/" target="_blank" rel="noopener">PMID: 42290669</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
+<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12882-026-05015-8" target="_blank" rel="noopener">X-Linked immune dysregulation, polyendocrinopathy, and enteropathy (IPEX) syndrome with concurrent membranous and IgA nephropathy: a case report</a><div class="pmeta"><span>BMC Nephrology (2026 May 06)</span> · <a href="https://doi.org/10.1186/s12882-026-05015-8" target="_blank" rel="noopener">DOI: 10.1186/s12882-026-05015-8</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42092823/" target="_blank" rel="noopener">PMID: 42092823</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
+<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12882-026-04952-8" target="_blank" rel="noopener">A near-miss: case of pseudo-foreign body in End Stage Renal Disease</a><div class="pmeta"><span>BMC Nephrology (2026 Apr 29)</span> · <a href="https://doi.org/10.1186/s12882-026-04952-8" target="_blank" rel="noopener">DOI: 10.1186/s12882-026-04952-8</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42056932/" target="_blank" rel="noopener">PMID: 42056932</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span></div></li>
+<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101405" target="_blank" rel="noopener">When Atypical Becomes Typical: A Fulminant Seronegative Anti-GBM Disease</a><div class="pmeta"><span>Kidney Medicine (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101405" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101405</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42305860/" target="_blank" rel="noopener">PMID: 42305860</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span></div></li>
 </ol></div></details>
 
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">こんにちは。Weekly Nephrology へようこそ。腎臓内科の話題を、日本語を中心にお届けする番組です。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">Hello, and welcome to the show.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">今日は2026年7月11日、土曜日の配信です。この Case Reports シリーズは、今回が第1回になります。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">この番組には3つのシリーズがあります。まず月曜の Weekly Summary は、PubMed を横断して臨床研究を5本、抄録ベースで手短に紹介する回です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">次に木曜の Deep Read は、オープンアクセスの腎臓ジャーナルからオリジナル論文を1本選び、本文まで踏み込んで深読みする回です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">そして土曜の Case Reports、つまり今日の回は、オープンアクセスのケースレポートを、抄録3本と深読み1本で紹介します。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">今日の症例の選び方も少しだけお話しします。対象はオープンアクセスの腎臓ケース誌6誌、直近90日のケースレポートです。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">抄録があり、重複や直近に取り上げたものを除いた候補プールは、87本でした。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">そこから、教育的価値、鑑別の面白さ、腎臓内科らしさ、希少性、実臨床への示唆などをスコア化し、あらかじめ決めた好みの方針を踏まえて、抄録3本と深読み1本を選びました。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">Today, three short cases first. Then one deep dive.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">というわけで今日は、3症例を抄録ベースで手短に、そして1症例を本文までじっくり深読みします。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">大事な前提を一つ。抄録の3本は抄録に書かれた範囲だけで、深読みの1本は本文を根拠に話します。今日は導入のニュースはありません。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">それでは1例目です。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">A seventeen-year-old woman had nephrotic syndrome.</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">She turned out to have three conditions at once.</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">Fabry disease, Castleman disease, and membranous nephropathy.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">17歳の女性で、ネフローゼ症候群でした。調べてみると、Fabry病、特発性多中心性キャッスルマン病、いわゆるiMCD、そして膜性腎症の3つが同時に存在していた、という珍しい症例です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">出典です。雑誌は Kidney Medicine、2026年7月の掲載で、主な著者所属は日本、神奈川の湘南鎌倉総合病院です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">ポイントを手短に。Fabry病はX連鎖のライソゾーム蓄積症で、女性ではX染色体のランダム不活化のため、診断が難しいことがあります。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">この症例では、ポドサイトに zebra bodies という層状の封入体が見られ、遺伝子検査と合わせて Fabry病を確定しています。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">一方で免疫複合体の沈着があり、これは膜性腎症を示唆しました。さらに多発リンパ節腫脹と炎症マーカーの上昇から、iMCD と診断されています。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">興味深いのは、ステロイド治療で蛋白尿と炎症が速やかに改善した点です。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">The steroids worked fast. That was an important clue.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">ステロイドが速やかに効いたことが、病態を切り分ける手がかりになった、というわけです。著者は、Fabry関連のポドサイト障害とは別に、免疫が介在する障害があったのではと考えています。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">ただし、これは n=1 の症例報告です。Gb3による炎症と免疫異常の関連は、あくまで興味深い問いとして提起されたもので、因果や一般化は言えません。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">ここで英語表現を一つ。present with という言い方です。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">The patient presented with nephrotic syndrome.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">present with は「〜を主訴に受診する」「〜で発症する」という、症例記述で最もよく出る表現です。「現在」ではなく、「症状を呈して来院する」の意味だと覚えておくと、英語の症例が読みやすくなります。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">では2例目に移ります。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">A fifteen-year-old boy had type one diabetes from age one.</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">Later, his kidneys started to fail.</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">A gene test showed IPEX syndrome.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">15歳の男の子で、1歳のときから1型糖尿病がありました。その後に腎機能が低下し、遺伝子検査で IPEX 症候群と分かった症例です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">出典です。雑誌は BMC Nephrology、2026年5月の掲載で、主な著者所属はサウジアラビア、マディーナの Prince Mohammed bin Abdulaziz 病院の小児科です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">IPEX症候群は、FOXP3遺伝子の変異による、まれなX連鎖の疾患です。ふつうは乳児期に、難治性の下痢、1型糖尿病、皮膚炎という古典的な三徴で発症します。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">この子は1歳で1型糖尿病、その後に難治性の喘息、湿疹のような皮疹、食物アレルギーを併発していました。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">9歳のときにクレアチニンの上昇と蛋白尿を指摘され、腎生検で膜性腎症とIgA腎症が重なった所見が見られました。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">遺伝子検査で FOXP3 の病的なバリアントが見つかり、IPEX症候群と確定しています。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">His kidney disease kept getting worse.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">支持療法にもかかわらず腎機能は低下を続け、ステージVのCKDまで進行し、今は造血幹細胞移植を待っている状態です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">学びとしては、消化管症状が目立たなくても、自己免疫性の内分泌疾患やアレルギーを伴う小児の腎疾患では、IPEX症候群を鑑別に入れる、という点です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">これも n=1 です。膜性腎症とIgA腎症の重複が進行を早めたのではという指摘は、証明された因果ではなく、あくまで仮説にとどまります。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">3例目、最後の抄録症例です。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">A dialysis patient came in with fever and vomiting.</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">A scan found a bright object in the stomach.</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">It looked like a swallowed piece of metal.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">透析患者さんが、発熱と嘔吐で受診しました。CTで胃の中に明るく光る物体が見つかり、金属を飲み込んだように見えた、という症例です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">出典です。雑誌は BMC Nephrology、2026年4月の掲載で、主な著者所属はシンガポールの Changi General Hospital 腎臓内科です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">背景から。炭酸ランタンは、末期腎不全の高リン血症に使う、カルシウムを含まないリン吸着薬です。放射線を通しにくいので、画像では造影剤のように見えることがあります。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">この患者さんは発熱、嘔吐、そして胆汁うっ滞性の肝障害があり、肝胆道系の敗血症が心配される状態でした。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">腹部CTで、胃の中に1.1センチ、7000ハンスフィールドという非常に高い吸収値の物体が偶然見つかり、金属異物の誤飲が疑われました。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">内視鏡で取り出すために緊急で外科にコンサルトされましたが、内服中の炭酸ランタンではないか、という鑑別が挙がりました。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">So they watched and waited, instead of operating.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">そこで、すぐ処置をするのではなく、経過を見る保存的な方針に切り替えたわけですね。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">連続したX線で、その物体が腸管を移動していくのが確認できました。良性と判断され、患者さんは無事に退院しています。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">学びは明快です。私たちがよく使うリン吸着薬が、画像で異物そっくりに見えることがある。既往と内服歴、そして経時的な観察が、不要な内視鏡を避ける鍵になります。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">これも n=1 で、頻度は分かりません。炭酸ランタンが有害だとか、本当の異物だという話ではなく、あくまで画像上そう見えた、という点に注意してください。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">ここで英語表現をもう一つ。unremarkable と workup です。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">The initial workup was unremarkable.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">workup は「一連の精査、検査ひとそろい」という意味です。そして unremarkable は「特記すべき所見なし」、つまり異常なし、という遠回しな言い方で、英語のカルテで頻出します。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">さて、ここからは深読みです。今日いちばん時間をかけて掘り下げる症例です。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">A twenty-four-year-old man had severe kidney failure.</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">His blood tests for anti-GBM antibodies were negative.</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">But his biopsy looked just like anti-GBM disease.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">24歳の男性で、重い腎不全でした。抗GBM抗体の血液検査は陰性だったのに、腎生検の所見は、まさに抗GBM病そのものだった、という症例です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">出典です。雑誌は Kidney Medicine、2026年7月の掲載で、主な著者所属はイスラエルの Galilee Medical Center 腎臓内科です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">まず用語の整理を。抗GBM病は、糸球体の基底膜、GBMに対する抗体ができて、急速に進行する腎炎を起こす、まれな自己免疫疾患です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">典型例では、血中に抗GBM抗体が検出され、基底膜に沿ってIgGが線状に沈着します。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">一方で「非典型」の抗GBM病は、経過がゆっくりで、抗体が検出されず、病理像もさまざま、とされてきました。ところが今日の症例は、その常識を裏切ります。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">時系列で追ってみましょう。患者さんは農業に従事する喫煙者の若い男性で、3週間続く嘔吐と全身の倦怠感で受診しました。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">既往歴はなく、腎疾患の家族歴も、腎毒性のある薬剤や化学物質への曝露もありませんでした。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">受診時は疲弊した様子で、血圧は150/90と高めでした。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">His creatinine was seventeen.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">血清クレアチニンは17 mg/dL、BUNは90 mg/dLと、すでに重度の腎不全でした。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">尿検査では、尿蛋白とクレアチニンの比が8.7と大量の蛋白尿、そして顕微鏡的血尿と赤血球円柱を認めました。赤血球円柱は、糸球体での活動性の炎症を示す、重要な所見です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">ここで血清学的な精査、workup です。抗GBM抗体はELISAと間接蛍光抗体法の両方で陰性。ANCA、ANA、B型・C型肝炎、HIVもすべて陰性で、補体も正常でした。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">胸部の画像と肺の拡散能検査は unremarkable、つまり異常なしで、肺出血はありませんでした。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">The picture pointed to anti-GBM disease. But the blood tests said no.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">臨床像は抗GBM病を強く疑わせるのに、血液検査はそれを否定する。この食い違いこそが、この症例の核心です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">尿毒症の症状があったため、緊急で血液透析が始められました。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">決め手を求めて、腎生検が行われました。ここが鑑別の分かれ目です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">光学顕微鏡では、半月体形成性腎炎でした。17個の糸球体のうち8個に細胞性半月体、7個に分節性の硬化、そして2個は正常でした。抄録では、細胞性半月体55%と表現されています。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">皮質には広範な尿細管障害があり、約50から60%の尿細管萎縮と、早期の間質線維化を認めました。これは、すでにかなり進んで慢性化した変化です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">そして蛍光抗体法です。基底膜に沿って、強い線状のIgG沈着が3+で見られました。κとλの両方の軽鎖が3+、C3が陽性、IgAも陽性でした。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">IgGのサブクラスはIgG1からIgG4まですべて陽性。さらにHLAタイピングで、DRB1*0401という、古典的な抗GBM病と関連する遺伝子型が見つかりました。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">The biopsy said anti-GBM. The blood still said no.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">生検は抗GBM病だと言っている。でも血液はやはり陰性のまま。この状態が seronegative、つまり血清陰性ということです。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">ここで英語をもう一つ、consistent with です。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">The biopsy was consistent with anti-GBM disease.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">consistent with は「〜に合致する、矛盾しない」という意味で、断定はしないけれど所見が一致する、というときに使います。診断を確定できない、今回のような場面にぴったりの表現です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">治療です。生検で証明された病態に基づいて、標準的な抗GBMのプロトコルが取られました。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">具体的には、血液透析に加えて、高用量のステロイド、シクロホスファミド、そして血漿交換です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">ただ、ここで大きな問題が生じます。抗GBM抗体が最後まで検出されなかったため、血漿交換をいつまで続ければよいかを、抗体価で判断できなかったのです。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">In the usual disease, the antibody level guides the treatment.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">古典的な抗GBM病では、抗体価を見ながら血漿交換の期間を決め、移植も、抗体が半年以上検出されなくなるまで待ちます。ところが抗体が測れないと、その道しるべが使えません。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">転帰です。ここははっきりお伝えします。積極的な治療にもかかわらず、腎機能は回復しませんでした。患者さんは透析依存のままです。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">どの治療が効いて良くなった、とは言えません。むしろ、治療しても腎機能は戻らなかった、というのがこの症例の事実です。患者さんは将来の腎移植を希望しています。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">なぜ seronegative がこれほど難しいのか、もう少し掘り下げます。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">抗体が測定できない理由には、いくつかの仮説があります。抗体が、通常のELISAでは捉えにくいエピトープを標的にしている可能性。あるいはIgG4が主体で、IgG1やIgG3向けに作られた検査に引っかかりにくい可能性です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">さらに、抗体が基底膜に素早く吸着してしまい、血中の濃度が検出限界を下回る、いわゆる sink effect も考えられています。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">著者は、より高感度なバイオセンサーやウェスタンブロットなら、低い力価の抗体を捉えられるかもしれない、と述べています。ただし、この施設ではそれが使えませんでした。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">考察では、著者はこの症例を、非典型抗GBM病の主要な4つの報告の中に位置づけています。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">Nasr らの20例では、肺出血はなく、1年の腎生存が85%と、古典的な抗GBM病より軽い経過が示唆されました。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">Liang らの19例は、もっと幅が広く、半月体が少ないものから、古典型に似た激しいものまでありました。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">約60例を集めた最大のコホートでは、半月体が約42%に見られ、半月体のある患者は腎機能も転帰も悪く、23%が腎代替療法に進みました。非典型でも一様に良性ではない、ということです。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">フランスの25例では、フォローの生検で、臨床的に落ち着いた後も線状のIgG沈着が残ることが多い、と報告されています。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">Most atypical cases do better than the classic disease. This one did not.</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">多くの非典型例は古典型より予後が良いのに、この症例はそうではなかった。著者は、本例を非典型スペクトラムの中の、重症の例外、outlier だと述べています。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">そして、重要な問いを投げかけます。seronegative の一部は、実は現行の検査では捉えられないだけの、古典的な抗GBM病ではないか、と。だからこそ、抗体を待たずに、臨床と病理で診断して早く治療を始めることが大切だ、というのが著者の主張です。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">一点、誤解のないように。IdeS、イミリフィダーゼという、IgGを分解する新しい治療が、抗体陽性の例では注目されていますが、seronegative や非典型の例に効くかどうかは、分かっていません。本例でも使われていませんし、有効とは言えません。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">呼び名についても著者は提案しています。線状のIgG沈着が、必ずしも病原性の抗体を意味しないことから、この病態は「非典型抗GBM病」より、「線状IgG沈着を伴う半月体形成性腎炎」と呼ぶ方が正確かもしれない、と。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">学びと限界をまとめます。この症例の教訓は、抗体が陰性でも、臨床像と病理が一致すれば、抗GBM病として扱い、早く動く必要がある、ということです。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">限界も明確です。まず n=1、一般化はできません。そして、より高感度な抗体検査が使えなかったため、真の seronegative なのか、検査で隠れた古典型なのかを、確定的に区別できませんでした。転帰も単一の時点で、長期の経過は詳しく分かりません。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">今日のまとめです。4つの症例に共通するのは、いずれも n=1 で、因果も一般化も言えないこと。それでも、診断が食い違うとき、画像が紛らわしいとき、どう考えるかのヒントをくれます。</div></div>
-<div class="turn a"><span class="who">Umbriel · 日本語</span><div class="bubble">特に深読みの抗GBM病は、抗体が陰性でも臨床と病理で診断する、という大切な姿勢を教えてくれました。それではまた次回、Weekly Nephrology でお会いしましょう。</div></div>
-<div class="turn b"><span class="who">Charon · English</span><div class="bubble">Thanks for listening. See you next time.</div></div>
+
+<section class="script"><h2 class="section-heading">Script</h2><div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">こんにちは。Weekly Nephrology へようこそ。腎臓内科の話題を、日本語を中心にお届けする番組です。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">Hello, and welcome to the show.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">今日は2026年7月11日、土曜日の配信です。この Case Reports シリーズは、今回が第1回になります。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">この番組には3つのシリーズがあります。まず月曜の Weekly Summary は、PubMed を横断して臨床研究を5本、抄録ベースで手短に紹介する回です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">次に木曜の Deep Read は、オープンアクセスの腎臓ジャーナルからオリジナル論文を1本選び、本文まで踏み込んで深読みする回です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">そして土曜の Case Reports、つまり今日の回は、オープンアクセスのケースレポートを、抄録3本と深読み1本で紹介します。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">今日の症例の選び方も少しだけお話しします。対象はオープンアクセスの腎臓ケース誌6誌、直近90日のケースレポートです。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">抄録があり、重複や直近に取り上げたものを除いた候補プールは、87本でした。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">そこから、教育的価値、鑑別の面白さ、腎臓内科らしさ、希少性、実臨床への示唆などをスコア化し、あらかじめ決めた好みの方針を踏まえて、抄録3本と深読み1本を選びました。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">Today, three short cases first. Then one deep dive.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">というわけで今日は、3症例を抄録ベースで手短に、そして1症例を本文までじっくり深読みします。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">大事な前提を一つ。抄録の3本は抄録に書かれた範囲だけで、深読みの1本は本文を根拠に話します。今日は導入のニュースはありません。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">それでは1例目です。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">A seventeen-year-old woman had nephrotic syndrome.</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">She turned out to have three conditions at once.</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">Fabry disease, Castleman disease, and membranous nephropathy.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">17歳の女性で、ネフローゼ症候群でした。調べてみると、Fabry病、特発性多中心性キャッスルマン病、いわゆるiMCD、そして膜性腎症の3つが同時に存在していた、という珍しい症例です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">出典です。雑誌は Kidney Medicine、2026年7月の掲載で、主な著者所属は日本、神奈川の湘南鎌倉総合病院です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">ポイントを手短に。Fabry病はX連鎖のライソゾーム蓄積症で、女性ではX染色体のランダム不活化のため、診断が難しいことがあります。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">この症例では、ポドサイトに zebra bodies という層状の封入体が見られ、遺伝子検査と合わせて Fabry病を確定しています。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">一方で免疫複合体の沈着があり、これは膜性腎症を示唆しました。さらに多発リンパ節腫脹と炎症マーカーの上昇から、iMCD と診断されています。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">興味深いのは、ステロイド治療で蛋白尿と炎症が速やかに改善した点です。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">The steroids worked fast. That was an important clue.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">ステロイドが速やかに効いたことが、病態を切り分ける手がかりになった、というわけです。著者は、Fabry関連のポドサイト障害とは別に、免疫が介在する障害があったのではと考えています。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">ただし、これは n=1 の症例報告です。Gb3による炎症と免疫異常の関連は、あくまで興味深い問いとして提起されたもので、因果や一般化は言えません。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">ここで英語表現を一つ。present with という言い方です。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">The patient presented with nephrotic syndrome.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">present with は「〜を主訴に受診する」「〜で発症する」という、症例記述で最もよく出る表現です。「現在」ではなく、「症状を呈して来院する」の意味だと覚えておくと、英語の症例が読みやすくなります。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">では2例目に移ります。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">A fifteen-year-old boy had type one diabetes from age one.</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">Later, his kidneys started to fail.</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">A gene test showed IPEX syndrome.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">15歳の男の子で、1歳のときから1型糖尿病がありました。その後に腎機能が低下し、遺伝子検査で IPEX 症候群と分かった症例です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">出典です。雑誌は BMC Nephrology、2026年5月の掲載で、主な著者所属はサウジアラビア、マディーナの Prince Mohammed bin Abdulaziz 病院の小児科です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">IPEX症候群は、FOXP3遺伝子の変異による、まれなX連鎖の疾患です。ふつうは乳児期に、難治性の下痢、1型糖尿病、皮膚炎という古典的な三徴で発症します。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">この子は1歳で1型糖尿病、その後に難治性の喘息、湿疹のような皮疹、食物アレルギーを併発していました。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">9歳のときにクレアチニンの上昇と蛋白尿を指摘され、腎生検で膜性腎症とIgA腎症が重なった所見が見られました。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">遺伝子検査で FOXP3 の病的なバリアントが見つかり、IPEX症候群と確定しています。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">His kidney disease kept getting worse.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">支持療法にもかかわらず腎機能は低下を続け、ステージVのCKDまで進行し、今は造血幹細胞移植を待っている状態です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">学びとしては、消化管症状が目立たなくても、自己免疫性の内分泌疾患やアレルギーを伴う小児の腎疾患では、IPEX症候群を鑑別に入れる、という点です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">これも n=1 です。膜性腎症とIgA腎症の重複が進行を早めたのではという指摘は、証明された因果ではなく、あくまで仮説にとどまります。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">3例目、最後の抄録症例です。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">A dialysis patient came in with fever and vomiting.</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">A scan found a bright object in the stomach.</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">It looked like a swallowed piece of metal.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">透析患者さんが、発熱と嘔吐で受診しました。CTで胃の中に明るく光る物体が見つかり、金属を飲み込んだように見えた、という症例です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">出典です。雑誌は BMC Nephrology、2026年4月の掲載で、主な著者所属はシンガポールの Changi General Hospital 腎臓内科です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">背景から。炭酸ランタンは、末期腎不全の高リン血症に使う、カルシウムを含まないリン吸着薬です。放射線を通しにくいので、画像では造影剤のように見えることがあります。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">この患者さんは発熱、嘔吐、そして胆汁うっ滞性の肝障害があり、肝胆道系の敗血症が心配される状態でした。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">腹部CTで、胃の中に1.1センチ、7000ハンスフィールドという非常に高い吸収値の物体が偶然見つかり、金属異物の誤飲が疑われました。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">内視鏡で取り出すために緊急で外科にコンサルトされましたが、内服中の炭酸ランタンではないか、という鑑別が挙がりました。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">So they watched and waited, instead of operating.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">そこで、すぐ処置をするのではなく、経過を見る保存的な方針に切り替えたわけですね。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">連続したX線で、その物体が腸管を移動していくのが確認できました。良性と判断され、患者さんは無事に退院しています。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">学びは明快です。私たちがよく使うリン吸着薬が、画像で異物そっくりに見えることがある。既往と内服歴、そして経時的な観察が、不要な内視鏡を避ける鍵になります。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">これも n=1 で、頻度は分かりません。炭酸ランタンが有害だとか、本当の異物だという話ではなく、あくまで画像上そう見えた、という点に注意してください。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">ここで英語表現をもう一つ。unremarkable と workup です。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">The initial workup was unremarkable.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">workup は「一連の精査、検査ひとそろい」という意味です。そして unremarkable は「特記すべき所見なし」、つまり異常なし、という遠回しな言い方で、英語のカルテで頻出します。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">さて、ここからは深読みです。今日いちばん時間をかけて掘り下げる症例です。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">A twenty-four-year-old man had severe kidney failure.</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">His blood tests for anti-GBM antibodies were negative.</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">But his biopsy looked just like anti-GBM disease.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">24歳の男性で、重い腎不全でした。抗GBM抗体の血液検査は陰性だったのに、腎生検の所見は、まさに抗GBM病そのものだった、という症例です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">出典です。雑誌は Kidney Medicine、2026年7月の掲載で、主な著者所属はイスラエルの Galilee Medical Center 腎臓内科です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">まず用語の整理を。抗GBM病は、糸球体の基底膜、GBMに対する抗体ができて、急速に進行する腎炎を起こす、まれな自己免疫疾患です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">典型例では、血中に抗GBM抗体が検出され、基底膜に沿ってIgGが線状に沈着します。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">一方で「非典型」の抗GBM病は、経過がゆっくりで、抗体が検出されず、病理像もさまざま、とされてきました。ところが今日の症例は、その常識を裏切ります。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">時系列で追ってみましょう。患者さんは農業に従事する喫煙者の若い男性で、3週間続く嘔吐と全身の倦怠感で受診しました。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">既往歴はなく、腎疾患の家族歴も、腎毒性のある薬剤や化学物質への曝露もありませんでした。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">受診時は疲弊した様子で、血圧は150/90と高めでした。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">His creatinine was seventeen.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">血清クレアチニンは17 mg/dL、BUNは90 mg/dLと、すでに重度の腎不全でした。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">尿検査では、尿蛋白とクレアチニンの比が8.7と大量の蛋白尿、そして顕微鏡的血尿と赤血球円柱を認めました。赤血球円柱は、糸球体での活動性の炎症を示す、重要な所見です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">ここで血清学的な精査、workup です。抗GBM抗体はELISAと間接蛍光抗体法の両方で陰性。ANCA、ANA、B型・C型肝炎、HIVもすべて陰性で、補体も正常でした。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">胸部の画像と肺の拡散能検査は unremarkable、つまり異常なしで、肺出血はありませんでした。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">The picture pointed to anti-GBM disease. But the blood tests said no.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">臨床像は抗GBM病を強く疑わせるのに、血液検査はそれを否定する。この食い違いこそが、この症例の核心です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">尿毒症の症状があったため、緊急で血液透析が始められました。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">決め手を求めて、腎生検が行われました。ここが鑑別の分かれ目です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">光学顕微鏡では、半月体形成性腎炎でした。17個の糸球体のうち8個に細胞性半月体、7個に分節性の硬化、そして2個は正常でした。抄録では、細胞性半月体55%と表現されています。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">皮質には広範な尿細管障害があり、約50から60%の尿細管萎縮と、早期の間質線維化を認めました。これは、すでにかなり進んで慢性化した変化です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">そして蛍光抗体法です。基底膜に沿って、強い線状のIgG沈着が3+で見られました。κとλの両方の軽鎖が3+、C3が陽性、IgAも陽性でした。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">IgGのサブクラスはIgG1からIgG4まですべて陽性。さらにHLAタイピングで、DRB1*0401という、古典的な抗GBM病と関連する遺伝子型が見つかりました。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">The biopsy said anti-GBM. The blood still said no.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">生検は抗GBM病だと言っている。でも血液はやはり陰性のまま。この状態が seronegative、つまり血清陰性ということです。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">ここで英語をもう一つ、consistent with です。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">The biopsy was consistent with anti-GBM disease.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">consistent with は「〜に合致する、矛盾しない」という意味で、断定はしないけれど所見が一致する、というときに使います。診断を確定できない、今回のような場面にぴったりの表現です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">治療です。生検で証明された病態に基づいて、標準的な抗GBMのプロトコルが取られました。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">具体的には、血液透析に加えて、高用量のステロイド、シクロホスファミド、そして血漿交換です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">ただ、ここで大きな問題が生じます。抗GBM抗体が最後まで検出されなかったため、血漿交換をいつまで続ければよいかを、抗体価で判断できなかったのです。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">In the usual disease, the antibody level guides the treatment.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">古典的な抗GBM病では、抗体価を見ながら血漿交換の期間を決め、移植も、抗体が半年以上検出されなくなるまで待ちます。ところが抗体が測れないと、その道しるべが使えません。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">転帰です。ここははっきりお伝えします。積極的な治療にもかかわらず、腎機能は回復しませんでした。患者さんは透析依存のままです。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">どの治療が効いて良くなった、とは言えません。むしろ、治療しても腎機能は戻らなかった、というのがこの症例の事実です。患者さんは将来の腎移植を希望しています。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">なぜ seronegative がこれほど難しいのか、もう少し掘り下げます。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">抗体が測定できない理由には、いくつかの仮説があります。抗体が、通常のELISAでは捉えにくいエピトープを標的にしている可能性。あるいはIgG4が主体で、IgG1やIgG3向けに作られた検査に引っかかりにくい可能性です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">さらに、抗体が基底膜に素早く吸着してしまい、血中の濃度が検出限界を下回る、いわゆる sink effect も考えられています。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">著者は、より高感度なバイオセンサーやウェスタンブロットなら、低い力価の抗体を捉えられるかもしれない、と述べています。ただし、この施設ではそれが使えませんでした。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">考察では、著者はこの症例を、非典型抗GBM病の主要な4つの報告の中に位置づけています。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">Nasr らの20例では、肺出血はなく、1年の腎生存が85%と、古典的な抗GBM病より軽い経過が示唆されました。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">Liang らの19例は、もっと幅が広く、半月体が少ないものから、古典型に似た激しいものまでありました。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">約60例を集めた最大のコホートでは、半月体が約42%に見られ、半月体のある患者は腎機能も転帰も悪く、23%が腎代替療法に進みました。非典型でも一様に良性ではない、ということです。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">フランスの25例では、フォローの生検で、臨床的に落ち着いた後も線状のIgG沈着が残ることが多い、と報告されています。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">Most atypical cases do better than the classic disease. This one did not.</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">多くの非典型例は古典型より予後が良いのに、この症例はそうではなかった。著者は、本例を非典型スペクトラムの中の、重症の例外、outlier だと述べています。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">そして、重要な問いを投げかけます。seronegative の一部は、実は現行の検査では捉えられないだけの、古典的な抗GBM病ではないか、と。だからこそ、抗体を待たずに、臨床と病理で診断して早く治療を始めることが大切だ、というのが著者の主張です。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">一点、誤解のないように。IdeS、イミリフィダーゼという、IgGを分解する新しい治療が、抗体陽性の例では注目されていますが、seronegative や非典型の例に効くかどうかは、分かっていません。本例でも使われていませんし、有効とは言えません。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">呼び名についても著者は提案しています。線状のIgG沈着が、必ずしも病原性の抗体を意味しないことから、この病態は「非典型抗GBM病」より、「線状IgG沈着を伴う半月体形成性腎炎」と呼ぶ方が正確かもしれない、と。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">学びと限界をまとめます。この症例の教訓は、抗体が陰性でも、臨床像と病理が一致すれば、抗GBM病として扱い、早く動く必要がある、ということです。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">限界も明確です。まず n=1、一般化はできません。そして、より高感度な抗体検査が使えなかったため、真の seronegative なのか、検査で隠れた古典型なのかを、確定的に区別できませんでした。転帰も単一の時点で、長期の経過は詳しく分かりません。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">今日のまとめです。4つの症例に共通するのは、いずれも n=1 で、因果も一般化も言えないこと。それでも、診断が食い違うとき、画像が紛らわしいとき、どう考えるかのヒントをくれます。</div></div>
+<div class="turn a"><span class="who">Umbriel · Host</span><div class="bubble">特に深読みの抗GBM病は、抗体が陰性でも臨床と病理で診断する、という大切な姿勢を教えてくれました。それではまた次回、Weekly Nephrology でお会いしましょう。</div></div>
+<div class="turn b"><span class="who">Charon · Co-host</span><div class="bubble">Thanks for listening. See you next time.</div></div></section>
 </div></main>
 <footer><div class="wrap">
-  抄録ベースの自動生成です。医学的最終判断は各自で行ってください。<br/>
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
   <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
 </div></footer>
 </body>

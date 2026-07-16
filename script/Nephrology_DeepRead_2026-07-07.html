@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex"/>
-<meta name="theme-color" content="#7d5c1e"/>
-<title>Weekly Nephrology AI Deep Read 2026-07-07 — 原稿スクリプト</title>
+<meta name="description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-07."/>
+<meta name="theme-color" content="#33452f"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-07-07 — Transcript"/>
+<meta property="og:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-07."/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-07 — Transcript"/>
+<meta name="twitter:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-07."/>
+<title>Weekly Nephrology AI 2026-07-07 — Transcript</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
 <style>
   :root {
     --accent:#a97f2f; --accent-deep:#7d5c1e;
@@ -21,7 +36,7 @@
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+    font-family:"Avenir Next",-apple-system,
       system-ui,sans-serif;
     line-height:1.85; font-size:15.5px;
     -webkit-font-smoothing:antialiased; }
@@ -36,9 +51,9 @@
     background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
     padding:4px 12px; border-radius:999px; margin-bottom:14px;
     backdrop-filter:blur(4px); }
-  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:650;
+  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:400;
     letter-spacing:.005em;
-    font-family:Georgia,"Times New Roman","Hiragino Mincho ProN",
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
   .sub { opacity:.78; font-size:.88rem; }
   audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
@@ -51,13 +66,32 @@
 
   main { padding:30px 0 60px; }
 
-  .papers { background:var(--card); border:1px solid var(--line);
-    border-radius:16px; padding:22px 24px 16px;
-    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); margin-bottom:34px; }
-  .papers h2 { margin:0 0 2px; font-size:1.02rem; letter-spacing:.02em;
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
     display:flex; align-items:center; gap:8px; }
-  .papers h2::before { content:""; width:9px; height:9px; border-radius:3px;
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
     background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
   .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
   .plist { list-style:none; margin:0; padding:0; }
   .plist li { display:flex; gap:13px; padding:12px 0;
@@ -74,6 +108,29 @@
     overflow-wrap:anywhere; }
   .pmeta a { color:var(--accent); text-decoration:none; }
   .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
 
   .turn { margin:18px 0; max-width:88%; }
   .turn.b { margin-left:auto; }
@@ -99,70 +156,79 @@
 <body>
 <header><div class="wrap">
   <span class="badge">Deep Read</span>
-  <h1>Weekly Nephrology AI Deep Read</h1>
-  <div class="sub">2026-07-07 配信 · 原稿スクリプト（教育・英語学習用）</div>
+  <h1>Weekly Nephrology AI</h1>
+  <div class="sub">2026-07-07 · Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3"></audio>
   <div class="bar">
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3">⬇ MP3</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">RSS を購読</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">エピソード一覧</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
   </div>
 </div></header>
 <main><div class="wrap">
-<section class="papers"><h2>取り上げた論文</h2><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
-<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ekir.2026.106613" target="_blank" rel="noopener">A Clinicopathologic Study of Neural Epidermal Growth Factor-Like 1 (NELL-1)-Associated Membranous Nephropathy in a Chinese Cohort</a><div class="pmeta"><span>Kidney Int Rep (2026)</span> · <a href="https://doi.org/10.1016/j.ekir.2026.106613" target="_blank" rel="noopener">DOI: 10.1016/j.ekir.2026.106613</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42318536/" target="_blank" rel="noopener">PMID: 42318536</a></div></div></li>
-</ol></section>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>Not available</b></li>
+<li><span>TTS model</span><b>Gemini 2.5 Flash TTS</b></li>
+<li><span>Speakers</span><b>Speaker A — Host, gender not set voice (Speaker A); Speaker B — Co-host, gender not set voice (Speaker B)</b></li>
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ekir.2026.106613" target="_blank" rel="noopener">A Clinicopathologic Study of Neural Epidermal Growth Factor-Like 1-Associated Membranous Nephropathy in a Chinese Cohort</a><div class="pmeta"><span>Kidney Int Rep （2026 Aug, Vol 11 Issue 8）</span> · <a href="https://doi.org/10.1016/j.ekir.2026.106613" target="_blank" rel="noopener">DOI: 10.1016/j.ekir.2026.106613</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42318536/" target="_blank" rel="noopener">PMID: 42318536</a></div></div></li>
+</ol></div></details>
 
 
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">みなさん、こんにちは。Weekly Nephrology へようこそ。今日は2026年7月7日、この「深掘り（Deep Read）」シリーズの記念すべき第1回です。まず本番組の全体像を簡単にご紹介します。本番組には3つのシリーズがあります。月曜配信の Weekly Summary は、今週の腎臓内科の臨床研究をだいたい5本、抄録ベースでコンパクトに紹介する回。木曜配信のこの Deep Read は、オープンアクセス論文を1本だけ選んで、full text、つまり本文の Methods や Results まで踏み込んで、じっくり深読みする回。そして土曜配信の Case Reports は、教育的な症例報告を扱う回です。今日はそのうちの Deep Read、20分ほどかけて論文を1本、深く読んでいきます。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Hello, and welcome. Today we read one paper in depth.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">はい。今日の論文の選び方も少しだけお話しします。この深掘り版は、週ごとに「当番誌」がローテーションで決まる仕組みなのですが、今週は当番誌の最新号から本文の取れる臨床研究が拾えなかったため、完全オープンアクセスの Kidney International Reports にフォールバックしました。その最新号から Original Article を候補化して、PMC本文が取れた5本の中から、今日の1本を選んでいます。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Before the paper, a little recent news.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうですね。本題に入る前に、直近の腎臓内科まわりの話題を短く2つだけ。1つ目は、6月にグラスゴーで開かれたヨーロッパ腎臓学会（ERA）で報告された TURING 試験です。報じられた範囲では、微小変化型ネフローゼ症候群（MCD）と巣状分節性糸球体硬化症（FSGS）の成人で、リツキシマブが再発リスクの低減と関連していた、という late-breaking のデータでした。糸球体疾患の再発予防にリツキシマブという流れは、今日の膜性腎症の話ともつながってきます。2つ目は、2026年の世界腎臓学会議（WCN 2026）に、第69回日本腎臓学会とアジア太平洋腎臓学会の年次総会が包含される形で開催された、という国際的な動きです。学会シーズンらしい話題ですね。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">さて、今日深く読む1本はこちらです。Kidney International Reports に載った、「NELL-1 関連膜性腎症の臨床病理学的研究——中国人コホート」。膜性腎症、つまり糸球体疾患は本番組の関心テーマのど真ん中ですし、抗原で分類する膜性腎症は、いま診断と管理が大きく変わりつつあるホットな領域です。NELL-1 という比較的新しい抗原にフォーカスして、しかも68例という、この希少なサブタイプとしてはかなり大きめのコホートで、長期予後まで見ている。臨床に直結する話が多そうだ、ということで今日はこの1本を選びました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">So, let&#x27;s start with the background. What is NELL-1?</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">いい問いですね。まず膜性腎症のおさらいから。膜性腎症は、糸球体基底膜の上皮側に免疫複合体が沈着して、ネフローゼ症候群を起こす代表的な糸球体疾患です。長らく「一次性」「二次性」という分け方をしてきましたが、2009年に PLA2R、いわゆるホスホリパーゼA2受容体が標的抗原として見つかってから、膜性腎症は「抗原で定義する病気」へと大きく舵を切りました。PLA2R がおよそ7割、THSD7A が数パーセントを占め、その後、20を超える標的抗原が次々と報告されています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">NELL-1 is one of these antigens. It is the second most common.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうなんです。NELL-1、正式には neural epidermal growth factor-like 1 は、本文の考察によれば2019年に2つの研究グループが独立に膜性腎症の標的抗原として同定したものです。そして PLA2R に次いで2番目に多い抗原と位置づけられています。臨床的に何が重要かというと、NELL-1 は「悪性腫瘍」との関連がしばしば報告されてきた、という点です。ただ、この論文が問題にしているのは、NELL-1 関連膜性腎症の臨床像や病理像、そして長期予後が、まだよく分かっていない、というギャップです。特にアジア人集団のまとまったデータが乏しかった。そこを埋めようとしたのがこの研究です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Good. Now the methods. This is the heart of today&#x27;s episode.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">はい、深掘り回なので、方法にはしっかり時間をかけます。まず研究デザインですが、これは「後ろ向きの単施設診断コホート」です。上海の瑞金（ルイジン）病院で、2006年1月から2025年7月までの約20年間に腎生検で膜性腎症と診断された連続症例、全部で3216例をベースにしています。ここで一つポイントなのが、著者は「単施設」と言いつつ、患者さんは複数の病院から紹介されてきていて、生検標本の判定だけを自分たちの施設で一元的に行った、と断っている点です。だから地域は上海に限られず、でも病理診断の一貫性は担保されている、という構図ですね。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">They did not stain every case. Only some cases were stained for NELL-1.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここ、とても大事なところです。3216例すべてに NELL-1 染色をかけたわけではありません。まず PLA2R と THSD7A の両方が陰性だった症例、これが556例。この「ダブルネガティブ」の膜性腎症に対してのみ NELL-1 免疫染色を行いました。加えて、比較のために PLA2R 陽性を47例、THSD7A 陽性を9例にも NELL-1 染色をしています。結果として、この陽性例では NELL-1 との二重陽性は1例もなかった。つまり NELL-1 は PLA2R や THSD7A とは基本的に排他的に出る抗原だ、という所見です。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">曝露の定義、というか分類の定義もいくつか押さえておきましょう。二次性の悪性腫瘍関連は、「膜性腎症の診断の前後6か月以内に悪性腫瘍が診断されたもの」と定義しています。予後解析からは、この悪性腫瘍例は除外しています。寛解の定義は KDIGO ガイドラインに準拠していて、完全寛解（CR）は蛋白尿0.3 g/日未満かつ腎機能悪化なし、部分寛解（PR）は蛋白尿0.3〜3.5 g/日でベースラインから50%超の減少かつ腎機能安定、としています。そして重要なのが「自然寛解（SR）」の定義で、ステロイドや免疫抑制薬を使わずに CR か PR に到達したもの、とされています。ACE 阻害薬や ARB、SGLT2 阻害薬は「標準的な支持療法」とみなして、免疫抑制療法にはカウントしていません。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">They also created a new grouping. Diffuse versus segmental deposition.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">これがこの論文のオリジナルな工夫です。NELL-1 の沈着パターンを「びまん性（diffuse）」と「分節性（segmental）」に分けました。定義は半定量的で、糸球体の75%超が、しかもその糸球体の毛細血管ループ面積の75%超で NELL-1 陽性、という条件を満たすものを「びまん性」、それ以外を「分節性」としています。判定は2人の腎病理医が盲検で独立に評価して、食い違ったらすり合わせて合意、という手順です。ただ、著者自身も認めているように、免疫染色の沈着範囲を「びまん性か分節性か」で分ける標準的な基準は存在しません。ループス腎炎や半月体形成性腎炎の考え方を応用して、探索的に作った区分だ、という点は覚えておいてください。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">What about the endpoints and the statistics?</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">エンドポイントは、主に寛解（CR / PR / 自然寛解）、再発、そして腎機能悪化です。腎機能悪化は「血清クレアチニンがベースラインから50%以上上昇」と定義しています。追跡は診療録と電話で行い、6か月以上フォローが途切れたものを脱落、12か月未満を追跡不十分として、予後解析からは外しています。統計はかなりシンプルで、群間比較は t 検定、Mann-Whitney、カイ二乗、Fisher の正確検定など、寛解までの時間は Kaplan-Meier 法と log-rank 検定です。ここで方法論的に一つ指摘しておくと、これは記述的・探索的な解析で、多変量で交絡を調整した回帰分析は行っていません。欠測は補完せず「complete-case analysis」、つまり揃っているデータだけで解析しています。ハザード比やオッズ比といった調整済みの効果指標は報告されていない、という点は結果を読むうえで大事です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Now the results. Let&#x27;s start with how common NELL-1 was.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">では結果です。まず頻度から。ダブルネガティブの膜性腎症556例のうち、NELL-1 陽性は68例。全膜性腎症の中では2.1%、ダブルネガティブの中では12.2%でした。この12.2%という数字は、本文の考察で他コホートと比べられていて、米国の Sethi らの16%、Caza らの3.8%、ヨーロッパの5%台、一方で別の中国コホートの34.9%、日本コホートの23.2%と、かなりばらつきがあります。人種や検出法の違いが背景にあるだろう、と著者は述べています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The age and sex pattern was very interesting.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここが今日の一番面白いところかもしれません。全体の年齢中央値は46歳、範囲は18歳から81歳。そして女性優位で、男女比はおよそ0.7対1でした。ところが、男女で年齢がまるで違うんです。男性の年齢中央値は66歳、女性は39.5歳。つまり「若い女性」と「高齢の男性」という2つの山がある。そして二次性の内訳を見ると、悪性腫瘍は7例、全体の10.3%で、その全員が60歳以上の男性でした。内訳は肺癌6例、消化管の癌1例。逆に、自己免疫疾患を背景に持つ3例——ループス腎炎、抗リン脂質抗体症候群、強直性脊椎炎——は、全員が60歳未満の女性でした。年齢と性別で背景疾患の顔つきがきれいに分かれる、というわけです。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">So the older patients looked sicker.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">その通りです。60歳未満と60歳以上で分けると、臨床像がはっきり違いました。高齢群のほうが血清クレアチニンが高く（0.89 対 0.64 mg/dL）、eGFR が低く（74.6 対 112.4）、蛋白尿が多く（7.4 対 4.6 g/日）、そして血清アルブミンが低い（22.9 対 27.3 g/L）。いずれも統計学的に有意でした。高血圧や貧血、抗核抗体陽性も高齢群で多かった。ただし興味深いことに、年齢で補正した予想値を超える全体的な糸球体硬化の割合は、両群でほとんど差がありませんでした（23.1%対23.8%）。つまり慢性化の度合いそのものは似ていて、高齢群の腎機能の悪さは、必ずしも硬化の進行だけでは説明しきれない、という含みがあります。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Next, the deposition pattern. Diffuse versus segmental.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">沈着パターンの比較も見ましょう。びまん性が28例、分節性が40例でした。びまん性群のほうが、蛋白尿が多く（6.3 対 4.5 g/日、P=0.012）、アルブミンが低い（22.7 対 27.7 g/L、P=0.006）。さらに電子顕微鏡でメサンギウムの高電子密度沈着物が、びまん性群で31.8%、分節性群で6.9%と、びまん性群で有意に多かった（P=0.029）。一方で、糸球体硬化やメサンギウム増殖、膜性腎症のステージといった他の病理指標では、両群に有意差はありませんでした。年齢・性別・クレアチニンにも差はなく、二次性かどうかも沈着パターンでは区別できませんでした。著者は、NELL-1 沈着が広いほど蛋白尿が重くアルブミンが低い、つまり抗原沈着の量がポドサイト障害の強さと直接関係するのではないか、と考察しています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">And the immunostaining. IgG subclass.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">IgG のサブクラスも押さえておきましょう。染色できた33例では、IgG1 が100%で陽性、IgG4 が63.6%で陽性でした。IgG4 優位が30.3%。古典的な一次性膜性腎症は IgG4 優位が典型ですが、NELL-1 では IgG1 が普遍的に出ている、という点が特徴的です。それから軽鎖については、大半が λ 優位あるいは共優位で、κ 優位はごく一部。ただし κ 優位が続いた症例でも、血液学的な精査でモノクローナル・ガンモパチーは認めなかった、と報告しています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Now, the most important part. The outcomes.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">予後です。ここは慎重に読む必要があります。まず、予後解析の対象は51例。脱落4例、追跡12か月未満6例、そして悪性腫瘍7例を除いた集団です。この「悪性腫瘍を除いた」というのが後で効いてきます。追跡期間の中央値は48か月、およそ4年です。この51例では、96.1%、49例が寛解に到達しました。完全寛解が78.4%、部分寛解が17.6%、寛解に至らなかったのはわずか2例。自然寛解、つまり免疫抑制薬なしでの寛解が33.3%、17例もいました。部分寛解までの期間の中央値は4か月、完全寛解までが10か月と、比較的速い。再発は9.8%でした。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">So without cancer, the outlook was good.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうです。悪性腫瘍がなければ、腎予後はかなり良好、という結果です。腎機能悪化は7.8%、4例のみで、その全員が生検の時点ですでにクレアチニンが高かった。死亡は1例だけで、72歳の患者さんが5年後に心血管イベントで亡くなったケースでした。若年ほど自然寛解が多い傾向（41.7%対13.3%）も見えましたが、これは P値が0.0597で、有意には届いていません。症例数が少ないための検出力不足かもしれない、と著者も慎重に述べています。Kaplan-Meier では、寛解率は性別・年齢・沈着パターンのいずれでも有意差なしでした。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">But the cancer group was very different.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここが臨床的に最も重いメッセージです。悪性腫瘍を合併した7例の予後は、まったく異なりました。7例中4例、57.1%が、膜性腎症の診断から1年以内に亡くなっています。しかも全員が肺癌の進行によるものでした。つまりこのサブグループの予後を決めているのは、腎臓の病気そのものではなく、背景の癌なんですね。腎臓が良くなるかどうかより先に、癌でお亡くなりになってしまう。この対比——癌がなければ96%が寛解、癌があれば半数以上が1年以内に死亡——が、この論文の一番のインパクトだと思います。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Let&#x27;s be careful, though. There are important limitations.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうですね。深掘り回なので、限界にもきちんと時間を割きます。著者自身が挙げているものだけでも複数あります。第一に、約20年にわたる後ろ向き研究なので、悪性腫瘍のスクリーニングの方法が時代で標準化されていない。古い時代の症例では癌が拾いきれていない可能性があります。第二に、後ろ向きゆえに、市販薬やサプリメントの曝露歴が十分に記録されていないかもしれない。実際、他国のコホートでは水銀含有の美白クリームや α-リポ酸との関連が報告されていますが、この集団では確認されていません。ただ、それが「本当に無かった」のか「記録が無かった」のかは区別できません。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">第三に、これは私が最も重要だと思う限界です。予後解析から、悪性腫瘍例・追跡不十分例・脱落例を除いています。予後の悪い人ほど解析から抜けやすいので、選択バイアスと生存者バイアスがかかっている。だから「96%が寛解」という数字は、NELL-1 関連膜性腎症の全体像ではなく、あくまで「経過を追えた、比較的良好な集団」の数字だと理解すべきです。第四に、治療が標準化されておらず、主治医の裁量でバラバラだったこと。第五に、びまん性・分節性の75%というカットオフは探索的なもので、正式には検証されていない。実際、50%という別の閾値では有意差が再現しなかった、と正直に書いています。そして全例が漢民族という単一の民族集団なので、一般化には注意が要ります。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">So what does this mean for clinical practice?</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">臨床的な意義をまとめます。ただし、これは観察研究であって、因果関係を証明するものでも、ガイドラインを変えるものでもない、という前提を強調しておきます。それでも実務的に持ち帰れるメッセージは、私は2つあると思います。1つ目、そして最も重要なのは、NELL-1 関連膜性腎症、とりわけ高齢の男性では、診断時にきちんと悪性腫瘍のスクリーニングをしましょう、ということ。癌があるかどうかで予後がまったく変わり、癌の制御が腎臓の運命を左右するからです。2つ目は、NELL-1 の沈着がびまん性の症例は蛋白尿が重く、より重症の表現型かもしれない——ただしこれは探索的な所見で、治療方針を変える根拠にはまだ弱い、ということです。逆に、癌がなければ自然寛解も含めて予後は良好なので、いきなり強い免疫抑制に踏み込む前に、支持療法で経過を見る余地がある、という点も示唆的でした。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Before we close, a couple of English phrases.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">はい、英語学習の Tips を少しだけ。今日の本文から2つ拾います。1つ目は「consecutive cases」。これは「連続症例」という意味で、研究方法でよく出てくる表現です。「都合のいい症例だけを選んでいませんよ、期間内の該当例を漏れなく入れましたよ」というニュアンスで、選択バイアスを避けたことを示す、いわば信頼性のキーワードです。論文の Methods を読むとき、この一語があるかどうかを意識すると質が見えてきます。2つ目は「underscore」。動詞で「〜を強調する、際立たせる」という意味です。本文では &quot;underscoring the importance of malignancy screening&quot;、つまり「悪性腫瘍スクリーニングの重要性を際立たせる」という形で使われていました。emphasize や highlight の言い換えとして、考察でとても便利な動詞です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">That&#x27;s a great one. Underscore. To emphasize.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">では今日のまとめです。NELL-1 関連膜性腎症は、PLA2R に次ぐ2番目に多い抗原型で、若い女性と高齢男性という2つの顔を持つ。癌がなければ予後は良好ですが、高齢男性では悪性腫瘍、特に肺癌が背景に潜み、その場合の予後は厳しい。だからこそ診断時の悪性腫瘍スクリーニングが鍵になる——単一施設・単一民族・後ろ向きという限界を踏まえつつ、そう読める1本でした。今日も最後までお聴きいただき、ありがとうございました。次回の Deep Read でまたお会いしましょう。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Thank you for listening. See you next time.</div></div>
+<section class="script"><h2 class="section-heading">Script</h2><div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">みなさん、こんにちは。Weekly Nephrology へようこそ。今日は2026年7月7日、この「深掘り（Deep Read）」シリーズの記念すべき第1回です。まず本番組の全体像を簡単にご紹介します。本番組には3つのシリーズがあります。月曜配信の Weekly Summary は、今週の腎臓内科の臨床研究をだいたい5本、抄録ベースでコンパクトに紹介する回。木曜配信のこの Deep Read は、オープンアクセス論文を1本だけ選んで、full text、つまり本文の Methods や Results まで踏み込んで、じっくり深読みする回。そして土曜配信の Case Reports は、教育的な症例報告を扱う回です。今日はそのうちの Deep Read、20分ほどかけて論文を1本、深く読んでいきます。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Hello, and welcome. Today we read one paper in depth.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">はい。今日の論文の選び方も少しだけお話しします。この深掘り版は、週ごとに「当番誌」がローテーションで決まる仕組みなのですが、今週は当番誌の最新号から本文の取れる臨床研究が拾えなかったため、完全オープンアクセスの Kidney International Reports にフォールバックしました。その最新号から Original Article を候補化して、PMC本文が取れた5本の中から、今日の1本を選んでいます。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Before the paper, a little recent news.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうですね。本題に入る前に、直近の腎臓内科まわりの話題を短く2つだけ。1つ目は、6月にグラスゴーで開かれたヨーロッパ腎臓学会（ERA）で報告された TURING 試験です。報じられた範囲では、微小変化型ネフローゼ症候群（MCD）と巣状分節性糸球体硬化症（FSGS）の成人で、リツキシマブが再発リスクの低減と関連していた、という late-breaking のデータでした。糸球体疾患の再発予防にリツキシマブという流れは、今日の膜性腎症の話ともつながってきます。2つ目は、2026年の世界腎臓学会議（WCN 2026）に、第69回日本腎臓学会とアジア太平洋腎臓学会の年次総会が包含される形で開催された、という国際的な動きです。学会シーズンらしい話題ですね。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">さて、今日深く読む1本はこちらです。Kidney International Reports に載った、「NELL-1 関連膜性腎症の臨床病理学的研究——中国人コホート」。膜性腎症、つまり糸球体疾患は本番組の関心テーマのど真ん中ですし、抗原で分類する膜性腎症は、いま診断と管理が大きく変わりつつあるホットな領域です。NELL-1 という比較的新しい抗原にフォーカスして、しかも68例という、この希少なサブタイプとしてはかなり大きめのコホートで、長期予後まで見ている。臨床に直結する話が多そうだ、ということで今日はこの1本を選びました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">So, let&#x27;s start with the background. What is NELL-1?</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">いい問いですね。まず膜性腎症のおさらいから。膜性腎症は、糸球体基底膜の上皮側に免疫複合体が沈着して、ネフローゼ症候群を起こす代表的な糸球体疾患です。長らく「一次性」「二次性」という分け方をしてきましたが、2009年に PLA2R、いわゆるホスホリパーゼA2受容体が標的抗原として見つかってから、膜性腎症は「抗原で定義する病気」へと大きく舵を切りました。PLA2R がおよそ7割、THSD7A が数パーセントを占め、その後、20を超える標的抗原が次々と報告されています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">NELL-1 is one of these antigens. It is the second most common.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうなんです。NELL-1、正式には neural epidermal growth factor-like 1 は、本文の考察によれば2019年に2つの研究グループが独立に膜性腎症の標的抗原として同定したものです。そして PLA2R に次いで2番目に多い抗原と位置づけられています。臨床的に何が重要かというと、NELL-1 は「悪性腫瘍」との関連がしばしば報告されてきた、という点です。ただ、この論文が問題にしているのは、NELL-1 関連膜性腎症の臨床像や病理像、そして長期予後が、まだよく分かっていない、というギャップです。特にアジア人集団のまとまったデータが乏しかった。そこを埋めようとしたのがこの研究です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Good. Now the methods. This is the heart of today&#x27;s episode.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">はい、深掘り回なので、方法にはしっかり時間をかけます。まず研究デザインですが、これは「後ろ向きの単施設診断コホート」です。上海の瑞金（ルイジン）病院で、2006年1月から2025年7月までの約20年間に腎生検で膜性腎症と診断された連続症例、全部で3216例をベースにしています。ここで一つポイントなのが、著者は「単施設」と言いつつ、患者さんは複数の病院から紹介されてきていて、生検標本の判定だけを自分たちの施設で一元的に行った、と断っている点です。だから地域は上海に限られず、でも病理診断の一貫性は担保されている、という構図ですね。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">They did not stain every case. Only some cases were stained for NELL-1.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ここ、とても大事なところです。3216例すべてに NELL-1 染色をかけたわけではありません。まず PLA2R と THSD7A の両方が陰性だった症例、これが556例。この「ダブルネガティブ」の膜性腎症に対してのみ NELL-1 免疫染色を行いました。加えて、比較のために PLA2R 陽性を47例、THSD7A 陽性を9例にも NELL-1 染色をしています。結果として、この陽性例では NELL-1 との二重陽性は1例もなかった。つまり NELL-1 は PLA2R や THSD7A とは基本的に排他的に出る抗原だ、という所見です。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">曝露の定義、というか分類の定義もいくつか押さえておきましょう。二次性の悪性腫瘍関連は、「膜性腎症の診断の前後6か月以内に悪性腫瘍が診断されたもの」と定義しています。予後解析からは、この悪性腫瘍例は除外しています。寛解の定義は KDIGO ガイドラインに準拠していて、完全寛解（CR）は蛋白尿0.3 g/日未満かつ腎機能悪化なし、部分寛解（PR）は蛋白尿0.3〜3.5 g/日でベースラインから50%超の減少かつ腎機能安定、としています。そして重要なのが「自然寛解（SR）」の定義で、ステロイドや免疫抑制薬を使わずに CR か PR に到達したもの、とされています。ACE 阻害薬や ARB、SGLT2 阻害薬は「標準的な支持療法」とみなして、免疫抑制療法にはカウントしていません。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">They also created a new grouping. Diffuse versus segmental deposition.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">これがこの論文のオリジナルな工夫です。NELL-1 の沈着パターンを「びまん性（diffuse）」と「分節性（segmental）」に分けました。定義は半定量的で、糸球体の75%超が、しかもその糸球体の毛細血管ループ面積の75%超で NELL-1 陽性、という条件を満たすものを「びまん性」、それ以外を「分節性」としています。判定は2人の腎病理医が盲検で独立に評価して、食い違ったらすり合わせて合意、という手順です。ただ、著者自身も認めているように、免疫染色の沈着範囲を「びまん性か分節性か」で分ける標準的な基準は存在しません。ループス腎炎や半月体形成性腎炎の考え方を応用して、探索的に作った区分だ、という点は覚えておいてください。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">What about the endpoints and the statistics?</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">エンドポイントは、主に寛解（CR / PR / 自然寛解）、再発、そして腎機能悪化です。腎機能悪化は「血清クレアチニンがベースラインから50%以上上昇」と定義しています。追跡は診療録と電話で行い、6か月以上フォローが途切れたものを脱落、12か月未満を追跡不十分として、予後解析からは外しています。統計はかなりシンプルで、群間比較は t 検定、Mann-Whitney、カイ二乗、Fisher の正確検定など、寛解までの時間は Kaplan-Meier 法と log-rank 検定です。ここで方法論的に一つ指摘しておくと、これは記述的・探索的な解析で、多変量で交絡を調整した回帰分析は行っていません。欠測は補完せず「complete-case analysis」、つまり揃っているデータだけで解析しています。ハザード比やオッズ比といった調整済みの効果指標は報告されていない、という点は結果を読むうえで大事です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Now the results. Let&#x27;s start with how common NELL-1 was.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">では結果です。まず頻度から。ダブルネガティブの膜性腎症556例のうち、NELL-1 陽性は68例。全膜性腎症の中では2.1%、ダブルネガティブの中では12.2%でした。この12.2%という数字は、本文の考察で他コホートと比べられていて、米国の Sethi らの16%、Caza らの3.8%、ヨーロッパの5%台、一方で別の中国コホートの34.9%、日本コホートの23.2%と、かなりばらつきがあります。人種や検出法の違いが背景にあるだろう、と著者は述べています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The age and sex pattern was very interesting.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ここが今日の一番面白いところかもしれません。全体の年齢中央値は46歳、範囲は18歳から81歳。そして女性優位で、男女比はおよそ0.7対1でした。ところが、男女で年齢がまるで違うんです。男性の年齢中央値は66歳、女性は39.5歳。つまり「若い女性」と「高齢の男性」という2つの山がある。そして二次性の内訳を見ると、悪性腫瘍は7例、全体の10.3%で、その全員が60歳以上の男性でした。内訳は肺癌6例、消化管の癌1例。逆に、自己免疫疾患を背景に持つ3例——ループス腎炎、抗リン脂質抗体症候群、強直性脊椎炎——は、全員が60歳未満の女性でした。年齢と性別で背景疾患の顔つきがきれいに分かれる、というわけです。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">So the older patients looked sicker.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">その通りです。60歳未満と60歳以上で分けると、臨床像がはっきり違いました。高齢群のほうが血清クレアチニンが高く（0.89 対 0.64 mg/dL）、eGFR が低く（74.6 対 112.4）、蛋白尿が多く（7.4 対 4.6 g/日）、そして血清アルブミンが低い（22.9 対 27.3 g/L）。いずれも統計学的に有意でした。高血圧や貧血、抗核抗体陽性も高齢群で多かった。ただし興味深いことに、年齢で補正した予想値を超える全体的な糸球体硬化の割合は、両群でほとんど差がありませんでした（23.1%対23.8%）。つまり慢性化の度合いそのものは似ていて、高齢群の腎機能の悪さは、必ずしも硬化の進行だけでは説明しきれない、という含みがあります。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Next, the deposition pattern. Diffuse versus segmental.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">沈着パターンの比較も見ましょう。びまん性が28例、分節性が40例でした。びまん性群のほうが、蛋白尿が多く（6.3 対 4.5 g/日、P=0.012）、アルブミンが低い（22.7 対 27.7 g/L、P=0.006）。さらに電子顕微鏡でメサンギウムの高電子密度沈着物が、びまん性群で31.8%、分節性群で6.9%と、びまん性群で有意に多かった（P=0.029）。一方で、糸球体硬化やメサンギウム増殖、膜性腎症のステージといった他の病理指標では、両群に有意差はありませんでした。年齢・性別・クレアチニンにも差はなく、二次性かどうかも沈着パターンでは区別できませんでした。著者は、NELL-1 沈着が広いほど蛋白尿が重くアルブミンが低い、つまり抗原沈着の量がポドサイト障害の強さと直接関係するのではないか、と考察しています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">And the immunostaining. IgG subclass.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">IgG のサブクラスも押さえておきましょう。染色できた33例では、IgG1 が100%で陽性、IgG4 が63.6%で陽性でした。IgG4 優位が30.3%。古典的な一次性膜性腎症は IgG4 優位が典型ですが、NELL-1 では IgG1 が普遍的に出ている、という点が特徴的です。それから軽鎖については、大半が λ 優位あるいは共優位で、κ 優位はごく一部。ただし κ 優位が続いた症例でも、血液学的な精査でモノクローナル・ガンモパチーは認めなかった、と報告しています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Now, the most important part. The outcomes.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">予後です。ここは慎重に読む必要があります。まず、予後解析の対象は51例。脱落4例、追跡12か月未満6例、そして悪性腫瘍7例を除いた集団です。この「悪性腫瘍を除いた」というのが後で効いてきます。追跡期間の中央値は48か月、およそ4年です。この51例では、96.1%、49例が寛解に到達しました。完全寛解が78.4%、部分寛解が17.6%、寛解に至らなかったのはわずか2例。自然寛解、つまり免疫抑制薬なしでの寛解が33.3%、17例もいました。部分寛解までの期間の中央値は4か月、完全寛解までが10か月と、比較的速い。再発は9.8%でした。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">So without cancer, the outlook was good.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうです。悪性腫瘍がなければ、腎予後はかなり良好、という結果です。腎機能悪化は7.8%、4例のみで、その全員が生検の時点ですでにクレアチニンが高かった。死亡は1例だけで、72歳の患者さんが5年後に心血管イベントで亡くなったケースでした。若年ほど自然寛解が多い傾向（41.7%対13.3%）も見えましたが、これは P値が0.0597で、有意には届いていません。症例数が少ないための検出力不足かもしれない、と著者も慎重に述べています。Kaplan-Meier では、寛解率は性別・年齢・沈着パターンのいずれでも有意差なしでした。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">But the cancer group was very different.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ここが臨床的に最も重いメッセージです。悪性腫瘍を合併した7例の予後は、まったく異なりました。7例中4例、57.1%が、膜性腎症の診断から1年以内に亡くなっています。しかも全員が肺癌の進行によるものでした。つまりこのサブグループの予後を決めているのは、腎臓の病気そのものではなく、背景の癌なんですね。腎臓が良くなるかどうかより先に、癌でお亡くなりになってしまう。この対比——癌がなければ96%が寛解、癌があれば半数以上が1年以内に死亡——が、この論文の一番のインパクトだと思います。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Let&#x27;s be careful, though. There are important limitations.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうですね。深掘り回なので、限界にもきちんと時間を割きます。著者自身が挙げているものだけでも複数あります。第一に、約20年にわたる後ろ向き研究なので、悪性腫瘍のスクリーニングの方法が時代で標準化されていない。古い時代の症例では癌が拾いきれていない可能性があります。第二に、後ろ向きゆえに、市販薬やサプリメントの曝露歴が十分に記録されていないかもしれない。実際、他国のコホートでは水銀含有の美白クリームや α-リポ酸との関連が報告されていますが、この集団では確認されていません。ただ、それが「本当に無かった」のか「記録が無かった」のかは区別できません。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">第三に、これは私が最も重要だと思う限界です。予後解析から、悪性腫瘍例・追跡不十分例・脱落例を除いています。予後の悪い人ほど解析から抜けやすいので、選択バイアスと生存者バイアスがかかっている。だから「96%が寛解」という数字は、NELL-1 関連膜性腎症の全体像ではなく、あくまで「経過を追えた、比較的良好な集団」の数字だと理解すべきです。第四に、治療が標準化されておらず、主治医の裁量でバラバラだったこと。第五に、びまん性・分節性の75%というカットオフは探索的なもので、正式には検証されていない。実際、50%という別の閾値では有意差が再現しなかった、と正直に書いています。そして全例が漢民族という単一の民族集団なので、一般化には注意が要ります。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">So what does this mean for clinical practice?</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">臨床的な意義をまとめます。ただし、これは観察研究であって、因果関係を証明するものでも、ガイドラインを変えるものでもない、という前提を強調しておきます。それでも実務的に持ち帰れるメッセージは、私は2つあると思います。1つ目、そして最も重要なのは、NELL-1 関連膜性腎症、とりわけ高齢の男性では、診断時にきちんと悪性腫瘍のスクリーニングをしましょう、ということ。癌があるかどうかで予後がまったく変わり、癌の制御が腎臓の運命を左右するからです。2つ目は、NELL-1 の沈着がびまん性の症例は蛋白尿が重く、より重症の表現型かもしれない——ただしこれは探索的な所見で、治療方針を変える根拠にはまだ弱い、ということです。逆に、癌がなければ自然寛解も含めて予後は良好なので、いきなり強い免疫抑制に踏み込む前に、支持療法で経過を見る余地がある、という点も示唆的でした。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Before we close, a couple of English phrases.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">はい、英語学習の Tips を少しだけ。今日の本文から2つ拾います。1つ目は「consecutive cases」。これは「連続症例」という意味で、研究方法でよく出てくる表現です。「都合のいい症例だけを選んでいませんよ、期間内の該当例を漏れなく入れましたよ」というニュアンスで、選択バイアスを避けたことを示す、いわば信頼性のキーワードです。論文の Methods を読むとき、この一語があるかどうかを意識すると質が見えてきます。2つ目は「underscore」。動詞で「〜を強調する、際立たせる」という意味です。本文では &quot;underscoring the importance of malignancy screening&quot;、つまり「悪性腫瘍スクリーニングの重要性を際立たせる」という形で使われていました。emphasize や highlight の言い換えとして、考察でとても便利な動詞です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">That&#x27;s a great one. Underscore. To emphasize.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">では今日のまとめです。NELL-1 関連膜性腎症は、PLA2R に次ぐ2番目に多い抗原型で、若い女性と高齢男性という2つの顔を持つ。癌がなければ予後は良好ですが、高齢男性では悪性腫瘍、特に肺癌が背景に潜み、その場合の予後は厳しい。だからこそ診断時の悪性腫瘍スクリーニングが鍵になる——単一施設・単一民族・後ろ向きという限界を踏まえつつ、そう読める1本でした。今日も最後までお聴きいただき、ありがとうございました。次回の Deep Read でまたお会いしましょう。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Thank you for listening. See you next time.</div></div></section>
 </div></main>
 <footer><div class="wrap">
-  抄録ベースの自動生成です。医学的最終判断は各自で行ってください。<br/>
-  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
 </div></footer>
 </body>
 </html>

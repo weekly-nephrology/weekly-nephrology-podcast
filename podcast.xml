@@ -3,9 +3,10 @@
   <channel>
     <title>Weekly Nephrology AI</title>
     <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link>
-    <description>腎臓内科分野の最新論文をAIエージェントが日本語と英語のバイリンガル会話で紹介します。</description>
-    <language>ja</language>
-    <lastBuildDate>Wed, 15 Jul 2026 22:18:46 +0000</lastBuildDate>
+    <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
+    <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Jul 2026 02:53:21 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
@@ -14,14 +15,11 @@
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-07-16</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-16.html</link>
-      <description>【Deep Read】CKD女性の妊娠予後を個別に予測するモデルの開発と外部検証（PREDICT）
-腎アウトカム（産後の腎機能低下・KRT）／新生児アウトカム（早産・SGA）の2モデル
-TRIPOD準拠の予測モデル研究、英国開発コホート＋カナダ・英国の外部検証
-Kidney International Reports 2026年9月／King's College London
+      <description>[Deep Read] CKD
 
-▼ 原稿スクリプト（英語表現の確認に）:
+Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-16.html</description>
-      <content:encoded><![CDATA[<p>【Deep Read】CKD女性の妊娠予後を個別に予測するモデルの開発と外部検証（PREDICT）</p><p>腎アウトカム（産後の腎機能低下・KRT）／新生児アウトカム（早産・SGA）の2モデル</p><p>TRIPOD準拠の予測モデル研究、英国開発コホート＋カナダ・英国の外部検証</p><p>Kidney International Reports 2026年9月／King's College London</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-16.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[Deep Read] CKD</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-16.html">Read the transcript</a></p>]]></content:encoded>
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-16.mp3" length="8046336" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-16.mp3</guid>
       <pubDate>Thu, 16 Jul 2026 07:00:00 +0900</pubDate>
@@ -30,14 +28,13 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
     <item>
       <title>Weekly Nephrology AI — Weekly Summary 2026-07-13</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-13.html</link>
-      <description>【Weekly Summary】2026年7月13日配信。今回は最新の腎臓内科論文5本を抄録ベースで紹介します。
-早期腎臓内科コンサルトによるAKI予防の単施設RCT、膜性腎症の標的抗原診断パスウェイの最適化。
-小児IgA腎症の蛋白尿寛解と長期腎予後の観察研究、ループス腎炎のEULAR質指標の開発・検証。
-2型糖尿病の高カリウム血症に対するSZC対カリウム制限食の非劣性RCT（SILVERSTAR）。
+      <description>[Weekly Summary] Proteinuria remission and long-term kidney o
+AKI / Optimization of a Target Antigen Diagnostic
+Lupus nephritis evidence review / Hyperkalemia
 
-▼ 原稿スクリプト（英語表現の確認に）:
+Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-13.html</description>
-      <content:encoded><![CDATA[<p>【Weekly Summary】2026年7月13日配信。今回は最新の腎臓内科論文5本を抄録ベースで紹介します。</p><p>早期腎臓内科コンサルトによるAKI予防の単施設RCT、膜性腎症の標的抗原診断パスウェイの最適化。</p><p>小児IgA腎症の蛋白尿寛解と長期腎予後の観察研究、ループス腎炎のEULAR質指標の開発・検証。</p><p>2型糖尿病の高カリウム血症に対するSZC対カリウム制限食の非劣性RCT（SILVERSTAR）。</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-13.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[Weekly Summary] Proteinuria remission and long-term kidney o</p><p>AKI / Optimization of a Target Antigen Diagnostic</p><p>Lupus nephritis evidence review / Hyperkalemia</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-13.html">Read the transcript</a></p>]]></content:encoded>
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-13.mp3" length="7406400" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-13.mp3</guid>
       <pubDate>Mon, 13 Jul 2026 07:00:00 +0900</pubDate>
@@ -46,14 +43,13 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-07-11</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-11.html</link>
-      <description>【Case Reports】診断が食い違う・紛らわしい腎症例を抄録3本＋深読み1本で
-深読み: seronegative（非典型）抗GBM病、劇症で透析依存に至った一例
-抄録: Fabry病＋iMCD＋膜性腎症／IPEXの膜性＋IgA腎症
-抄録: ランタン製剤が金属異物に見えたESRDのnear-miss
+      <description>[Case Reports] A Rare Case of Fabry Disease Combined With I
+X-Linked immune dysregulation, polyendocrino / A near-miss: case of pseudo-foreign body in
+When Atypical Becomes Typical: A Fulminant S
 
-▼ 原稿スクリプト（英語表現の確認に）:
+Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-11.html</description>
-      <content:encoded><![CDATA[<p>【Case Reports】診断が食い違う・紛らわしい腎症例を抄録3本＋深読み1本で</p><p>深読み: seronegative（非典型）抗GBM病、劇症で透析依存に至った一例</p><p>抄録: Fabry病＋iMCD＋膜性腎症／IPEXの膜性＋IgA腎症</p><p>抄録: ランタン製剤が金属異物に見えたESRDのnear-miss</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-11.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[Case Reports] A Rare Case of Fabry Disease Combined With I</p><p>X-Linked immune dysregulation, polyendocrino / A near-miss: case of pseudo-foreign body in</p><p>When Atypical Becomes Typical: A Fulminant S</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-11.html">Read the transcript</a></p>]]></content:encoded>
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-11.mp3" length="7113408" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-11.mp3</guid>
       <pubDate>Sat, 11 Jul 2026 07:00:00 +0900</pubDate>
@@ -62,13 +58,13 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
     <item>
       <title>Weekly Nephrology AI — Weekly Summary 2026-07-10</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-10.html</link>
-      <description>【Weekly Summary】腎移植後FSGS再発予防のメタ解析／治療抵抗性高血圧に対するロルンドロスタットのメタ解析
-ループス腎炎のEULAR systematic review／高齢CKDに対するSGLT2阻害薬のメタ解析
-小児IgA血管炎性腎炎（IgAVN）に合併するAKI・AKD
+      <description>[Weekly Summary] Kidney transplantation
+Lorundrostat for resistant hypertension / Lupus nephritis evidence review
+SGLT2 inhibitors in older adults with CKD / AKI and AKD in pediatric IgA vasculitis nephritis
 
-▼ 原稿スクリプト（英語表現の確認に）:
+Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-10.html</description>
-      <content:encoded><![CDATA[<p>【Weekly Summary】腎移植後FSGS再発予防のメタ解析／治療抵抗性高血圧に対するロルンドロスタットのメタ解析</p><p>ループス腎炎のEULAR systematic review／高齢CKDに対するSGLT2阻害薬のメタ解析</p><p>小児IgA血管炎性腎炎（IgAVN）に合併するAKI・AKD</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-10.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[Weekly Summary] Kidney transplantation</p><p>Lorundrostat for resistant hypertension / Lupus nephritis evidence review</p><p>SGLT2 inhibitors in older adults with CKD / AKI and AKD in pediatric IgA vasculitis nephritis</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-10.html">Read the transcript</a></p>]]></content:encoded>
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-10.mp3" length="10012608" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-10.mp3</guid>
       <pubDate>Fri, 10 Jul 2026 07:00:00 +0900</pubDate>
@@ -77,13 +73,11 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-07-09</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-09.html</link>
-      <description>【Deep Read】糖尿病性腎臓病における糸球体内皮細胞のMEF2Cネットワーク
-単核RNA・ATACと空間トランスクリプトミクスをfull textで検討
-蛋白尿・メサンギウム硬化との関連とSGLT2阻害薬治療後の変化
+      <description>[Deep Read] A MEF2C transcription factor network regulat
 
-▼ 原稿スクリプト（英語表現の確認に）:
+Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-09.html</description>
-      <content:encoded><![CDATA[<p>【Deep Read】糖尿病性腎臓病における糸球体内皮細胞のMEF2Cネットワーク</p><p>単核RNA・ATACと空間トランスクリプトミクスをfull textで検討</p><p>蛋白尿・メサンギウム硬化との関連とSGLT2阻害薬治療後の変化</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-09.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[Deep Read] A MEF2C transcription factor network regulat</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-09.html">Read the transcript</a></p>]]></content:encoded>
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-09.mp3" length="7364736" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-09.mp3</guid>
       <pubDate>Thu, 09 Jul 2026 07:00:00 +0900</pubDate>
@@ -92,13 +86,11 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-07-07</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html</link>
-      <description>【Deep Read】NELL-1関連膜性腎症の臨床病理
-中国人単施設コホート68例をfull textで検討
-年齢・性別・悪性腫瘍合併と予後の特徴
+      <description>[Deep Read] A Clinicopathologic Study of Neural Epiderma
 
-▼ 原稿スクリプト（英語表現の確認に）:
+Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html</description>
-      <content:encoded><![CDATA[<p>【Deep Read】NELL-1関連膜性腎症の臨床病理</p><p>中国人単施設コホート68例をfull textで検討</p><p>年齢・性別・悪性腫瘍合併と予後の特徴</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[Deep Read] A Clinicopathologic Study of Neural Epiderma</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-07.html">Read the transcript</a></p>]]></content:encoded>
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3" length="10377984" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3</guid>
       <pubDate>Tue, 07 Jul 2026 07:00:00 +0900</pubDate>
@@ -107,13 +99,13 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-07-07</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-07.html</link>
-      <description>【Case Reports】抗GBM抗体・MPO-ANCA二重陽性の半月体形成性糸球体腎炎を深読み
-PFAPA症候群＋IgA腎症／血清陰性抗GBM病
-形質細胞異常症を背景としたHTRA1膜性腎症
+      <description>[Case Reports] Kidney Biopsy of a Patient With Double Posit
+Early Tonsillectomy for Dual Remission of Pe / When Atypical Becomes Typical: A Fulminant S
+Serine Protease HTRA1 Membranous Nephropathy
 
-▼ 原稿スクリプト（英語表現の確認に）:
+Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-07.html</description>
-      <content:encoded><![CDATA[<p>【Case Reports】抗GBM抗体・MPO-ANCA二重陽性の半月体形成性糸球体腎炎を深読み</p><p>PFAPA症候群＋IgA腎症／血清陰性抗GBM病</p><p>形質細胞異常症を背景としたHTRA1膜性腎症</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-07.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[Case Reports] Kidney Biopsy of a Patient With Double Posit</p><p>Early Tonsillectomy for Dual Remission of Pe / When Atypical Becomes Typical: A Fulminant S</p><p>Serine Protease HTRA1 Membranous Nephropathy</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-07.html">Read the transcript</a></p>]]></content:encoded>
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-07.mp3" length="11388864" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-07.mp3</guid>
       <pubDate>Tue, 07 Jul 2026 07:00:00 +0900</pubDate>
@@ -122,13 +114,13 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
     <item>
       <title>Weekly Nephrology AI — Weekly Summary 2026-07-06</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html</link>
-      <description>【Weekly Summary】小児IgAVNの尿中sCD163／学校検尿で見つかった小児ANCA関連腎炎
-CKD・透析・移植領域の研究優先課題／CKD進行評価の多パラメトリック腎MRI
-小児C3腎症・免疫複合体性MPGNの自然経過
+      <description>[Weekly Summary] IgA vasculitis nephritis
+Pediatric case of anti-neutrophil cytoplasmi / CKD
+Natural History of C3 Glomerulopathy and Imm
 
-▼ 原稿スクリプト（英語表現の確認に）:
+Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html</description>
-      <content:encoded><![CDATA[<p>【Weekly Summary】小児IgAVNの尿中sCD163／学校検尿で見つかった小児ANCA関連腎炎</p><p>CKD・透析・移植領域の研究優先課題／CKD進行評価の多パラメトリック腎MRI</p><p>小児C3腎症・免疫複合体性MPGNの自然経過</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[Weekly Summary] IgA vasculitis nephritis</p><p>Pediatric case of anti-neutrophil cytoplasmi / CKD</p><p>Natural History of C3 Glomerulopathy and Imm</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html">Read the transcript</a></p>]]></content:encoded>
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3" length="5545344" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3</guid>
       <pubDate>Mon, 06 Jul 2026 07:00:00 +0900</pubDate>
@@ -137,13 +129,13 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
     <item>
       <title>Weekly Nephrology AI — Weekly Summary 2026-07-05</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html</link>
-      <description>【Weekly Summary】免疫介在性糸球体腎炎に対する生物学的製剤／感染関連IgA血管炎
-高浸透圧高血糖状態（HHS）のメタ解析／PGNMIDに対するBCD療法 vs リツキシマブのpilot RCT
-自己免疫性糸球体疾患における抗リツキシマブ抗体
+      <description>[Weekly Summary] Glomerulonephritis
+From the Hip to the Kidney: Suspected Infect / Hyperosmolar hyperglycaemic state: a systema
+Bortezomib-Cyclophosphamide-Dexamethasone ve
 
-▼ 原稿スクリプト（英語表現の確認に）:
+Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html</description>
-      <content:encoded><![CDATA[<p>【Weekly Summary】免疫介在性糸球体腎炎に対する生物学的製剤／感染関連IgA血管炎</p><p>高浸透圧高血糖状態（HHS）のメタ解析／PGNMIDに対するBCD療法 vs リツキシマブのpilot RCT</p><p>自己免疫性糸球体疾患における抗リツキシマブ抗体</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html">▶ 原稿スクリプトを読む</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[Weekly Summary] Glomerulonephritis</p><p>From the Hip to the Kidney: Suspected Infect / Hyperosmolar hyperglycaemic state: a systema</p><p>Bortezomib-Cyclophosphamide-Dexamethasone ve</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html">Read the transcript</a></p>]]></content:encoded>
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3" length="7141485" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3</guid>
       <pubDate>Sun, 05 Jul 2026 07:00:00 +0900</pubDate>

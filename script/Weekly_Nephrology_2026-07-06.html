@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex"/>
+<meta name="description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-06."/>
 <meta name="theme-color" content="#33452f"/>
-<title>Weekly Nephrology AI 2026-07-06 — 原稿スクリプト</title>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-07-06 — Transcript"/>
+<meta property="og:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-06."/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-06.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-06 — Transcript"/>
+<meta name="twitter:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-06."/>
+<title>Weekly Nephrology AI 2026-07-06 — Transcript</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
 <style>
   :root {
     --accent:#4a6048; --accent-deep:#33452f;
@@ -21,7 +36,7 @@
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:"Avenir Next","Hiragino Sans","Noto Sans JP",-apple-system,
+    font-family:"Avenir Next",-apple-system,
       system-ui,sans-serif;
     line-height:1.85; font-size:15.5px;
     -webkit-font-smoothing:antialiased; }
@@ -36,9 +51,9 @@
     background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
     padding:4px 12px; border-radius:999px; margin-bottom:14px;
     backdrop-filter:blur(4px); }
-  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:650;
+  h1 { margin:0 0 4px; font-size:1.6rem; font-weight:400;
     letter-spacing:.005em;
-    font-family:Georgia,"Times New Roman","Hiragino Mincho ProN",
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
   .sub { opacity:.78; font-size:.88rem; }
   audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
@@ -51,13 +66,32 @@
 
   main { padding:30px 0 60px; }
 
-  .papers { background:var(--card); border:1px solid var(--line);
-    border-radius:16px; padding:22px 24px 16px;
-    box-shadow:0 8px 28px -18px rgba(0,0,0,.25); margin-bottom:34px; }
-  .papers h2 { margin:0 0 2px; font-size:1.02rem; letter-spacing:.02em;
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
     display:flex; align-items:center; gap:8px; }
-  .papers h2::before { content:""; width:9px; height:9px; border-radius:3px;
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
     background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
   .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
   .plist { list-style:none; margin:0; padding:0; }
   .plist li { display:flex; gap:13px; padding:12px 0;
@@ -74,6 +108,29 @@
     overflow-wrap:anywhere; }
   .pmeta a { color:var(--accent); text-decoration:none; }
   .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
 
   .turn { margin:18px 0; max-width:88%; }
   .turn.b { margin-left:auto; }
@@ -98,83 +155,93 @@
 </head>
 <body>
 <header><div class="wrap">
-  <span class="badge">Weekly</span>
+  <span class="badge">Weekly Summary</span>
   <h1>Weekly Nephrology AI</h1>
-  <div class="sub">2026-07-06 配信 · 原稿スクリプト（教育・英語学習用）</div>
+  <div class="sub">2026-07-06 · Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3"></audio>
   <div class="bar">
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3">⬇ MP3</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">RSS を購読</a>
-    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">エピソード一覧</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
   </div>
 </div></header>
 <main><div class="wrap">
-<section class="papers"><h2>取り上げた論文</h2><p class="phint">タイトルまたは DOI をクリックすると論文本文（出版社ページ）に移動します。</p><ol class="plist">
-<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1007/s00467-026-07444-x" target="_blank" rel="noopener">Correlation between urinary soluble CD163 and endocapillary proliferation and fibrinoid necrosis in IgA vasculitis with nephritis</a><div class="pmeta"><span>Pediatr Nephrol (2026)</span> · <a href="https://doi.org/10.1007/s00467-026-07444-x" target="_blank" rel="noopener">DOI: 10.1007/s00467-026-07444-x</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42390809/" target="_blank" rel="noopener">PMID: 42390809</a></div></div></li>
-<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1007/s13730-026-01152-z" target="_blank" rel="noopener">Pediatric case of ANCA-associated glomerulonephritis with immunoglobulin A deposition diagnosed early through school urinary screening</a><div class="pmeta"><span>CEN Case Rep (2026)</span> · <a href="https://doi.org/10.1007/s13730-026-01152-z" target="_blank" rel="noopener">DOI: 10.1007/s13730-026-01152-z</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42371244/" target="_blank" rel="noopener">PMID: 42371244</a></div></div></li>
-<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ekir.2026.106573" target="_blank" rel="noopener">Priorities for Evidence-Based CKD Guidance Using Delphi Methods</a><div class="pmeta"><span>Kidney Int Rep (2026)</span> · <a href="https://doi.org/10.1016/j.ekir.2026.106573" target="_blank" rel="noopener">DOI: 10.1016/j.ekir.2026.106573</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42375702/" target="_blank" rel="noopener">PMID: 42375702</a></div></div></li>
-<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ekir.2026.106594" target="_blank" rel="noopener">Prospective Study of Multiparametric Renal MRI for CKD Progression (AFiRM)</a><div class="pmeta"><span>Kidney Int Rep (2026)</span> · <a href="https://doi.org/10.1016/j.ekir.2026.106594" target="_blank" rel="noopener">DOI: 10.1016/j.ekir.2026.106594</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42375700/" target="_blank" rel="noopener">PMID: 42375700</a></div></div></li>
-</ol></section>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>Not available</b></li>
+<li><span>TTS model</span><b>Gemini 2.5 Flash TTS</b></li>
+<li><span>Speakers</span><b>Speaker A — Host, gender not set voice (Speaker A); Speaker B — Co-host, gender not set voice (Speaker B)</b></li>
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1007/s00467-026-07444-x" target="_blank" rel="noopener">Correlation between urinary soluble CD163 and endocapillary proliferation and fibrinoid necrosis in IgA vasculitis with nephritis</a><div class="pmeta"><span>Pediatr Nephrol (2026 Jul 02)</span> · <a href="https://doi.org/10.1007/s00467-026-07444-x" target="_blank" rel="noopener">DOI: 10.1007/s00467-026-07444-x</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42390809/" target="_blank" rel="noopener">PMID: 42390809</a></div></div></li>
+<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1007/s13730-026-01152-z" target="_blank" rel="noopener">Pediatric case of anti-neutrophil cytoplasmic antibody-associated glomerulonephritis with immunoglobulin a deposition diagnosed early through school urinary screening</a><div class="pmeta"><span>CEN Case Rep (2026 Jun 29)</span> · <a href="https://doi.org/10.1007/s13730-026-01152-z" target="_blank" rel="noopener">DOI: 10.1007/s13730-026-01152-z</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42371244/" target="_blank" rel="noopener">PMID: 42371244</a></div></div></li>
+<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ekir.2026.106573" target="_blank" rel="noopener">Priorities for Evidence-Based CKD Guidance Using Delphi Methods</a><div class="pmeta"><span>Kidney Int Rep (2026 Aug)</span> · <a href="https://doi.org/10.1016/j.ekir.2026.106573" target="_blank" rel="noopener">DOI: 10.1016/j.ekir.2026.106573</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42375702/" target="_blank" rel="noopener">PMID: 42375702</a></div></div></li>
+<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.ekir.2026.106594" target="_blank" rel="noopener">Prospective Study of Multiparametric Renal MRI for CKD Progression (AFiRM)</a><div class="pmeta"><span>Kidney Int Rep (2026 Aug)</span> · <a href="https://doi.org/10.1016/j.ekir.2026.106594" target="_blank" rel="noopener">DOI: 10.1016/j.ekir.2026.106594</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42375700/" target="_blank" rel="noopener">PMID: 42375700</a></div></div></li>
+<li><span class="pnum">5</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.2215/CJN.0000001118" target="_blank" rel="noopener">Natural History of C3 Glomerulopathy and Immune Complex-Associated Membranoproliferative Glomerulonephritis in Children</a><div class="pmeta"><span>Clin J Am Soc Nephrol (2026 Jun 22)</span> · <a href="https://doi.org/10.2215/CJN.0000001118" target="_blank" rel="noopener">DOI: 10.2215/CJN.0000001118</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42329702/" target="_blank" rel="noopener">PMID: 42329702</a></div></div></li>
+</ol></div></details>
 
 
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">みなさん、こんにちは。Weekly Nephrology へようこそ。今週も腎臓内科の注目論文を、日本語と英語のバイリンガルでお届けします。進行役の日本語ホストです。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Hello, and welcome to the show. I am your English co-host. Let&#x27;s learn together today.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">まず最初に、いつもの大切なお断りです。今回ご紹介する論文は、すべて抄録、つまりアブストラクトのみに基づいています。本文は未読で、数値や結論はあくまで抄録の範囲です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">That&#x27;s right. We will not overstate anything. And for observational studies, we will say association, not cause.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">では本題の前に、この2〜3週間の腎臓内科まわりの話題を2分ほどご紹介します。今日の導入は2つです。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">1つ目は学会の話題です。ヨーロッパ腎臓学会、ERA の第63回学会が、2026年6月3日から6日にかけて、イギリスのグラスゴーで開催されました。今年のテーマは「Open your mind, challenge your thinking」、つまり「思考の枠を広げ、常識を問い直そう」というものでした。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The theme asks us to challenge our own thinking. That is a nice message for any clinician.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうですね。9千人規模の大きな学会で、今日ご紹介する糸球体疾患やCKDのテーマも数多く議論されました。ヨーロッパの動向を追ううえで押さえておきたい会です。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">2つ目は、IgA腎症の治療をめぐる動きです。ここ1〜2年、B細胞や形質細胞に関わる BAFF・APRIL という分子を標的にした新しい生物学的製剤が相次いで登場しています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">For example, sibeprenlimab received accelerated approval in the United States. And atacicept is under review by the F.D.A.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">補足しますと、シベプレンリマブという APRIL を抑える薬がアメリカで迅速承認を受け、アタシセプトという BAFF と APRIL の両方を抑える薬も審査中、という状況です。加えて、評価のものさしも、蛋白尿だけでなく eGFR の傾き、つまり腎機能低下の速さや腎不全そのものへと移りつつあります。2025年には KDIGO の IgA腎症ガイドラインも更新されました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">So the field is moving fast. Keep this background in mind. Several papers today are about glomerular disease.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">まさにその通りで、今週は糸球体疾患が多めです。導入はこのあたりにして、論文に入りましょう。今日は4本をご紹介します。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">1本目は、小児の IgA血管炎腎炎、略して IgAVN で、尿中の可溶性CD163というマーカーを調べた研究です。Pediatric Nephrology に掲載されました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">CD163 is a marker on a type of macrophage. This study measured its soluble form in the urine of children.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">補足します。CD163 は M2c マクロファージという細胞の表面にある分子で、その「可溶性」の形、つまり尿に溶け出したものを測っています。マクロファージは炎症に関わる免疫細胞ですね。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">デザインは観察研究です。IgAVN の子ども 73人、IgA腎症の子ども 37人、健常な子ども 50人で、腎生検の所見と尿中可溶性CD163の関係を調べました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The urinary marker was higher in the sick children. And it was higher in more severe grades of disease.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうです。健常児より IgAVN で有意に高く、grade II より grade III から IV でさらに高値でした。そして病理では、糸球体の「管内増殖」や、血栓、線維素様壊死のある部分にCD163陽性細胞が多く見られ、尿のマーカーは管内増殖の割合とよく相関しました。治療後には有意に下がっています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Clinically, this could be a non-invasive marker. But it is early. We cannot use it at the bedside yet.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">臨床的には、腎生検をしなくても活動性を推し量れる非侵襲的な指標になりうる、という期待です。ただし注意も必要で、これは相関を示す観察研究ですから、因果は言えません。IgA腎症との区別はつかず、対照も健常児のみ、サンプルサイズも小さいです。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここで英語のワンポイントです。「endocapillary proliferation」、日本語で管内増殖。endo は「内側」、capillary は「毛細血管」。糸球体係蹄の内側で細胞が増える所見です。IgA腎症の病理でよく出るので、発音とセットで覚えておきたい表現です。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">まとめると、尿中可溶性CD163は小児IgAVNの活動性、特に管内増殖や凝固を反映しうる有望なマーカー候補、という一本でした。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">2本目は症例報告です。学校検尿で早期に見つかった、IgA沈着を伴う小児のANCA関連腎炎の1例。CEN Case Reports からです。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">A twelve-year-old girl had no symptoms. She was found through routine school urine screening.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">補足します。12歳の女の子で、症状はまったくなく、学校の検尿がきっかけでした。血尿と、だんだん増える蛋白尿があり、MPO-ANCA という抗体が高値。一方で腎機能は保たれていました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">The biopsy showed a cellular crescent. That fits ANCA-associated glomerulonephritis.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">腎生検では細胞性半月体と炎症細胞の浸潤があり、ANCA関連腎炎に合致しました。免疫蛍光ではメサンギウムに IgA・IgM・C3 の沈着がありましたが、メサンギウム増殖や基質拡大はなく、典型的なIgA腎症とは言えない。そこで主病態は IgA腎症ではなく ANCA関連腎炎と判断しています。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">They treated it as vasculitis. Steroids, then rituximab, then azathioprine. The antibody and the protein came back to normal.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">治療はステロイドのパルス、次にリツキシマブ、維持にアザチオプリンです。MPO-ANCA と蛋白尿は正常化し、再発はありません。もちろん単一症例ですので一般化はできません。長期予後もこれからです。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">英語のワンポイントです。「pauci-immune」。pauci はラテン語由来で「少ない」。免疫沈着が乏しい、という意味で、ANCA関連腎炎の典型像を表します。今回はIgA沈着を伴う非典型例だった、という対比で使われています。少し難しい単語ですが、腎病理では頻出です。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">学校検尿という日本ならではの仕組みが、重い病気の早期発見につながった、示唆に富む症例でした。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">3本目はテーマが変わって、CKDのガイドラインづくりの「優先順位」を決めた研究です。Kidney International Reports から。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">This is a Delphi survey. Patients and clinicians voted on which topics matter most.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">補足します。デルファイ法という、複数回のアンケートで合意を形づくる手法を使い、CKDの当事者、つまり患者さんと、医療者が一緒に、どのテーマを優先的に整理すべきかを投票で決めました。保存期CKD、腹膜透析、血液透析、移植の4分野です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Top topics were things like slowing kidney disease, and managing infections and heart disease.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">優先度が高かったのは、CKDの評価と管理、CKD進行を遅らせる治療、透析での体液管理や感染管理、移植の拒絶などでした。面白いのは、患者さんは症状や副作用、心理社会的な支援といった「日常生活への影響」を重視し、医療者はプロトコルやモニタリングといった「ケアの提供」を重視する、という差が見えた点です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">This does not change one patient&#x27;s treatment today. But it shapes future guidelines.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">そうですね。これは個々の治療を今すぐ変えるものではなく、今後のガイドラインやレビューの方向性を決める研究です。臨床アウトカムそのものではない点、そして参加者の構成にやや偏りがある点は限界です。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">英語のワンポイントは「lived experience」。直訳は「生きられた経験」ですが、医療では「当事者としての経験」を指します。単なる experience より、その人自身が病いを生きている、というニュアンスが強い表現です。患者参画の文脈でよく出てきます。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">患者と医療者の優先度の違いを可視化した、共同意思決定を考えるうえで参考になる一本でした。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">最後の4本目は、CKDの腎MRIの大規模コホート、AFiRM研究のベースライン報告です。同じく Kidney International Reports から。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">This study uses a special kidney M.R.I. It looks at fibrosis, inflammation, blood flow, and oxygen.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">補足します。多パラメトリック腎MRI、いくつもの撮像パラメータを組み合わせたMRIで、腎臓の線維化・炎症・血流つまり灌流・酸素化などを一度に見ようという試みです。これらを非侵襲的に評価できれば、腎生検を補える可能性があります。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">デザインは多施設・前向きの観察研究で、9施設420人が登録されました。平均55歳、eGFRの中央値は39。原因はIgA腎症が22%と最も多く、次いで原因不明、糖尿病性腎臓病でした。標準化した撮像法を使い、2年後にもMRIを撮り、腎不全のアウトカムは10年後まで追う計画です。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Today&#x27;s paper is the baseline report. It builds the cohort. The progression results will come later.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">ここが大事な点で、今回の論文はあくまでベースライン、コホートを立ち上げた段階の報告です。MRIがCKD進行を予測できるか、という結論はまだ出ていません。観察研究であることも含め、結果は長期の追跡を待つ必要があります。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">英語のワンポイントは「harmonized」。調和させる、という動詞ですが、多施設研究では「施設や装置が違っても撮像条件をそろえる」という意味で使われます。cross-vendor、装置メーカーを横断して、という語とセットでよく登場します。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">腎生検を補完しうる画像バイオマーカーの大規模な検証基盤として、今後の続報が楽しみな研究でした。</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">それでは今週のまとめです。小児IgAVNの尿中可溶性CD163、学校検尿で見つかった小児ANCA関連腎炎、CKDガイドラインの優先順位づけ、そしてCKDの腎MRIコホートAFiRM、の4本をご紹介しました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Remember, all of this was based on abstracts only. Please read the full papers before you draw conclusions.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">いずれも単独で診療を変えるものではありません。気になった論文はぜひ本文をご確認ください。ご清聴ありがとうございました。</div></div>
-<div class="turn b"><span class="who">B · English</span><div class="bubble">Thanks for listening. See you next week.</div></div>
-<div class="turn a"><span class="who">A · 日本語</span><div class="bubble">また来週の Weekly Nephrology でお会いしましょう。</div></div>
+<section class="script"><h2 class="section-heading">Script</h2><div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">みなさん、こんにちは。Weekly Nephrology へようこそ。今週も腎臓内科の注目論文を、日本語と英語のバイリンガルでお届けします。進行役の日本語ホストです。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Hello, and welcome to the show. I am your English co-host. Let&#x27;s learn together today.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">まず最初に、いつもの大切なお断りです。今回ご紹介する論文は、すべて抄録、つまりアブストラクトのみに基づいています。本文は未読で、数値や結論はあくまで抄録の範囲です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">That&#x27;s right. We will not overstate anything. And for observational studies, we will say association, not cause.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">では本題の前に、この2〜3週間の腎臓内科まわりの話題を2分ほどご紹介します。今日の導入は2つです。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">1つ目は学会の話題です。ヨーロッパ腎臓学会、ERA の第63回学会が、2026年6月3日から6日にかけて、イギリスのグラスゴーで開催されました。今年のテーマは「Open your mind, challenge your thinking」、つまり「思考の枠を広げ、常識を問い直そう」というものでした。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The theme asks us to challenge our own thinking. That is a nice message for any clinician.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうですね。9千人規模の大きな学会で、今日ご紹介する糸球体疾患やCKDのテーマも数多く議論されました。ヨーロッパの動向を追ううえで押さえておきたい会です。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">2つ目は、IgA腎症の治療をめぐる動きです。ここ1〜2年、B細胞や形質細胞に関わる BAFF・APRIL という分子を標的にした新しい生物学的製剤が相次いで登場しています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">For example, sibeprenlimab received accelerated approval in the United States. And atacicept is under review by the F.D.A.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">補足しますと、シベプレンリマブという APRIL を抑える薬がアメリカで迅速承認を受け、アタシセプトという BAFF と APRIL の両方を抑える薬も審査中、という状況です。加えて、評価のものさしも、蛋白尿だけでなく eGFR の傾き、つまり腎機能低下の速さや腎不全そのものへと移りつつあります。2025年には KDIGO の IgA腎症ガイドラインも更新されました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">So the field is moving fast. Keep this background in mind. Several papers today are about glomerular disease.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">まさにその通りで、今週は糸球体疾患が多めです。導入はこのあたりにして、論文に入りましょう。今日は4本をご紹介します。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">1本目は、小児の IgA血管炎腎炎、略して IgAVN で、尿中の可溶性CD163というマーカーを調べた研究です。Pediatric Nephrology に掲載されました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">CD163 is a marker on a type of macrophage. This study measured its soluble form in the urine of children.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">補足します。CD163 は M2c マクロファージという細胞の表面にある分子で、その「可溶性」の形、つまり尿に溶け出したものを測っています。マクロファージは炎症に関わる免疫細胞ですね。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">デザインは観察研究です。IgAVN の子ども 73人、IgA腎症の子ども 37人、健常な子ども 50人で、腎生検の所見と尿中可溶性CD163の関係を調べました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The urinary marker was higher in the sick children. And it was higher in more severe grades of disease.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうです。健常児より IgAVN で有意に高く、grade II より grade III から IV でさらに高値でした。そして病理では、糸球体の「管内増殖」や、血栓、線維素様壊死のある部分にCD163陽性細胞が多く見られ、尿のマーカーは管内増殖の割合とよく相関しました。治療後には有意に下がっています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Clinically, this could be a non-invasive marker. But it is early. We cannot use it at the bedside yet.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">臨床的には、腎生検をしなくても活動性を推し量れる非侵襲的な指標になりうる、という期待です。ただし注意も必要で、これは相関を示す観察研究ですから、因果は言えません。IgA腎症との区別はつかず、対照も健常児のみ、サンプルサイズも小さいです。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ここで英語のワンポイントです。「endocapillary proliferation」、日本語で管内増殖。endo は「内側」、capillary は「毛細血管」。糸球体係蹄の内側で細胞が増える所見です。IgA腎症の病理でよく出るので、発音とセットで覚えておきたい表現です。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">まとめると、尿中可溶性CD163は小児IgAVNの活動性、特に管内増殖や凝固を反映しうる有望なマーカー候補、という一本でした。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">2本目は症例報告です。学校検尿で早期に見つかった、IgA沈着を伴う小児のANCA関連腎炎の1例。CEN Case Reports からです。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">A twelve-year-old girl had no symptoms. She was found through routine school urine screening.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">補足します。12歳の女の子で、症状はまったくなく、学校の検尿がきっかけでした。血尿と、だんだん増える蛋白尿があり、MPO-ANCA という抗体が高値。一方で腎機能は保たれていました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">The biopsy showed a cellular crescent. That fits ANCA-associated glomerulonephritis.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">腎生検では細胞性半月体と炎症細胞の浸潤があり、ANCA関連腎炎に合致しました。免疫蛍光ではメサンギウムに IgA・IgM・C3 の沈着がありましたが、メサンギウム増殖や基質拡大はなく、典型的なIgA腎症とは言えない。そこで主病態は IgA腎症ではなく ANCA関連腎炎と判断しています。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">They treated it as vasculitis. Steroids, then rituximab, then azathioprine. The antibody and the protein came back to normal.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">治療はステロイドのパルス、次にリツキシマブ、維持にアザチオプリンです。MPO-ANCA と蛋白尿は正常化し、再発はありません。もちろん単一症例ですので一般化はできません。長期予後もこれからです。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">英語のワンポイントです。「pauci-immune」。pauci はラテン語由来で「少ない」。免疫沈着が乏しい、という意味で、ANCA関連腎炎の典型像を表します。今回はIgA沈着を伴う非典型例だった、という対比で使われています。少し難しい単語ですが、腎病理では頻出です。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">学校検尿という日本ならではの仕組みが、重い病気の早期発見につながった、示唆に富む症例でした。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">3本目はテーマが変わって、CKDのガイドラインづくりの「優先順位」を決めた研究です。Kidney International Reports から。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">This is a Delphi survey. Patients and clinicians voted on which topics matter most.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">補足します。デルファイ法という、複数回のアンケートで合意を形づくる手法を使い、CKDの当事者、つまり患者さんと、医療者が一緒に、どのテーマを優先的に整理すべきかを投票で決めました。保存期CKD、腹膜透析、血液透析、移植の4分野です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Top topics were things like slowing kidney disease, and managing infections and heart disease.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">優先度が高かったのは、CKDの評価と管理、CKD進行を遅らせる治療、透析での体液管理や感染管理、移植の拒絶などでした。面白いのは、患者さんは症状や副作用、心理社会的な支援といった「日常生活への影響」を重視し、医療者はプロトコルやモニタリングといった「ケアの提供」を重視する、という差が見えた点です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">This does not change one patient&#x27;s treatment today. But it shapes future guidelines.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">そうですね。これは個々の治療を今すぐ変えるものではなく、今後のガイドラインやレビューの方向性を決める研究です。臨床アウトカムそのものではない点、そして参加者の構成にやや偏りがある点は限界です。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">英語のワンポイントは「lived experience」。直訳は「生きられた経験」ですが、医療では「当事者としての経験」を指します。単なる experience より、その人自身が病いを生きている、というニュアンスが強い表現です。患者参画の文脈でよく出てきます。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">患者と医療者の優先度の違いを可視化した、共同意思決定を考えるうえで参考になる一本でした。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">最後の4本目は、CKDの腎MRIの大規模コホート、AFiRM研究のベースライン報告です。同じく Kidney International Reports から。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">This study uses a special kidney M.R.I. It looks at fibrosis, inflammation, blood flow, and oxygen.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">補足します。多パラメトリック腎MRI、いくつもの撮像パラメータを組み合わせたMRIで、腎臓の線維化・炎症・血流つまり灌流・酸素化などを一度に見ようという試みです。これらを非侵襲的に評価できれば、腎生検を補える可能性があります。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">デザインは多施設・前向きの観察研究で、9施設420人が登録されました。平均55歳、eGFRの中央値は39。原因はIgA腎症が22%と最も多く、次いで原因不明、糖尿病性腎臓病でした。標準化した撮像法を使い、2年後にもMRIを撮り、腎不全のアウトカムは10年後まで追う計画です。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Today&#x27;s paper is the baseline report. It builds the cohort. The progression results will come later.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">ここが大事な点で、今回の論文はあくまでベースライン、コホートを立ち上げた段階の報告です。MRIがCKD進行を予測できるか、という結論はまだ出ていません。観察研究であることも含め、結果は長期の追跡を待つ必要があります。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">英語のワンポイントは「harmonized」。調和させる、という動詞ですが、多施設研究では「施設や装置が違っても撮像条件をそろえる」という意味で使われます。cross-vendor、装置メーカーを横断して、という語とセットでよく登場します。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">腎生検を補完しうる画像バイオマーカーの大規模な検証基盤として、今後の続報が楽しみな研究でした。</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">それでは今週のまとめです。小児IgAVNの尿中可溶性CD163、学校検尿で見つかった小児ANCA関連腎炎、CKDガイドラインの優先順位づけ、そしてCKDの腎MRIコホートAFiRM、の4本をご紹介しました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Remember, all of this was based on abstracts only. Please read the full papers before you draw conclusions.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">いずれも単独で診療を変えるものではありません。気になった論文はぜひ本文をご確認ください。ご清聴ありがとうございました。</div></div>
+<div class="turn b"><span class="who">Speaker B · Co-host</span><div class="bubble">Thanks for listening. See you next week.</div></div>
+<div class="turn a"><span class="who">Speaker A · Host</span><div class="bubble">また来週の Weekly Nephrology でお会いしましょう。</div></div></section>
 </div></main>
 <footer><div class="wrap">
-  抄録ベースの自動生成です。医学的最終判断は各自で行ってください。<br/>
-  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
 </div></footer>
 </body>
 </html>
