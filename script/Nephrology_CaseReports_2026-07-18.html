@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<meta name="description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-18."/>
+<meta name="theme-color" content="#33452f"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-07-18 — Transcript"/>
+<meta property="og:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-18."/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-18.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-18 — Transcript"/>
+<meta name="twitter:description" content="Episode transcript, papers discussed, vocabulary, AI models, and speakers for 2026-07-18."/>
+<title>Weekly Nephrology AI 2026-07-18 — Transcript</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
+<style>
+  :root {
+    --accent:#6b7a4b; --accent-deep:#4c5a33;
+    --bg:#f5f1e3; --card:#fdfbf2; --ink:#26301f; --sub:#6f7863;
+    --line:rgba(38,48,31,.1); --bubble-b:#ecf0dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#161b12; --card:#20271a; --ink:#ece7d4; --sub:#a4ac93;
+      --line:rgba(236,231,212,.1); --bubble-b:#2a3321;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Avenir Next",-apple-system,
+      system-ui,sans-serif;
+    line-height:1.85; font-size:15.5px;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+
+  header { color:#f3ebd2; padding:44px 0 34px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 160% at 85% -20%, #6b7a4b 0%, transparent 55%),
+      linear-gradient(150deg,#2c3a28 20%, #4c5a33 130%); }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:#f3ebd2;
+    background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
+    padding:4px 12px; border-radius:999px; margin-bottom:14px;
+    backdrop-filter:blur(4px); }
+  h1 { margin:0 0 4px; font-size:2.15rem; font-weight:400;
+    letter-spacing:.005em; line-height:1.15;
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
+      "Noto Serif JP",serif; }
+  .sub { opacity:.78; font-size:.88rem; }
+  audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:7px 15px; border-radius:999px; font-size:.82rem;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(243,235,210,.24); }
+
+  main { padding:30px 0 60px; }
+
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
+  .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
+  .plist { list-style:none; margin:0; padding:0; }
+  .plist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .pnum { flex:none; width:26px; height:26px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; margin-top:2px; }
+  .pbody { min-width:0; }
+  .ptitle { font-weight:650; font-size:.92rem; line-height:1.55;
+    color:var(--ink); text-decoration:none; }
+  a.ptitle:hover { color:var(--accent); text-decoration:underline; }
+  .pmeta { font-size:.76rem; color:var(--sub); margin-top:3px;
+    overflow-wrap:anywhere; }
+  .pmeta a { color:var(--accent); text-decoration:none; }
+  .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
+
+  .turn { margin:18px 0; max-width:88%; }
+  .turn.b { margin-left:auto; }
+  .who { display:block; font-size:.7rem; font-weight:700;
+    letter-spacing:.08em; color:var(--sub); margin:0 6px 4px; }
+  .turn.a .who { color:var(--accent); }
+  .turn.b { text-align:right; }
+  .turn.b .bubble { text-align:left; }
+  .bubble { display:inline-block; background:var(--card);
+    border:1px solid var(--line); padding:12px 17px;
+    border-radius:4px 18px 18px 18px;
+    box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
+  .turn.b .bubble { background:var(--bubble-b);
+    border-radius:18px 4px 18px 18px; }
+  .note { color:var(--sub); font-size:.88rem; }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+
+  footer { color:var(--sub); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="badge">Case Reports</span>
+  <h1>Weekly Nephrology AI</h1>
+  <div class="sub">2026-07-18 · Episode transcript · Educational use</div>
+  <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-18.mp3"></audio>
+  <div class="bar">
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-18.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
+  </div>
+</div></header>
+<main><div class="wrap">
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / News Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>85 papers</b></li>
+<li><span>TTS model</span><b>Gemini 2.5 Flash TTS</b></li>
+<li><span>Speakers</span><b>Emma — Trainee host, CEFR A2-B1, female voice (Autonoe); James — Expert co-host, CEFR B1-B2, male voice (Rasalgethi)</b></li>
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1007/s13730-026-01141-2" target="_blank" rel="noopener">Heavily ossified renal mass as the initial presentation of primary renal osteosarcoma: a case report</a><div class="pmeta"><span>CEN Case Reports (2026 Jun 15)</span> · <a href="https://doi.org/10.1007/s13730-026-01141-2" target="_blank" rel="noopener">DOI: 10.1007/s13730-026-01141-2</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42289618/" target="_blank" rel="noopener">PMID: 42289618</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
+<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101322" target="_blank" rel="noopener">All Eyes on Hyperkalemia: A Case Report of Timolol Ophthalmic Drops Leading to Hyperkalemia</a><div class="pmeta"><span>Kidney Medicine (2026 May)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101322" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101322</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42004659/" target="_blank" rel="noopener">PMID: 42004659</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
+<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12882-026-05017-6" target="_blank" rel="noopener">A rare case of renal AHL amyloidosis with marked complement deposition: clinicopathologic and proteomic findings</a><div class="pmeta"><span>BMC Nephrology (2026 Apr 30)</span> · <a href="https://doi.org/10.1186/s12882-026-05017-6" target="_blank" rel="noopener">DOI: 10.1186/s12882-026-05017-6</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42062954/" target="_blank" rel="noopener">PMID: 42062954</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
+<li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101402" target="_blank" rel="noopener">Serine Protease HTRA1 Membranous Nephropathy With Polytypic IgG Concurrent With Plasma Cell Dyscrasia</a><div class="pmeta"><span>Kidney Medicine (2026 Jul)</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101402" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101402</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42290670/" target="_blank" rel="noopener">PMID: 42290670</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
+</ol></div></details>
+<details class="collapsible words"><summary><span class="section-title">Today&#x27;s words and phrases</span></summary><div class="collapsible-body"><ol class="wlist"><li><span class="wnum">1</span><div class="wbody"><b>present with</b><p>to come to medical care with a particular symptom</p><p class="example">Example: The man presented with foamy urine and swelling.</p></div></li>
+<li><span class="wnum">2</span><div class="wbody"><b>differential diagnosis</b><p>the list of possible causes a clinician weighs</p><p class="example">Example: The scan differential included cancer, infection, and stones.</p></div></li>
+<li><span class="wnum">3</span><div class="wbody"><b>dystrophic calcification</b><p>calcium deposited in damaged or dead tissue</p><p class="example">Example: Injured tissue can show dystrophic calcification on a scan.</p></div></li>
+<li><span class="wnum">4</span><div class="wbody"><b>immunohistochemistry</b><p>staining tissue to detect specific proteins</p><p class="example">Example: Immunohistochemistry showed the SATB2 marker in the tumor.</p></div></li>
+<li><span class="wnum">5</span><div class="wbody"><b>adverse effect</b><p>an unwanted effect caused by a treatment</p><p class="example">Example: High potassium was an adverse effect of the eye drop.</p></div></li>
+<li><span class="wnum">6</span><div class="wbody"><b>monoclonal gammopathy</b><p>one clone of plasma cells making one abnormal antibody</p><p class="example">Example: Blood tests found a monoclonal gammopathy in the patient.</p></div></li>
+<li><span class="wnum">7</span><div class="wbody"><b>proteinuria</b><p>protein leaking into the urine</p><p class="example">Example: Rising proteinuria showed the kidney was getting worse.</p></div></li>
+<li><span class="wnum">8</span><div class="wbody"><b>mass spectrometry</b><p>a test that reads the exact proteins in a sample</p><p class="example">Example: Mass spectrometry named the amyloid proteins and the HTRA1 antigen.</p></div></li>
+<li><span class="wnum">9</span><div class="wbody"><b>partial response</b><p>some improvement from treatment, but not full recovery</p><p class="example">Example: The urine protein fell by half, a partial response.</p></div></li>
+<li><span class="wnum">10</span><div class="wbody"><b>paraneoplastic</b><p>an effect caused by a cancer acting at a distance</p><p class="example">Example: A paraneoplastic process may drive some kidney diseases.</p></div></li></ol></div></details>
+
+<section class="script"><h2 class="section-heading">Script</h2><div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Welcome to Weekly Nephrology AI. This episode is published on July 18, 2026.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This podcast is generated by AI and may contain errors. Before using this information in clinical practice or research, please review the full text of the original paper.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This is an educational podcast about recent nephrology research, with clear English and careful evidence review.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">I&#x27;m Emma, your trainee host. I&#x27;ll guide us through each case, explain the clues in clear English, and summarize our reasoning.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">And I&#x27;m James, your expert co-host. I&#x27;ll add the differential diagnosis, management details, and key cautions.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Today&#x27;s series is Case Reports. We discuss three cases from abstracts and one case using its verified full text.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Let me say a word about how we found today&#x27;s cases.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Yes, please walk us through it.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">We searched open-access kidney case journals from the last ninety days.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">After removing duplicates, that left a pool of eighty-five case reports.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">We scored them for teaching value, rare findings, and clinical usefulness.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Then we chose three short cases and one case to read in depth.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">One reminder before we start. Every case today is a single patient.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And a single case cannot prove cause. It cannot be generalized.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Exactly. So we treat each story as a clue, not as proof.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">There is no news item today, so we will move directly to the main discussion.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Now, let&#x27;s get started.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Our first case is a rare kidney tumor. We are using its abstract only.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It matters because a bone-hard mass in the kidney can fool the eye.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So the imaging looked unusual from the start?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Very. A forty-seven-year-old man had right flank pain for six months.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And I understand he also felt a lump in his abdomen.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">He did. Scans showed a large right kidney mass full of dense calcium.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">In simple terms, part of the kidney looked almost like solid bone.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Right. That heavy calcium is the striking feature of this case.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So the usual scan clues could not give a clear answer.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Correct. The team listed three possible causes from the images.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Let me guess. Kidney cancer with calcium was one of them?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes, plus calcified tuberculosis and simple stone disease.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">What matters here is that the scan alone could not separate these three.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">So they took tissue, which is the only way to be sure.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And what did the biopsy actually show?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Odd spindle-shaped cells making a lace-like bone material called osteoid.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So the tumor itself was trying to build bone.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes. A stain for a marker called SATB2 was positive.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And I believe several other markers were negative.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">They were, which pointed to a bone-type tumor, not ordinary kidney cancer.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">The main point is the final label. This was primary renal osteosarcoma.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">That is a bone-forming cancer starting inside the kidney itself.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And that is genuinely rare, isn&#x27;t it?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Very rare. It is under one percent of soft-tissue sarcomas.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Sadly, the abstract says it had already spread by diagnosis.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes. So he began chemotherapy with doxorubicin and cisplatin.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And how did he handle that treatment?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">He finished three cycles with good tolerance, the abstract reports.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So let me give the take-home, and only for this one patient.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">A heavily calcified kidney mass can rarely be a bone-type cancer.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">And tissue with stains, not the scan, made that diagnosis.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This case came from CEN Case Reports, published in June 2026.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The senior authors were in radiology at a medical institute in Rishikesh, India.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Our second case is a hidden cause of high potassium. Again, abstract only.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It matters because the cause was an eye drop, which is easy to miss.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">An eye drop raising blood potassium? That is surprising.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It is. The patient had glaucoma and used timolol eye drops.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And timolol is a type of beta-blocker, if I remember right.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes, a nonselective beta-blocker that lowers pressure inside the eye.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So this was a common drop for a common eye problem.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Exactly. But the patient had high blood potassium that would not settle.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This means the team had to hunt for a cause that was not obvious.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">They linked it to the timolol being absorbed into the whole body.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So a drug placed in the eye can still act far beyond it.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Right. Beta-blockers can push potassium up, even from a small dose.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">What did they do once they suspected the drop?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">They stopped the timolol and switched to a different eye pressure drug.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And I understand the potassium then came back to normal.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It did, with no other treatment needed, the abstract says.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">In simple terms, removing the drug fixed the problem.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">That stop-and-improve pattern is a strong clue that the drug was the cause.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Still, we should be careful here about how much we claim.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Agreed. This is one patient, and the effect is only rarely reported.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And the abstract did not even give the exact potassium numbers.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">True. So we describe the pattern, not precise values.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">What matters here is the habit of checking the full medication list.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">And that list should include eye drops, not just tablets.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This report was in Kidney Medicine, published in May 2026.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The authors worked with a regional health pharmacy program in Winnipeg, Canada.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Our third short case is a tricky diagnosis under the microscope. Abstract only.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It matters because two rare kidney diseases can look almost the same.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Let&#x27;s meet the patient first.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">A seventy-six-year-old woman had years of blood in her urine.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And then her kidneys started to show mild trouble?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes. She developed mild kidney dysfunction and some protein in the urine.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Can you give us the numbers from the abstract?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Her creatinine was about 1.05, with under one gram of protein a day.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So the kidney problem was real, but still fairly mild.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Correct. Blood tests then found a small abnormal antibody.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">That is what we call a monoclonal protein, yes?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes, and her bone marrow fit a low-risk condition called MGUS.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This means one clone of cells was making one abnormal antibody.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">That finding pointed the team toward a deposit disease in the kidney.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So what did the kidney biopsy reveal?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Fibril deposits that stained with Congo red, a classic amyloid clue.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">But there was a twist, wasn&#x27;t there?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">There was. There was also strong complement staining.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And that complement clue pointed toward a different disease at first.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Right, toward fibrillary glomerulonephritis, which can look similar.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So how did they avoid taking the wrong path?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">A marker called DNAJB9 was negative, which argued against that disease.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And then they read the proteins directly, I believe.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes. Mass spectrometry found heavy and light chains together.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">What matters here is that proteins, not just staining, gave the truth.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">That combination is a type called AHL amyloidosis, which is very rare.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">The main point is that amyloid and fibrillary disease can overlap.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">And reading the deposits settled it. Still, this is one patient only.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This case was in BMC Nephrology, published in April 2026.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The authors were nephrologists at a general hospital in Shizuoka, Japan.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Now our deep-read case. Here we use the verified full text.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It matters because it links a kidney disease to a blood cancer.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Let&#x27;s start at the very beginning of the story.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">A sixty-two-year-old man had one month of foamy urine and swelling.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Those two signs together often point to heavy protein loss.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">They do. His urine protein-creatinine ratio was very high, at 8.5.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And his blood protein, the albumin, was low?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Low, at 2.0. So this was full nephrotic syndrome.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Let me pause and explain nephrotic syndrome in plain words.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">It means heavy protein loss, low blood protein, and body swelling.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Blood tests then found a monoclonal IgA lambda protein.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So again, one clone making one abnormal antibody.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes, and his bone marrow showed a plasma cell cancer in one-fifth of cells.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">That is a serious finding on its own.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It is. Importantly, the common membranous antibody test was negative.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">That test is the PLA2R antibody, for our listeners.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Right. So the usual cause of membranous nephropathy was ruled out.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And membranous nephropathy is an immune disease of the filter wall.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Exactly. The first kidney biopsy was small and only suggested early disease.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So the tissue could not yet name the true target?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Correct. There was not enough tissue to identify the antigen.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This means they had a diagnosis, but not the full cause.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">He was then treated for the plasma cell cancer with daratumumab-based therapy.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And at first, that seemed to help the kidney.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It did. His urine protein dropped to 0.7, a partial response.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">In simple terms, treating the marrow first improved the leak.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">But after the main treatment phase, the protein rose again to about 6.7.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Let me pause there. The kidney worsened even as they treated the marrow.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">That mismatch is the puzzle at the center of this case.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So they went back for a second, larger biopsy?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes. It confirmed membranous nephropathy with polytypic IgG.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Please explain what polytypic means here.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It means both light chains and all four IgG subclasses were present.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This matters, so let me say why polytypic is surprising.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">A cancer clone usually makes one single antibody type, not many.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Right. Here the deposits were mixed, which argues against a pure clone product.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So how did they finally name the target antigen?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Mass spectrometry on the filtered tissue identified it as HTRA1.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And HTRA1 is a rare cause of membranous nephropathy, correct?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Very rare, the target in only about one to two percent of cases.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">What matters here is that special testing named a hidden antigen.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Without mass spectrometry, this cause would have stayed unknown.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">What happened with treatment after that second biopsy?</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">They tried to deepen therapy, but he could not tolerate one drug.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So they changed the plan again.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">They added rituximab to his maintenance treatment.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And sadly the kidney did not follow the marrow this time.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">No. His urine protein rose further, to about 12.3.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So despite strong treatment, the leak kept getting worse.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The authors say this is only the second reported case with this blood disorder.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And the first ever reported with multiple myeloma, I read.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Yes. That is what makes the case worth sharing.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">The main point is that the link here is a suggestion, not a proven cause.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The timing and the early response hint at a paraneoplastic link.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">A paraneoplastic link means the cancer drives the disease from a distance.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">But the mixed deposits and ongoing leak keep the cause uncertain.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So the authors are careful, and they call this possible, not proven.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Which is the right stance for a single, unusual patient.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And once more, this is n=1, so we cannot generalize the cause or outcome.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Well said. The value is in the reasoning, not in a rule.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This deep-read case was in Kidney Medicine, published in July 2026.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The authors were in pathology at a university medical school in Los Angeles.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Now it is time for today&#x27;s words and phrases.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">First, present with. It means to come to care with a symptom.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, the man presented with foamy urine and swelling.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Second, differential diagnosis. It is the list of possible causes you weigh.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, the scan differential included cancer, infection, and stones.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Third, dystrophic calcification. It is calcium laid down in damaged tissue.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, old injured tissue can show dystrophic calcification on a scan.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Fourth, immunohistochemistry. It is staining tissue to find specific proteins.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, immunohistochemistry showed the SATB2 marker in the tumor.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Fifth, adverse effect. It is an unwanted effect of a treatment.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, high potassium was an adverse effect of the eye drop.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Sixth, monoclonal gammopathy. It is one clone making one abnormal antibody.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, blood tests found a monoclonal gammopathy in two patients today.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Seventh, proteinuria. It simply means protein in the urine.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, rising proteinuria showed the kidney was getting worse.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Eighth, mass spectrometry. It is a test that reads the exact proteins present.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, mass spectrometry named the amyloid and the HTRA1 antigen.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Ninth, partial response. It means some improvement, but not full recovery.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, the protein fell by half, a partial response.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Tenth, paraneoplastic. It means a cancer causes an effect at a distance.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">For example, a paraneoplastic process may drive some kidney diseases.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">That is all for today&#x27;s words and phrases.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Let me close with a few lessons, and only for these single cases.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">First, the scan or the stain can mislead, so tissue and proteins matter.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Second, always review the full medication list, including eye drops.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">And third, rare antigens like HTRA1 can hide behind common diseases.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Each case is n=1, so these are lessons in reasoning, not rules for practice.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Thank you for listening. We will see you next time on Weekly Nephrology AI.</div></div>
+<div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Thanks for joining us. Take care.</div></div></section>
+</div></main>
+<footer><div class="wrap">
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
+</div></footer>
+</body>
+</html>

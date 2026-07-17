@@ -6,12 +6,28 @@
     <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jul 2026 03:14:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 23:16:36 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Case Reports 2026-07-18</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-18.html</link>
+      <description>[Case Reports] Four open-access nephrology cases, explained in clear English.
+From abstracts: renal osteosarcoma, hyperkalemia from timolol drops, and AHL amyloidosis.
+A full-text deep read of HTRA1 membranous nephropathy with a plasma cell disorder.
+Each case is a single patient, so we treat it as reasoning, not proof.
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-18.html</description>
+      <content:encoded><![CDATA[<p>[Case Reports] Four open-access nephrology cases, explained in clear English.</p><p>From abstracts: renal osteosarcoma, hyperkalemia from timolol drops, and AHL amyloidosis.</p><p>A full-text deep read of HTRA1 membranous nephropathy with a plasma cell disorder.</p><p>Each case is a single patient, so we treat it as reasoning, not proof.</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-18.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-18.mp3" length="6554880" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-18.mp3</guid>
+      <pubDate>Sat, 18 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-07-16</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-16.html</link>
