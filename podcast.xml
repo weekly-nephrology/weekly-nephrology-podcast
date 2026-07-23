@@ -6,7 +6,7 @@
     <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Jul 2026 20:41:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 03:14:23 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
@@ -23,7 +23,7 @@ Educational evidence review in clear English; not medical advice.
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-23.html</description>
       <content:encoded><![CDATA[<p>[Deep Read] Sparsentan vs irbesartan in pediatric FSGS (ages 8 to under 18).</p><p>A post hoc exploratory subgroup of the phase 3 DUPLEX randomized active-controlled trial.</p><p>We walk through the design, proteinuria and kidney endpoints, and why the small sample limits it.</p><p>Educational evidence review in clear English; not medical advice.</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-23.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-23.mp3" length="7991808" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-23.mp3" length="7945536" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-23.mp3</guid>
       <pubDate>Thu, 23 Jul 2026 07:00:00 +0900</pubDate>
       <itunes:episodeType>full</itunes:episodeType>
