@@ -1,3 +1,3 @@
-[Case Reports] Onco-nephrology: drug-induced cryoglobulinemic GN with gemcitabine chronic TMA.
-Primary renal osteosarcoma; rare AHL amyloidosis mimicking fibrillary glomerulonephritis.
-Topical timolol eye drops causing hyperkalemia. Why kidney biopsy and electron microscopy matter.
+[Case Reports] ATIN after a COVID-19 vaccine booster in a teenager, resolved with steroids.
+Roxadustat restores red cells in anti-EPO-antibody pure red cell aplasia.
+Renal malakoplakia with Michaelis-Gutmann bodies. Onco-nephrology: a multifactorial biopsy case.

@@ -6,7 +6,7 @@
     <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jul 2026 20:41:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 01:31:09 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/cover.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
@@ -15,14 +15,14 @@
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-07-25</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-25.html</link>
-      <description>[Case Reports] Onco-nephrology: drug-induced cryoglobulinemic GN with gemcitabine chronic TMA.
-Primary renal osteosarcoma; rare AHL amyloidosis mimicking fibrillary glomerulonephritis.
-Topical timolol eye drops causing hyperkalemia. Why kidney biopsy and electron microscopy matter.
+      <description>[Case Reports] ATIN after a COVID-19 vaccine booster in a teenager, resolved with steroids.
+Roxadustat restores red cells in anti-EPO-antibody pure red cell aplasia.
+Renal malakoplakia with Michaelis-Gutmann bodies. Onco-nephrology: a multifactorial biopsy case.
 
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-25.html</description>
-      <content:encoded><![CDATA[<p>[Case Reports] Onco-nephrology: drug-induced cryoglobulinemic GN with gemcitabine chronic TMA.</p><p>Primary renal osteosarcoma; rare AHL amyloidosis mimicking fibrillary glomerulonephritis.</p><p>Topical timolol eye drops causing hyperkalemia. Why kidney biopsy and electron microscopy matter.</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-25.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-25.mp3" length="8154624" type="audio/mpeg"/>
+      <content:encoded><![CDATA[<p>[Case Reports] ATIN after a COVID-19 vaccine booster in a teenager, resolved with steroids.</p><p>Roxadustat restores red cells in anti-EPO-antibody pure red cell aplasia.</p><p>Renal malakoplakia with Michaelis-Gutmann bodies. Onco-nephrology: a multifactorial biopsy case.</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-25.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-25.mp3" length="7064640" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-25.mp3</guid>
       <pubDate>Sat, 25 Jul 2026 07:00:00 +0900</pubDate>
       <itunes:episodeType>full</itunes:episodeType>
