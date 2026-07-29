@@ -6,12 +6,28 @@
     <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jul 2026 20:43:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 22:12:22 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Deep Read 2026-07-30</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-30.html</link>
+      <description>[Deep Read] Adult first-onset pure class V lupus nephritis: real-world treatment strategies
+Twenty-five-centre French retrospective cohort, verified open-access full text
+Supportive care, mycophenolate-based and rituximab-based regimens compared
+Predictors of treatment response, plus limitations of non-randomised comparison
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-30.html</description>
+      <content:encoded><![CDATA[<p>[Deep Read] Adult first-onset pure class V lupus nephritis: real-world treatment strategies</p><p>Twenty-five-centre French retrospective cohort, verified open-access full text</p><p>Supportive care, mycophenolate-based and rituximab-based regimens compared</p><p>Predictors of treatment response, plus limitations of non-randomised comparison</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-30.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-30.mp3" length="8775168" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-30.mp3</guid>
+      <pubDate>Thu, 30 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Weekly Summary 2026-07-27</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-27.html</link>
