@@ -6,12 +6,28 @@
     <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Fri, 31 Jul 2026 21:13:17 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 20:47:50 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Weekly Summary 2026-08-03</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-03.html</link>
+      <description>[Weekly Summary] Finerenone for CKD from glomerular disease: exploratory subgroup of a phase 3 RCT
+Dapagliflozin before elective cardiac surgery: a randomized trial of AKI prevention
+Anti-podocin and anti-KIRREL1 antibodies in autoimmune podocytopathies: multicenter observational
+Tubular secretion markers in HFpEF; a LASSO relapse-prediction model in lupus nephritis
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-03.html</description>
+      <content:encoded><![CDATA[<p>[Weekly Summary] Finerenone for CKD from glomerular disease: exploratory subgroup of a phase 3 RCT</p><p>Dapagliflozin before elective cardiac surgery: a randomized trial of AKI prevention</p><p>Anti-podocin and anti-KIRREL1 antibodies in autoimmune podocytopathies: multicenter observational</p><p>Tubular secretion markers in HFpEF; a LASSO relapse-prediction model in lupus nephritis</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-03.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-03.mp3" length="6577920" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-03.mp3</guid>
+      <pubDate>Mon, 03 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-08-01</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-01.html</link>
