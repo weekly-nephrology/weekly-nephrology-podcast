@@ -154,6 +154,9 @@
   .turn.b .bubble { background:var(--bubble-b);
     border-radius:18px 4px 18px 18px; }
   .note { color:var(--sub); font-size:.88rem; }
+  .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
+    margin:-10px 12px 18px; padding-left:12px;
+    border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
   .empty { color:var(--sub); text-align:center; padding:40px 0; }
 
   footer { color:var(--sub); font-size:.78rem; text-align:center;
@@ -229,7 +232,6 @@
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">What matters here is the framing. This describes real practice; it is not a trial. So we can speak about association, never about cause.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">That is the right guard rail. The people who received immunosuppression were sicker at baseline. Keep that in mind throughout.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Let&#x27;s look at how the study was built.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Daniel, start us off with the design.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">It is a retrospective, observational, nationwide cohort study. Twenty-five French tertiary centres took part. Patients had a first flare of pure lupus membranous nephropathy between two thousand and twenty twenty.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">So the data already existed in records. Nobody was randomly assigned.</div></div>
@@ -258,14 +260,13 @@
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Which makes the failure rate partly a measure of physician behaviour.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Fairly put. Now the statistics. Variables with a p-value of zero point two or less entered a multivariable model. Backward elimination kept the independent ones.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">They also ran a sensitivity analysis. It targeted patients who changed drugs very early.</div></div>
-<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Yes. Those patients were reassigned to the treatment they were on at month three. Response rates barely changed.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Yes. Those patients were reassigned to the treatment they were on at month three. Renal response rates did not change significantly at six or twelve months.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">And they modelled the trends over time.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Linear mixed-effects models tracked protein, albumin, and steroid dose at day zero, month six, and month twelve.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Missing values were not filled in, so the denominators move around.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">They do. Watch that in the tables.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">To sum up the methods, this is careful bookkeeping of routine care. The design cannot tell us which drug works better.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Let&#x27;s move to what they found.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Start with who these patients were.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">One hundred ninety-four adults. Eighty-seven point six percent were women. Median age at the class five diagnosis was thirty-three point nine years.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">And kidney function was well preserved, which surprised me.</div></div>
@@ -285,7 +286,7 @@
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Let&#x27;s take the six-month results first.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">One patient of forty-seven reached complete response with supportive care. That is two point one percent.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">And with immunosuppression it was thirty of one hundred twenty-four. That is twenty-four point two percent, at p under zero point zero one.</div></div>
-<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">A real early separation. But within the immunosuppressed arms the rates were almost identical.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">A large numerical separation, but not a randomized treatment comparison. Within the immunosuppressed arms the rates were almost identical.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Twenty-two percent with mycophenolate, twenty-one point seven percent with rituximab, and twenty-seven point four percent with other regimens.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">With a p-value of zero point seven eight. So no significant difference between the regimens at six months.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Then the twelve-month picture changes.</div></div>
@@ -299,7 +300,7 @@
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">What about overall response, partial plus complete?</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Fifty-five point one percent with supportive care, and sixty point three percent with immunosuppression. The p-value was zero point five three.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">The trajectories over time were similar too.</div></div>
-<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Yes. Protein fell and albumin rose in every group across twelve months, at p under zero point zero zero one. Between groups there was no significant difference, at p equals zero point four five.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Yes. Protein fell and albumin rose in every group across twelve months, at p under zero point zero zero one. Between groups there was no significant difference: p equals zero point four five for protein and zero point six two for albumin.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">But rituximab did look different in one clear way.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">The exposure, not the response. Patients spent less time on treatment, and on far less steroid.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Right. Median treatment duration was six point two months with rituximab, against twenty-five point three with mycophenolate. The median starting prednisone dose was ten milligrams a day, against forty.</div></div>
@@ -326,7 +327,6 @@
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">The log-rank p-value was zero point eight one seven. A small number also reached kidney failure needing replacement therapy.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Nine in the results section, ten in the discussion. The paper reports that count two different ways.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Let&#x27;s look at what could be distorting all of this.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">The authors are candid here. Start with their own list.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">The design is retrospective, so referral bias and incomplete case capture are possible. There was no central pathology review either.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Which means newer biopsy markers could not be checked.</div></div>
@@ -345,14 +345,14 @@
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">To sum up the limitations, this cohort describes practice well. It cannot rank the treatments against each other.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">So where does that leave us clinically?</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">It leaves the twenty twenty-four KDIGO framing intact, but adds real-world texture.</div></div>
-<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">The six-month gap was large and clear. Whether that early gain persists is much less certain.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">The six-month rates were far apart, but the comparison was confounded. By twelve months, the difference was no longer statistically significant.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">And nobody should read this as a reason to withhold care.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">No. Supportive care here went to a selected, lower-risk group. In the heavier protein group nobody responded at all.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">The rituximab signal is interesting but unproven.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Shorter courses and lower steroid exposure are real observations. Better efficacy is not established.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">What about anti-U1RNP as a marker?</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">It is hypothesis-generating. The authors suggest it may mark greater immune activity. They do not claim it causes failure, and it is not a tool for choosing therapy.</div></div>
-<div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">The practical meaning for me is modest but real. This is the largest real-world picture we have of first-onset pure class five disease. It supports careful, individual decisions rather than one fixed rule.</div></div>
+<div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">The practical meaning for me is modest but real. This is a multicentre real-world cohort of first-onset pure class five disease. It supports careful, individual decisions rather than one fixed rule.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And it makes a strong case for a proper randomised trial in this population.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">Now it is time for today&#x27;s words and phrases.</div></div>
 <div class="turn a"><span class="who">Sophia · Host</span><div class="bubble">First, lupus membranous nephropathy. This is lupus kidney disease with damage to the filtering membrane. Example: &quot;Her biopsy showed pure lupus membranous nephropathy.&quot;</div></div>

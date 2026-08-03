@@ -154,6 +154,9 @@
   .turn.b .bubble { background:var(--bubble-b);
     border-radius:18px 4px 18px 18px; }
   .note { color:var(--sub); font-size:.88rem; }
+  .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
+    margin:-10px 12px 18px; padding-left:12px;
+    border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
   .empty { color:var(--sub); text-align:center; padding:40px 0; }
 
   footer { color:var(--sub); font-size:.78rem; text-align:center;
@@ -232,7 +235,7 @@
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">This is the TRACK trial, published in JAMA in June 2026. The first author group is the George Institute for Global Health in Sydney.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">These patients carry high cardiovascular risk, and they&#x27;ve been left out of most trials.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">They randomized 1,458 adults with CKD stage 4 or 5, or dialysis-dependent kidney failure. Half received low-dose rivaroxaban, 2.5 milligrams twice daily, and half received placebo.</div></div>
-<div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Double-blind, and everyone had a reason to be at risk. Coronary disease, a previous non-haemorrhagic stroke, peripheral artery disease, diabetes, or age 65 and over.</div></div>
+<div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Double-blind, and everyone had a reason to be at risk. Coronary disease, a previous non-haemorrhagic, non-lacunar stroke, peripheral artery disease, diabetes, or age 65 and over.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">Median follow-up was 1.7 years. The trial was stopped early, in August 2025, for lack of efficacy.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">That already tells us a lot before we hear a single number.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">The primary outcome combined cardiovascular death, non-fatal heart attack, stroke, and peripheral artery events. It occurred in 22.6 percent on rivaroxaban and 20.7 percent on placebo. The hazard ratio was 1.09, with a range from 0.87 to 1.36.</div></div>
@@ -243,7 +246,6 @@
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">And the abstract never separates dialysis patients from non-dialysis stage 4 and 5. That&#x27;s the first thing I&#x27;d want to know.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">It doesn&#x27;t. It also tested only this 2.5 milligram dose, so it says nothing about treatment-dose anticoagulation for atrial fibrillation.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Fair. What I carry away is narrow but clear. In advanced CKD, this drug at this dose did not prevent cardiovascular events, and bleeding was more common.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Our second paper is a question asked at almost every intensive care bedside. Should we give bicarbonate for metabolic acidosis?</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">This is the SODa-BIC trial in the New England Journal of Medicine, June 2026. It was led from the intensive care research centre at Monash University in Melbourne.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">These patients are already on vasopressors, so they are acidotic and unstable at the same time.</div></div>
@@ -255,11 +257,10 @@
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Almost identical. The adjusted difference was about one percentage point, and the range crosses zero with room to spare.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">Renal-replacement therapy within 30 days was 16.8 percent versus 20.9 percent. That looks lower, but the range runs from minus 10.6 to plus 2.7 percentage points.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">So we can&#x27;t call that a benefit. It&#x27;s a number worth remembering, not a result to act on.</div></div>
-<div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">Mortality was close as well, 25.4 percent against 24.0 percent.</div></div>
+<div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">In-hospital mortality by day thirty was close as well, 25.4 percent against 24.0 percent.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">What limits this trial for me is what the abstract leaves out. We never learn how much the pH actually improved in either group.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">Or what caused the acidosis. Lactic and kidney-related acidosis may not behave the same way.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">With 500 patients a moderate difference in renal-replacement use could still be hiding in there. But the key point is simple. Correcting the acid-base numbers did not change kidney outcomes at 30 days.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Our third paper picks up the Small Talk we opened with. It compares urea and tolvaptan for hyponatremia caused by SIAD.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">It appeared in Nephrology Dialysis Transplantation in July 2026, from the nephrology department at Hospital St. Georg in Leipzig, Germany.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">And this is a retrospective cohort, not a trial, so everything here is an association.</div></div>
@@ -269,13 +270,12 @@
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">So both treatments arrive at the same place. The interesting part is how they travel.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">Tolvaptan was faster at 48 hours, a rise of 8.3 millimoles per liter against 5.6 with urea. But overcorrection above ten millimoles in 24 hours occurred in 10.8 percent with tolvaptan and 3.2 percent with urea.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">There&#x27;s the trade-off we talked about earlier. Faster on the chart, and more often faster than we wanted.</div></div>
-<div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">The cost gap is also hard to ignore. About 468 euros per course against 12 euros.</div></div>
+<div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">The cost gap is also hard to ignore. The reported treatment costs were about 468 euros against 12 euros.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Same destination, very different price and pace. Now the limits, and they&#x27;re substantial.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">One centre, and retrospective. Even after weighting, clinicians chose which drug to use, and no method removes that entirely.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The urea patients were also about ten years older by median age. And the abstract reports no neurological outcomes at all.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">Correct. So we cannot say that urea prevents harm from fast correction. We only know it was associated with fewer fast corrections.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">That&#x27;s the honest reading. What matters here is that urea looked as effective, far cheaper, and slower. Slower may be a feature rather than a fault.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Our fourth study is about timing in tumour lysis syndrome. When should rasburicase actually go in?</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">This one is in the BMJ, July 2026, from the division of renal medicine at Brigham and Women&#x27;s Hospital in Boston. They call it an emulated target trial.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">That phrase deserves a sentence. They used routine hospital records, but designed the analysis as if it were a trial.</div></div>
@@ -287,16 +287,15 @@
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Roughly a third lower odds. And 90-day mortality pointed the same way, didn&#x27;t it?</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">It did, with an adjusted odds ratio of 0.71, from 0.54 to 0.94.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">I want to slow down here, because this is observational. Clinicians decided who was treated early.</div></div>
-<div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">And the treated patients started with higher uric acid, which the weighting balanced. Even so, this remains an association.</div></div>
+<div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">And the treated patients started with higher uric acid. After weighting, the authors report that severity of illness was well balanced. Even so, this remains an association.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The comparison group also mixes two different things. Patients treated late, and patients never treated at all.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">That matters. The abstract also gives no dose, no duration, and nothing about G6PD testing.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">So this doesn&#x27;t create a 12-hour rule. The practical meaning is narrower. Move quickly once tumour lysis is recognised, but the design still stops short of proof.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Our last paper is the only transplant study today, and the smallest.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">A multicenter registry of daratumumab for microvascular inflammation after kidney transplantation, in Kidney International, July 2026. The lead group is the nephrology department at University Hospital Regensburg in Germany.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Microvascular inflammation on biopsy is bad news for the graft, and our options are thin.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">Seventy recipients. Fifty-nine had antibody mediated rejection, and eleven had microvascular inflammation without donor specific antibodies or C4d.</div></div>
-<div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Daratumumab is a CD38 antibody, so it targets the plasma cells that produce those antibodies.</div></div>
+<div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Daratumumab is a CD38-targeting antibody. The abstract presents its use for microvascular inflammation, but it does not give a cellular mechanism.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">They compared the eGFR slope before and after treatment. In the year before diagnosis, it fell by 1.6 millilitres per minute per 1.73 square metres each month. After treatment started, the slope was plus 0.3.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">A steady decline turning flat. That&#x27;s the headline, and now I want to push against it.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">You should. There is no control group here. A before-and-after slope can shift for many reasons, including the natural course after a bad stretch.</div></div>
