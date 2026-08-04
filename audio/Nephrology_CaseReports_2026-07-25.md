@@ -1,3 +1,1 @@
-[Case Reports] ATIN after a COVID-19 vaccine booster in a teenager, resolved with steroids.
-Roxadustat restores red cells in anti-EPO-antibody pure red cell aplasia.
-Renal malakoplakia with Michaelis-Gutmann bodies. Onco-nephrology: a multifactorial biopsy case.
+[Case Reports] ATIN after a COVID-19 vaccine booster in a teenager, resolved with steroids. ／ Roxadustat restores red cells in anti-EPO-antibody pure red cell aplasia. ／ Renal malakoplakia with Michaelis-Gutmann bodies. Onco-nephrology: a multifactorial biopsy case.
