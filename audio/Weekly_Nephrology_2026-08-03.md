@@ -1,1 +1,5 @@
-[Weekly Summary] Finerenone for CKD from glomerular disease: exploratory subgroup of a phase 3 RCT ／ Dapagliflozin before elective cardiac surgery: a randomized trial of AKI prevention ／ Anti-podocin and anti-KIRREL1 antibodies in autoimmune podocytopathies: multicenter observational ／ Tubular secretion markers in HFpEF ／ a LASSO relapse-prediction model in lupus nephritis
+[Weekly Summary] Finerenone for CKD from glomerular disease: exploratory subgroup of a phase 3 RCT
+Dapagliflozin before elective cardiac surgery: a randomized trial of AKI prevention
+Anti-podocin and anti-KIRREL1 antibodies in autoimmune podocytopathies: multicenter observational
+Tubular secretion markers in HFpEF
+a LASSO relapse-prediction model in lupus nephritis

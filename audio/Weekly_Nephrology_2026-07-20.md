@@ -1,4 +1,5 @@
-[Weekly Summary] Abstract-based review of five recent clinical nephrology studies.
-Atrasentan phase 3 RCT in IgA nephropathy; finerenone RCT in non-diabetic CKD.
-Kidney biopsy prognosis in severe ANCA vasculitis; postpartum kidney risk after preeclampsia.
-Crossover RCT of dapagliflozin in inactive lupus nephritis.
+[Weekly Summary] Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a…
+Kidney histopathology associated with kidney function at 1 year post severe AKI related to…
+Finerenone in Persons with Chronic Kidney Disease without Diabetes
+Risks of Postpartum Kidney Disease Following Preeclampsia and Gestational Hypertension
+Efficacy and safety of dapagliflozin in inactive lupus nephritis: a randomized crossover…

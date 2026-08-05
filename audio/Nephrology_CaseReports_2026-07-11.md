@@ -1,3 +1,4 @@
-[Case Reports] A Rare Case of Fabry Disease Combined With I
-X-Linked immune dysregulation, polyendocrino / A near-miss: case of pseudo-foreign body in
-When Atypical Becomes Typical: A Fulminant S
+[Case Reports] A Rare Case of Fabry Disease Combined With Idiopathic Multicentric Castleman Disease…
+X-Linked immune dysregulation, polyendocrinopathy, and enteropathy (IPEX) syndrome with…
+A near-miss: case of pseudo-foreign body in End Stage Renal Disease
+When Atypical Becomes Typical: A Fulminant Seronegative Anti-GBM Disease
