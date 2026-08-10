@@ -6,7 +6,7 @@
     <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Aug 2026 02:20:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 11:25:34 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
@@ -15,16 +15,16 @@
     <item>
       <title>Weekly Nephrology AI — Weekly Summary 2026-08-10</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-10.html</link>
-      <description>• Finerenone for nondiabetic CKD from glomerular disease, a phase 3 RCT analysis
-• Add-on dapagliflozin for adults with biopsy-proven lupus nephritis, a placebo-controlled RCT
-• Semaglutide and kidney outcomes in cardio-kidney-metabolic adults, a pooled analysis of three RCTs
-• Benzylpenicillin versus flucloxacillin for penicillin-susceptible S aureus bacteraemia, an adult RCT
-• Proteinuria remission in children with IgA nephropathy, a multiethnic observational cohort study
+      <description>• Kidney involvement in antisynthetase syndrome, a systematic review
+• Dapagliflozin in adults with biopsy-proven lupus nephritis, a placebo-controlled randomised trial
+• Immune checkpoint inhibitor-associated AKI, an international multidisciplinary consensus statement
+• Semaglutide in adults with CKD or cardiovascular disease, a pooled analysis of three trials
+• Benzylpenicillin versus flucloxacillin or cloxacillin in adults with S aureus bacteraemia, an RCT
 
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-10.html</description>
-      <content:encoded><![CDATA[<ul><li>Finerenone for nondiabetic CKD from glomerular disease, a phase 3 RCT analysis</li><li>Add-on dapagliflozin for adults with biopsy-proven lupus nephritis, a placebo-controlled RCT</li><li>Semaglutide and kidney outcomes in cardio-kidney-metabolic adults, a pooled analysis of three RCTs</li><li>Benzylpenicillin versus flucloxacillin for penicillin-susceptible S aureus bacteraemia, an adult RCT</li><li>Proteinuria remission in children with IgA nephropathy, a multiethnic observational cohort study</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-10.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-10.mp3" length="7036800" type="audio/mpeg"/>
+      <content:encoded><![CDATA[<ul><li>Kidney involvement in antisynthetase syndrome, a systematic review</li><li>Dapagliflozin in adults with biopsy-proven lupus nephritis, a placebo-controlled randomised trial</li><li>Immune checkpoint inhibitor-associated AKI, an international multidisciplinary consensus statement</li><li>Semaglutide in adults with CKD or cardiovascular disease, a pooled analysis of three trials</li><li>Benzylpenicillin versus flucloxacillin or cloxacillin in adults with S aureus bacteraemia, an RCT</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-10.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-10.mp3" length="6338496" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-10.mp3</guid>
       <pubDate>Mon, 10 Aug 2026 07:00:00 +0900</pubDate>
       <itunes:episodeType>full</itunes:episodeType>

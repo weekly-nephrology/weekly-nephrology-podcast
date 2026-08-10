@@ -1,5 +1,5 @@
-[Weekly Summary] Finerenone for nondiabetic CKD from glomerular disease, a phase 3 RCT analysis
-Add-on dapagliflozin for adults with biopsy-proven lupus nephritis, a placebo-controlled RCT
-Semaglutide and kidney outcomes in cardio-kidney-metabolic adults, a pooled analysis of three RCTs
-Benzylpenicillin versus flucloxacillin for penicillin-susceptible S aureus bacteraemia, an adult RCT
-Proteinuria remission in children with IgA nephropathy, a multiethnic observational cohort study
+[Weekly Summary] Kidney involvement in antisynthetase syndrome, a systematic review
+Dapagliflozin in adults with biopsy-proven lupus nephritis, a placebo-controlled randomised trial
+Immune checkpoint inhibitor-associated AKI, an international multidisciplinary consensus statement
+Semaglutide in adults with CKD or cardiovascular disease, a pooled analysis of three trials
+Benzylpenicillin versus flucloxacillin or cloxacillin in adults with S aureus bacteraemia, an RCT
