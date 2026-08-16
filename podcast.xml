@@ -6,12 +6,29 @@
     <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 22:47:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 20:58:05 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Weekly Summary 2026-08-17</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-17.html</link>
+      <description>• Combined uACR and eGFR screening by age band in a hospital workforce
+• A pilot randomised trial of bortezomib-based therapy versus rituximab in PGNMID
+• A pragmatic treatment approach to CKD-associated osteoporosis in CKD G4-5D
+• Late-onset primary glomerular disease in the CureGN cohort, from biopsy to outcome
+• A cluster-randomised trial integrating hypertension care into HIV clinics in Botswana
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-17.html</description>
+      <content:encoded><![CDATA[<ul><li>Combined uACR and eGFR screening by age band in a hospital workforce</li><li>A pilot randomised trial of bortezomib-based therapy versus rituximab in PGNMID</li><li>A pragmatic treatment approach to CKD-associated osteoporosis in CKD G4-5D</li><li>Late-onset primary glomerular disease in the CureGN cohort, from biopsy to outcome</li><li>A cluster-randomised trial integrating hypertension care into HIV clinics in Botswana</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-17.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-17.mp3" length="6246912" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-17.mp3</guid>
+      <pubDate>Mon, 17 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-08-15</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-15.html</link>
