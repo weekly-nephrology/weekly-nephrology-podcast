@@ -6,7 +6,7 @@
     <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Aug 2026 20:58:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 02:02:05 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
@@ -23,7 +23,7 @@
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-22.html</description>
       <content:encoded><![CDATA[<ul><li>WDR72-related distal renal tubular acidosis with renal cysts in a boy</li><li>ROSAH syndrome masquerading as lupus nephritis in an adult man</li><li>Subarachnoid hemorrhage and cerebral infarction during anti-GBM disease in a woman</li><li>Full-text case: crescentic IgA nephropathy in polycythemia vera, JAK inhibitor then steroids</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-22.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-22.mp3" length="7572096" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-22.mp3" length="7380480" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-22.mp3</guid>
       <pubDate>Sat, 22 Aug 2026 07:00:00 +0900</pubDate>
       <itunes:episodeType>full</itunes:episodeType>
