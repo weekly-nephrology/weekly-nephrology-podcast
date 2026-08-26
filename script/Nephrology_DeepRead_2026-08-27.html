@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<meta name="description" content="Sibeprenlimab for IgA nephropathy in the China cohort of the phase 3 VISIONARY trial"/>
+<meta name="theme-color" content="#33452f"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-08-27 — Transcript"/>
+<meta property="og:description" content="Sibeprenlimab for IgA nephropathy in the China cohort of the phase 3 VISIONARY trial"/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-08-27.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-08-27 — Transcript"/>
+<meta name="twitter:description" content="Sibeprenlimab for IgA nephropathy in the China cohort of the phase 3 VISIONARY trial"/>
+<title>Weekly Nephrology AI 2026-08-27 — Transcript</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
+<style>
+  :root {
+    --accent:#a97f2f; --accent-deep:#7d5c1e;
+    --bg:#f5f1e3; --card:#fdfbf2; --ink:#26301f; --sub:#6f7863;
+    --line:rgba(38,48,31,.1); --bubble-b:#ecf0dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#161b12; --card:#20271a; --ink:#ece7d4; --sub:#a4ac93;
+      --line:rgba(236,231,212,.1); --bubble-b:#2a3321;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Avenir Next",-apple-system,
+      system-ui,sans-serif;
+    line-height:1.85; font-size:15.5px;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+
+  header { color:#f3ebd2; padding:44px 0 34px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 160% at 85% -20%, #a97f2f 0%, transparent 55%),
+      linear-gradient(150deg,#2c3a28 20%, #7d5c1e 130%); }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:#f3ebd2;
+    background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
+    padding:4px 12px; border-radius:999px; margin-bottom:14px;
+    backdrop-filter:blur(4px); }
+  h1 { margin:0 0 4px; font-size:2.15rem; font-weight:400;
+    letter-spacing:.005em; line-height:1.15;
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
+      "Noto Serif JP",serif; }
+  .sub { opacity:.78; font-size:.88rem; }
+  audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:7px 15px; border-radius:999px; font-size:.82rem;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(243,235,210,.24); }
+
+  main { padding:30px 0 60px; }
+
+  .overview { background:var(--card); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:16px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25);
+    padding:20px 22px; margin-bottom:22px; }
+  .overview .section-heading { margin-bottom:10px; }
+  .overview-heading { margin:5px 0; font-size:.96rem; line-height:1.65; }
+  .overview-topics { margin:5px 0; padding-left:1.3rem; }
+  .overview-topics li { margin:5px 0; font-size:.92rem; line-height:1.55; }
+
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
+  .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
+  .plist { list-style:none; margin:0; padding:0; }
+  .plist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .pnum { flex:none; width:26px; height:26px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; margin-top:2px; }
+  .pbody { min-width:0; }
+  .ptitle { font-weight:650; font-size:.92rem; line-height:1.55;
+    color:var(--ink); text-decoration:none; }
+  a.ptitle:hover { color:var(--accent); text-decoration:underline; }
+  .pmeta { font-size:.76rem; color:var(--sub); margin-top:3px;
+    overflow-wrap:anywhere; }
+  .pmeta a { color:var(--accent); text-decoration:none; }
+  .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
+
+  .turn { margin:18px 0; max-width:88%; }
+  .turn.b { margin-left:auto; }
+  .who { display:block; font-size:.7rem; font-weight:700;
+    letter-spacing:.08em; color:var(--sub); margin:0 6px 4px; }
+  .turn.a .who { color:var(--accent); }
+  .turn.b { text-align:right; }
+  .turn.b .bubble { text-align:left; }
+  .bubble { display:inline-block; background:var(--card);
+    border:1px solid var(--line); padding:12px 17px;
+    border-radius:4px 18px 18px 18px;
+    box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
+  .turn.b .bubble { background:var(--bubble-b);
+    border-radius:18px 4px 18px 18px; }
+  /* 1話者回は掛け合いがないので、吹き出しではなく記事本文として流す。
+     話者名は Script 直下の byline に一度だけ出す。 */
+  .byline { margin:-6px 0 22px; font-size:.72rem; font-weight:700;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:10px; }
+  .byline::after { content:""; flex:1; height:1px; background:var(--line); }
+  .monologue .say { margin:0 0 15px; }
+  .monologue .say:last-child { margin-bottom:0; }
+  .monologue .web-numbers { margin:-6px 0 18px; }
+  .note { color:var(--sub); font-size:.88rem; }
+  .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
+    margin:-10px 12px 18px; padding-left:12px;
+    border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+
+  footer { color:var(--sub); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="badge">Deep Read</span>
+  <h1>Weekly Nephrology AI</h1>
+  <div class="sub">2026-08-27 · Episode transcript · Educational use</div>
+  <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-27.mp3"></audio>
+  <div class="bar">
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-27.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
+  </div>
+</div></header>
+<main><div class="wrap">
+<section class="overview" aria-labelledby="episode-overview-title"><h2 id="episode-overview-title" class="section-heading">Episode overview</h2><p class="overview-heading">Sibeprenlimab for IgA nephropathy in the China cohort of the phase 3 VISIONARY trial</p></section>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 5 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / Small Talk Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>8 papers</b></li>
+<li><span>TTS model</span><b>GPT-4o mini TTS</b></li>
+<li><span>Speakers</span><b>Daniel — Host, CEFR B1-B2, male voice (cedar)</b></li>
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ckj/sfag222" target="_blank" rel="noopener">Efficacy and safety of sibeprenlimab in IgA nephropathy: interim analysis of the China cohort in the phase 3 VISIONARY trial</a><div class="pmeta"><span>Clin Kidney J （2026 Aug, Vol 19 Issue 8）</span> · <a href="https://doi.org/10.1093/ckj/sfag222" target="_blank" rel="noopener">DOI: 10.1093/ckj/sfag222</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42633049/" target="_blank" rel="noopener">PMID: 42633049</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span></div></li>
+</ol></div></details>
+<details class="collapsible words"><summary><span class="section-title">Today&#x27;s words and phrases</span></summary><div class="collapsible-body"><ol class="wlist"><li><span class="wnum">1</span><div class="wbody"><b>upstream</b><p>earlier in a chain of events, nearer the cause than the result</p><p class="example">Example: The team aimed upstream, at the signal rather than at the end result.</p></div></li>
+<li><span class="wnum">2</span><div class="wbody"><b>monoclonal antibody</b><p>a laboratory-made antibody built to attach to one target and nothing else</p><p class="example">Example: A monoclonal antibody can be designed against a single cytokine.</p></div></li>
+<li><span class="wnum">3</span><div class="wbody"><b>background treatment</b><p>the standard care everyone in a trial keeps taking</p><p class="example">Example: The new agent was added on top of background treatment.</p></div></li>
+<li><span class="wnum">4</span><div class="wbody"><b>type one error control</b><p>a way of limiting how often a study calls a chance finding real</p><p class="example">Example: Without type one error control, no p-value is attached to the estimate.</p></div></li>
+<li><span class="wnum">5</span><div class="wbody"><b>point estimate</b><p>the single best-guess value a study reports, sitting in the middle of its range</p><p class="example">Example: The point estimate looked large, but the range around it was wide.</p></div></li>
+<li><span class="wnum">6</span><div class="wbody"><b>proteinuric remission</b><p>when protein in the urine falls below a set level</p><p class="example">Example: Proteinuric remission was reached by a minority of the treated group.</p></div></li>
+<li><span class="wnum">7</span><div class="wbody"><b>dipstick</b><p>a paper strip dipped in urine that gives a quick, rough reading</p><p class="example">Example: A dipstick is easy to repeat but hard to trust to the last detail.</p></div></li>
+<li><span class="wnum">8</span><div class="wbody"><b>opportunistic infections</b><p>infections that take hold when the body&#x27;s defences are weakened</p><p class="example">Example: Opportunistic infections are what you watch for when a treatment suppresses the immune system.</p></div></li>
+<li><span class="wnum">9</span><div class="wbody"><b>quoted second hand</b><p>repeated from someone else rather than read in the original</p><p class="example">Example: Proportions quoted second hand often lose the group they came from.</p></div></li>
+<li><span class="wnum">10</span><div class="wbody"><b>take apart</b><p>to examine something piece by piece to see how it really works</p><p class="example">Example: We take apart the methods before we trust the numbers.</p></div></li></ol></div></details>
+
+<section class="script"><h2 class="section-heading">Script</h2><div class="monologue"><p class="byline">Daniel · Host</p>
+<p class="say">Welcome to Weekly Nephrology AI. This is the episode for August 27, 2026.</p>
+<p class="say">A quick note before we start. This show is generated by AI, so it can get things wrong. Before you act on anything here, in the clinic or in your own research, read the original paper in full.</p>
+<p class="say">This is an educational show about recent nephrology research, and how far the evidence actually goes.</p>
+<p class="say">Today it&#x27;s Deep Read. One open-access paper, read closely from the verified full text.</p>
+<p class="say">I&#x27;m Daniel. We&#x27;ll take this one slowly, and I&#x27;ll show you where the evidence is strong and where it is weak.</p>
+<p class="say">Before we get into today&#x27;s episode, let&#x27;s ease in with a little Small Talk connected to today&#x27;s topic.</p>
+<p class="say">Here&#x27;s a contrast worth holding onto before we start. Ask two nephrologists what a kidney disease actually is, and you can get two very different answers.</p>
+<p class="say">The first answer is about the organ. What the biopsy shows, what the urine shows, and how quickly the damage is moving.</p>
+<p class="say">The second answer sits upstream. It&#x27;s about the immune system that keeps feeding the damage, somewhere well away from the kidney itself.</p>
+<p class="say">Neither answer is wrong. But whichever one you carry into clinic quietly decides what you think a drug is for.</p>
+<p class="say">And it decides what you expect a trial to measure. Treat the organ, and you watch the organ. Aim upstream, and you have to ask whether the organ ever notices.</p>
+<p class="say">That question sits underneath today&#x27;s paper, so keep it somewhere nearby.</p>
+<p class="say">So, a single paper today, and I have the verified open-access full text in front of me, not just the abstract.</p>
+<p class="say">It&#x27;s in Clinical Kidney Journal, published online in July of this year, and the first author works in the Renal Division at Peking University First Hospital in Beijing.</p>
+<p class="say">It earns the full twenty minutes on the strength of its methods, not its headline. Everything you&#x27;re allowed to conclude here is decided by how the analysis was built.</p>
+<p class="say">Now, let&#x27;s get started.</p>
+<p class="say">Let me give you the shape of it first. Then we&#x27;ll take apart the methods, because that&#x27;s where the real argument lives.</p>
+<p class="say">IgA nephropathy is the most common primary glomerulonephritis in the world, and China carries an especially heavy share of it. The introduction reports that it accounts for somewhere between a third and a half of primary glomerular disease there, and that even with the supportive care we consider standard, as many as a quarter of Chinese patients reach kidney failure within six years. The drug in question, sibeprenlimab, is a humanized monoclonal antibody that blocks APRIL, a cytokine that pushes B cells to make the galactose-deficient IgA1 sitting at the center of this disease. The global interim analysis of the same trial had already shown roughly a fifty percent placebo-adjusted drop in proteinuria at nine months, and that result supported an accelerated approval in the United States in late twenty twenty-five.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: share of primary glomerular disease in China 30%-53%; seen on up to 40% of biopsies there; kidney failure by 6 years in up to 24% despite current care; usual age at diagnosis 20-40 years; sibeprenlimab is a humanized IgG2 anti-APRIL monoclonal antibody; global VISIONARY interim, placebo-adjusted 24-hour uPCR reduction 51.2% at 9 months, P &lt; .0001; FDA accelerated approval 25 November 2025.)</p>
+<p class="say">Notice what that background is doing. It sets up a heavy burden, and then it points the treatment away from the kidney and towards the signal feeding it.</p>
+<p class="say">And notice the currency it trades in. Protein in the urine. Not survival, not dialysis, not years of preserved function.</p>
+<p class="say">That&#x27;s the question the whole field is waiting on, and this paper can&#x27;t answer it. What it can do is ask something narrower.</p>
+<p class="say">Does an effect seen across a global trial turn up again in a single country&#x27;s patients, in that country&#x27;s hospitals, under that country&#x27;s usual care?</p>
+<p class="say">That sounds like a small question. It isn&#x27;t. Regional cohorts are where a lot of promising effects quietly shrink.</p>
+<p class="say">Now to the methods, because that is where the limits of the whole exercise get set.</p>
+<p class="say">The parent study, VISIONARY, is a double-blind, placebo-controlled phase three trial running at two hundred forty sites in thirty-one countries, twenty-five of them in China. Adults with biopsy-proven IgA nephropathy were assigned one to one to sibeprenlimab four hundred milligrams or placebo, given under the skin every four weeks for up to twenty-six doses across about two years. To get in, patients needed proteinuria at or above the trial threshold, an estimated GFR of at least thirty, and at least three months on the highest tolerated dose of an ACE inhibitor or an ARB, so everyone was already on optimized supportive care, and a stable SGLT2 inhibitor was allowed if it had been started at least three months before screening. The primary endpoint is the change in twenty-four-hour urine protein-to-creatinine ratio at nine months. The endpoint most of us actually care about, the annualized eGFR slope over twenty-four months, is still blinded and is not reported in this paper.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: sibeprenlimab 400 mg subcutaneously every 4 weeks, up to 26 doses over up to 100 weeks; randomization 1:1; 240 sites in 31 countries, 25 sites in China; entry 24-hour uPCR &gt;=0.75 g/g or 24-hour urine protein &gt;=1.0 g/day; screening eGFR &gt;=30 ml/min/1.73 m2; stable maximally tolerated ACE inhibitor and/or ARB for &gt;=3 months; primary endpoint change from baseline in 24-hour uPCR at 9 months; key secondary endpoint annualized eGFR slope over 24 months, still blinded.)</p>
+<p class="say">A couple of things in there are worth pulling out. The first is what the patients were already taking.</p>
+<p class="say">This wasn&#x27;t a trial of a drug against nothing. Each patient arrived on optimised background treatment, so whatever the drug did, it did on top of that.</p>
+<p class="say">The second is the endpoint. The question this analysis can reach is about protein in the urine at a fixed point in time.</p>
+<p class="say">The measure that would actually settle the matter is still sealed. It stays sealed until the trial finishes, and that includes us.</p>
+<p class="say">This is where the methods really matter. One hundred two patients were randomized in mainland China, but only forty-two of them belonged to the prespecified global analysis population, and those forty-two, twenty-five on sibeprenlimab and seventeen on placebo, are the entire efficacy analysis. The remaining sixty came in through an extended China enrolment program set up for regional representation, and they were left out of the efficacy comparison, though safety and pharmacodynamics did use everyone randomized. The authors are refreshingly explicit about what that costs them. No sample size calculation was done for this regional interim look. The randomization stratification factors were dropped from the model. There was no type one error control for efficacy, which is why you will not see a p-value attached to the China result. Missing nine-month values were filled in by multiple imputation under a missing-at-random assumption, and no intercurrent event analyses were run because the sample was too small. The primary endpoint was analyzed with analysis of covariance, the spot ratio with a mixed model for repeated measures, and remission with logistic regression.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: 156 screened in mainland China, 102 randomized, 54 screening failures; randomized population 42 from the main global population plus 60 from an extended China enrolment program; China interim efficacy analysis set 42 (sibeprenlimab n=25, placebo n=17); safety and pharmacodynamic population N=102; 3 of the 42 discontinued treatment; global interim cohort n=320, the first 62.5% randomized of the main global population N=510; data cutoffs global 4 September 2024 and China 3 January 2025.)</p>
+<p class="say">That&#x27;s a dense passage, so let me pull out what it costs you.</p>
+<p class="say">A randomised trial protects you with three things. Randomisation itself, an analysis written down in advance, and a fixed error rate that stops chance findings being read as real.</p>
+<p class="say">This regional analysis keeps the first and gives up part of the other two. So what you&#x27;re reading is a look, not a test.</p>
+<p class="say">That isn&#x27;t a criticism of the authors. They chose to say it plainly rather than dress it up, which is exactly what you want in an interim regional report.</p>
+<p class="say">Methods takeaway, then. Read what follows as a description of what happened in this group. Don&#x27;t read it as a verdict.</p>
+<p class="say">Now the results. I&#x27;ll keep the exact figures on the page rather than in your ear.</p>
+<p class="say">At nine months, twenty-four-hour urine protein-to-creatinine ratio fell by about sixty-three percent from baseline on sibeprenlimab, while the placebo group barely moved, down about three percent. That works out to a placebo-adjusted reduction of roughly sixty-two percent, with a ninety-five percent confidence interval running from the low forties up to the mid seventies. For comparison, the global interim cohort came in around fifty-one percent. So the China number is numerically larger, but look at the width of that interval, which is exactly what forty-two patients buys you. The spot urine protein-to-creatinine ratio told the same story, separating from placebo by week four and holding through month twelve, and at twelve months the placebo-adjusted reduction in the twenty-four-hour measure was still around fifty-one percent, though the placebo arm itself had drifted down by then.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: 9 months, sibeprenlimab -63.1% from baseline in 24-hour uPCR, 95% CI -52.1% to -71.6%; placebo -3.1%, 95% CI -31.0% to 28.3%; placebo-adjusted reduction 61.9%, 95% CI 43.2% to 74.5%; global interim comparator 51.2%, 96.5% CI 42.9% to 58.2%, P &lt; .0001; 12 months placebo-adjusted reduction 51.5%, 95% CI 23.1% to 69.4%; month 9 spot uPCR placebo-adjusted reduction 60.2%, 95% CI 40.3% to 73.4%; no P value is reported for the China placebo-adjusted result.)</p>
+<p class="say">Let me give you the generous reading, and then the careful reading.</p>
+<p class="say">The generous reading is that the effect turned up again, in a different health system, and it wasn&#x27;t a whisper.</p>
+<p class="say">The careful reading is about that interval. When a range that wide is the honest summary of what you know, the point estimate sitting in the middle is the least interesting part of it.</p>
+<p class="say">So the sentence I&#x27;d write down is that the China cohort is consistent with the larger trial. Not better than it. Consistent with it.</p>
+<p class="say">Two downstream signals in this China cohort point in the same direction. Proteinuric remission, defined as urine protein below half a gram a day at twelve months, was reached by six of fourteen patients on sibeprenlimab and one of eleven on placebo. Dipstick blood in the urine, present in the large majority of both arms at baseline, was down to four of eighteen on sibeprenlimab at week forty-eight but was still there in twelve of fourteen placebo patients. Here is the thing worth flagging out loud: those denominators are much smaller than the forty-two patients in the efficacy set, and the paper never says why, so the honest way to quote these is with the denominator attached, not as a rate across the whole cohort. On the biology side, sibeprenlimab shut down free APRIL almost completely by week forty-eight and cut galactose-deficient IgA1 by roughly two thirds, with serum IgA, IgG and IgM all falling as well, while placebo barely moved.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: proteinuric remission at 12 months 6/14, 42.9%, 95% CI 17.7% to 71.1% with sibeprenlimab versus 1/11, 9.1%, 95% CI 0.2% to 41.3% with placebo; baseline dipstick haematuria 20/25 and 16/17; week 48 dipstick haematuria 4/18, 22.2%, versus 12/14, 85.7%; galactose-deficient IgA1 mean reduction 67.3%, SD 10.2, at week 48; APRIL mean reduction 97.7%, SD 0.8, at week 48; week 48 IgA 67.1%, IgG 32.0%, IgM 74.4%; the source does not reconcile the smaller denominators against the 42-patient efficacy set.)</p>
+<p class="say">The denominator problem there is worth naming twice, because it&#x27;s exactly the sort of thing that gets lost when a result is quoted second hand.</p>
+<p class="say">Quote those proportions with the group they came from attached, or don&#x27;t quote them at all.</p>
+<p class="say">The biology is the cleanest part of the paper. Block a signal, and the things that signal drives fall away. At the very least, the drug is doing what it says on the label.</p>
+<p class="say">That isn&#x27;t the same as helping the patient. It&#x27;s a reason to keep looking.</p>
+<p class="say">On safety, across all one hundred two randomized patients in China, treatment-emergent adverse events were reported in about seventy-nine percent on sibeprenlimab and about seventy-three percent on placebo. Serious events were uncommon in both arms, none of them judged treatment related in the sibeprenlimab group, and there were no deaths. The one clear difference was infections, roughly fifty-one percent versus twenty-nine percent, driven mainly by upper respiratory tract infections that were mostly mild and cleared without any change in dosing, with no opportunistic infections such as herpes or candidiasis reported. Injection site reactions were mild and a little more common with the active drug, mostly injection site pain. And notably, given that this drug suppresses immunoglobulins, no sibeprenlimab patient fell below an IgG of four hundred milligrams per deciliter after baseline.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: safety population N=102, sibeprenlimab 47 and placebo 55; treatment-emergent adverse events 78.7% versus 72.7%; serious events 4.3%, none treatment related, versus 5.5%, no deaths; infections and infestations 51.1% versus 29.1%; upper respiratory tract infection 29.8% versus 18.2%, mild in 23.4% of sibeprenlimab patients; injection site reactions 5/47, 10.6%, versus 3/55, 5.5%; no post-baseline IgG below 400 mg/dl in the sibeprenlimab group.)</p>
+<p class="say">A safety picture this size can only rule out the obvious. Rare harm needs thousands of patients and years of follow-up, and this has neither.</p>
+<p class="say">What it can give you is the texture of what did show up, and the texture here is unremarkable rather than reassuring. Those are different words on purpose.</p>
+<p class="say">Now to the part that decides how much of all this you carry out of the room.</p>
+<p class="say">The limitations deserve as much airtime as the results here. This is an interim look at a trial that is still running, and the endpoint is proteinuria, a surrogate. The endpoint that will actually tell us whether kidney function is preserved, the annualized eGFR slope over twenty-four months, is still blinded and is not in this paper. Haematuria was judged by dipstick, a semiquantitative test, because urine microscopy was only available in some patients. There was no sample size calculation, no error rate control, and only forty-two patients in the efficacy set, which is why the authors call these early indicators of a treatment effect rather than confirmation. There was also a sex imbalance between the arms, with more women on active drug, which the authors attribute to chance in a small subgroup where sex was not a stratification factor. And the comparisons in the discussion with other IgA nephropathy drugs are explicitly descriptive, because the trials differ in design, population and endpoint, so nothing here ranks one drug against another.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: interim data from an ongoing trial with proteinuria at 9 months as a surrogate endpoint; annualized eGFR slope over 24 months remains blinded and unreported; haematuria assessed by dipstick at week 48, with urine microscopy available only in a subset; no formal sample size calculation, stratification factors removed, no type 1 error control, and no supplementary, sensitivity or subgroup analyses of the primary endpoint; efficacy analysis set limited to 42 patients; 52.4% female overall, and sex was not a stratification factor.)</p>
+<p class="say">Those are the authors&#x27; own limits, and they set them honestly. Let me add a couple of mine, clearly labelled as mine.</p>
+<p class="say">The first is about reach. This describes the patients who were enrolled, and that&#x27;s the limit of it. Not the person with advanced disease, not a child, not somebody whose diagnosis was left unconfirmed under the microscope.</p>
+<p class="say">The second is about what a surrogate can buy you. A urine measurement that moves is a reason to keep going. It is not yet a reason to promise anything about the years ahead.</p>
+<p class="say">So where does that leave the drug in practice? Honestly, close to where the authors leave it.</p>
+<p class="say">The signal repeated in a population that carries a great deal of this disease, and it repeated in the direction you would want. That is genuinely worth something.</p>
+<p class="say">What it does not do is rank this drug against the others arriving in the same space. Different trials, different patients, different endpoints, and nothing compared side by side.</p>
+<p class="say">And the thing that would move practice is the thing still under seal. Until that opens, this is evidence about a marker, and the authors say so themselves.</p>
+<p class="say">Before we get to today&#x27;s words and phrases, let&#x27;s pull the main discussion together.</p>
+<p class="say">First. Treat this as a regional interim look rather than a second trial. It repeats the direction of the main finding in Chinese patients, and it does so without a formal statistical test standing behind it.</p>
+<p class="say">Second. The measure that would tell you whether kidney function is protected has not been reported, so nothing in this paper speaks to what happens to kidney function over time.</p>
+<p class="say">Now, today&#x27;s words and phrases.</p>
+<p class="say">First, upstream. Earlier in a chain of events, nearer the cause than the result. For example, the team aimed upstream, at the signal rather than at the end result.</p>
+<p class="say">Second, monoclonal antibody. A laboratory-made antibody built to attach to one target and nothing else. For example, a monoclonal antibody can be designed against a single cytokine.</p>
+<p class="say">Third, background treatment. The standard care everyone in a trial keeps taking. For example, the new agent was added on top of background treatment.</p>
+<p class="say">Fourth, type one error control. A way of limiting how often a study calls a chance finding real. For example, without type one error control, no p-value is attached to the estimate.</p>
+<p class="say">Fifth, point estimate. The single best-guess value a study reports, sitting in the middle of its range. For example, the point estimate looked large, but the range around it was wide.</p>
+<p class="say">Sixth, proteinuric remission. When protein in the urine falls below a set level. For example, proteinuric remission was reached by a minority of the treated group.</p>
+<p class="say">Seventh, dipstick. A paper strip dipped in urine that gives a quick, rough reading. For example, a dipstick is easy to repeat but hard to trust to the last detail.</p>
+<p class="say">Eighth, opportunistic infections. Infections that take hold when the body&#x27;s defences are weakened. For example, opportunistic infections are what you watch for when a treatment suppresses the immune system.</p>
+<p class="say">Ninth, quoted second hand. Repeated from someone else rather than read in the original. For example, proportions quoted second hand often lose the group they came from.</p>
+<p class="say">Tenth, take apart. To examine something piece by piece to see how it really works. For example, we take apart the methods before we trust the numbers.</p>
+<p class="say">That&#x27;s it for today&#x27;s words and phrases.</p>
+<p class="say">This episode was produced by Weekly Nephrology AI. The literature search and the first screening ran in Python, with no AI model involved. From there, Claude Opus 5 chose the papers, summarized them, and wrote the script. The narration is GPT-4o mini TTS. Thanks for listening, and we&#x27;ll see you next time.</p></div></section>
+</div></main>
+<footer><div class="wrap">
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
+</div></footer>
+</body>
+</html>
