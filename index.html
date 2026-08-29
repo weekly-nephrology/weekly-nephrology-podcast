@@ -4,19 +4,20 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Weekly Nephrology AI</title>
-<meta name="description" content="An AI-generated educational podcast reviewing recent nephrology research in clear English."/>
+<meta name="description" content="An AI-generated educational podcast reviewing recent nephrology papers in clear English."/>
 <meta name="theme-color" content="#33452f"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Weekly Nephrology AI"/>
 <meta property="og:title" content="Weekly Nephrology AI"/>
-<meta property="og:description" content="An AI-generated educational podcast reviewing recent nephrology research in clear English."/>
+<meta property="og:description" content="An AI-generated educational podcast reviewing recent nephrology papers in clear English."/>
 <meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/"/>
-<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
-<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Weekly Nephrology AI"/>
-<meta name="twitter:description" content="An AI-generated educational podcast reviewing recent nephrology research in clear English."/>
+<meta name="twitter:description" content="An AI-generated educational podcast reviewing recent nephrology papers in clear English."/>
+<link rel="alternate" type="application/rss+xml" title="Weekly Nephrology AI" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
@@ -63,7 +64,10 @@
     border-color:var(--cream); }
   .btn.primary:hover { background:#fff; }
   .btn:active { transform:translateY(1px); }
-  .hint { margin-top:13px; font-size:.8rem; opacity:.75; max-width:560px; }
+  .hint { margin-top:13px; font-size:.8rem; opacity:.75; max-width:560px;
+    transition:opacity .2s, background-color .2s; border-radius:10px; }
+  .hint.nudge { opacity:1; background:rgba(215,171,82,.16);
+    padding:9px 12px; margin-left:-12px; }
   .hint .rawlink { color:var(--cream); margin-left:6px; }
 
   main { padding:30px 0 64px; }
@@ -128,15 +132,15 @@
 <body>
 <header><div class="wrap">
   <div class="top">
-    <img class="cover" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png" alt="Weekly Nephrology AI"/>
+    <img class="cover" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg" alt="Weekly Nephrology AI"/>
     <div>
       <h1>Weekly Nephrology AI</h1>
-      <div class="desc">An AI-generated educational podcast reviewing recent nephrology research in clear English.</div>
+      <div class="desc">An AI-generated educational podcast reviewing recent nephrology papers in clear English.</div>
       <div class="bar">
-        <a class="btn primary" href="podcast://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Follow in Apple Podcasts</a>
+        <a class="btn primary" id="applePodcasts" href="podcast://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Follow in Apple Podcasts</a>
         <button class="btn" type="button" id="copyFeed" data-url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Copy feed URL</button>
       </div>
-      <div class="hint">
+      <div class="hint" id="feedHint">
         To follow in another app, copy the feed URL and paste it into the app's
         “Add by URL” option.
         <a class="rawlink" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Open the RSS feed</a>
@@ -147,7 +151,7 @@
 <main><div class="wrap">
   <div class="about">
     <h2>About this podcast</h2>
-    <p>An AI-generated educational podcast about recent nephrology research, presented in clear English with careful evidence review.</p>
+    <p>An AI-generated educational podcast about recent nephrology papers, presented in clear English with careful evidence review.</p>
     <p><span class="tag" style="color:#4a6048">Weekly Summary</span> — Five recent clinical studies reviewed from their abstracts, published on Mondays.</p>
     <p><span class="tag" style="color:#a97f2f">Deep Read</span> — One open-access paper examined using its verified full text, published on Thursdays.</p>
     <p><span class="tag" style="color:#6b7a4b">Case Reports</span> — Three abstract-based cases and one full-text case, published on Saturdays.</p>
@@ -208,6 +212,24 @@
       } else {
         window.prompt('Copy this URL:', url);
       }
+    });
+  })();
+  (function() {
+    // `podcast://` is an Apple Podcasts URL scheme. On iOS/macOS the OS hands
+    // the feed to the Podcasts app. Everywhere else — Android, Windows, Linux,
+    // a Mac without Podcasts — no app is registered for the scheme, so the
+    // click does nothing at all and the page gives no sign of it. If we are
+    // still here and visible a moment later, the handoff did not happen, so
+    // point at the feed URL instead of leaving the visitor with silence.
+    var apple = document.getElementById('applePodcasts');
+    var hint = document.getElementById('feedHint');
+    if (!apple || !hint) return;
+    apple.addEventListener('click', function() {
+      window.setTimeout(function() {
+        if (document.hidden) return;
+        hint.classList.add('nudge');
+        hint.setAttribute('role', 'status');
+      }, 1200);
     });
   })();
   (function() {

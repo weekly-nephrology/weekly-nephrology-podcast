@@ -3,13 +3,14 @@
   <channel>
     <title>Weekly Nephrology AI</title>
     <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link>
-    <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
+    <description>An AI-generated educational podcast reviewing recent nephrology papers in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2026 02:02:26 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 09:39:16 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
-    <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
-    <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
+    <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
+    <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
+    <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
     <item>
@@ -26,6 +27,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-29.mp3" length="7143744" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-29.mp3</guid>
       <pubDate>Sat, 29 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>14:53</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -39,6 +41,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-27.mp3" length="7305792" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-27.mp3</guid>
       <pubDate>Thu, 27 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:13</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -56,6 +59,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-24.mp3" length="6237312" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-24.mp3</guid>
       <pubDate>Mon, 24 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>13:00</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -72,6 +76,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-22.mp3" length="7380480" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-22.mp3</guid>
       <pubDate>Sat, 22 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:23</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -85,6 +90,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-20.mp3" length="7225728" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-20.mp3</guid>
       <pubDate>Thu, 20 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:03</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -102,6 +108,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-17.mp3" length="6246912" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-17.mp3</guid>
       <pubDate>Mon, 17 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>13:01</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -118,6 +125,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-15.mp3" length="7298880" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-15.mp3</guid>
       <pubDate>Sat, 15 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:12</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -131,6 +139,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-13.mp3" length="7075392" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-13.mp3</guid>
       <pubDate>Thu, 13 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>14:44</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -148,6 +157,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-10.mp3" length="6338496" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-10.mp3</guid>
       <pubDate>Mon, 10 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>13:12</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -164,6 +174,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-08.mp3" length="6939456" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-08.mp3</guid>
       <pubDate>Sat, 08 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>14:27</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -177,6 +188,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-06.mp3" length="7172928" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-06.mp3</guid>
       <pubDate>Thu, 06 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>14:57</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -194,6 +206,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-03.mp3" length="6645504" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-03.mp3</guid>
       <pubDate>Mon, 03 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>13:51</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -210,6 +223,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-01.mp3" length="7509312" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-01.mp3</guid>
       <pubDate>Sat, 01 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:39</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -223,6 +237,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-30.mp3" length="8732160" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-30.mp3</guid>
       <pubDate>Thu, 30 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>18:12</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -240,6 +255,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-27.mp3" length="7261824" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-27.mp3</guid>
       <pubDate>Mon, 27 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:08</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -256,6 +272,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-25.mp3" length="7064640" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-25.mp3</guid>
       <pubDate>Sat, 25 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>14:43</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -269,6 +286,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-23.mp3" length="7945536" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-23.mp3</guid>
       <pubDate>Thu, 23 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>16:33</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -286,6 +304,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-20.mp3" length="7373568" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-20.mp3</guid>
       <pubDate>Mon, 20 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:22</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -302,6 +321,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-18.mp3" length="6554880" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-18.mp3</guid>
       <pubDate>Sat, 18 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>13:39</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -315,6 +335,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-16.mp3" length="8046336" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-16.mp3</guid>
       <pubDate>Thu, 16 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>16:46</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -332,6 +353,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-13.mp3" length="7406400" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-13.mp3</guid>
       <pubDate>Mon, 13 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:26</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -348,6 +370,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-11.mp3" length="7113408" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-11.mp3</guid>
       <pubDate>Sat, 11 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>14:49</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -365,6 +388,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-10.mp3" length="10012608" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-10.mp3</guid>
       <pubDate>Fri, 10 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>20:52</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -378,6 +402,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-09.mp3" length="7364736" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-09.mp3</guid>
       <pubDate>Thu, 09 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:21</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -391,6 +416,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3" length="10377984" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-07.mp3</guid>
       <pubDate>Tue, 07 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>21:37</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -407,6 +433,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-07.mp3" length="11388864" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-07.mp3</guid>
       <pubDate>Tue, 07 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>23:44</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -424,6 +451,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3" length="5545344" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-06.mp3</guid>
       <pubDate>Mon, 06 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>11:33</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -441,6 +469,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
       <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3" length="7141485" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3</guid>
       <pubDate>Sun, 05 Jul 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>14:53</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
