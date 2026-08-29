@@ -6,12 +6,28 @@
     <description>An AI-generated educational podcast reviewing recent nephrology research in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Aug 2026 20:56:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 02:02:26 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Case Reports 2026-08-29</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-29.html</link>
+      <description>• Renal malakoplakia from Klebsiella pneumoniae in a transplanted kidney
+• Late-onset oligomeganephronia in a young adult born extremely preterm
+• MPO-ANCA crescentic glomerulonephritis with membranous features in Sjogren's syndrome
+• Tumor-to-tumor metastasis of breast carcinoma into clear cell renal cell carcinoma
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-29.html</description>
+      <content:encoded><![CDATA[<ul><li>Renal malakoplakia from Klebsiella pneumoniae in a transplanted kidney</li><li>Late-onset oligomeganephronia in a young adult born extremely preterm</li><li>MPO-ANCA crescentic glomerulonephritis with membranous features in Sjogren's syndrome</li><li>Tumor-to-tumor metastasis of breast carcinoma into clear cell renal cell carcinoma</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-29.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-29.mp3" length="7143744" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-29.mp3</guid>
+      <pubDate>Sat, 29 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-08-27</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-08-27.html</link>
