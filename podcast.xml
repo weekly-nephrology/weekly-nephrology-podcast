@@ -6,13 +6,31 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2026 09:39:16 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 21:00:05 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Weekly Summary 2026-08-31</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-31.html</link>
+      <description>• Sodium bicarbonate in adult in-hospital cardiac arrest, a blinded randomized trial
+• Potassium-rich diet with a binder in advanced CKD on RAAS inhibitors, a randomized crossover trial
+• Avacopan in ANCA-associated vasculitis with advanced kidney impairment, a multicenter cohort study
+• Urinary protein measures and kidney failure risk in rare kidney diseases, a registry cohort analysis
+• Urinary tubular biomarkers of drug response in CKD, a biomarker analysis within two trials
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-31.html</description>
+      <content:encoded><![CDATA[<ul><li>Sodium bicarbonate in adult in-hospital cardiac arrest, a blinded randomized trial</li><li>Potassium-rich diet with a binder in advanced CKD on RAAS inhibitors, a randomized crossover trial</li><li>Avacopan in ANCA-associated vasculitis with advanced kidney impairment, a multicenter cohort study</li><li>Urinary protein measures and kidney failure risk in rare kidney diseases, a registry cohort analysis</li><li>Urinary tubular biomarkers of drug response in CKD, a biomarker analysis within two trials</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-31.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-31.mp3" length="6621312" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-31.mp3</guid>
+      <pubDate>Mon, 31 Aug 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>13:48</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-08-29</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-29.html</link>
