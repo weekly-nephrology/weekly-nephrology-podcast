@@ -6,13 +6,30 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Sep 2026 20:57:57 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 02:04:09 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Case Reports 2026-09-12</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-09-12.html</link>
+      <description>• IgA-dominant infection-related glomerulonephritis with a Mycobacterium avium abscess
+• Steroid-resistant FSGS with an INF2 exon 6 variant progressing to kidney failure in a teenager
+• Nephrotic syndrome and organizing pneumonia during durvalumab treatment for advanced lung cancer
+• Purtscher-like retinopathy causing acute vision loss in a child with nephrotic syndrome
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-09-12.html</description>
+      <content:encoded><![CDATA[<ul><li>IgA-dominant infection-related glomerulonephritis with a Mycobacterium avium abscess</li><li>Steroid-resistant FSGS with an INF2 exon 6 variant progressing to kidney failure in a teenager</li><li>Nephrotic syndrome and organizing pneumonia during durvalumab treatment for advanced lung cancer</li><li>Purtscher-like retinopathy causing acute vision loss in a child with nephrotic syndrome</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-09-12.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-09-12.mp3" length="7583808" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-09-12.mp3</guid>
+      <pubDate>Sat, 12 Sep 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:48</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-09-10</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-09-10.html</link>
