@@ -6,13 +6,31 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Sep 2026 02:04:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 21:06:34 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Weekly Summary 2026-09-14</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-09-14.html</link>
+      <description>• Sparsentan plus an SGLT2 inhibitor in IgA nephropathy, two prospective studies
+• Cardiovascular death across glomerular disease subtypes in a national registry cohort
+• ASN clinical practice guidance on cardiovascular-kidney-metabolic syndrome in CKD
+• Rethinking protocol kidney biopsy in proliferative lupus nephritis, a narrative review
+• A bioengineered vessel against an arteriovenous fistula in a randomised dialysis access trial
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-09-14.html</description>
+      <content:encoded><![CDATA[<ul><li>Sparsentan plus an SGLT2 inhibitor in IgA nephropathy, two prospective studies</li><li>Cardiovascular death across glomerular disease subtypes in a national registry cohort</li><li>ASN clinical practice guidance on cardiovascular-kidney-metabolic syndrome in CKD</li><li>Rethinking protocol kidney biopsy in proliferative lupus nephritis, a narrative review</li><li>A bioengineered vessel against an arteriovenous fistula in a randomised dialysis access trial</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-09-14.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-09-14.mp3" length="8135808" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-09-14.mp3</guid>
+      <pubDate>Mon, 14 Sep 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>16:57</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-09-12</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-09-12.html</link>
