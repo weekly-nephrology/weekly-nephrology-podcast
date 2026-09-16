@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<meta name="description" content="Remission induction in severe renal ANCA-associated vasculitis: a cohort study"/>
+<meta name="theme-color" content="#33452f"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-09-17 — Transcript"/>
+<meta property="og:description" content="Remission induction in severe renal ANCA-associated vasculitis: a cohort study"/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-09-17.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-09-17 — Transcript"/>
+<meta name="twitter:description" content="Remission induction in severe renal ANCA-associated vasculitis: a cohort study"/>
+<title>Weekly Nephrology AI 2026-09-17 — Transcript</title>
+<link rel="alternate" type="application/rss+xml" title="Weekly Nephrology AI" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
+<style>
+  :root {
+    --accent:#a97f2f; --accent-deep:#7d5c1e;
+    --bg:#f5f1e3; --card:#fdfbf2; --ink:#26301f; --sub:#6f7863;
+    --line:rgba(38,48,31,.1); --bubble-b:#ecf0dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#161b12; --card:#20271a; --ink:#ece7d4; --sub:#a4ac93;
+      --line:rgba(236,231,212,.1); --bubble-b:#2a3321;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Avenir Next",-apple-system,
+      system-ui,sans-serif;
+    line-height:1.85; font-size:15.5px;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+
+  header { color:#f3ebd2; padding:44px 0 34px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 160% at 85% -20%, #a97f2f 0%, transparent 55%),
+      linear-gradient(150deg,#2c3a28 20%, #7d5c1e 130%); }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:#f3ebd2;
+    background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
+    padding:4px 12px; border-radius:999px; margin-bottom:14px;
+    backdrop-filter:blur(4px); }
+  h1 { margin:0 0 4px; font-size:2.15rem; font-weight:400;
+    letter-spacing:.005em; line-height:1.15;
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
+      "Noto Serif JP",serif; }
+  .sub { opacity:.78; font-size:.88rem; }
+  audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:7px 15px; border-radius:999px; font-size:.82rem;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(243,235,210,.24); }
+
+  main { padding:30px 0 60px; }
+
+  .overview { background:var(--card); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:16px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25);
+    padding:20px 22px; margin-bottom:22px; }
+  .overview .section-heading { margin-bottom:10px; }
+  .overview-heading { margin:5px 0; font-size:.96rem; line-height:1.65; }
+  .overview-topics { margin:5px 0; padding-left:1.3rem; }
+  .overview-topics li { margin:5px 0; font-size:.92rem; line-height:1.55; }
+
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
+  .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
+  .plist { list-style:none; margin:0; padding:0; }
+  .plist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .pnum { flex:none; width:26px; height:26px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; margin-top:2px; }
+  .pbody { min-width:0; }
+  .ptitle { font-weight:650; font-size:.92rem; line-height:1.55;
+    color:var(--ink); text-decoration:none; }
+  a.ptitle:hover { color:var(--accent); text-decoration:underline; }
+  .pmeta { font-size:.76rem; color:var(--sub); margin-top:3px;
+    overflow-wrap:anywhere; }
+  .pmeta a { color:var(--accent); text-decoration:none; }
+  .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
+
+  .turn { margin:18px 0; max-width:88%; }
+  .turn.b { margin-left:auto; }
+  .who { display:block; font-size:.7rem; font-weight:700;
+    letter-spacing:.08em; color:var(--sub); margin:0 6px 4px; }
+  .turn.a .who { color:var(--accent); }
+  .turn.b { text-align:right; }
+  .turn.b .bubble { text-align:left; }
+  .bubble { display:inline-block; background:var(--card);
+    border:1px solid var(--line); padding:12px 17px;
+    border-radius:4px 18px 18px 18px;
+    box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
+  .turn.b .bubble { background:var(--bubble-b);
+    border-radius:18px 4px 18px 18px; }
+  /* 1話者回は掛け合いがないので、吹き出しではなく記事本文として流す。
+     話者名は Script 直下の byline に一度だけ出す。 */
+  .byline { margin:-6px 0 22px; font-size:.72rem; font-weight:700;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:10px; }
+  .byline::after { content:""; flex:1; height:1px; background:var(--line); }
+  .monologue .say { margin:0 0 15px; }
+  .monologue .say:last-child { margin-bottom:0; }
+  .monologue .web-numbers { margin:-6px 0 18px; }
+  .note { color:var(--sub); font-size:.88rem; }
+  .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
+    margin:-10px 12px 18px; padding-left:12px;
+    border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+
+  footer { color:var(--sub); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="badge">Deep Read</span>
+  <h1>Weekly Nephrology AI</h1>
+  <div class="sub">2026-09-17 · Episode transcript · Educational use</div>
+  <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-09-17.mp3"></audio>
+  <div class="bar">
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-09-17.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
+  </div>
+</div></header>
+<main><div class="wrap">
+<section class="overview" aria-labelledby="episode-overview-title"><h2 id="episode-overview-title" class="section-heading">Episode overview</h2><p class="overview-heading">Remission induction in severe renal ANCA-associated vasculitis: a cohort study</p></section>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 5 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / Small Talk Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>8 papers</b></li>
+<li><span>TTS model</span><b>GPT-4o mini TTS</b></li>
+<li><span>Speakers</span><b>Daniel — Host, CEFR B1-B2, male voice (cedar)</b></li>
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ckj/sfag290" target="_blank" rel="noopener">Rituximab therapy achieves comparable remission to cyclophosphamide in ANCA-associated vasculitis with severe kidney involvement</a><div class="pmeta"><span>Clin Kidney J （2026 Sep, Vol 19 Issue 9）</span> · <a href="https://doi.org/10.1093/ckj/sfag290" target="_blank" rel="noopener">DOI: 10.1093/ckj/sfag290</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42741535/" target="_blank" rel="noopener">PMID: 42741535</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
+</ol></div></details>
+<details class="collapsible words"><summary><span class="section-title">Today&#x27;s words and phrases</span></summary><div class="collapsible-body"><ol class="wlist"><li><span class="wnum">1</span><div class="wbody"><b>look-back study</b><p>A study that goes back through records that already exist, instead of following people forward</p><p class="example">Example: A look-back study can describe what happened, but it cannot tell you why.</p></div></li>
+<li><span class="wnum">2</span><div class="wbody"><b>yardstick</b><p>A standard that you measure something against</p><p class="example">Example: Choose your yardstick before you look at the data, not after.</p></div></li>
+<li><span class="wnum">3</span><div class="wbody"><b>propensity score matching</b><p>A way of pairing people from two groups so that they look alike on the things that were measured</p><p class="example">Example: Propensity score matching can balance what you measured, but never what you missed.</p></div></li>
+<li><span class="wnum">4</span><div class="wbody"><b>competing risk</b><p>Another event that can happen first and make the event you are counting impossible</p><p class="example">Example: Death is a competing risk whenever you are counting later events.</p></div></li>
+<li><span class="wnum">5</span><div class="wbody"><b>tangled together</b><p>So mixed up that you cannot separate one from the other</p><p class="example">Example: When the treatment changed with the calendar, era and drug are tangled together.</p></div></li>
+<li><span class="wnum">6</span><div class="wbody"><b>crowd out</b><p>To take up so much space that other things get pushed aside</p><p class="example">Example: A strong baseline predictor can crowd out everything else in the model.</p></div></li>
+<li><span class="wnum">7</span><div class="wbody"><b>runs thin</b><p>Becomes scarce, so that very little of it is left</p><p class="example">Example: The evidence runs thin exactly where the decision gets hard.</p></div></li>
+<li><span class="wnum">8</span><div class="wbody"><b>ANCA-associated vasculitis</b><p>The full name behind the short form A-A-V, a rare disease that can involve the kidneys</p><p class="example">Example: ANCA-associated vasculitis is usually shortened to A-A-V in conversation.</p></div></li>
+<li><span class="wnum">9</span><div class="wbody"><b>intravenous antibiotics</b><p>Antibiotics given straight into a vein rather than by mouth</p><p class="example">Example: Needing intravenous antibiotics is one common way of marking an infection as severe.</p></div></li>
+<li><span class="wnum">10</span><div class="wbody"><b>high-dose steroids</b><p>Large doses of steroid medicine given early in treatment</p><p class="example">Example: The phrase high-dose steroids covers a range of doses, so it is worth checking what a paper means by it.</p></div></li></ol></div></details>
+
+<section class="script"><h2 class="section-heading">Script</h2><div class="monologue"><p class="byline">Daniel · Host</p>
+<p class="say">Welcome to Weekly Nephrology AI. This is the episode for September 17, 2026.</p>
+<p class="say">A quick note before we start. This show is generated by AI, so it can get things wrong. Before you act on anything here, in the clinic or in your own research, read the original paper in full.</p>
+<p class="say">This is an educational show about recent nephrology papers, and how far the evidence actually goes.</p>
+<p class="say">Today it&#x27;s Deep Read. One open-access paper, read closely from the verified full text.</p>
+<p class="say">I&#x27;m Daniel. We&#x27;ll take this one slowly, and I&#x27;ll show you where the evidence is strong and where it is weak.</p>
+<p class="say">Before we get into today&#x27;s episode, let&#x27;s ease in with a little Small Talk connected to today&#x27;s topic.</p>
+<p class="say">Here&#x27;s a thought to start on. Almost everything we call standard care was tested in people ill enough to need it, and still well enough to get into the trial.</p>
+<p class="say">Rituximab and cyclophosphamide are both accepted ways to induce remission in ANCA-associated vasculitis, but the two landmark randomised trials left a gap exactly where the kidneys are sickest. One of them refused entry to anyone whose creatinine was above 354 micromoles per litre. The other did enrol those patients, but its rituximab arm also received two intravenous pulses of cyclophosphamide, so rituximab on its own was never really put to the test in that group.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: RAVE exclusion threshold: serum creatinine &gt;354 µmol/L; RITUXIVAS rituximab arm also received 2 intravenous cyclophosphamide pulses; Renal involvement occurs in over 75% of patients with AAV; Prior observational comparisons: Geetha et al. n = 37 (eGFR &lt;20 mL/min/1.73 m²); Moura et al. n = 251 (eGFR &lt;30 mL/min/1.73 m², mean eGFR 17.5 mL/min/1.73 m², 15% dialysis-requiring at presentation).)</p>
+<p class="say">So the evidence runs thin exactly where the decision gets hard. That&#x27;s the gap today&#x27;s paper walks into.</p>
+<p class="say">Today we have one open-access study from Clinical Kidney Journal, published online this September, and we&#x27;re reading the verified full text, not just the abstract.</p>
+<p class="say">The authors work in the renal unit at Queen Elizabeth Hospital Birmingham, in the United Kingdom.</p>
+<p class="say">I chose it partly for the clinical question, and partly because it&#x27;s such a good teaching case in how to read a study that finds no difference.</p>
+<p class="say">Now, let&#x27;s get started.</p>
+<p class="say">Let&#x27;s start with the question. It&#x27;s sharper than it looks.</p>
+<p class="say">Two drugs. One decision. And the argument isn&#x27;t really about whether either of them works.</p>
+<p class="say">It&#x27;s about whether the evidence we have actually covers the patient in front of us, on the day they arrive.</p>
+<p class="say">That&#x27;s a different question from the one the trials were built to answer. A trial answers the question it enrolled for, and nothing wider.</p>
+<p class="say">So here&#x27;s the headline. Then we&#x27;ll spend the episode working out how much weight it carries.</p>
+<p class="say">Across those 107 patients, roughly half of each group reached the combined one-year target of sustained remission with kidneys working well enough to stay off dialysis. It was about fifty-two percent among those given cyclophosphamide and about forty-nine percent among those given rituximab, and that gap was well short of statistical significance. The authors then rebuilt the comparison using propensity score matching, which produced thirty closely matched pairs, and in that matched set the figure came out at fifty-three percent on each side.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Primary outcome at 12 months: cyclophosphamide 34/66 (52%) vs rituximab 20/41 (49%); P = .783; Secondary analysis excluding 7 patients who received both agents at induction: cyclophosphamide 56% vs rituximab 49%; P = .481; Propensity score–matched cohort (30 pairs): 16/30 (53%) in each group; P = 1.00; Matched-cohort balance: dialysis dependence 57% vs 60% (P = .80); PLEX 23% vs 23% (P = 1.00); IV methylprednisolone 46% vs 36% (P = .43).)</p>
+<p class="say">Now, before anyone files that away under &quot;they&#x27;re the same&quot;, let&#x27;s be careful about what a result of that shape can support.</p>
+<p class="say">When a study doesn&#x27;t land on a difference, there are two possible reasons, and on the page they look identical.</p>
+<p class="say">Either there really isn&#x27;t much of a difference, or there is one and the study was too small to see it. A null result on its own can&#x27;t tell you which.</p>
+<p class="say">Which is why the design matters more here than the percentages do. So let&#x27;s go through it.</p>
+<p class="say">Now to the methods.</p>
+<p class="say">This is a retrospective study, and it&#x27;s worth being precise about what that word buys and what it costs.</p>
+<p class="say">Retrospective means the care came first and the study came afterwards, reading records that were written for clinical reasons, not for research.</p>
+<p class="say">The upside is real. You get patients as they actually turned up, including the ones far too unwell to be enrolled in anything.</p>
+<p class="say">The cost is that the reason a patient got one drug rather than the other is baked into the data, and it&#x27;s usually invisible.</p>
+<p class="say">The investigators went back through the records of two Birmingham kidney units and pulled out every adult who had turned up between 2010 and 2023 with newly diagnosed ANCA-associated vasculitis and a creatinine above 354 micromoles per litre. That gave them 107 patients: 66 were treated with pulsed cyclophosphamide and 41 with rituximab, each on top of high-dose steroids. The yardstick they chose combined two things at the one-year mark. The vasculitis had to have stayed quiet for at least six consecutive months with no need to step up immunosuppression, and the kidneys had to be working well enough that the patient had been off dialysis for the previous ninety days and had not needed a transplant.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Design: retrospective two-centre cohort, Queen Elizabeth Hospital Birmingham and Birmingham Heartlands Hospital, consecutive de novo AAV presentations 2010–2023 (quality improvement audit CARMS-21610); Inclusion, stated two ways in the source: MATERIALS AND METHODS ¶1 requires age &gt;18 years and severe renal impairment defined by serum creatinine &gt;354 µmol/L, in patients with clinical or biopsy-proven AAV, with no dialysis route in; Abstract METHODS gives peak creatinine &gt;354 µmol/L; the INTRODUCTION aim and the CONCLUSION instead add &#x27;or dialysis dependency&#x27; at presentation; n = 107; cyclophosphamide 66 (6–10 IV pulses, median cumulative dose 5.6 g); rituximab 41 (1 g at baseline plus 1 g at week 2); Primary outcome: sustained remission (≥6 consecutive months, no escalation of immunosuppression) with independent renal function (dialysis-free for the preceding 90 days, no transplant) at 12 months; Kidney biopsy performed in 103/107 patients; ANCA Kidney Risk Score distribution did not differ between groups (P = .077).)</p>
+<p class="say">Two things there are worth slowing down on.</p>
+<p class="say">The first is how patients got into the cohort. Taking every patient who met the entry rule, in order, is the strongest thing a chart review can do for itself.</p>
+<p class="say">It stops the tidy cases being kept while the messy ones slip away.</p>
+<p class="say">The second is that the main measure is a composite. Two separate things have to be true at once before a patient counts as a success.</p>
+<p class="say">Composites earn their place when neither part happens often enough to study on its own. They&#x27;re also slippery, because the combined figure can hide which part is doing the work.</p>
+<p class="say">And a yardstick built out of phrases like &quot;the disease stayed quiet&quot; is a judgement. In a trial, someone makes that judgement in real time, against a protocol.</p>
+<p class="say">In a chart review you&#x27;re reading somebody else&#x27;s notes, years later, and deciding what they meant. That&#x27;s harder, and worth remembering when the outcome has soft edges.</p>
+<p class="say">Then there&#x27;s the statistics, and three ideas you&#x27;ll meet again and again.</p>
+<p class="say">The first is a multivariable model. You put several possible explanations into one analysis and ask which of them still matters once the others are accounted for.</p>
+<p class="say">That&#x27;s what people mean by an independent predictor. Not independent of the patient. Independent of the other variables in that particular model.</p>
+<p class="say">The second is competing risk. If you&#x27;re counting how many people relapse, someone who dies first can&#x27;t relapse.</p>
+<p class="say">Treat that death as ordinary censoring and you quietly overstate the risk. A competing-risk model keeps death in the picture instead of pretending the person is still waiting.</p>
+<p class="say">The third is propensity score matching. You work out how likely each patient was to get one treatment rather than the other, then pair up similar scores.</p>
+<p class="say">The pairs then look alike on the things you measured. Here&#x27;s the limit. Matching can only balance what was written down, and anything that went unrecorded stays unbalanced.</p>
+<p class="say">One more thing to listen for in any comparison like this. Was a target difference agreed before the data were opened?</p>
+<p class="say">If a study wants to claim two options are close enough, it has to say in advance how close counts. Without that, it can only report what it did or didn&#x27;t detect.</p>
+<p class="say">So, methods takeaway. A consecutive cohort, a composite outcome, and a design that can describe who did well without telling you why.</p>
+<p class="say">On to the results. I&#x27;ll keep the numbers light.</p>
+<p class="say">We&#x27;ve had the headline. Now the kidney story, and then the safety story.</p>
+<p class="say">Kidney recovery in this cohort told much the same story. At three months, six months and one year, the share of patients living without dialysis was statistically indistinguishable between the two induction drugs, and at the one-year mark it was sixty-five percent after cyclophosphamide against fifty-six percent after rituximab. Among the patients who did get off dialysis, the filtration rates were also in the same range. What did track strongly with a poor result was needing dialysis on the day of presentation. In a model that took account of age, ANCA type, plasma exchange and which drug was used, that single baseline feature was the one factor independently linked to missing the one-year target, while the drug itself was not.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Independent renal function: 3 months 63% vs 53% (P = .298); 6 months 61% vs 58% (P = .799); 12 months 65% vs 56% (P = .582), cyclophosphamide vs rituximab; eGFR at 12 months (patients off dialysis): 28 (21–40) vs 31 (28–49) mL/min/1.73 m²; P = .439; Urine ACR at 12 months: 49 (21–103) vs 37 (9–72) mg/mmol; P = .395; Multivariable logistic regression for the composite outcome: dialysis dependence at presentation OR 0.355 (95% CI 0.138–0.912), P = .031; induction agent P = .495; ANCA serotype P = .426; age P = .778; PLEX P = .763; Baseline dialysis requirement: cyclophosphamide 56% vs rituximab 71%; P = .129. Presenting eGFR 9 (6–11) vs 7 (6–10) mL/min/1.73 m²; P = .372; Recovery of independent renal function among those dialysis dependent at baseline: cyclophosphamide 15 patients (41%) at a median of 3 (3–173) days vs rituximab 9 patients (31%) at a median of 30 (3–59) days; P = .426.)</p>
+<p class="say">That last part is the most interesting line in the paper, and easy to skate past.</p>
+<p class="say">In a model like that, every variable competes to explain the same outcome. One that captures how advanced the illness already was will often crowd out the others, because it carries so much of the signal.</p>
+<p class="say">That&#x27;s a fact about the model, not a verdict on the drugs. A model ranks the variables you handed it, and says nothing about variables you left out.</p>
+<p class="say">Now to the safety side of the cohort.</p>
+<p class="say">The safety picture in this 107-patient cohort was less tidy. One-year survival was ninety-four percent in the cyclophosphamide group and eighty-three percent in the rituximab group, a difference that did not cross the usual threshold for significance. Seven rituximab-treated patients died, and the authors note that three of those deaths were caused by COVID-19 during a stretch when their unit was reaching for rituximab almost automatically to keep people out of the infusion suite; leave the COVID deaths aside and each group had four. Serious infections needing admission or intravenous antibiotics landed at roughly a quarter of the cyclophosphamide patients and roughly a third of the rituximab patients, again with no significant difference. Relapses inside the first year ran the other way, eight patients on cyclophosphamide against one on rituximab, but that too fell short of significance.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Survival at 12 months: cyclophosphamide 94% vs rituximab 83%; P = .068; Deaths in the rituximab cohort: 7 total, 3 secondary to COVID-19 and 3 associated with severe pre-existing comorbidities; 4 deaths in each cohort after excluding COVID-19 deaths; Severe infection within 12 months: cyclophosphamide 16/66 (24.2%) vs rituximab 13/41 (31.7%); P = .398; Relapse within 12 months: cyclophosphamide 8/66 (12.1%) vs rituximab 1/41 (2.4%); P = .079; Fine–Gray competing-risk model for time to first relapse (death as competing event): subdistribution HR 0.193 (95% CI 0.024–1.544), P = .120; Tolerability problems: cyclophosphamide 7/66 (11%) vs rituximab 0; P = .31 (3 cytopenia, 2 rash, 1 visible haematuria).)</p>
+<p class="say">Several comparisons there, and it&#x27;s tempting to hear a run of non-significant results as a run of reassurances. It isn&#x27;t.</p>
+<p class="say">When you&#x27;re counting a handful of events in each group, the range of values still compatible with the data is very wide.</p>
+<p class="say">A result like that doesn&#x27;t lean one way or the other. It simply hasn&#x27;t been measured precisely enough to lean.</p>
+<p class="say">And there&#x27;s a second problem, which is timing. Whenever a difference in outcome lines up with a difference in calendar years, you have to ask which one you&#x27;re really looking at.</p>
+<p class="say">A pandemic is the extreme version of that. The mild version is everywhere in old cohorts, because supportive care, thresholds and habits all drift.</p>
+<p class="say">Which brings us to the limitations, and I want to keep two things apart here.</p>
+<p class="say">First, what the authors say themselves. Then, separately, what I&#x27;d add as a reader.</p>
+<p class="say">The design puts firm limits on what can be taken from this. Nobody was randomised, and because the unit swung towards rituximab around the pandemic, the cyclophosphamide patients come mostly from the earlier years and were far more likely to have received plasma exchange and intravenous methylprednisolone, so calendar era and drug choice are tangled together. The authors are open about that, and they suggest the sparing use of plasma exchange on the rituximab side could have hidden a benefit that plasma exchange might otherwise have shown. Their matched sensitivity analysis pointed the same way as the main result, but a look-back study of this size was never set up as a formal non-inferiority trial, so what it offers is a failure to detect a difference rather than evidence that the two regimens can simply be swapped. They also did not test the strategy of giving cyclophosphamide pulses alongside rituximab.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Plasma exchange use: 59% of cyclophosphamide patients (39/66) vs 17% of rituximab patients (7/41); P &lt; .001; Intravenous methylprednisolone use: 53% of cyclophosphamide patients vs 27% of rituximab patients; P = .008; Propensity score–matched sensitivity analysis: 30 pairs, primary outcome 16/30 (53%) in each group; P = 1.00; No non-inferiority margin, power calculation or randomisation reported; single-region, two-centre cohort of 107 patients over 2010–2023.)</p>
+<p class="say">That&#x27;s a candid limitations paragraph, and it names the two biases that matter most here.</p>
+<p class="say">The first is confounding by indication. Doctors don&#x27;t choose treatments at random. They choose for reasons, and those reasons are often connected to how the patient will do.</p>
+<p class="say">So the groups differ before anyone is treated, and what you measure afterwards partly reflects why the choice was made.</p>
+<p class="say">The second is time-trend bias. If one option belongs mostly to the early years and the other mostly to the late years, era and treatment are tangled together.</p>
+<p class="say">Matching helps with the first. It can&#x27;t fix the second, because a year on the calendar carries everything else that changed with it.</p>
+<p class="say">Now my own reading, on top of theirs.</p>
+<p class="say">The word I&#x27;d be most careful with is comparable, which is the word the paper uses in its own title and conclusion.</p>
+<p class="say">In ordinary English, comparable sounds like equivalent. In statistics, a study that sets no threshold in advance cannot deliver equivalence at all.</p>
+<p class="say">What a design like this can deliver is a failure to detect a difference. That&#x27;s genuinely useful. It is not the same thing as showing there isn&#x27;t one.</p>
+<p class="say">Small cohorts are good at ruling things in and poor at ruling things out. Keep that asymmetry in mind whenever a null result is offered as reassurance.</p>
+<p class="say">There&#x27;s also the question of where a result like this travels. A cohort describes the place it came from. Whether it describes your unit is your judgement, not something the paper can settle.</p>
+<p class="say">So what does all of this mean clinically? Less than the title suggests, and a good deal more than nothing.</p>
+<p class="say">It adds careful description from the severe end of a disease, which is exactly where description is hardest to come by.</p>
+<p class="say">What it can&#x27;t do is establish that one option causes better outcomes than the other, in either direction. Observational data compare people, not treatments.</p>
+<p class="say">And I&#x27;m not going to tell you which drug to reach for. That decision sits with the person in the room, working from the guidelines and the whole clinical picture.</p>
+<p class="say">Before we get to today&#x27;s words and phrases, let&#x27;s pull the main discussion together.</p>
+<p class="say">Lesson one. When a study reports that it could not detect a difference, that&#x27;s a statement about the study&#x27;s resolution, not about the options themselves.</p>
+<p class="say">Lesson two. In any look-back comparison, ask what else changed when the treatment changed. Usually, something did.</p>
+<p class="say">Lesson three. A cohort study can frame an urgent question beautifully without being able to answer it. That&#x27;s an argument for a trial, not against the paper.</p>
+<p class="say">Now, today&#x27;s words and phrases.</p>
+<p class="say">First, look-back study. A study that goes back through records that already exist, instead of following people forward. For example, a look-back study can describe what happened, but it cannot tell you why.</p>
+<p class="say">Second, yardstick. A standard that you measure something against. For example, choose your yardstick before you look at the data, not after.</p>
+<p class="say">Third, propensity score matching. A way of pairing people from two groups so that they look alike on the things that were measured. For example, propensity score matching can balance what you measured, but never what you missed.</p>
+<p class="say">Fourth, competing risk. Another event that can happen first and make the event you are counting impossible. For example, death is a competing risk whenever you are counting later events.</p>
+<p class="say">Fifth, tangled together. So mixed up that you cannot separate one from the other. For example, when the treatment changed with the calendar, era and drug are tangled together.</p>
+<p class="say">Sixth, crowd out. To take up so much space that other things get pushed aside. For example, a strong baseline predictor can crowd out everything else in the model.</p>
+<p class="say">Seventh, runs thin. Becomes scarce, so that very little of it is left. For example, the evidence runs thin exactly where the decision gets hard.</p>
+<p class="say">Eighth, ANCA-associated vasculitis. The full name behind the short form A-A-V, a rare disease that can involve the kidneys. For example, ANCA-associated vasculitis is usually shortened to A-A-V in conversation.</p>
+<p class="say">Ninth, intravenous antibiotics. Antibiotics given straight into a vein rather than by mouth. For example, needing intravenous antibiotics is one common way of marking an infection as severe.</p>
+<p class="say">Tenth, high-dose steroids. Large doses of steroid medicine given early in treatment. For example, the phrase high-dose steroids covers a range of doses, so it is worth checking what a paper means by it.</p>
+<p class="say">That&#x27;s it for today&#x27;s words and phrases.</p>
+<p class="say">This episode was produced by Weekly Nephrology AI. The literature search and the first screening ran in Python, with no AI model involved. From there, Claude Opus 5 chose the papers, summarized them, and wrote the script. The narration is GPT-4o mini TTS.</p>
+<p class="say">Thanks for listening, and we&#x27;ll see you next time.</p></div></section>
+</div></main>
+<footer><div class="wrap">
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
+</div></footer>
+</body>
+</html>
