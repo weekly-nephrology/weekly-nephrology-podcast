@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<meta name="description" content="Tubular secretion biomarkers and outcomes in HFpEF on an MRA, a nested cohort analysis"/>
+<meta name="theme-color" content="#33452f"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Weekly Nephrology AI 2026-09-24 — Transcript"/>
+<meta property="og:description" content="Tubular secretion biomarkers and outcomes in HFpEF on an MRA, a nested cohort analysis"/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-09-24.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Weekly Nephrology AI 2026-09-24 — Transcript"/>
+<meta name="twitter:description" content="Tubular secretion biomarkers and outcomes in HFpEF on an MRA, a nested cohort analysis"/>
+<title>Weekly Nephrology AI 2026-09-24 — Transcript</title>
+<link rel="alternate" type="application/rss+xml" title="Weekly Nephrology AI" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
+<style>
+  :root {
+    --accent:#a97f2f; --accent-deep:#7d5c1e;
+    --bg:#f5f1e3; --card:#fdfbf2; --ink:#26301f; --sub:#6f7863;
+    --line:rgba(38,48,31,.1); --bubble-b:#ecf0dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#161b12; --card:#20271a; --ink:#ece7d4; --sub:#a4ac93;
+      --line:rgba(236,231,212,.1); --bubble-b:#2a3321;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Avenir Next",-apple-system,
+      system-ui,sans-serif;
+    line-height:1.85; font-size:15.5px;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+
+  header { color:#f3ebd2; padding:44px 0 34px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 160% at 85% -20%, #a97f2f 0%, transparent 55%),
+      linear-gradient(150deg,#2c3a28 20%, #7d5c1e 130%); }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:#f3ebd2;
+    background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
+    padding:4px 12px; border-radius:999px; margin-bottom:14px;
+    backdrop-filter:blur(4px); }
+  h1 { margin:0 0 4px; font-size:2.15rem; font-weight:400;
+    letter-spacing:.005em; line-height:1.15;
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
+      "Noto Serif JP",serif; }
+  .sub { opacity:.78; font-size:.88rem; }
+  audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:7px 15px; border-radius:999px; font-size:.82rem;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(243,235,210,.24); }
+
+  main { padding:30px 0 60px; }
+
+  .overview { background:var(--card); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:16px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25);
+    padding:20px 22px; margin-bottom:22px; }
+  .overview .section-heading { margin-bottom:10px; }
+  .overview-heading { margin:5px 0; font-size:.96rem; line-height:1.65; }
+  .overview-topics { margin:5px 0; padding-left:1.3rem; }
+  .overview-topics li { margin:5px 0; font-size:.92rem; line-height:1.55; }
+
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
+  .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
+  .plist { list-style:none; margin:0; padding:0; }
+  .plist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .pnum { flex:none; width:26px; height:26px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; margin-top:2px; }
+  .pbody { min-width:0; }
+  .ptitle { font-weight:650; font-size:.92rem; line-height:1.55;
+    color:var(--ink); text-decoration:none; }
+  a.ptitle:hover { color:var(--accent); text-decoration:underline; }
+  .pmeta { font-size:.76rem; color:var(--sub); margin-top:3px;
+    overflow-wrap:anywhere; }
+  .pmeta a { color:var(--accent); text-decoration:none; }
+  .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
+
+  .turn { margin:18px 0; max-width:88%; }
+  .turn.b { margin-left:auto; }
+  .who { display:block; font-size:.7rem; font-weight:700;
+    letter-spacing:.08em; color:var(--sub); margin:0 6px 4px; }
+  .turn.a .who { color:var(--accent); }
+  .turn.b { text-align:right; }
+  .turn.b .bubble { text-align:left; }
+  .bubble { display:inline-block; background:var(--card);
+    border:1px solid var(--line); padding:12px 17px;
+    border-radius:4px 18px 18px 18px;
+    box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
+  .turn.b .bubble { background:var(--bubble-b);
+    border-radius:18px 4px 18px 18px; }
+  /* 1話者回は掛け合いがないので、吹き出しではなく記事本文として流す。
+     話者名は Script 直下の byline に一度だけ出す。 */
+  .byline { margin:-6px 0 22px; font-size:.72rem; font-weight:700;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:10px; }
+  .byline::after { content:""; flex:1; height:1px; background:var(--line); }
+  .monologue .say { margin:0 0 15px; }
+  .monologue .say:last-child { margin-bottom:0; }
+  .monologue .web-numbers { margin:-6px 0 18px; }
+  .note { color:var(--sub); font-size:.88rem; }
+  .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
+    margin:-10px 12px 18px; padding-left:12px;
+    border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+
+  footer { color:var(--sub); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="badge">Deep Read</span>
+  <h1>Weekly Nephrology AI</h1>
+  <div class="sub">2026-09-24 · Episode transcript · Educational use</div>
+  <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-09-24.mp3"></audio>
+  <div class="bar">
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-09-24.mp3">⬇ Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
+  </div>
+</div></header>
+<main><div class="wrap">
+<section class="overview" aria-labelledby="episode-overview-title"><h2 id="episode-overview-title" class="section-heading">Episode overview</h2><p class="overview-heading">Tubular secretion biomarkers and outcomes in HFpEF on an MRA, a nested cohort analysis</p></section>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 5 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / Small Talk Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>Candidate papers</span><b>8 papers</b></li>
+<li><span>TTS model</span><b>GPT-4o mini TTS</b></li>
+<li><span>Speakers</span><b>Daniel — Host, CEFR B1-B2, male voice (cedar)</b></li>
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/j.xkme.2026.101428" target="_blank" rel="noopener">Association of Proximal Tubule Secretion With Hyperkalemia Risk, Treatment Response, and Outcomes in Heart Failure With Preserved Ejection Fraction</a><div class="pmeta"><span>Kidney Med （2026 Aug, Vol 8 Issue 8）</span> · <a href="https://doi.org/10.1016/j.xkme.2026.101428" target="_blank" rel="noopener">DOI: 10.1016/j.xkme.2026.101428</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42499456/" target="_blank" rel="noopener">PMID: 42499456</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
+</ol></div></details>
+<details class="collapsible words"><summary><span class="section-title">Today&#x27;s words and phrases</span></summary><div class="collapsible-body"><ol class="wlist"><li><span class="wnum">1</span><div class="wbody"><b>tubular secretion</b><p>This is the way the kidney tubules move substances out of the blood and into the urine.</p><p class="example">Example: The panel was chosen to reflect tubular secretion rather than filtration.</p></div></li>
+<li><span class="wnum">2</span><div class="wbody"><b>serum potassium</b><p>This is the amount of potassium measured in the blood.</p><p class="example">Example: Serum potassium was checked on a fixed schedule for everyone in the trial.</p></div></li>
+<li><span class="wnum">3</span><div class="wbody"><b>organic anion transporters</b><p>These are proteins in the kidney that carry negatively charged waste products into the urine.</p><p class="example">Example: All nine markers in the score are handled by organic anion transporters.</p></div></li>
+<li><span class="wnum">4</span><div class="wbody"><b>mass spectrometry</b><p>This is a laboratory method that identifies and measures substances by their weight.</p><p class="example">Example: Mass spectrometry lets you measure many small molecules in a single run.</p></div></li>
+<li><span class="wnum">5</span><div class="wbody"><b>loop diuretic</b><p>This is a medicine that makes the kidneys pass much more water and salt.</p><p class="example">Example: Loop diuretic use was one of the variables the authors adjusted for.</p></div></li>
+<li><span class="wnum">6</span><div class="wbody"><b>screened out</b><p>Removed from a group before it begins, because of a rule set in advance.</p><p class="example">Example: People at the highest risk were screened out before anyone was randomised.</p></div></li>
+<li><span class="wnum">7</span><div class="wbody"><b>starting point</b><p>The place where an idea begins, not the final answer.</p><p class="example">Example: An unadjusted association is a starting point, not a conclusion.</p></div></li>
+<li><span class="wnum">8</span><div class="wbody"><b>worth unpacking</b><p>Deserving a closer look, because the detail changes how you read it.</p><p class="example">Example: That single summary number is worth unpacking before you trust it.</p></div></li>
+<li><span class="wnum">9</span><div class="wbody"><b>backdrop</b><p>The background situation that gives meaning to whatever comes next.</p><p class="example">Example: A normal baseline value is an important backdrop for the whole analysis.</p></div></li>
+<li><span class="wnum">10</span><div class="wbody"><b>held loosely</b><p>Accepted only weakly, because it could easily turn out to be wrong.</p><p class="example">Example: A subgroup finding with very few events should be held loosely.</p></div></li></ol></div></details>
+
+<section class="script"><h2 class="section-heading">Script</h2><div class="monologue"><p class="byline">Daniel · Host</p>
+<p class="say">Welcome to Weekly Nephrology AI. This is the episode for September 24, 2026.</p>
+<p class="say">A quick note before we start. This show is generated by AI, so it can get things wrong. Before you act on anything here, in the clinic or in your own research, read the original paper in full.</p>
+<p class="say">This is an educational show about recent nephrology papers, and how far the evidence actually goes.</p>
+<p class="say">Today it&#x27;s Deep Read. One open-access paper, read closely from the verified full text.</p>
+<p class="say">I&#x27;m Daniel. We&#x27;ll take this one slowly, and I&#x27;ll show you where the evidence is strong and where it is weak.</p>
+<p class="say">Before we get into today&#x27;s episode, let&#x27;s ease in with a little Small Talk connected to today&#x27;s topic.</p>
+<p class="say">Here&#x27;s something you&#x27;ve probably thought in clinic without ever saying it out loud. Wouldn&#x27;t it be handy to know, before you write the prescription, which patient you&#x27;ll end up chasing lab results on?</p>
+<p class="say">In heart failure with preserved ejection fraction, the usefulness of spironolactone is limited in everyday practice by worry about potassium climbing. Before this study, nobody knew whether these urine and blood markers of tubular secretion could tell you in advance which of those patients would run into trouble.</p>
+<p class="say">That&#x27;s the hook for today. One measurement at the start, sorting people into worry and don&#x27;t worry. It&#x27;s an appealing idea, and it deserves testing rather than admiring. So today we find out what happened when somebody went and checked.</p>
+<p class="say">The evidence I&#x27;m working from is the verified open-access full text, not just the abstract. That matters for this one, because nearly everything interesting sits in the methods and the tables rather than in the summary at the front.</p>
+<p class="say">It&#x27;s from Kidney Medicine, in the August issue, and the first author works in the cardiology section at the Veterans Affairs San Diego Healthcare System. It earns a slow read because it&#x27;s a serious attempt at a question plenty of people would like answered, and because of how honestly it reports coming up empty.</p>
+<p class="say">Now, let&#x27;s get started.</p>
+<p class="say">Let me lay out the shape of the study before any of the detail.</p>
+<p class="say">The design matters here. This was not a new trial but an observational analysis carried out inside an existing randomized trial of spironolactone in heart failure with preserved ejection fraction. The authors studied three hundred seventy-two participants whose matched baseline blood and urine samples were still available in a national specimen bank, and roughly half of them had been assigned to spironolactone.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Parent trial randomized: 3,445 participants, 1:1 spironolactone vs placebo; Analytic cohort: 372 participants; spironolactone 179 (48%), placebo 193; Participants not included in this substudy: 3,073.)</p>
+<p class="say">And here&#x27;s the finding, up front, so you know where all of this is heading.</p>
+<p class="say">The authors&#x27; own reading is straightforward. In this heart failure with preserved ejection fraction cohort, these tubular secretion markers did not identify who would become hyperkalemic, who would respond to spironolactone, or who would go on to have cardiovascular or kidney events.</p>
+<p class="say">Which raises the obvious question. Why go looking in the first place? The idea didn&#x27;t come out of nowhere.</p>
+<p class="say">The starting point for this study was an earlier finding in adults with hypertension and chronic kidney disease. In that group, people whose measured tubular secretion was weaker had roughly sixty percent higher risk of developing high potassium, and the authors wanted to know whether the same marker would behave that way in heart failure.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Prior SPRINT analysis: 2,089 nondiabetic participants with hypertension and CKD; 63% greater risk of ambulatory hyperkalemia per 1-SD lower secretion score.)</p>
+<p class="say">So that&#x27;s the clinical question. Same measurement, different patients, different setting. Does it still do the job?</p>
+<p class="say">Now to the methods. In a paper like this, the methods are the argument, so I&#x27;ll take them slowly and stop wherever the language gets dense.</p>
+<p class="say">It helps to know who could get into the parent trial in the first place. Participants were aged fifty or older, had an ejection fraction of at least forty-five percent, and had to start with a normal potassium, while anyone with substantially reduced kidney function was excluded. In other words, the people most likely to become hyperkalemic were largely screened out before randomisation.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Age 50 years or older; Left ventricular ejection fraction 45% or greater; Baseline serum potassium below 5.0 mmol/L; Excluded: eGFR below 30 mL/min/1.73 m2 or serum creatinine 2.5 mg/dL or above; Spironolactone dose range in the parent trial: 15 to 45 mg daily.)</p>
+<p class="say">Hold on to that last point. It comes back at the end, and it changes how you read everything in between.</p>
+<p class="say">The exposure itself is worth unpacking. Nine substances that the proximal tubule pumps out through the organic anion transporters were measured in matched urine and plasma using mass spectrometry. For each one the investigators took the urine to plasma ratio, log transformed it, rescaled it onto a common zero to one hundred scale, and then averaged all nine into a single summary secretion score for each participant.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: 9 secretion biomarkers transported by organic anion transporters 1 and 3; Each marker&#x27;s log-transformed urine-to-plasma ratio standardized to a 0-100 scale; Summary score = mean of the 9 standardized values; Mean secretion score in the cohort: 59 (SD 12).)</p>
+<p class="say">So, that is the exposure. The next question is what they tried to predict with it.</p>
+<p class="say">The outcome list was deliberately wide. It covered the trajectory of serum potassium over repeat measurements, a first episode of hyperkalemia, twelve-month change in a heart failure quality of life questionnaire and in NT-proBNP, two different cardiovascular composites, and a composite kidney outcome combining a large fall in filtration rate with starting kidney replacement therapy.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Incident hyperkalemia defined as potassium 5.5 mmol/L or higher at any point in follow-up; Clinically meaningful quality of life change defined as a 5-point or greater rise in KCCQ; Kidney composite: 40% or greater eGFR decline or receipt of kidney replacement therapy; TOPCAT primary composite, 3 components: cardiovascular death, heart failure hospitalization, aborted cardiac arrest; MACE, 4 components: cardiovascular death, heart failure hospitalization, stroke, myocardial infarction.)</p>
+<p class="say">That&#x27;s a wide net. And a wide net needs the right statistics underneath it, because each of those outcomes has a different shape.</p>
+<p class="say">The statistical approach fitted the model to the shape of the data. Repeated potassium values went into linear mixed effects models that allowed each person their own starting point and their own slope over time. Events over time were handled with Cox models, while the twelve month response measures used linear and logistic regression, run separately within each randomised arm. One detail matters here: the adjusted models did not all carry the same confounders. There were two sets. The potassium trajectory models and the event models used the fuller set of ten, which was age, sex, region, study arm, diabetes, blockade of the renin angiotensin system, loop diuretic use, baseline potassium, kidney function and albuminuria. The twelve month response models used a reduced set that dropped study arm, which cannot vary inside a single arm, and dropped baseline potassium as well.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Linear mixed-effects models with random intercepts, random slopes and exchangeable covariance for the 1 repeated-measures outcome (serial potassium); Adjustment set 1, 10 variables, used for the linear mixed-effects potassium models and the Cox models (Methods / Statistical Analysis; Table 2 note): age, sex, region (Americas vs Eastern Europe), study arm, diabetes, ACE inhibitor or ARB use, loop diuretic use, baseline potassium, baseline eGFR, urine albumin-to-creatinine ratio; Adjustment set 2, 8 variables, used for the arm-split 12-month KCCQ and NT-proBNP models (Table 3 note; Table 4 note): age, sex, region (Americas vs Eastern Europe), diabetes, ACE inhibitor or ARB use, loop diuretic use, eGFR, urine albumin-to-creatinine ratio; Difference between the 2 sets: the arm-split models omit study arm and baseline potassium; Source internal wording difference: Methods / Statistical Analysis describes the arm-split adjustment with 7 variables and does not mention urine albumin-to-creatinine ratio, while the Table 3 and Table 4 notes list 8 variables including it; Significance threshold: P below 0.05; analyses performed in Stata 18.)</p>
+<p class="say">There&#x27;s one more layer, and it&#x27;s the layer that decides how much weight any subgroup result can carry later on.</p>
+<p class="say">Three questions about who the marker might work in were built into the analysis plan in advance: does it behave differently in the spironolactone arm than the placebo arm, does it behave differently by enrolling region, and does it behave differently at different levels of kidney function. On top of that, the potassium analyses were repeated using only the values measured while people were still taking their assigned study drug.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: 3 prespecified interaction terms: study arm, region (Americas vs Eastern Europe), eGFR; Sensitivity analyses for the 2 potassium outcomes restricted to values measured before study drug discontinuation.)</p>
+<p class="say">That&#x27;s the toolkit. It&#x27;s worth holding on to, because the results only make sense against it.</p>
+<p class="say">Time for the results. Let&#x27;s start with who we&#x27;re actually talking about, because that shapes everything that follows.</p>
+<p class="say">The people actually studied were elderly but not, on the whole, people with kidney disease. Average age was about seventy years and nearly half were women. Mean kidney function sat around sixty-six millilitres per minute, and mean baseline potassium was squarely normal, which is an important backdrop for everything that follows.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Mean age 70 (SD 10) years; 45% women; 42% enrolled in Eastern Europe; Mean eGFR 66 (SD 18) mL/min/1.73 m2; mean serum potassium 4.2 (SD 0.5) mmol/L; Hypertension 95%, diabetes 34%, atrial fibrillation 43%, ACE inhibitor or ARB use 82%; Mean body mass index 32.6 (SD 6.8) kg/m2; mean LVEF 60 (SD 7)%.)</p>
+<p class="say">Keep that picture in mind as the numbers arrive. Potassium first, since that was the whole reason for doing this.</p>
+<p class="say">With an average of eight potassium measurements per person over a median of about three years, a higher baseline secretion score was not associated with the way potassium moved over time in these heart failure participants. That was true before adjustment and after it, and the result held up when the analysis was restricted to values measured on study drug.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Average 8 potassium measurements per participant; median follow-up 3 years; Unadjusted change in potassium per month per 1-SD higher score: -0.03 mmol/L (95% CI, -0.20 to 0.12); Adjusted change in potassium per month per 1-SD higher score: -0.13 mmol/L (95% CI, -0.31 to 0.05); P for interaction by study arm, region and eGFR all above 0.10.)</p>
+<p class="say">That&#x27;s the continuous version of the question, the slow drift over years. Now the version a clinician would actually ask. Did anyone tip over the edge?</p>
+<p class="say">Twenty-six participants, about seven percent of the cohort, reached a potassium of five point five or higher. In the unadjusted analysis, a higher secretion score looked protective. Once the model accounted for age, kidney function and the other prespecified confounders, that association faded and was no longer statistically significant, which is a clean example of why an unadjusted signal is only ever a starting point.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Incident hyperkalemia: 26 of 372 participants (7%); Unadjusted HR per 1-SD higher secretion score: 0.77 (95% CI, 0.60-0.99); Adjusted HR per 1-SD higher secretion score: 0.94 (95% CI, 0.62-1.43).)</p>
+<p class="say">So much for the risk side. The second question the authors put to the score was about response to treatment.</p>
+<p class="say">Among the three hundred forty participants who had quality of life scores at both time points, there was one association that did reach significance. In the spironolactone arm, a higher secretion score went with a slightly lower quality of life score at twelve months, a difference of roughly three and a half points per standard deviation. Nothing similar appeared in the placebo arm, and the score did not predict who achieved a clinically meaningful improvement in either arm.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: 340 participants with paired KCCQ (spironolactone 161, placebo 179); Adjusted change in KCCQ per 1-SD higher score, spironolactone arm: -3.5 (95% CI, -6.6 to -0.4 in the abstract and Table 3; the Results text gives -6.6 to -0.5); Adjusted change in KCCQ per 1-SD higher score, placebo arm: -1.9 (95% CI, -5.2 to 1.3); Adjusted OR for a 5-point or greater KCCQ increase: 0.8 (95% CI, 0.5-1.2) spironolactone, 0.9 (95% CI, 0.6-1.2) placebo; Participants with a 5-point or greater KCCQ increase: 90 spironolactone, 79 placebo.)</p>
+<p class="say">And then the other half of that question, the half measured in the laboratory rather than by questionnaire.</p>
+<p class="say">NT-proBNP told the same story as the rest of the study. In these heart failure participants, the secretion score was not associated with how NT-proBNP changed over twelve months, and that was true in the spironolactone arm and in the placebo arm alike. The numbers of participants contributing to this particular outcome are reported inconsistently within the paper, so the safe statement is simply that no association was found in either arm.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Methods state 331 participants had paired baseline and 12-month specimens for NT-proBNP; Table 4 arm sizes for this outcome: placebo 149, spironolactone 132 (total 281); Mean change in NT-proBNP: -72 pg/mL spironolactone arm, +196 pg/mL placebo arm; Adjusted change per 1-SD higher score: 7 pg/mL (95% CI, -116 to 131) spironolactone; -41 pg/mL (95% CI, -238 to 156) placebo.)</p>
+<p class="say">Now to hard events, the ones that put people in hospital.</p>
+<p class="say">About one in five participants had the trial&#x27;s main cardiovascular composite, and about a quarter had the broader one. For both, the same pattern appeared as with potassium. Unadjusted models showed what looked like a protective association, and after adjustment that association was gone, with the point estimates actually drifting weakly in the opposite direction.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: TOPCAT primary composite: 76 of 372 participants (20%); MACE composite: 89 of 372 participants (24%); Primary composite HR per 1-SD higher score: 0.81 (95% CI, 0.66-0.99) unadjusted; 1.24 (95% CI, 0.95-1.62) adjusted; MACE HR per 1-SD higher score: 0.76 (95% CI, 0.63-0.93) unadjusted; 1.09 (95% CI, 0.85-1.41) adjusted.)</p>
+<p class="say">Before we leave the events, there&#x27;s one interaction I have to put in front of you, and it needs careful handling.</p>
+<p class="say">One interaction did come out statistically significant: the relationship between the secretion score and cardiovascular events differed across levels of kidney function, and the apparent excess risk sat in the group with the highest filtration rates. The authors are careful with it, because the overall adjusted analysis showed nothing, each quartile held few events, and the direction was the opposite of what they had predicted.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Adjusted P for interaction with eGFR: 0.001 for the TOPCAT primary composite, 0.003 for MACE; Unadjusted P for interaction with eGFR: 0.002 for the primary composite, 0.006 for MACE; Exploratory analysis across 4 eGFR quartiles (Table S3): higher risk with higher secretion score confined to the highest quartile.)</p>
+<p class="say">And finally the kidney outcome, which is the one you&#x27;d most expect a kidney marker to predict.</p>
+<p class="say">Forty-nine participants met the composite kidney outcome, which combined a large fall in filtration rate with starting kidney replacement therapy. The secretion score was not associated with that outcome either, and the authors point out that this differs from earlier studies in populations with worse kidney function.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Composite kidney outcome: 49 of 372 participants; Kidney composite HR per 1-SD higher score: 0.83 (95% CI, 0.67-1.05) unadjusted; 1.26 (95% CI, 0.93-1.71) adjusted.)</p>
+<p class="say">That&#x27;s the complete sweep of results. Which leaves the real work, and it&#x27;s the part that a headline never does for you. Deciding what all of that is actually worth.</p>
+<p class="say">Let&#x27;s talk about limitations, and I want to be clear about whose limitations these are. The next few points are the authors&#x27; own, set out in their own paper.</p>
+<p class="say">Power is the first limitation to weigh. The analysis had been planned around a slightly larger sample, and a small number of stored specimens turned out to have too little volume, leaving three hundred seventy-two participants. On top of that, only a little over two hundred of them were enrolled in the Americas, which narrows the usable sample further.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Planned sample for the power calculation: 385 participants; Specimens with inadequate volume: 13; Analysed cohort: 372 participants; Enrolled in the Americas: 216 participants; Eastern Europe: 156 (42%).)</p>
+<p class="say">Two measurement limits matter for how far this null result travels. The secretion markers were measured once, at baseline, rather than repeatedly, which leaves more measurement noise than the authors would have liked. And only markers handled by the anion pathway were assayed, even though markers of cation handling might be more directly relevant to potassium.</p>
+<p class="say">The parent trial&#x27;s well-documented problems with how it was run in one enrolling region carry straight into this analysis. The team tested for differences by region, but they accept that residual confounding remains. And the regional signal that did appear rested on a very small number of events on one side, which is exactly the situation in which a subgroup result should be held loosely.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: MACE events by region: 12 in Eastern Europe, 77 in the Americas, 89 in total; Adjusted P for region interaction for MACE: 0.05; unadjusted: 0.02.)</p>
+<p class="say">That&#x27;s the authors&#x27; list, and it&#x27;s a refreshingly plain one. Here&#x27;s one more thing I&#x27;d put on the scale myself. It isn&#x27;t in their limitations paragraph at all, but it appears earlier in the paper and it&#x27;s easy to read past.</p>
+<p class="say">Here is a subtlety worth pausing on. The substudy sample is described as a random selection, yet when the authors compared it with the rest of the trial, the two groups were not alike. The people with usable stored samples were older, more often men, less often enrolled in Eastern Europe, and had a higher creatinine, even though average filtration rate was similar.</p>
+<p class="say">So where does that leave a clinician? The authors don&#x27;t dress the result up, and they don&#x27;t write the idea off either.</p>
+<p class="say">Rather than concluding that the biology is wrong, the authors point to differences between this trial and their earlier work in chronic kidney disease. The participants here had much better kidney function, people at high risk of hyperkalemia were excluded at entry, and potassium was checked on a schedule with the dose adjusted by protocol. They are explicit that they do not think this one analysis closes the question.</p>
+<p class="say">I&#x27;d read that as the right tone. There&#x27;s a difference between a question that has been answered and a question that was asked in the wrong room, and the authors aren&#x27;t pretending to know which of those this was.</p>
+<p class="say">Before we get to today&#x27;s words and phrases, let&#x27;s pull the main discussion together.</p>
+<p class="say">One framing point holds everything else together. What was randomised in the parent trial was spironolactone against placebo, not the secretion score. So every association reported here for the score is observational, with all the confounding that implies, and a result that fails to reach significance is not the same as showing that no relationship is there.</p>
+<p class="say">There are two clear boundaries on who this applies to. Everyone had an ejection fraction of at least forty-five percent, so the study says nothing about heart failure with reduced ejection fraction. And advanced kidney disease was an exclusion at entry, with average kidney function in the mid sixties, so these results cannot be carried across to people with substantially reduced filtration.</p>
+<p class="web-numbers" aria-label="Exact study values">(Exact values: Parent trial required left ventricular ejection fraction of 45% or greater; Parent trial excluded eGFR below 30 mL/min/1.73 m2; Mean eGFR in the analysed cohort: 66 (SD 18) mL/min/1.73 m2.)</p>
+<p class="say">Now, today&#x27;s words and phrases.</p>
+<p class="say">First, tubular secretion. This is the way the kidney tubules move substances out of the blood and into the urine. For example, the panel was chosen to reflect tubular secretion rather than filtration.</p>
+<p class="say">Second, serum potassium. This is the amount of potassium measured in the blood. For example, serum potassium was checked on a fixed schedule for everyone in the trial.</p>
+<p class="say">Third, organic anion transporters. These are proteins in the kidney that carry negatively charged waste products into the urine. For example, all nine markers in the score are handled by organic anion transporters.</p>
+<p class="say">Fourth, mass spectrometry. This is a laboratory method that identifies and measures substances by their weight. For example, mass spectrometry lets you measure many small molecules in a single run.</p>
+<p class="say">Fifth, loop diuretic. This is a medicine that makes the kidneys pass much more water and salt. For example, loop diuretic use was one of the variables the authors adjusted for.</p>
+<p class="say">Sixth, screened out. Removed from a group before it begins, because of a rule set in advance. For example, people at the highest risk were screened out before anyone was randomised.</p>
+<p class="say">Seventh, starting point. The place where an idea begins, not the final answer. For example, an unadjusted association is a starting point, not a conclusion.</p>
+<p class="say">Eighth, worth unpacking. Deserving a closer look, because the detail changes how you read it. For example, that single summary number is worth unpacking before you trust it.</p>
+<p class="say">Ninth, backdrop. The background situation that gives meaning to whatever comes next. For example, a normal baseline value is an important backdrop for the whole analysis.</p>
+<p class="say">Tenth, held loosely. Accepted only weakly, because it could easily turn out to be wrong. For example, a subgroup finding with very few events should be held loosely.</p>
+<p class="say">That&#x27;s it for today&#x27;s words and phrases.</p>
+<p class="say">This episode was produced by Weekly Nephrology AI. The literature search and the first screening ran in Python, with no AI model involved. From there, Claude Opus 5 chose the papers, summarized them, and wrote the script. The narration is GPT-4o mini TTS.</p>
+<p class="say">Thanks for listening, and we&#x27;ll see you next time.</p></div></section>
+</div></main>
+<footer><div class="wrap">
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
+</div></footer>
+</body>
+</html>
