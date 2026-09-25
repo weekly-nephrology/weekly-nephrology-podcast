@@ -6,13 +6,30 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers in clear English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Sep 2026 22:49:48 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 20:34:41 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Case Reports 2026-09-26</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-09-26.html</link>
+      <description>• Granulomatous interstitial nephritis from NSAID-laced traditional remedies, a case
+• Masked-IgG immunotactoid glomerulopathy with multiple myeloma in an older woman, a case
+• Hereditary xanthinuria with crystal-free CKD in an adult man, first biopsy case report
+• Recurrent IgA nephropathy after kidney transplant treated with Nefecon then sparsentan, a case
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-09-26.html</description>
+      <content:encoded><![CDATA[<ul><li>Granulomatous interstitial nephritis from NSAID-laced traditional remedies, a case</li><li>Masked-IgG immunotactoid glomerulopathy with multiple myeloma in an older woman, a case</li><li>Hereditary xanthinuria with crystal-free CKD in an adult man, first biopsy case report</li><li>Recurrent IgA nephropathy after kidney transplant treated with Nefecon then sparsentan, a case</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-09-26.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-09-26.mp3" length="7182528" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-09-26.mp3</guid>
+      <pubDate>Sat, 26 Sep 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>14:58</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-09-24</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-09-24.html</link>
