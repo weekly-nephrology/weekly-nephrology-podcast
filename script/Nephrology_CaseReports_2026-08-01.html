@@ -4,20 +4,21 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex"/>
-<meta name="description" content="Hydroxychloroquine-related renal phospholipidosis presenting as proximal tubulopathy · FcRn antagonist with anticoagulation in antiphospholipid syndrome kidney transplantation · Atypical HUS with malignant hypertension mimicking…"/>
+<meta name="description" content="Hydroxychloroquine-related renal phospholipidosis presenting as proximal tubulopathy FcRn antagonist with anticoagulation in antiphospholipid syndrome kidney transplantation Atypical HUS with malignant hypertension mimicking pulmonary-renal…"/>
 <meta name="theme-color" content="#33452f"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Weekly Nephrology AI"/>
-<meta property="og:title" content="Weekly Nephrology AI 2026-08-01 — Transcript"/>
-<meta property="og:description" content="Hydroxychloroquine-related renal phospholipidosis presenting as proximal tubulopathy · FcRn antagonist with anticoagulation in antiphospholipid syndrome kidney transplantation · Atypical HUS with malignant hypertension mimicking…"/>
+<meta property="og:title" content="Case Reports 2026-08-01 — Weekly Nephrology AI"/>
+<meta property="og:description" content="Hydroxychloroquine-related renal phospholipidosis presenting as proximal tubulopathy FcRn antagonist with anticoagulation in antiphospholipid syndrome kidney transplantation Atypical HUS with malignant hypertension mimicking pulmonary-renal…"/>
 <meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-01.html"/>
-<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
-<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Weekly Nephrology AI 2026-08-01 — Transcript"/>
-<meta name="twitter:description" content="Hydroxychloroquine-related renal phospholipidosis presenting as proximal tubulopathy · FcRn antagonist with anticoagulation in antiphospholipid syndrome kidney transplantation · Atypical HUS with malignant hypertension mimicking…"/>
-<title>Weekly Nephrology AI 2026-08-01 — Transcript</title>
+<meta name="twitter:title" content="Case Reports 2026-08-01 — Weekly Nephrology AI"/>
+<meta name="twitter:description" content="Hydroxychloroquine-related renal phospholipidosis presenting as proximal tubulopathy FcRn antagonist with anticoagulation in antiphospholipid syndrome kidney transplantation Atypical HUS with malignant hypertension mimicking pulmonary-renal…"/>
+<title>Case Reports 2026-08-01 — Weekly Nephrology AI</title>
+<link rel="alternate" type="application/rss+xml" title="Weekly Nephrology AI" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
@@ -51,7 +52,13 @@
     background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
     padding:4px 12px; border-radius:999px; margin-bottom:14px;
     backdrop-filter:blur(4px); }
-  h1 { margin:0 0 4px; font-size:2.15rem; font-weight:400;
+  .eyebrow { display:block; color:#f3ebd2; opacity:.8; text-decoration:none;
+    font-family:"DM Serif Display",Georgia,serif; font-size:1.05rem;
+    margin-bottom:12px; }
+  .eyebrow:hover { opacity:1; text-decoration:underline; }
+  .badge-ja { letter-spacing:.04em; text-transform:none; font-weight:600;
+    opacity:.85; margin-left:4px; }
+  h1 { margin:0 0 6px; font-size:1.75rem; font-weight:400;
     letter-spacing:.005em; line-height:1.15;
     font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
@@ -136,6 +143,14 @@
   .wbody b { font-size:.94rem; }
   .wbody p { margin:3px 0; font-size:.84rem; }
   .wbody .example { color:var(--sub); font-style:italic; }
+  .wbody .ja { margin-top:6px; padding:6px 10px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 8%, transparent); }
+  .take-home { margin-top:14px; padding-top:12px; border-top:1px solid var(--line); }
+  .take-home-label { font-size:.72rem; font-weight:700; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); }
+  .take-home-line { margin:4px 0; font-size:.94rem; line-height:1.65; }
+  [lang="ja"] { font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",
+    "Noto Sans JP","Yu Gothic",sans-serif; }
   .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
     display:flex; align-items:center; gap:8px; }
   .section-heading::before { content:""; width:9px; height:9px;
@@ -154,10 +169,21 @@
     box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
   .turn.b .bubble { background:var(--bubble-b);
     border-radius:18px 4px 18px 18px; }
+  /* 1話者回は掛け合いがないので、吹き出しではなく記事本文として流す。
+     話者名は Script 直下の byline に一度だけ出す。 */
+  .byline { margin:-6px 0 22px; font-size:.72rem; font-weight:700;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:10px; }
+  .byline::after { content:""; flex:1; height:1px; background:var(--line); }
+  .monologue .say { margin:0 0 15px; }
+  .monologue .say:last-child { margin-bottom:0; }
+  .monologue .web-numbers { margin:-6px 0 18px; }
   .note { color:var(--sub); font-size:.88rem; }
   .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
     margin:-10px 12px 18px; padding-left:12px;
     border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .web-numbers summary { cursor:pointer; font-weight:600; width:fit-content; }
+  .web-numbers p { margin:4px 0 0; }
   .empty { color:var(--sub); text-align:center; padding:40px 0; }
 
   footer { color:var(--sub); font-size:.78rem; text-align:center;
@@ -167,9 +193,10 @@
 </head>
 <body>
 <header><div class="wrap">
-  <span class="badge">Case Reports</span>
-  <h1>Weekly Nephrology AI</h1>
-  <div class="sub">2026-08-01 · Episode transcript · Educational use</div>
+  <a class="eyebrow" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
+  <span class="badge">Case Reports <span class="badge-ja" lang="ja">ケースレポーツ</span></span>
+  <h1>Case Reports, August 1, 2026</h1>
+  <div class="sub">Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-01.mp3"></audio>
   <div class="bar">
     <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-01.mp3">⬇ Download MP3</a>
@@ -182,9 +209,8 @@
 <details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
 <li><span>AI model</span><b>Opus 5 (Claude)</b></li>
 <li><span>Agent team</span><b>Research Curator / Small Talk Scout / Episode Writer / Medical Reviewer</b></li>
-<li><span>Candidate papers</span><b>66 papers</b></li>
 <li><span>TTS model</span><b>Gemini 2.5 Flash TTS</b></li>
-<li><span>Speakers</span><b>Emma — Trainee host, CEFR A2-B1, female voice (Autonoe); James — Expert co-host, CEFR B1-B2, male voice (Rasalgethi)</b></li>
+<li><span>Speakers</span><b>Emma — Trainee host, English at CEFR A2-B1; James — Expert co-host, English at CEFR B1-B2</b></li>
 </ul></div></details>
 <details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
 <li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12882-026-05021-w" target="_blank" rel="noopener">Hydroxychloroquine-induced renal phospholipidosis manifesting as proximal tubulopathy in systemic lupus erythematosus</a><div class="pmeta"><span>BMC Nephrology (2026 May 04)</span> · <a href="https://doi.org/10.1186/s12882-026-05021-w" target="_blank" rel="noopener">DOI: 10.1186/s12882-026-05021-w</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42071197/" target="_blank" rel="noopener">PMID: 42071197</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span></div></li>
@@ -227,13 +253,13 @@
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Her markers of tubular injury were markedly raised. She had sugar in the urine with normal blood sugar, amino acids spilling out, low phosphate, low uric acid, and acidosis.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">That list has a name. Together those findings make up Fanconi syndrome, which means the proximal tubule was letting go of things the body normally keeps.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And while she stayed on the drug, her filtration rate was falling by more than ten points a year.</div></div>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: eGFR slope during HCQ treatment -11.2 mL/min/1.73 m2/year.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: eGFR slope during HCQ treatment -11.2 mL/min/1.73 m2/year.)</p></details>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The biopsy explained the leak. The classic zebra, myeloid, and curvilinear bodies were in glomerular cells. The proximal tubular cells instead contained many lysosomes filled with electron-dense granules.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">The glomerular bodies can look a lot like Fabry disease under the microscope, which is a real trap.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">It is, and the team excluded Fabry with clinical, biochemical, genetic, and tissue testing.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So the label became proximal tubulopathy secondary to drug-related phospholipidosis, and the drug was stopped.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The Fanconi picture then resolved, and the filtration slope turned slightly positive.</div></div>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: eGFR slope after HCQ discontinuation +0.9 mL/min/1.73 m2/year, versus -11.2 mL/min/1.73 m2/year during treatment.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: eGFR slope after HCQ discontinuation +0.9 mL/min/1.73 m2/year, versus -11.2 mL/min/1.73 m2/year during treatment.)</p></details>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">What matters here is the shape of the curve rather than the exact figures. A steady fall flattened out once the drug was gone.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Still, this is a single patient, and the abstract does not tell us how long she was watched afterwards.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Stopping a drug and getting better is not proof either. The timing fits, and that is as far as one case can take us.</div></div>
@@ -277,13 +303,13 @@
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The patient is a man in his sixties who works as a fisherman. He was diagnosed with minimal change disease in his forties, and then relapsed again and again.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Minimal change disease is a glomerular condition where the filter leaks protein badly, yet the tissue looks almost normal. Most patients respond well to steroids, but his leak kept coming back.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">More than ten relapses over the years. He needed prednisolone repeatedly, then mizoribine, then rituximab.</div></div>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: diagnosed at age 44 and reported at age 61; mizoribine 100 mg added at the ninth relapse; rituximab 500 mg/body from the tenth relapse.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: diagnosed at age 44 and reported at age 61; mizoribine 100 mg added at the ninth relapse; rituximab 500 mg/body from the tenth relapse.)</p></details>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Rituximab did buy time. He had four quiet years before the pattern returned.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">This relapse was severe. His albumin fell to about one gram per decilitre, and both legs were badly swollen.</div></div>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: serum albumin 1.1 g/dL, reference range 4.1-5.1 g/dL; 9 kg weight gain; blood pressure 162/90 mmHg.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: serum albumin 1.1 g/dL, reference range 4.1-5.1 g/dL; 9 kg weight gain; blood pressure 162/90 mmHg.)</p></details>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">A normal albumin sits above four grams per decilitre. His was far below that.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">His urine was losing about fifteen grams of protein for every gram of creatinine. His filtration rate had fallen to around thirty.</div></div>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: proteinuria 15.21 g/gCr; serum creatinine 1.84 mg/dL, reference 0.46-0.79; eGFR 30.6 mL/min/1.73 m2; BUN 46.8 mg/dL; total cholesterol 507 mg/dL.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: proteinuria 15.21 g/gCr; serum creatinine 1.84 mg/dL, reference 0.46-0.79; eGFR 30.6 mL/min/1.73 m2; BUN 46.8 mg/dL; total cholesterol 507 mg/dL.)</p></details>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This means he was leaking heavily and filtering poorly at the same time. That is a hard place to begin treatment from.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The team gave rituximab again, together with oral prednisolone and furosemide.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">And the response was only partial, wasn&#x27;t it?</div></div>
@@ -299,7 +325,7 @@
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">They set up two conditions. A standard bottle at body temperature, and a second medium kept at thirty degrees.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">The key point is that this organism prefers cool skin rather than core temperature.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">The cool medium grew it in about ten days. The warm bottle was still negative six weeks later.</div></div>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: Ogawa medium at 30 °C showed growth on day 10; MGIT at 37 °C remained negative at 42 days; species identified by mass spectrometry.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Ogawa medium at 30 °C showed growth on day 10; MGIT at 37 °C remained negative at 42 days; species identified by mass spectrometry.)</p></details>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Let me put that plainly, because it is the lesson here. The organism was there the whole time, and the routine culture simply could not show it.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">The negative culture at body temperature alone would not have identified Mycobacterium marinum.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">And the empiric antibiotics they had already tried were not clearing the abscess. Once sensitivities returned, they switched to clarithromycin, minocycline, and rifampicin together.</div></div>
@@ -311,10 +337,15 @@
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">There are other gaps. Anti-nephrin antibodies were not measured, and rituximab and steroids were given shortly before the remission.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So we cannot say which part of the story did the work. This is a single patient, and this infection is genuinely uncommon.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">Uncommon is an understatement. National reports put it at a small fraction of a case per hundred thousand people each year.</div></div>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: reported annual incidence 0.27 per 100,000 in the United States and 0.04 per 100,000 in France.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: reported annual incidence 0.27 per 100,000 in the United States and 0.04 per 100,000 in France.)</p></details>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">So our take-home has to stay narrow on purpose. In this patient, nephrotic syndrome became refractory while a hidden infection was present under immunosuppression.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Here, telling the laboratory why mycobacteria were suspected led to culture at thirty degrees and identification of the organism.</div></div>
 <div class="turn b"><span class="who">James · Co-host</span><div class="bubble">In this report, that laboratory request was what made the diagnosis possible.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Before today&#x27;s words and phrases, let&#x27;s bring the main discussion together.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Here are three short lessons.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">First, in the hydroxychloroquine case, the tubular findings, not only the glomerular findings, were central to the diagnosis.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Second, this case shows how a change in the clinical picture led the team to ask the laboratory a different question.</div></div>
+<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Third, every case today is a single patient, so timing and association are all we can claim.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Now it is time for today&#x27;s words and phrases.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">First, Fanconi syndrome. This is a condition where the proximal tubule fails to reabsorb sugar, amino acids and phosphate. Example: The urine findings together made up a mild Fanconi syndrome.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Second, phospholipidosis. This is a build-up of fatty material inside cells, often linked to a drug. Example: The biopsy showed renal phospholipidosis rather than an inherited disorder.</div></div>
@@ -327,10 +358,6 @@
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Ninth, overreach. This means to claim more than the facts allow. Example: With a single report, it is easy to overreach in the conclusion.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Tenth, an understatement. This is a way of describing something as smaller or less serious than it really is. Example: Calling that result unexpected was an understatement.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">That is all for today&#x27;s words and phrases.</div></div>
-<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Let me close with three short lessons.</div></div>
-<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">First, in the hydroxychloroquine case, the tubular findings, not only the glomerular findings, were central to the diagnosis.</div></div>
-<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Second, this case shows how a change in the clinical picture led the team to ask the laboratory a different question.</div></div>
-<div class="turn a"><span class="who">Emma · Host</span><div class="bubble">Third, every case today is a single patient, so timing and association are all we can claim.</div></div>
 <div class="turn a"><span class="who">Emma · Host</span><div class="bubble">This episode was produced by Weekly Nephrology AI. The initial literature search and screening were automated in Python without the use of an AI model. From the screened results, final paper selection, summarization, and script development were performed using Claude Opus 5. Narration was generated using Gemini 2.5 Flash TTS. Thanks for listening, and we&#x27;ll see you next time.</div></div></section>
 </div></main>
 <footer><div class="wrap">

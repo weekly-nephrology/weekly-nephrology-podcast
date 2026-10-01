@@ -4,20 +4,21 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex"/>
-<meta name="description" content="Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a… · Kidney histopathology associated with kidney function at 1 year post severe AKI related to… · Finerenone in Persons with Chronic Kidney Disease without…"/>
+<meta name="description" content="Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a… Kidney histopathology associated with kidney function at 1 year post severe AKI related to… Finerenone in Persons with Chronic Kidney Disease without…"/>
 <meta name="theme-color" content="#33452f"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Weekly Nephrology AI"/>
-<meta property="og:title" content="Weekly Nephrology AI 2026-07-20 — Transcript"/>
-<meta property="og:description" content="Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a… · Kidney histopathology associated with kidney function at 1 year post severe AKI related to… · Finerenone in Persons with Chronic Kidney Disease without…"/>
+<meta property="og:title" content="Weekly Summary 2026-07-20 — Weekly Nephrology AI"/>
+<meta property="og:description" content="Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a… Kidney histopathology associated with kidney function at 1 year post severe AKI related to… Finerenone in Persons with Chronic Kidney Disease without…"/>
 <meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-20.html"/>
-<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
-<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Weekly Nephrology AI 2026-07-20 — Transcript"/>
-<meta name="twitter:description" content="Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a… · Kidney histopathology associated with kidney function at 1 year post severe AKI related to… · Finerenone in Persons with Chronic Kidney Disease without…"/>
-<title>Weekly Nephrology AI 2026-07-20 — Transcript</title>
+<meta name="twitter:title" content="Weekly Summary 2026-07-20 — Weekly Nephrology AI"/>
+<meta name="twitter:description" content="Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a… Kidney histopathology associated with kidney function at 1 year post severe AKI related to… Finerenone in Persons with Chronic Kidney Disease without…"/>
+<title>Weekly Summary 2026-07-20 — Weekly Nephrology AI</title>
+<link rel="alternate" type="application/rss+xml" title="Weekly Nephrology AI" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
@@ -51,7 +52,13 @@
     background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
     padding:4px 12px; border-radius:999px; margin-bottom:14px;
     backdrop-filter:blur(4px); }
-  h1 { margin:0 0 4px; font-size:2.15rem; font-weight:400;
+  .eyebrow { display:block; color:#f3ebd2; opacity:.8; text-decoration:none;
+    font-family:"DM Serif Display",Georgia,serif; font-size:1.05rem;
+    margin-bottom:12px; }
+  .eyebrow:hover { opacity:1; text-decoration:underline; }
+  .badge-ja { letter-spacing:.04em; text-transform:none; font-weight:600;
+    opacity:.85; margin-left:4px; }
+  h1 { margin:0 0 6px; font-size:1.75rem; font-weight:400;
     letter-spacing:.005em; line-height:1.15;
     font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
@@ -136,6 +143,14 @@
   .wbody b { font-size:.94rem; }
   .wbody p { margin:3px 0; font-size:.84rem; }
   .wbody .example { color:var(--sub); font-style:italic; }
+  .wbody .ja { margin-top:6px; padding:6px 10px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 8%, transparent); }
+  .take-home { margin-top:14px; padding-top:12px; border-top:1px solid var(--line); }
+  .take-home-label { font-size:.72rem; font-weight:700; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); }
+  .take-home-line { margin:4px 0; font-size:.94rem; line-height:1.65; }
+  [lang="ja"] { font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",
+    "Noto Sans JP","Yu Gothic",sans-serif; }
   .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
     display:flex; align-items:center; gap:8px; }
   .section-heading::before { content:""; width:9px; height:9px;
@@ -154,7 +169,21 @@
     box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
   .turn.b .bubble { background:var(--bubble-b);
     border-radius:18px 4px 18px 18px; }
+  /* 1話者回は掛け合いがないので、吹き出しではなく記事本文として流す。
+     話者名は Script 直下の byline に一度だけ出す。 */
+  .byline { margin:-6px 0 22px; font-size:.72rem; font-weight:700;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:10px; }
+  .byline::after { content:""; flex:1; height:1px; background:var(--line); }
+  .monologue .say { margin:0 0 15px; }
+  .monologue .say:last-child { margin-bottom:0; }
+  .monologue .web-numbers { margin:-6px 0 18px; }
   .note { color:var(--sub); font-size:.88rem; }
+  .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
+    margin:-10px 12px 18px; padding-left:12px;
+    border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .web-numbers summary { cursor:pointer; font-weight:600; width:fit-content; }
+  .web-numbers p { margin:4px 0 0; }
   .empty { color:var(--sub); text-align:center; padding:40px 0; }
 
   footer { color:var(--sub); font-size:.78rem; text-align:center;
@@ -164,9 +193,10 @@
 </head>
 <body>
 <header><div class="wrap">
-  <span class="badge">Weekly Summary</span>
-  <h1>Weekly Nephrology AI</h1>
-  <div class="sub">2026-07-20 · Episode transcript · Educational use</div>
+  <a class="eyebrow" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
+  <span class="badge">Weekly Summary <span class="badge-ja" lang="ja">ウィークリーサマリー</span></span>
+  <h1>Weekly Summary, July 20, 2026</h1>
+  <div class="sub">Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-20.mp3"></audio>
   <div class="bar">
     <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-20.mp3">⬇ Download MP3</a>
@@ -177,18 +207,17 @@
 <main><div class="wrap">
 <section class="overview" aria-labelledby="episode-overview-title"><h2 id="episode-overview-title" class="section-heading">Episode overview</h2><ul class="overview-topics"><li>Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a…</li><li>Kidney histopathology associated with kidney function at 1 year post severe AKI related to…</li><li>Finerenone in Persons with Chronic Kidney Disease without Diabetes</li><li>Risks of Postpartum Kidney Disease Following Preeclampsia and Gestational Hypertension</li><li>Efficacy and safety of dapagliflozin in inactive lupus nephritis: a randomized crossover…</li></ul></section>
 <details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
-<li><span>AI model</span><b>Opus 4.8 (Claude)</b></li>
+<li><span>AI model</span><b>Opus 5.5 (Claude)</b></li>
 <li><span>Agent team</span><b>Research Curator / Small Talk Scout / Episode Writer / Medical Reviewer</b></li>
-<li><span>Candidate papers</span><b>Not available</b></li>
 <li><span>TTS model</span><b>Gemini 2.5 Flash TTS</b></li>
-<li><span>Speakers</span><b>Alex — Trainee host, CEFR A2-B1, male voice (Charon); Maya — Expert co-host, CEFR B1-B2, female voice (Kore)</b></li>
+<li><span>Speakers</span><b>Alex — Trainee host, English at CEFR A2-B1; Maya — Expert co-host, English at CEFR B1-B2</b></li>
 </ul></div></details>
 <details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
-<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1016/S0140-6736(26" target="_blank" rel="noopener">Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a randomised, double-blind, placebo-controlled, phase 3 trial</a><div class="pmeta"><span>Lancet (2026 Jun 13)</span> · <a href="https://doi.org/10.1016/S0140-6736(26" target="_blank" rel="noopener">DOI: 10.1016/S0140-6736(26</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42242268/" target="_blank" rel="noopener">PMID: 42242268</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
-<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12882-026-05189-1" target="_blank" rel="noopener">Kidney histopathology associated with kidney function at 1 year post severe AKI related to ANCA-associated vasculitis</a><div class="pmeta"><span>BMC Nephrol (2026 Jul 14)</span> · <a href="https://doi.org/10.1186/s12882-026-05189-1" target="_blank" rel="noopener">DOI: 10.1186/s12882-026-05189-1</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42449260/" target="_blank" rel="noopener">PMID: 42449260</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
-<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1056/NEJMoa2604625" target="_blank" rel="noopener">Finerenone in Persons with Chronic Kidney Disease without Diabetes</a><div class="pmeta"><span>N Engl J Med (2026 Jun 04)</span> · <a href="https://doi.org/10.1056/NEJMoa2604625" target="_blank" rel="noopener">DOI: 10.1056/NEJMoa2604625</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42246672/" target="_blank" rel="noopener">PMID: 42246672</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://pubmed.ncbi.nlm.nih.gov/42242268/" target="_blank" rel="noopener">Atrasentan in patients with IgA nephropathy (ALIGN): final 2·5-year results from a randomised, double-blind, placebo-controlled, phase 3 trial</a><div class="pmeta"><span>Lancet (2026 Jun 13)</span> · <span>DOI: 10.1016/S0140-6736(26 (not yet active)</span> · <a href="https://pubmed.ncbi.nlm.nih.gov/42242268/" target="_blank" rel="noopener">PMID: 42242268</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
+<li><span class="pnum">2</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1056/NEJMoa2604625" target="_blank" rel="noopener">Finerenone in Persons with Chronic Kidney Disease without Diabetes</a><div class="pmeta"><span>N Engl J Med (2026 Jun 04)</span> · <a href="https://doi.org/10.1056/NEJMoa2604625" target="_blank" rel="noopener">DOI: 10.1056/NEJMoa2604625</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42246672/" target="_blank" rel="noopener">PMID: 42246672</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
+<li><span class="pnum">3</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ndt/gfaf257" target="_blank" rel="noopener">Efficacy and safety of dapagliflozin in inactive lupus nephritis: a randomized crossover trial</a><div class="pmeta"><span>Nephrol Dial Transplant (2026 Jun 30)</span> · <a href="https://doi.org/10.1093/ndt/gfaf257" target="_blank" rel="noopener">DOI: 10.1093/ndt/gfaf257</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/41324239/" target="_blank" rel="noopener">PMID: 41324239</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
 <li><span class="pnum">4</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1053/j.ajkd.2026.04.016" target="_blank" rel="noopener">Risks of Postpartum Kidney Disease Following Preeclampsia and Gestational Hypertension</a><div class="pmeta"><span>Am J Kidney Dis (2026 Jul 17)</span> · <a href="https://doi.org/10.1053/j.ajkd.2026.04.016" target="_blank" rel="noopener">DOI: 10.1053/j.ajkd.2026.04.016</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42468835/" target="_blank" rel="noopener">PMID: 42468835</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
-<li><span class="pnum">5</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ndt/gfaf257" target="_blank" rel="noopener">Efficacy and safety of dapagliflozin in inactive lupus nephritis: a randomized crossover trial</a><div class="pmeta"><span>Nephrol Dial Transplant (2026 Jun 30)</span> · <a href="https://doi.org/10.1093/ndt/gfaf257" target="_blank" rel="noopener">DOI: 10.1093/ndt/gfaf257</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/41324239/" target="_blank" rel="noopener">PMID: 41324239</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
+<li><span class="pnum">5</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1186/s12882-026-05189-1" target="_blank" rel="noopener">Kidney histopathology associated with kidney function at 1 year post severe AKI related to ANCA-associated vasculitis</a><div class="pmeta"><span>BMC Nephrol (2026 Jul 14)</span> · <a href="https://doi.org/10.1186/s12882-026-05189-1" target="_blank" rel="noopener">DOI: 10.1186/s12882-026-05189-1</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42449260/" target="_blank" rel="noopener">PMID: 42449260</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
 </ol></div></details>
 <details class="collapsible words"><summary><span class="section-title">Today&#x27;s words and phrases</span></summary><div class="collapsible-body"><ol class="wlist"><li><span class="wnum">1</span><div class="wbody"><b>proteinuria</b><p>protein leaking into the urine</p><p class="example">Example: Her proteinuria improved after treatment.</p></div></li>
 <li><span class="wnum">2</span><div class="wbody"><b>hyperkalemia</b><p>a high level of potassium in the blood</p><p class="example">Example: We watched for hyperkalemia on the new drug.</p></div></li>
@@ -220,7 +249,6 @@
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">The late-breaking abstract period opened on July 8, and it closes on September 2, at 2 p.m. Eastern time.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">In simple terms, if you have late-breaking work, you have until early September to submit it.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Now, let&#x27;s get started.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Our first study looks at IgA nephropathy, a common cause of kidney failure in young adults.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The question is whether a drug called atrasentan can protect kidney function over time.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Atrasentan blocks a receptor called endothelin A, which can lower protein leaking into the urine.</div></div>
@@ -245,8 +273,6 @@
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">The authors concluded that atrasentan reduced proteinuria and preserved kidney function over 2.5 years.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Still, the abstract notes this was the double-blind phase, and the open-label extension is ongoing.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The take-home point is that atrasentan looks promising for IgA nephropathy, but the main eGFR endpoint just missed significance.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Next, we turn to severe ANCA-associated vasculitis, which can badly damage the kidneys.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">In this disease, the immune system attacks small blood vessels, including those in the kidney.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The question is whether the kidney biopsy can predict who recovers after plasma exchange.</div></div>
@@ -263,8 +289,6 @@
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">With just 34 patients and no proven cause, the authors suggest systematic biopsy in severe cases as a hypothesis.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">They frame the biopsy as a way to adapt treatment, not as a proven rule.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The take-home point is that biopsy may add prognostic value here, but this small study only shows association.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Our third study is a landmark trial for chronic kidney disease without diabetes.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">It asks whether finerenone can slow kidney decline in these patients.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Finerenone is a non-steroidal drug that blocks a hormone receptor tied to kidney scarring.</div></div>
@@ -289,8 +313,6 @@
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">And discontinuation for hyperkalemia was 1.5% versus 0.1%, so monitoring matters.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">High potassium also led to a few more hospital stays, 7 patients versus 5, though these numbers are small.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The take-home point is that finerenone extends its kidney benefit to CKD without diabetes, but potassium needs watching.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Our fourth study looks at kidney risk after pregnancy, in women who had preeclampsia.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The question is whether preeclampsia raises the risk of kidney disease in the first year after birth.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">This was a retrospective cohort using a large US readmissions database, published in the American Journal of Kidney Diseases in July 2026.</div></div>
@@ -310,8 +332,6 @@
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">But this counts readmissions only, so milder kidney injury is missed, and it cannot prove cause.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The authors also warn that kidney diagnoses may be under-recorded in this kind of database.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The take-home point is that preeclampsia, especially severe preeclampsia, may call for closer kidney follow-up after birth.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Our last study asks whether an SGLT2 inhibitor helps in lupus nephritis.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">These patients had inactive disease, but they still leaked protein in the urine.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Big SGLT2 inhibitor trials often left out lupus nephritis, so this gap matters.</div></div>
@@ -331,7 +351,6 @@
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">Right, and with only 21 patients, one center, and short follow-up, this is promising but not definitive.</div></div>
 <div class="turn b"><span class="who">Maya · Co-host</span><div class="bubble">The authors say dapagliflozin cut residual proteinuria without safety concerns in this setting.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">The take-home point is that dapagliflozin lowered protein leakage in inactive lupus nephritis, but we need larger trials.</div></div>
-<p class="note">&lt;!-- AUDIO_PAUSE --&gt;</p>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Now it is time for today&#x27;s words and phrases.</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">First, proteinuria. This means protein leaking into the urine. For example, &quot;Her proteinuria improved after treatment.&quot;</div></div>
 <div class="turn a"><span class="who">Alex · Host</span><div class="bubble">Second, hyperkalemia. This means a high level of potassium in the blood. For example, &quot;We watched for hyperkalemia on the new drug.&quot;</div></div>

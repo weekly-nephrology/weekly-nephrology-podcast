@@ -8,16 +8,17 @@
 <meta name="theme-color" content="#33452f"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Weekly Nephrology AI"/>
-<meta property="og:title" content="Weekly Nephrology AI 2026-08-13 — Transcript"/>
+<meta property="og:title" content="Deep Read 2026-08-13 — Weekly Nephrology AI"/>
 <meta property="og:description" content="Randomized placebo-controlled trial of dapagliflozin in adult lupus nephritis"/>
 <meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-08-13.html"/>
-<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
-<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover_0720.png"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Weekly Nephrology AI 2026-08-13 — Transcript"/>
+<meta name="twitter:title" content="Deep Read 2026-08-13 — Weekly Nephrology AI"/>
 <meta name="twitter:description" content="Randomized placebo-controlled trial of dapagliflozin in adult lupus nephritis"/>
-<title>Weekly Nephrology AI 2026-08-13 — Transcript</title>
+<title>Deep Read 2026-08-13 — Weekly Nephrology AI</title>
+<link rel="alternate" type="application/rss+xml" title="Weekly Nephrology AI" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
@@ -51,7 +52,13 @@
     background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
     padding:4px 12px; border-radius:999px; margin-bottom:14px;
     backdrop-filter:blur(4px); }
-  h1 { margin:0 0 4px; font-size:2.15rem; font-weight:400;
+  .eyebrow { display:block; color:#f3ebd2; opacity:.8; text-decoration:none;
+    font-family:"DM Serif Display",Georgia,serif; font-size:1.05rem;
+    margin-bottom:12px; }
+  .eyebrow:hover { opacity:1; text-decoration:underline; }
+  .badge-ja { letter-spacing:.04em; text-transform:none; font-weight:600;
+    opacity:.85; margin-left:4px; }
+  h1 { margin:0 0 6px; font-size:1.75rem; font-weight:400;
     letter-spacing:.005em; line-height:1.15;
     font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
@@ -136,6 +143,14 @@
   .wbody b { font-size:.94rem; }
   .wbody p { margin:3px 0; font-size:.84rem; }
   .wbody .example { color:var(--sub); font-style:italic; }
+  .wbody .ja { margin-top:6px; padding:6px 10px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 8%, transparent); }
+  .take-home { margin-top:14px; padding-top:12px; border-top:1px solid var(--line); }
+  .take-home-label { font-size:.72rem; font-weight:700; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); }
+  .take-home-line { margin:4px 0; font-size:.94rem; line-height:1.65; }
+  [lang="ja"] { font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",
+    "Noto Sans JP","Yu Gothic",sans-serif; }
   .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
     display:flex; align-items:center; gap:8px; }
   .section-heading::before { content:""; width:9px; height:9px;
@@ -167,6 +182,8 @@
   .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
     margin:-10px 12px 18px; padding-left:12px;
     border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .web-numbers summary { cursor:pointer; font-weight:600; width:fit-content; }
+  .web-numbers p { margin:4px 0 0; }
   .empty { color:var(--sub); text-align:center; padding:40px 0; }
 
   footer { color:var(--sub); font-size:.78rem; text-align:center;
@@ -176,9 +193,10 @@
 </head>
 <body>
 <header><div class="wrap">
-  <span class="badge">Deep Read</span>
-  <h1>Weekly Nephrology AI</h1>
-  <div class="sub">2026-08-13 · Episode transcript · Educational use</div>
+  <a class="eyebrow" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
+  <span class="badge">Deep Read <span class="badge-ja" lang="ja">ディープリード</span></span>
+  <h1>Randomized placebo-controlled trial of dapagliflozin in adult lupus nephritis</h1>
+  <div class="sub">August 13, 2026 · Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-13.mp3"></audio>
   <div class="bar">
     <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-08-13.mp3">⬇ Download MP3</a>
@@ -191,12 +209,11 @@
 <details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
 <li><span>AI model</span><b>Opus 5 (Claude)</b></li>
 <li><span>Agent team</span><b>Research Curator / Small Talk Scout / Episode Writer / Medical Reviewer</b></li>
-<li><span>Candidate papers</span><b>8 papers</b></li>
 <li><span>TTS model</span><b>GPT-4o mini TTS</b></li>
-<li><span>Speakers</span><b>Daniel — Host, CEFR B1-B2, male voice (cedar)</b></li>
+<li><span>Speakers</span><b>Daniel — Host, English at CEFR B1-B2</b></li>
 </ul></div></details>
 <details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
-<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ckj/sfag231" target="_blank" rel="noopener">Dapagliflozin in lupus nephritis: renal and hematologic outcomes from a randomized controlled trial</a><div class="pmeta"><span>Clin Kidney J （2026 Aug, Vol 19 Issue 8）</span> · <a href="https://doi.org/10.1093/ckj/sfag231" target="_blank" rel="noopener">DOI: 10.1093/ckj/sfag231</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42549085/" target="_blank" rel="noopener">PMID: 42549085</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ckj/sfag231" target="_blank" rel="noopener">Dapagliflozin in lupus nephritis: renal and hematologic outcomes from a randomized controlled trial</a><div class="pmeta"><span>Clin Kidney J (2026 Aug, Vol 19 Issue 8)</span> · <a href="https://doi.org/10.1093/ckj/sfag231" target="_blank" rel="noopener">DOI: 10.1093/ckj/sfag231</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42549085/" target="_blank" rel="noopener">PMID: 42549085</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
 </ol></div></details>
 <details class="collapsible words"><summary><span class="section-title">Today&#x27;s words and phrases</span></summary><div class="collapsible-body"><ol class="wlist"><li><span class="wnum">1</span><div class="wbody"><b>evidence gap</b><p>a question that research has not answered yet</p><p class="example">Example: This trial was designed around an evidence gap that older studies left behind.</p></div></li>
 <li><span class="wnum">2</span><div class="wbody"><b>biopsy-proven</b><p>confirmed by examining tissue, not just suspected</p><p class="example">Example: The trial enrolled patients with biopsy-proven disease.</p></div></li>
@@ -233,7 +250,7 @@
 <p class="say">That is the shape of today&#x27;s paper. So let&#x27;s look at how it was built.</p>
 <p class="say">Now to the methods.</p>
 <p class="say">This was a double-blind, placebo-controlled trial at a single centre in Egypt, where adults with biopsy-proven lupus nephritis were randomized to dapagliflozin or a matching placebo alongside their usual immunosuppression. Seventy-nine patients were randomized, they were followed for a year, and all of them stayed in the analysis. A feature of this cohort shapes how we read everything else: baseline urinary protein was low, with medians under a gram a day in both arms.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: Randomized: 79 (dapagliflozin 38, placebo 41); dapagliflozin dose 10 mg once daily; follow-up 12 months. Assessed for eligibility 100; excluded 16; sample size section states 84 enrolled - screening, enrolment and randomized totals do not reconcile in the source. Withdrawals from follow-up: 5 (4 dapagliflozin, 1 placebo), all analysed by intention to treat. Baseline median 24-h protein: 0.60 g/day (Q1-Q3 0.40-1.00) vs 0.40 g/day (0.20-1.60); above 1 g/day in 26% vs 32%. Baseline median eGFR: 96 (58-113) vs 93 (58-116) ml/min/1.73 m2; mean age 38 +/- 10 vs 37 +/- 10 years; female 89% vs 83%.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Randomized: 79 (dapagliflozin 38, placebo 41); dapagliflozin dose 10 mg once daily; follow-up 12 months. Assessed for eligibility 100; excluded 16; sample size section states 84 enrolled - screening, enrolment and randomized totals do not reconcile in the source. Withdrawals from follow-up: 5 (4 dapagliflozin, 1 placebo), all analysed by intention to treat. Baseline median 24-h protein: 0.60 g/day (Q1-Q3 0.40-1.00) vs 0.40 g/day (0.20-1.60); above 1 g/day in 26% vs 32%. Baseline median eGFR: 96 (58-113) vs 93 (58-116) ml/min/1.73 m2; mean age 38 +/- 10 vs 37 +/- 10 years; female 89% vs 83%.)</p></details>
 <p class="say">Let me take that apart, piece by piece.</p>
 <p class="say">Double-blind means neither the patient nor the treating team knows who is getting the active drug.</p>
 <p class="say">That matters more than it sounds. Urine collections and dose decisions are easy to nudge, without meaning to, when you know the allocation.</p>
@@ -257,7 +274,7 @@
 <p class="say">What a design like this can settle depends almost entirely on how many patients pass through it, and for how long.</p>
 <p class="say">Now to the results, starting with the endpoint the trial was built around.</p>
 <p class="say">The primary endpoint was the percentage change in twenty-four hour urinary protein, and dapagliflozin did not beat placebo on it. Protein excretion did drift downward in the treated arm during the second half of follow-up while the placebo arm ended higher, but that separation fell short of statistical significance, and the adjusted model and the log-transformed sensitivity analysis pointed the same way.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: Geometric mean 24-h protein, dapagliflozin: 0.58 g at baseline, 0.68 g at month 6, 0.50 g at month 12. Geometric mean 24-h protein, placebo: 0.48 g at baseline, 0.72 g at month 6, 0.61 g at month 12. Adjusted ANCOVA (baseline proteinuria, baseline eGFR, age, background immunosuppression): no statistically significant between-group difference at 12 months. Log-transformed sensitivity analysis: baseline proteinuria strongest predictor of 12-month proteinuria, P &lt; .001.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Geometric mean 24-h protein, dapagliflozin: 0.58 g at baseline, 0.68 g at month 6, 0.50 g at month 12. Geometric mean 24-h protein, placebo: 0.48 g at baseline, 0.72 g at month 6, 0.61 g at month 12. Adjusted ANCOVA (baseline proteinuria, baseline eGFR, age, background immunosuppression): no statistically significant between-group difference at 12 months. Log-transformed sensitivity analysis: baseline proteinuria strongest predictor of 12-month proteinuria, P &lt; .001.)</p></details>
 <p class="say">I want to be careful with the words here, because this is where listeners are most often misled.</p>
 <p class="say">Not significant does not mean the two arms are the same.</p>
 <p class="say">It means the difference could not be told apart from chance. A small trial can easily hide a difference that a larger one would find.</p>
@@ -267,13 +284,13 @@
 <p class="say">If you can&#x27;t say what you were hoping to see, you&#x27;ll find something to be pleased about in almost any figure.</p>
 <p class="say">Let&#x27;s move from the marker to kidney function itself.</p>
 <p class="say">Kidney function declined in both arms across the year, by roughly nine millilitres per minute on average, and the confidence bands overlapped at every visit. Neither the adjusted filtration rate at the end nor the yearly slope favoured either group, and the strongest predictor of where filtration finished was simply where it started.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: Mean eGFR reduction at month 12: 8.74 ml/min/1.73 m2 (dapagliflozin) vs 8.32 ml/min/1.73 m2 (placebo). Adjusted ANCOVA for 12-month eGFR and for annualized eGFR slope: no statistically significant between-group difference. Baseline eGFR was the strongest predictor of follow-up kidney function, P &lt; .001.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Mean eGFR reduction at month 12: 8.74 ml/min/1.73 m2 (dapagliflozin) vs 8.32 ml/min/1.73 m2 (placebo). Adjusted ANCOVA for 12-month eGFR and for annualized eGFR slope: no statistically significant between-group difference. Baseline eGFR was the strongest predictor of follow-up kidney function, P &lt; .001.)</p></details>
 <p class="say">When two arms move together like that, a trial can&#x27;t tell you which part of the movement belongs to a drug and which part belongs to the disease.</p>
 <p class="say">Here is the reading habit I would apply to a trial of this size. Whatever pattern you notice inside it stays inside it, as a description of these patients, until a larger study repeats it.</p>
 <p class="say">Let&#x27;s carry that discipline with us into the next section.</p>
 <p class="say">Now the part of this paper I did not expect, which is the blood side.</p>
 <p class="say">The haematological side of this trial is a striking negative. In diabetic and chronic kidney disease populations these drugs have been consistently linked to a rise in haemoglobin, but here haemoglobin, the red-cell indices, iron markers, erythropoietin and hepcidin all stayed put, and the proportion of patients counted as anaemic fell in both arms without any treatment signal. What predicted haemoglobin at the end of the study was haemoglobin at the start.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: Anaemia prevalence before treatment: 60.5% (dapagliflozin) vs 58.5% (placebo); after: 42.1% vs 53.7%; no statistically significant between-group difference. Haemoglobin, MCV, MCH: no statistically significant between-group difference at baseline, 3, 6, 9 or 12 months. Ferritin, transferrin saturation, erythropoietin, hepcidin, platelet count: no statistically significant between-group difference at baseline or 12 months. Multivariable predictors of 12-month haemoglobin: baseline haemoglobin beta 0.86 (P &lt; .001), baseline MCV beta 0.05 (P = .014); baseline TSAT beta 0.03 (P = .033) in univariate analysis only.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Anaemia prevalence before treatment: 60.5% (dapagliflozin) vs 58.5% (placebo); after: 42.1% vs 53.7%; no statistically significant between-group difference. Haemoglobin, MCV, MCH: no statistically significant between-group difference at baseline, 3, 6, 9 or 12 months. Ferritin, transferrin saturation, erythropoietin, hepcidin, platelet count: no statistically significant between-group difference at baseline or 12 months. Multivariable predictors of 12-month haemoglobin: baseline haemoglobin beta 0.86 (P &lt; .001), baseline MCV beta 0.05 (P = .014); baseline TSAT beta 0.03 (P = .033) in univariate analysis only.)</p></details>
 <p class="say">Let me slow down and say why that list of tests is worth your attention.</p>
 <p class="say">Erythropoietin is the kidney&#x27;s signal to the marrow to build red cells. Hepcidin is the hormone that decides how much iron leaves the stores and reaches the marrow.</p>
 <p class="say">If a drug lifts haemoglobin, you&#x27;d expect at least one of those levers to move first.</p>
@@ -281,14 +298,14 @@
 <p class="say">Keep both readings on the table, and don&#x27;t let either one harden.</p>
 <p class="say">The last block of results is safety, and it needs the most careful language of all.</p>
 <p class="say">On safety, the overall event rate was similar across the two arms and no serious adverse events were recorded. The figure that catches the eye is acute kidney injury, reported in about a fifth of the dapagliflozin group against a smaller share on placebo; that difference was not statistically significant, and the trial was far too small to tell us whether it is real or noise.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: Any adverse event: 31.6% (dapagliflozin) vs 26.8% (placebo); no serious adverse events in either arm. Acute kidney injury: 18.4% vs 7.3%; urinary tract infection: 18.4% vs 14.6%; genital infection: 5.3% vs 2.4%. Progression to kidney failure: 1 patient in each arm; no statistically significant between-group differences in adverse event rates.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Any adverse event: 31.6% (dapagliflozin) vs 26.8% (placebo); no serious adverse events in either arm. Acute kidney injury: 18.4% vs 7.3%; urinary tract infection: 18.4% vs 14.6%; genital infection: 5.3% vs 2.4%. Progression to kidney failure: 1 patient in each arm; no statistically significant between-group differences in adverse event rates.)</p></details>
 <p class="say">Two cautions here, and they pull in opposite directions.</p>
 <p class="say">A trial sized for one endpoint is almost never sized for uncommon harms.</p>
 <p class="say">So a gap that looks alarming may be noise, and a genuine harm may stay invisible. Neither reading is safe on its own.</p>
 <p class="say">Nothing in this section tells you to change a prescription. What it does is mark a question that a larger trial has to answer.</p>
 <p class="say">Let&#x27;s move to the limitations, and then to what all of this means in clinic.</p>
 <p class="say">The authors are candid about the limits. The trial was small and short, lupus activity scores were not gathered systematically so they could not be adjusted for, the subgroup analyses were exploratory rather than planned, and everything came from a single academic centre. A neutral result in that setting tells us the trial could not detect a benefit; it does not tell us that a benefit is absent.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: Follow-up 12 months; stated as probably too short for sustained eGFR preservation or progression to kidney failure. Power calculation as reported: 38 participants per group (n = 76) giving 90% power for a standardized effect size of 0.100 in haematological parameters at alpha = 0.05. Subgroup analyses by baseline eGFR and baseline proteinuria (Fig. 5) were post hoc, not prespecified, with no statistically significant interaction.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Follow-up 12 months; stated as probably too short for sustained eGFR preservation or progression to kidney failure. Power calculation as reported: 38 participants per group (n = 76) giving 90% power for a standardized effect size of 0.100 in haematological parameters at alpha = 0.05. Subgroup analyses by baseline eGFR and baseline proteinuria (Fig. 5) were post hoc, not prespecified, with no statistically significant interaction.)</p></details>
 <p class="say">That last sentence is the whole discipline of reading a neutral trial, and it is worth repeating slowly.</p>
 <p class="say">Could not detect a benefit is a statement about the study. A benefit is absent would be a statement about the drug. They are not the same sentence.</p>
 <p class="say">One general point about subgroups belongs here as well. When you slice a trial after the fact, you are working with smaller and smaller groups.</p>
@@ -300,7 +317,7 @@
 <p class="say">Neither point makes the trial a poor one. Both change how loudly you are allowed to speak about the result.</p>
 <p class="say">So what should a nephrologist actually take from this? The authors offer their own explanation, and I think it is the most useful part of the paper.</p>
 <p class="say">The authors&#x27; own reading is that lupus nephritis may simply be different biology. Injury there is driven by immune complexes and inflammation, whereas the kidney diseases where these drugs have their strongest evidence are driven more by pressure and metabolism, so blocking sodium-glucose transport may reach only part of the problem, and any haemodynamic benefit could be masked by the immunosuppression everyone was already receiving. They deliberately call this a possible signal rather than a closed question.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: Authors&#x27; stated position: a possible signal requiring confirmation in larger, adequately powered studies with follow-up longer than the 12 months of this trial.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Authors&#x27; stated position: a possible signal requiring confirmation in larger, adequately powered studies with follow-up longer than the 12 months of this trial.)</p></details>
 <p class="say">Let me put that mechanism argument in plainer terms.</p>
 <p class="say">A kidney damaged mainly by pressure and metabolism is a different problem from a kidney damaged mainly by inflammation.</p>
 <p class="say">A drug built for the first problem may only touch the edge of the second.</p>

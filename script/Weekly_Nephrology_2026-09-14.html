@@ -8,16 +8,16 @@
 <meta name="theme-color" content="#33452f"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Weekly Nephrology AI"/>
-<meta property="og:title" content="Weekly Nephrology AI 2026-09-14 — Transcript"/>
+<meta property="og:title" content="Weekly Summary 2026-09-14 — Weekly Nephrology AI"/>
 <meta property="og:description" content="Sparsentan plus an SGLT2 inhibitor in IgA nephropathy, two prospective studies Cardiovascular death across glomerular disease subtypes in a national registry cohort ASN clinical practice guidance on cardiovascular-kidney-metabolic syndrome…"/>
 <meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-09-14.html"/>
 <meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
 <meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Weekly Nephrology AI 2026-09-14 — Transcript"/>
+<meta name="twitter:title" content="Weekly Summary 2026-09-14 — Weekly Nephrology AI"/>
 <meta name="twitter:description" content="Sparsentan plus an SGLT2 inhibitor in IgA nephropathy, two prospective studies Cardiovascular death across glomerular disease subtypes in a national registry cohort ASN clinical practice guidance on cardiovascular-kidney-metabolic syndrome…"/>
-<title>Weekly Nephrology AI 2026-09-14 — Transcript</title>
+<title>Weekly Summary 2026-09-14 — Weekly Nephrology AI</title>
 <link rel="alternate" type="application/rss+xml" title="Weekly Nephrology AI" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -52,7 +52,13 @@
     background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
     padding:4px 12px; border-radius:999px; margin-bottom:14px;
     backdrop-filter:blur(4px); }
-  h1 { margin:0 0 4px; font-size:2.15rem; font-weight:400;
+  .eyebrow { display:block; color:#f3ebd2; opacity:.8; text-decoration:none;
+    font-family:"DM Serif Display",Georgia,serif; font-size:1.05rem;
+    margin-bottom:12px; }
+  .eyebrow:hover { opacity:1; text-decoration:underline; }
+  .badge-ja { letter-spacing:.04em; text-transform:none; font-weight:600;
+    opacity:.85; margin-left:4px; }
+  h1 { margin:0 0 6px; font-size:1.75rem; font-weight:400;
     letter-spacing:.005em; line-height:1.15;
     font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
       "Noto Serif JP",serif; }
@@ -137,6 +143,14 @@
   .wbody b { font-size:.94rem; }
   .wbody p { margin:3px 0; font-size:.84rem; }
   .wbody .example { color:var(--sub); font-style:italic; }
+  .wbody .ja { margin-top:6px; padding:6px 10px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 8%, transparent); }
+  .take-home { margin-top:14px; padding-top:12px; border-top:1px solid var(--line); }
+  .take-home-label { font-size:.72rem; font-weight:700; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--accent); }
+  .take-home-line { margin:4px 0; font-size:.94rem; line-height:1.65; }
+  [lang="ja"] { font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",
+    "Noto Sans JP","Yu Gothic",sans-serif; }
   .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
     display:flex; align-items:center; gap:8px; }
   .section-heading::before { content:""; width:9px; height:9px;
@@ -168,6 +182,8 @@
   .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
     margin:-10px 12px 18px; padding-left:12px;
     border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .web-numbers summary { cursor:pointer; font-weight:600; width:fit-content; }
+  .web-numbers p { margin:4px 0 0; }
   .empty { color:var(--sub); text-align:center; padding:40px 0; }
 
   footer { color:var(--sub); font-size:.78rem; text-align:center;
@@ -177,9 +193,10 @@
 </head>
 <body>
 <header><div class="wrap">
-  <span class="badge">Weekly Summary</span>
-  <h1>Weekly Nephrology AI</h1>
-  <div class="sub">2026-09-14 · Episode transcript · Educational use</div>
+  <a class="eyebrow" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
+  <span class="badge">Weekly Summary <span class="badge-ja" lang="ja">ウィークリーサマリー</span></span>
+  <h1>Weekly Summary, September 14, 2026</h1>
+  <div class="sub">Episode transcript · Educational use</div>
   <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-09-14.mp3"></audio>
   <div class="bar">
     <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-09-14.mp3">⬇ Download MP3</a>
@@ -192,9 +209,8 @@
 <details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
 <li><span>AI model</span><b>Opus 5 (Claude)</b></li>
 <li><span>Agent team</span><b>Research Curator / Small Talk Scout / Episode Writer / Medical Reviewer</b></li>
-<li><span>Candidate papers</span><b>2194 papers</b></li>
 <li><span>TTS model</span><b>GPT-4o mini TTS</b></li>
-<li><span>Speakers</span><b>Emma — Host, CEFR B1-B2, female voice (marin)</b></li>
+<li><span>Speakers</span><b>Emma — Host, English at CEFR B1-B2</b></li>
 </ul></div></details>
 <details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
 <li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ndt/gfag211" target="_blank" rel="noopener">Sparsentan - SGLT2 inhibitor combination therapy in trials of IgA nephropathy</a><div class="pmeta"><span>Nephrol Dial Transplant (2026 Sep 11)</span> · <a href="https://doi.org/10.1093/ndt/gfag211" target="_blank" rel="noopener">DOI: 10.1093/ndt/gfag211</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42726023/" target="_blank" rel="noopener">PMID: 42726023</a></div><span class="plicense unknown">License: Unknown — review required</span></div></li>
@@ -236,12 +252,12 @@
 <p class="say">This report brings together two studies in IgA nephropathy. In SPARTACUS, an open-label phase two study, people already taking an SGLT2 inhibitor had their renin-angiotensin blocker swapped for sparsentan. In a substudy of the PROTECT open-label extension, people already on sparsentan were randomly assigned either to add an SGLT2 inhibitor or to stay on sparsentan alone for twelve weeks, and after that everyone could take the combination for another twenty-four weeks.</p>
 <p class="say">Two different angles on the same practical question, published together in Nephrology Dialysis Transplantation.</p>
 <p class="say">SPARTACUS enrolled forty-eight adults with IgA nephropathy, average age about forty-nine, and thirty-nine of them finished treatment. After the switch to sparsentan, albuminuria dropped quickly, and the reduction was still there at week twenty-four, with a least-squares mean fall of roughly fifty-six percent. The confidence interval around that estimate is wide, so the size of the effect is less certain than the direction.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: 48 patients enrolled; mean (SD) age 48.9 (13.9) years; 39 completed treatment; UACR least-squares mean -56% (95% CI -66% to -3%) through week 24.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 48 patients enrolled; mean (SD) age 48.9 (13.9) years; 39 completed treatment; UACR least-squares mean -56% (95% CI -66% to -3%) through week 24.)</p></details>
 <p class="say">Now the part that can actually compare one option against another.</p>
 <p class="say">The PROTECT extension substudy included sixty-three people who completed the twelve-week randomised period: thirty-two took sparsentan together with an SGLT2 inhibitor, and thirty-one continued on sparsentan alone. Fifty-four of them went on to complete twenty-four weeks of the combination.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: sparsentan + SGLT2i n=32; sparsentan alone n=31; 54 completed 24 weeks of sparsentan + SGLT2i.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: sparsentan + SGLT2i n=32; sparsentan alone n=31; 54 completed 24 weeks of sparsentan + SGLT2i.)</p></details>
 <p class="say">At twelve weeks, proteinuria was modestly lower when an SGLT2 inhibitor was added to sparsentan than when sparsentan was continued on its own. The ratio between the two groups was zero point seven five, with a confidence interval of zero point five eight to zero point nine eight, so it just excluded one, and the p value was below zero point zero five. The authors describe this as a modest further reduction rather than a large one.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: week 12 UPCR least-squares mean -11.1% (95% CI -26.3% to 7.3%) with sparsentan + SGLT2i; 17.7% (95% CI -2.4% to 42.1%) with sparsentan alone; between-group ratio 0.75 (95% CI 0.58 to 0.98); P&lt;0.05.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: week 12 UPCR least-squares mean -11.1% (95% CI -26.3% to 7.3%) with sparsentan + SGLT2i; 17.7% (95% CI -2.4% to 42.1%) with sparsentan alone; between-group ratio 0.75 (95% CI 0.58 to 0.98); P&lt;0.05.)</p></details>
 <p class="say">Modest is the word the authors picked, and it is the one to hold on to.</p>
 <p class="say">Now the limits, and then we move on.</p>
 <p class="say">Two things are worth keeping in mind. The randomised comparison ran for only twelve weeks, and the SPARTACUS part was open-label with no control group. The endpoints reported here are proteinuria and safety, so this tells us nothing yet about long-term kidney survival.</p>
@@ -249,10 +265,10 @@
 <p class="say">This one is a large registry cohort from the China Renal Data System. The team assembled sixty-six thousand two hundred forty-seven people with glomerulonephritis, covering fourteen different underlying causes recorded between the year two thousand and twenty twenty-two, and then compared deaths from cardiovascular disease, from ischaemic heart disease and from stroke across those causes.</p>
 <p class="say">Start with the plain count, because it sets the floor for everything after it.</p>
 <p class="say">Over follow-up there were nine hundred seventy-one cardiovascular deaths, which is about one percent of the whole cohort. Within that, three hundred thirty-seven deaths were attributed to ischaemic heart disease and two hundred eighty-six to stroke.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: 971 cardiovascular deaths (1%); 337 ischemic heart disease-associated deaths (0.5%); 286 stroke-associated deaths (0.4%).)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 971 cardiovascular deaths (1%); 337 ischemic heart disease-associated deaths (0.5%); 286 stroke-associated deaths (0.4%).)</p></details>
 <p class="say">Now the same cohort, measured against the general population.</p>
 <p class="say">Crude cardiovascular death rates varied enormously between subtypes, from well under one to more than twenty per thousand person-years. Compared with the general population, every glomerular disease subtype carried a higher risk of cardiovascular death. Lupus nephritis sat at the top, with a standardised mortality ratio close to twenty-eight, and minimal change disease at the bottom, close to four.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: crude cardiovascular death rates 0.7 to 22.6 per 1000 person-years; lupus nephritis indirect standardized mortality ratio 27.9; minimal change disease indirect standardized mortality ratio 3.91.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: crude cardiovascular death rates 0.7 to 22.6 per 1000 person-years; lupus nephritis indirect standardized mortality ratio 27.9; minimal change disease indirect standardized mortality ratio 3.91.)</p></details>
 <p class="say">And the reading the authors settle on.</p>
 <p class="say">Taken together, the authors describe cardiovascular risk that is raised right across glomerular disease, but that differs a great deal depending on the underlying cause. Because this is an observational cohort, what we have is an association between the type of glomerular disease and cardiovascular death, not proof that one drives the other.</p>
 <p class="say">The design sets the limits here. This is retrospective registry data, and the abstract gives us crude rates and standardised ratios without telling us how individual risk factors or treatments were accounted for, so the differences between subtypes are best read as descriptive.</p>
@@ -288,18 +304,18 @@
 <p class="say">The histology was mixed. IgA nephropathy was the most common, in five of the twelve. Then two had membranoproliferative glomerulonephritis, two had diabetic nephropathy, and there was one each with thrombotic microangiopathy, pauci-immune crescentic glomerulonephritis and membranous nephropathy.</p>
 <p class="say">And then the follow-up.</p>
 <p class="say">Over roughly six years of follow-up, eight of the twelve reached what the authors call incomplete remission, meaning proteinuria under three and a half grams per gram. Three patients progressed to end-stage kidney disease: one with IgA nephropathy, one with membranoproliferative glomerulonephritis and one with crescentic glomerulonephritis.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: follow-up period 5.8 years; 8 patients (67%) achieved incomplete remission (&lt;3.5 g/gCr); 3 patients progressed to end-stage kidney disease.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: follow-up period 5.8 years; 8 patients (67%) achieved incomplete remission (&lt;3.5 g/gCr); 3 patients progressed to end-stage kidney disease.)</p></details>
 <p class="say">The obvious limits are size and selection. Twelve patients from one centre, all of them included precisely because they had a biopsy, so the mix of diagnoses here should not be read as the true distribution of nephrotic syndrome after liver transplantation.</p>
 <p class="say">Which is about as far as a series this size can take anyone.</p>
 <p class="say">And finally, vascular access. Today&#x27;s last paper is in The Lancet Digital Health, and it is a proper randomised trial.</p>
 <p class="say">This was a phase three randomised trial run across thirty-one American centres. Patients dialysing through a catheter, who were candidates for either a fistula or a graft, were randomly assigned in the operating room, before the first incision, either to a standard autogenous fistula or to a bioengineered acellular vessel. Nobody was masked. The coprimary outcomes were functional patency at six months and secondary patency at twelve months, brought together into a single measure the investigators call global relative patency.</p>
 <p class="say">Between two thousand seventeen and two thousand twenty-three, two hundred forty-two patients were enrolled. Roughly three in ten were women. One hundred nineteen were assigned to a fistula and one hundred twenty-three to the engineered vessel.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: 242 patients enrolled; 70 (29%) female; 119 (49%) assigned to autogenous AVF; 123 (51%) assigned to ATEV; enrolment from Sept 29, 2017 to April 22, 2023.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 242 patients enrolled; 70 (29%) female; 119 (49%) assigned to autogenous AVF; 123 (51%) assigned to ATEV; enrolment from Sept 29, 2017 to April 22, 2023.)</p></details>
 <p class="say">And the headline result.</p>
 <p class="say">The trial met its coprimary endpoints in favour of the engineered vessel. The global relative patency was one point one seven, with a confidence interval from one point zero four to one point three one, and a p value of zero point zero zero nine.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: global relative patency 1.17 (95% CI 1.04-1.31); p=0.0090.)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: global relative patency 1.17 (95% CI 1.04-1.31); p=0.0090.)</p></details>
 <p class="say">Infection rates were similar in the two groups, but the engineered vessel needed more interventions overall to keep it working. The investigators also describe a larger difference in one subgroup, made up of women and of men who had both diabetes and obesity, where the patency measure was one point six six. Being a subgroup, that is best treated as hypothesis-generating.</p>
-<p class="web-numbers" aria-label="Exact study values">(Exact values: subgroup global relative patency 1.66 (95% CI 1.34-2.04).)</p>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: subgroup global relative patency 1.66 (95% CI 1.34-2.04).)</p></details>
 <p class="say">A few caveats before we move on. The trial was open-label, so the surgeon, the patient and the site staff all knew which access had been used, and the funding came from the company behind the vessel. The abstract also does not tell us whether that subgroup analysis was planned in advance.</p>
 <p class="say">That is the seventh and last of them.</p>
 <p class="say">Before we get to today&#x27;s words and phrases, let&#x27;s pull the main discussion together.</p>
