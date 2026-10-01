@@ -62,6 +62,9 @@
       "Noto Serif JP",serif; }
   .sub { opacity:.78; font-size:.88rem; }
   audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  @media (prefers-color-scheme: dark) {
+    audio { color-scheme:dark; }
+  }
   .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
   .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
     border:1px solid rgba(243,235,210,.28); text-decoration:none;
@@ -173,6 +176,20 @@
   .monologue .say:last-child { margin-bottom:0; }
   .monologue .web-numbers { margin:-6px 0 18px; }
   .note { color:var(--sub); font-size:.88rem; }
+  .script-nav { display:flex; flex-wrap:wrap; gap:8px; margin:-8px 0 8px; }
+  .script-nav a { font-size:.8rem; color:var(--accent); text-decoration:none;
+    border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    padding:3px 12px; border-radius:999px; }
+  .script-nav a:hover { background:color-mix(in srgb, var(--accent) 10%, transparent); }
+  .script-section { margin:40px 0 6px; font-size:.78rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:12px; scroll-margin-top:16px; }
+  .script-section::after { content:""; flex:1; height:1px; background:var(--line); }
+  @media (prefers-color-scheme: dark) {
+    .script-nav a, .script-section { filter:brightness(1.7); }
+  }
+  .script-item { margin:26px 0 4px; font-size:.9rem; font-weight:650;
+    color:var(--ink); line-height:1.5; }
   .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
     margin:-10px 12px 18px; padding-left:12px;
     border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }

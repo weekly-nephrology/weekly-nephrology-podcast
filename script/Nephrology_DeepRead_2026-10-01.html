@@ -62,6 +62,9 @@
       "Noto Serif JP",serif; }
   .sub { opacity:.78; font-size:.88rem; }
   audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  @media (prefers-color-scheme: dark) {
+    audio { color-scheme:dark; }
+  }
   .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
   .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
     border:1px solid rgba(243,235,210,.28); text-decoration:none;
@@ -173,6 +176,20 @@
   .monologue .say:last-child { margin-bottom:0; }
   .monologue .web-numbers { margin:-6px 0 18px; }
   .note { color:var(--sub); font-size:.88rem; }
+  .script-nav { display:flex; flex-wrap:wrap; gap:8px; margin:-8px 0 8px; }
+  .script-nav a { font-size:.8rem; color:var(--accent); text-decoration:none;
+    border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    padding:3px 12px; border-radius:999px; }
+  .script-nav a:hover { background:color-mix(in srgb, var(--accent) 10%, transparent); }
+  .script-section { margin:40px 0 6px; font-size:.78rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:12px; scroll-margin-top:16px; }
+  .script-section::after { content:""; flex:1; height:1px; background:var(--line); }
+  @media (prefers-color-scheme: dark) {
+    .script-nav a, .script-section { filter:brightness(1.7); }
+  }
+  .script-item { margin:26px 0 4px; font-size:.9rem; font-weight:650;
+    color:var(--ink); line-height:1.5; }
   .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
     margin:-10px 12px 18px; padding-left:12px;
     border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
@@ -216,13 +233,15 @@
 <li><span class="wnum">5</span><div class="wbody"><b>hard to picture</b><p>Difficult to imagine clearly in your mind.</p><p class="example">Example: A change in a model score is hard to picture without a graph.</p><p class="ja" lang="ja">hard to picture は「イメージしにくい」。抽象的な指標を説明するときに、「だから図で見ましょう」とつなげやすい言い方です。</p></div></li>
 <li><span class="wnum">6</span><div class="wbody"><b>legwork</b><p>The slow, practical work needed to get something done.</p><p class="example">Example: The legwork behind a good study is often invisible to readers.</p><p class="ja" lang="ja">legwork は「地道な下準備」。足を使う仕事、というイメージで、研究の裏方の苦労をねぎらうときにも使えます。</p></div></li></ol></div></details>
 
-<section class="script"><h2 class="section-heading">Script</h2><div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Welcome to Weekly Nephrology AI. It&#x27;s October 1, 2026, and this is Deep Read. One open-access paper, read closely from the verified full text.</div></div>
+<section class="script"><h2 class="section-heading">Script</h2><nav class="script-nav" aria-label="Transcript sections"><a href="#section-opening">Opening</a><a href="#section-small-talk">Small Talk</a><a href="#section-main">Main discussion</a><a href="#section-words">Words and phrases</a><a href="#section-look-back">Look back</a></nav><h3 class="script-section" id="section-opening">Opening</h3>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Welcome to Weekly Nephrology AI. It&#x27;s October 1, 2026, and this is Deep Read. One open-access paper, read closely from the verified full text.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">Weekly Nephrology AIは、腎臓内科の新しい論文を、日本語と英語で読んでいく番組です。</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">New nephrology papers, in two languages, and how far the evidence actually goes.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">ノラです。今日は1本の論文を、じっくり読んでいきます。</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And I&#x27;m Daniel. I&#x27;ll sum up each part in plain English.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Quick note: this show is made by AI and can get things wrong, so check the original paper before you act on anything.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">気づけばもう十月ですね。朝晩が少し涼しくなって、温かいコーヒーがおいしい季節になりました。</div></div>
+<h3 class="script-section" id="section-small-talk">Small Talk</h3>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Let&#x27;s start with a little Small Talk.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">いきなりですが、聞いている皆さんに質問です。腎臓から出ていく薬の量を決めるとき、カルテのどの数字を最初に見ていますか？</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Honestly, on a busy ward, I tend to grab whichever number is right in front of me. Not my proudest habit.</div></div>
@@ -232,6 +251,7 @@
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">I&#x27;d love to hear about it. Keep that little phone call in mind, because today&#x27;s paper lives right in that moment.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">今日の論文は、オープンアクセスの全文をきちんと確認できた一本です。高齢の患者さんで薬の量をどう決めるか、という毎日の悩みに、方法の工夫で正面から向き合っているので、今日はこの一本を深く読みます。</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Right, and with the full text, we can really get into the methods and the thinking behind them.</div></div>
+<h3 class="script-section" id="section-main">Main discussion</h3>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Now, let&#x27;s get started.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">じゃあ、今日の一本。まずは英語でざっくりお願いします。</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Here&#x27;s the setup. Everyone got a single IV dose of gentamicin as a model kidney-cleared drug, and measured GFR was compared with ten estimating equations. Among the equations, the ones combining creatinine and cystatin C did best. Creatinine-only equations ended up near the bottom.</div></div>
@@ -306,6 +326,7 @@
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">では最後に英語で、今日の持ち帰りをお願いします。</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">So the take-home: in older medical patients with poor appetite, creatinine alone may mislead drug dosing. If measuring GFR isn&#x27;t possible, creatinine plus cystatin C in ml/min was the best stand-in here.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">ありがとうございます。本編はここまでです。</div></div>
+<h3 class="script-section" id="section-words">Words and phrases</h3>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Now, today&#x27;s words and phrases.</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">First, misleading. Giving the wrong idea, even when it looks correct. For example, a neat average can be misleading when the group is very mixed.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">misleading は「誤解を招く」。数字自体は正しくても、読み方を誤らせる、というときにぴったりの形容詞です。</div></div>
@@ -320,6 +341,7 @@
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Sixth, legwork. The slow, practical work needed to get something done. For example, the legwork behind a good study is often invisible to readers.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">legwork は「地道な下準備」。足を使う仕事、というイメージで、研究の裏方の苦労をねぎらうときにも使えます。</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">That&#x27;s it for today&#x27;s words and phrases.</div></div>
+<h3 class="script-section" id="section-look-back">Look back</h3>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Before we wrap up, a quick look back at today&#x27;s episode.</div></div>
 <div class="turn a"><span class="who">Nora · Host</span><div class="bubble" lang="ja">つまり、食欲が落ちた高齢の内科患者では、クレアチニン単独は当てにしにくいんです。測れないなら、シスタチンC併用のml/minが一番の代わりでした。</div></div>
 <div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Something to keep in mind the next time that phone call comes.</div></div>
