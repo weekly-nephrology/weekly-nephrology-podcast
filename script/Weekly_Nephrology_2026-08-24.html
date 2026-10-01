@@ -176,14 +176,20 @@
   .monologue .say:last-child { margin-bottom:0; }
   .monologue .web-numbers { margin:-6px 0 18px; }
   .note { color:var(--sub); font-size:.88rem; }
-  .script-nav { display:flex; flex-wrap:wrap; gap:8px; margin:-8px 0 8px; }
+  .script-nav { display:flex; flex-wrap:nowrap; gap:8px; overflow-x:auto;
+    position:sticky; top:0; z-index:5; margin:-8px -20px 8px; padding:10px 20px;
+    background:color-mix(in srgb, var(--bg) 92%, transparent);
+    -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line); scrollbar-width:none; }
+  .script-nav::-webkit-scrollbar { display:none; }
+  .script-nav a { flex:none; }
   .script-nav a { font-size:.8rem; color:var(--accent); text-decoration:none;
     border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
     padding:3px 12px; border-radius:999px; }
   .script-nav a:hover { background:color-mix(in srgb, var(--accent) 10%, transparent); }
   .script-section { margin:40px 0 6px; font-size:.78rem; font-weight:700;
     letter-spacing:.14em; text-transform:uppercase; color:var(--accent);
-    display:flex; align-items:center; gap:12px; scroll-margin-top:16px; }
+    display:flex; align-items:center; gap:12px; scroll-margin-top:64px; }
   .script-section::after { content:""; flex:1; height:1px; background:var(--line); }
   @media (prefers-color-scheme: dark) {
     .script-nav a, .script-section { filter:brightness(1.7); }
@@ -203,7 +209,7 @@
 </style>
 </head>
 <body>
-<header><div class="wrap">
+<header id="top"><div class="wrap">
   <a class="eyebrow" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
   <span class="badge">Weekly Summary</span>
   <h1>Weekly Summary, August 24, 2026</h1>
@@ -241,7 +247,7 @@
 <li><span class="wnum">9</span><div class="wbody"><b>a change of scene</b><p>a move to a completely different setting or subject</p><p class="example">Example: After the ward round we needed a change of scene.</p></div></li>
 <li><span class="wnum">10</span><div class="wbody"><b>hold that thought</b><p>keep an idea in mind for a moment, while something else is said</p><p class="example">Example: Hold that thought, and I&#x27;ll come back to it.</p></div></li></ol></div></details>
 
-<section class="script"><h2 class="section-heading">Script</h2><nav class="script-nav" aria-label="Transcript sections"><a href="#section-opening">Opening</a><a href="#section-small-talk">Small Talk</a><a href="#section-main">Main discussion</a><a href="#section-look-back">Look back</a><a href="#section-words">Words and phrases</a></nav><div class="monologue"><p class="byline">Emma · Host</p>
+<section class="script"><h2 class="section-heading">Script</h2><nav class="script-nav" aria-label="Transcript sections"><a href="#top">Top</a><a href="#section-opening">Opening</a><a href="#section-small-talk">Small Talk</a><a href="#section-main">Main discussion</a><a href="#section-look-back">Look back</a><a href="#section-words">Words and phrases</a></nav><div class="monologue"><p class="byline">Emma · Host</p>
 <p class="note"># Weekly Nephrology AI - Weekly Summary - 2026-08-24</p>
 <p class="note">## Script</p>
 <h3 class="script-section" id="section-opening">Opening</h3>
