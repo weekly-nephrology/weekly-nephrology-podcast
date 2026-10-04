@@ -6,7 +6,7 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers, in Japanese and English: a Japanese host explains each paper, and an English co-host gives the key points in plain English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Oct 2026 13:26:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 13:43:52 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
@@ -38,7 +38,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-10-01.html</description>
       <content:encoded><![CDATA[<p>Measured vs estimated GFR for renal drug dosing in older medical patients</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-10-01.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-10-01.mp3" length="6630720" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-10-01.mp3?v=bd7cf4f6" length="6630720" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-10-01.mp3</guid>
       <pubDate>Thu, 01 Oct 2026 07:00:00 +0900</pubDate>
       <itunes:duration>13:49</itunes:duration>
@@ -56,7 +56,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-09-28.html</description>
       <content:encoded><![CDATA[<ul><li>Lorundrostat for uncontrolled hypertension in albuminuric CKD, a crossover RCT</li><li>Automated anti-nephrin antibody assay in children with MCD or FSGS, a diagnostic study</li><li>Short versus standard steroid taper in adult podocytopathy, a noninferiority RCT</li><li>Undertreated advanced CKD in Sydney hospital inpatients, a cross-sectional study</li><li>Lupus nephritis class III or IV with low proteinuria in Japan, a retrospective cohort</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-09-28.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-09-28.mp3" length="9559488" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-09-28.mp3?v=67443aaf" length="9559488" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-09-28.mp3</guid>
       <pubDate>Mon, 28 Sep 2026 07:00:00 +0900</pubDate>
       <itunes:duration>19:55</itunes:duration>
@@ -318,7 +318,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-22.html</description>
       <content:encoded><![CDATA[<ul><li>WDR72-related distal renal tubular acidosis with renal cysts in a boy</li><li>ROSAH syndrome masquerading as lupus nephritis in an adult man</li><li>Subarachnoid hemorrhage and cerebral infarction during anti-GBM disease in a woman</li><li>Full-text case: crescentic IgA nephropathy in polycythemia vera, JAK inhibitor then steroids</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-22.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-22.mp3" length="7380480" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-22.mp3?v=c66e164d" length="7380480" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-22.mp3</guid>
       <pubDate>Sat, 22 Aug 2026 07:00:00 +0900</pubDate>
       <itunes:duration>15:23</itunes:duration>
@@ -399,7 +399,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-10.html</description>
       <content:encoded><![CDATA[<ul><li>Kidney involvement in antisynthetase syndrome, a systematic review</li><li>Dapagliflozin in adults with biopsy-proven lupus nephritis, a placebo-controlled randomised trial</li><li>Immune checkpoint inhibitor-associated AKI, an international multidisciplinary consensus statement</li><li>Semaglutide in adults with CKD or cardiovascular disease, a pooled analysis of three trials</li><li>Benzylpenicillin versus flucloxacillin or cloxacillin in adults with S aureus bacteraemia, an RCT</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-10.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-10.mp3" length="6338496" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-10.mp3?v=63297c0d" length="6338496" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-10.mp3</guid>
       <pubDate>Mon, 10 Aug 2026 07:00:00 +0900</pubDate>
       <itunes:duration>13:12</itunes:duration>
@@ -448,7 +448,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-03.html</description>
       <content:encoded><![CDATA[<ul><li>Finerenone for CKD from glomerular disease: exploratory subgroup of a phase 3 RCT</li><li>Dapagliflozin before elective cardiac surgery: a randomized trial of AKI prevention</li><li>Anti-podocin and anti-KIRREL1 antibodies in autoimmune podocytopathies: multicenter observational</li><li>Tubular secretion markers in HFpEF</li><li>a LASSO relapse-prediction model in lupus nephritis</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-08-03.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-03.mp3" length="6645504" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-03.mp3?v=558662b6" length="6645504" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-08-03.mp3</guid>
       <pubDate>Mon, 03 Aug 2026 07:00:00 +0900</pubDate>
       <itunes:duration>13:51</itunes:duration>
@@ -465,7 +465,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-01.html</description>
       <content:encoded><![CDATA[<ul><li>Hydroxychloroquine-related renal phospholipidosis presenting as proximal tubulopathy</li><li>FcRn antagonist with anticoagulation in antiphospholipid syndrome kidney transplantation</li><li>Atypical HUS with malignant hypertension mimicking pulmonary-renal syndrome</li><li>Full-text case: refractory minimal change disease with Mycobacterium marinum skin infection</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-08-01.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-01.mp3" length="7509312" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-01.mp3?v=46ea7219" length="7509312" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-08-01.mp3</guid>
       <pubDate>Sat, 01 Aug 2026 07:00:00 +0900</pubDate>
       <itunes:duration>15:39</itunes:duration>
@@ -479,7 +479,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-30.html</description>
       <content:encoded><![CDATA[<p>Adult first-onset pure class V lupus nephritis: real-world treatment strategies</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-30.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-30.mp3" length="8732160" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-30.mp3?v=85ad0486" length="8732160" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-30.mp3</guid>
       <pubDate>Thu, 30 Jul 2026 07:00:00 +0900</pubDate>
       <itunes:duration>18:12</itunes:duration>
@@ -497,7 +497,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-27.html</description>
       <content:encoded><![CDATA[<ul><li>Low-dose rivaroxaban in advanced CKD and dialysis: a randomized trial</li><li>Sodium bicarbonate for critically ill adults with metabolic acidosis and shock: an RCT</li><li>Urea vs tolvaptan for inpatient SIADH</li><li>early rasburicase in tumour lysis syndrome (cohorts)</li><li>Daratumumab for microvascular inflammation after kidney transplant: a registry study</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-27.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-27.mp3" length="7261824" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-27.mp3?v=31534a45" length="7261824" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-27.mp3</guid>
       <pubDate>Mon, 27 Jul 2026 07:00:00 +0900</pubDate>
       <itunes:duration>15:08</itunes:duration>
@@ -514,7 +514,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Neph
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-25.html</description>
       <content:encoded><![CDATA[<ul><li>Acute tubulointerstitial nephritis following a coronavirus disease 2019 vaccine…</li><li>Roxadustat in the Treatment of Pure Red Cell Aplasia Associated With Anti-EPO Antibodies</li><li>Florid Bilateral Renal Parenchymal Malakoplakia With Abundant Michaelis-Gutmann Bodies in…</li><li>A Novel Entity of Renal Toxicity After Combination Chemotherapy: An Onco-Nephrology Kidney…</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-07-25.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-25.mp3" length="7064640" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-25.mp3?v=6a20191c" length="7064640" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-07-25.mp3</guid>
       <pubDate>Sat, 25 Jul 2026 07:00:00 +0900</pubDate>
       <itunes:duration>14:43</itunes:duration>
@@ -528,7 +528,7 @@ https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-23.html</description>
       <content:encoded><![CDATA[<p>Sparsentan vs irbesartan in pediatric FSGS (ages 8 to under 18).</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-07-23.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-23.mp3" length="7945536" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-23.mp3?v=59bb7520" length="7945536" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-07-23.mp3</guid>
       <pubDate>Thu, 23 Jul 2026 07:00:00 +0900</pubDate>
       <itunes:duration>16:33</itunes:duration>
