@@ -23,6 +23,15 @@
       linear-gradient(150deg,#2c3a28 15%, var(--green-deep) 130%); }
   header a.home { color:var(--cream); opacity:.8; text-decoration:none;
     font-family:"DM Serif Display",Georgia,serif; }
+  header a.home:hover { opacity:1; text-decoration:underline; }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:var(--cream); background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:7px 16px; border-radius:999px; font-size:.86rem; font-weight:600;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(243,235,210,.24); }
+  .bar a.primary { background:var(--cream); color:var(--green-deep); border-color:var(--cream); }
+  .bar a.primary:hover { background:#fff; }
   h1 { margin:6px 0 4px; font-weight:400; font-size:2rem;
     font-family:"DM Serif Display",Georgia,serif; }
   .sub { opacity:.8; font-size:.9rem; }
@@ -56,6 +65,10 @@
   .topics { margin:4px 0; padding-left:1.2rem; font-size:.88rem; }
   .note { font-size:.84rem; color:var(--muted); margin:0 0 10px; }
   @media (prefers-color-scheme: dark) { a.eplink, .pmeta a { filter:brightness(1.6); } }
+  .bottom-nav { text-align:center; margin-top:26px; }
+  .bottom-nav a { display:inline-block; color:var(--cream); background:var(--green);
+    text-decoration:none; padding:9px 20px; border-radius:999px; font-size:.88rem; font-weight:650; }
+  .bottom-nav a:hover { background:var(--green-deep); }
   [hidden] { display:none !important; }
   footer { color:var(--muted); font-size:.78rem; text-align:center; padding:20px 0 48px; }
 </style>
@@ -65,6 +78,10 @@
   <a class="home" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/">Weekly Nephrology AI</a>
   <h1>Archive</h1>
   <div class="sub">Every paper we have featured, and the pilot-period episodes.</div>
+  <nav class="bar" aria-label="Site">
+    <a class="primary" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/">Back to latest episodes</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+  </nav>
 </div></header>
 <main><div class="wrap">
   <div class="tabs" role="tablist">
@@ -277,6 +294,7 @@
 <li class="paper" style="--sc:#4a6048"><div class="phead"><span class="badge">Weekly Summary</span><span class="eplink">2026-07-05</span></div><ul class="topics"><li>Mechanistic Insights and Therapeutic Advances of Anti-Inflammatory Biologics in…</li><li>From the Hip to the Kidney: Suspected Infection-Associated Immunoglobulin A Vasculitis in…</li><li>Hyperosmolar hyperglycaemic state: a systematic review and meta-analysis</li><li>Bortezomib-Cyclophosphamide-Dexamethasone versus Rituximab in PGNMID</li><li>Prevalence of anti-rituximab antibodies in autoimmune forms of glomerulonephritis and…</li></ul><div class="pmeta"><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-07-05.html">Transcript</a> · <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-07-05.mp3">Audio</a></div></li>
     </ul>
   </section>
+  <nav class="bottom-nav"><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/">Back to latest episodes</a></nav>
 </div></main>
 <footer><div class="wrap">AI-generated educational content. Verify the original papers before clinical or research use.<br/>© 2026 Weekly Nephrology AI. All rights reserved.<br/>This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.</div></footer>
 <script>
