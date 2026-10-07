@@ -6,13 +6,27 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers, in Japanese and English: a Japanese host explains each paper, and an English co-host gives the key points in plain English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 14:18:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 20:38:42 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Deep Read 2026-10-08</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-10-08.html</link>
+      <description>• Ionized calcium and hidden hypocalcemia in dialysis, a Korean cohort study
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-10-08.html</description>
+      <content:encoded><![CDATA[<p>Ionized calcium and hidden hypocalcemia in dialysis, a Korean cohort study</p><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-10-08.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-10-08.mp3" length="8443629" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-10-08.mp3</guid>
+      <pubDate>Thu, 08 Oct 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>17:35</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Weekly Summary 2026-10-05</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-10-05.html</link>
