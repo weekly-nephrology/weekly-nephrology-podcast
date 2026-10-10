@@ -6,7 +6,7 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers, in Japanese and English: a Japanese host explains each paper, and an English co-host gives the key points in plain English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Oct 2026 23:11:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 09:49:57 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
@@ -24,10 +24,10 @@
 Read the transcript:
 https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-10-10.html</description>
       <content:encoded><![CDATA[<ul><li>Subcutaneous daratumumab for recurrent FSGS after kidney transplantation</li><li>Biopsy-proven acute tubular injury temporally associated with semaglutide</li><li>Peri-transplant orlistat use and oxalate nephropathy in a kidney allograft</li><li>Crescentic glomerulonephritis after filgrastim in MGRS-associated MPGN</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-10-10.html">Read the transcript</a></p>]]></content:encoded>
-      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-10-10.mp3" length="8463981" type="audio/mpeg"/>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-10-10.mp3?v=37595b85" length="8572416" type="audio/mpeg"/>
       <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-10-10.mp3</guid>
       <pubDate>Sat, 10 Oct 2026 07:00:00 +0900</pubDate>
-      <itunes:duration>17:38</itunes:duration>
+      <itunes:duration>17:52</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
