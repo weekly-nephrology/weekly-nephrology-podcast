@@ -6,13 +6,31 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers, in Japanese and English: a Japanese host explains each paper, and an English co-host gives the key points in plain English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Oct 2026 09:49:57 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 01:08:33 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Weekly Summary 2026-10-12</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-10-12.html</link>
+      <description>• Real-world sparsentan in IgA nephropathy, a multicenter retrospective cohort
+• Quality of life with potassium binders in Japanese patients, a baseline cohort analysis
+• Eligibility for combined cardiorenal drugs in US adults, a microsimulation study
+• GLP-1 receptor agonists in patients starting hemodialysis, a matched retrospective cohort
+• A conversation tool for conservative management in older adults with CKD, a pilot randomized trial
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-10-12.html</description>
+      <content:encoded><![CDATA[<ul><li>Real-world sparsentan in IgA nephropathy, a multicenter retrospective cohort</li><li>Quality of life with potassium binders in Japanese patients, a baseline cohort analysis</li><li>Eligibility for combined cardiorenal drugs in US adults, a microsimulation study</li><li>GLP-1 receptor agonists in patients starting hemodialysis, a matched retrospective cohort</li><li>A conversation tool for conservative management in older adults with CKD, a pilot randomized trial</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-10-12.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-10-12.mp3" length="7406061" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-10-12.mp3</guid>
+      <pubDate>Mon, 12 Oct 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>15:26</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-10-10</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-10-10.html</link>
