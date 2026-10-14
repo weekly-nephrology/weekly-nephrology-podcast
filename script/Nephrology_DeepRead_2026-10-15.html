@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<meta name="description" content="Stopping vs continuing ACE inhibitors or ARBs in advanced CKD, a target trial emulation"/>
+<meta name="theme-color" content="#33452f"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Deep Read 2026-10-15 — Weekly Nephrology AI"/>
+<meta property="og:description" content="Stopping vs continuing ACE inhibitors or ARBs in advanced CKD, a target trial emulation"/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-10-15.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Deep Read 2026-10-15 — Weekly Nephrology AI"/>
+<meta name="twitter:description" content="Stopping vs continuing ACE inhibitors or ARBs in advanced CKD, a target trial emulation"/>
+<title>Deep Read 2026-10-15 — Weekly Nephrology AI</title>
+<link rel="alternate" type="application/rss+xml" title="Weekly Nephrology AI" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
+<style>
+  :root {
+    --accent:#a97f2f; --accent-deep:#7d5c1e;
+    --bg:#f5f1e3; --card:#fdfbf2; --ink:#26301f; --sub:#6f7863;
+    --line:rgba(38,48,31,.1); --bubble-b:#ecf0dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#161b12; --card:#20271a; --ink:#ece7d4; --sub:#a4ac93;
+      --line:rgba(236,231,212,.1); --bubble-b:#2a3321;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Avenir Next",-apple-system,
+      system-ui,sans-serif;
+    line-height:1.85; font-size:15.5px;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+
+  header { color:#f3ebd2; padding:44px 0 34px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 160% at 85% -20%, #a97f2f 0%, transparent 55%),
+      linear-gradient(150deg,#2c3a28 20%, #7d5c1e 130%); }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:#f3ebd2;
+    background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
+    padding:4px 12px; border-radius:999px; margin-bottom:14px;
+    backdrop-filter:blur(4px); }
+  .eyebrow { display:block; color:#f3ebd2; opacity:.8; text-decoration:none;
+    font-family:"DM Serif Display",Georgia,serif; font-size:1.05rem;
+    margin-bottom:12px; }
+  .eyebrow:hover { opacity:1; text-decoration:underline; }
+  h1 { margin:0 0 6px; font-size:1.75rem; font-weight:400;
+    letter-spacing:.005em; line-height:1.15;
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
+      "Noto Serif JP",serif; }
+  .sub { opacity:.78; font-size:.88rem; }
+  audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  @media (prefers-color-scheme: dark) {
+    audio { color-scheme:dark; }
+  }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:7px 15px; border-radius:999px; font-size:.82rem;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(243,235,210,.24); }
+
+  main { padding:30px 0 60px; }
+  .pilot-banner { background:rgba(215,171,82,.18); color:var(--ink); font-size:.86rem;
+    padding:10px 0; border-bottom:1px solid var(--line); }
+  .pilot-banner a { color:var(--accent); font-weight:650; }
+
+  .overview { background:var(--card); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:16px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25);
+    padding:20px 22px; margin-bottom:22px; }
+  .overview .section-heading { margin-bottom:10px; }
+  .overview-heading { margin:5px 0; font-size:.96rem; line-height:1.65; }
+  .overview-topics { margin:5px 0; padding-left:1.3rem; }
+  .overview-topics li { margin:5px 0; font-size:.92rem; line-height:1.55; }
+
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
+  .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
+  .plist { list-style:none; margin:0; padding:0; }
+  .plist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .pnum { flex:none; width:26px; height:26px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; margin-top:2px; }
+  .pbody { min-width:0; }
+  .ptitle { font-weight:650; font-size:.92rem; line-height:1.55;
+    color:var(--ink); text-decoration:none; }
+  a.ptitle:hover { color:var(--accent); text-decoration:underline; }
+  .pmeta { font-size:.76rem; color:var(--sub); margin-top:3px;
+    overflow-wrap:anywhere; }
+  .pmeta a { color:var(--accent); text-decoration:none; }
+  .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .wbody .ja { margin-top:6px; padding:6px 10px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 8%, transparent); }
+  [lang="ja"] { font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",
+    "Noto Sans JP","Yu Gothic",sans-serif; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
+
+  .turn { margin:18px 0; max-width:88%; }
+  .turn.b { margin-left:auto; }
+  .who { display:block; font-size:.7rem; font-weight:700;
+    letter-spacing:.08em; color:var(--sub); margin:0 6px 4px; }
+  .turn.a .who { color:var(--accent); }
+  .turn.b { text-align:right; }
+  .turn.b .bubble { text-align:left; }
+  .bubble { display:inline-block; background:var(--card);
+    border:1px solid var(--line); padding:12px 17px;
+    border-radius:4px 18px 18px 18px;
+    box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
+  .turn.b .bubble { background:var(--bubble-b);
+    border-radius:18px 4px 18px 18px; }
+  /* 1話者回は掛け合いがないので、吹き出しではなく記事本文として流す。
+     話者名は Script 直下の byline に一度だけ出す。 */
+  .byline { margin:-6px 0 22px; font-size:.72rem; font-weight:700;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:10px; }
+  .byline::after { content:""; flex:1; height:1px; background:var(--line); }
+  .monologue .say { margin:0 0 15px; }
+  .monologue .say:last-child { margin-bottom:0; }
+  .monologue .web-numbers { margin:-6px 0 18px; }
+  .note { color:var(--sub); font-size:.88rem; }
+  .script-nav { display:flex; flex-wrap:nowrap; gap:8px; overflow-x:auto;
+    position:sticky; top:0; z-index:5; margin:-8px -20px 8px; padding:10px 20px;
+    background:color-mix(in srgb, var(--bg) 92%, transparent);
+    -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line); scrollbar-width:none; }
+  .script-nav::-webkit-scrollbar { display:none; }
+  .script-nav a { flex:none; }
+  .script-nav a { font-size:.8rem; color:var(--accent); text-decoration:none;
+    border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    padding:3px 12px; border-radius:999px; }
+  .script-nav a:hover { background:color-mix(in srgb, var(--accent) 10%, transparent); }
+  .script-section { margin:40px 0 6px; font-size:.78rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:12px; scroll-margin-top:64px; }
+  .script-section::after { content:""; flex:1; height:1px; background:var(--line); }
+  @media (prefers-color-scheme: dark) {
+    .script-nav a, .script-section { filter:brightness(1.7); }
+  }
+  .script-item { margin:26px 0 4px; font-size:.9rem; font-weight:650;
+    color:var(--ink); line-height:1.5; }
+  .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
+    margin:-10px 12px 18px; padding-left:12px;
+    border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .web-numbers summary { cursor:pointer; font-weight:600; width:fit-content; }
+  .web-numbers p { margin:4px 0 0; }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+
+  footer { color:var(--sub); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header id="top"><div class="wrap">
+  <a class="eyebrow" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
+  <span class="badge">Deep Read</span>
+  <h1>Stopping vs continuing ACE inhibitors or ARBs in advanced CKD, a target trial emulation</h1>
+  <div class="sub">October 15, 2026 · Episode transcript · Educational use</div>
+  <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-10-15.mp3"></audio>
+  <div class="bar">
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-10-15.mp3">Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/archive.html">Archive</a>
+  </div>
+</div></header>
+
+<main><div class="wrap">
+<section class="overview" aria-labelledby="episode-overview-title"><h2 id="episode-overview-title" class="section-heading">Episode overview</h2><p class="overview-heading">Stopping vs continuing ACE inhibitors or ARBs in advanced CKD, a target trial emulation</p></section>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 5.5 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / Small Talk Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>TTS model</span><b>Gemini 3.8 Flash TTS</b></li>
+<li><span>Speakers</span><b>Sara (サラ) — Clinician, mid-career (Japanese host); Daniel — Statistician-minded clinician, mid-career (English co-host), English at CEFR B1-B2</b></li>
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ckj/sfag304" target="_blank" rel="noopener">Impact of renin-angiotensin system inhibitors discontinuation in advanced chronic kidney disease: a target trial emulation</a><div class="pmeta"><span>Clin Kidney J (2026 Oct, Vol 19 Issue 10)</span> · <a href="https://doi.org/10.1093/ckj/sfag304" target="_blank" rel="noopener">DOI: 10.1093/ckj/sfag304</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42851449/" target="_blank" rel="noopener">PMID: 42851449</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span></div></li>
+</ol></div></details>
+<details class="collapsible words"><summary><span class="section-title">Today&#x27;s words and phrases</span></summary><div class="collapsible-body"><ol class="wlist"><li><span class="wnum">1</span><div class="wbody"><b>judgment call</b><p>A decision where there is no single right answer</p><p class="example">Example: choosing the cut-off for stopping a drug is a judgment call.</p><p class="ja" lang="ja">judgment call は「正解が一つに決まらない判断」のこと。方法の議論で「そこは判断が分かれるところだね」と言いたいときに使えます。</p></div></li>
+<li><span class="wnum">2</span><div class="wbody"><b>for good</b><p>Forever, or permanently</p><p class="example">Example: she moved back to her hometown for good.</p><p class="ja" lang="ja">for good は「ずっと」「永久に」。stop for good なら「きっぱりやめる」で、一時的な中断と区別したいときに便利です。</p></div></li>
+<li><span class="wnum">3</span><div class="wbody"><b>dig into</b><p>To look at something closely and in detail</p><p class="example">Example: let&#x27;s dig into the methods before we trust the results.</p><p class="ja" lang="ja">dig into は「掘り下げる」。ざっと見るんじゃなくて、中身までじっくり調べるニュアンスです。</p></div></li>
+<li><span class="wnum">4</span><div class="wbody"><b>drifted from</b><p>Slowly moved away from something</p><p class="example">Example: over the years, the team&#x27;s routine drifted from the original plan.</p><p class="ja" lang="ja">drift from は「〜から少しずつずれていく」。急に外れるんじゃなくて、じわじわ離れていく感じです。</p></div></li>
+<li><span class="wnum">5</span><div class="wbody"><b>went the other way</b><p>Turned out opposite to what you expected</p><p class="example">Example: we expected a benefit, but the result went the other way.</p><p class="ja" lang="ja">went the other way は「逆の結果になった」。予想と反対だったときに、くだけた感じで言えます。</p></div></li>
+<li><span class="wnum">6</span><div class="wbody"><b>per-protocol</b><p>Looking at people who stuck to the plan they were given</p><p class="example">Example: the per-protocol analysis gave a slightly different answer.</p><p class="ja" lang="ja">per-protocol は、決められた方針どおりに続けた人で見る解析のこと。intention-to-treat と対になる言葉として覚えておくと便利です。</p></div></li></ol></div></details>
+
+<section class="script"><h2 class="section-heading">Script</h2><nav class="script-nav" aria-label="Transcript sections"><a href="#top">Top</a><a href="#section-opening">Opening</a><a href="#section-small-talk">Small Talk</a><a href="#section-main">Main discussion</a><a href="#section-words">Words and phrases</a><a href="#section-look-back">Look back</a></nav><h3 class="script-section" id="section-opening">Opening</h3>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">みなさん、こんにちは！</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Hi everyone, and welcome to Weekly Nephrology AI. It&#x27;s October 15, and this is Deep Read. One open-access paper, read closely from the verified full text.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">Weekly Nephrology AIは、腎臓内科の新しい論文を、日本語と英語で読んでいく番組です。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">New nephrology papers, in two languages, and how far the evidence actually goes.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">サラです。臨床研究を勉強中の腎臓内科医です。今日は1本の論文を、じっくり読んでいきます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And I&#x27;m Daniel. I&#x27;m the stats person here, and I&#x27;ll walk you through the methods in plain English.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Quick note: this show is made by AI and can get things wrong, so check the original paper before you act on anything.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">今週は東京の虎ノ門で、日本腎臓学会の東部学術大会ですね。会場へ向かう電車の中の方も、気楽にどうぞ。</div></div>
+<h3 class="script-section" id="section-small-talk">Small Talk</h3>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Let&#x27;s start with a little Small Talk.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ねえダニエル、外来でeGFRがじわじわ下がってきた人のARBを見て、「これ、そろそろ止めようかな」って手が止まる瞬間ってない？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Oh, all the time. It&#x27;s one quick click in the chart, but it never feels like a quick decision.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">わかる。しかも患者さんに「この薬、まだ飲まなきゃダメですか？」って聞かれると、ちょっと言葉に詰まっちゃうんだよね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And months later, someone else opens the chart and has to guess why it was stopped.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">そうそう、理由がどこにも書いてないやつ。聞いてるみなさんは、どっちに寄りがちですか？止める派？続ける派？今日の論文は、まさにこの「止めるか、続けるか」の場面に向き合っています。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">今日は、オープンアクセスで全文まで確認できた論文から、一本を選びました。外来でしょっちゅう出てくる判断なのに、答えがはっきりしない問いなので、今日はこの一本を、方法まで深く読んでいきます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Sounds good. With the full text, we can actually open up the methods, and that&#x27;s where this paper gets interesting.</div></div>
+<h3 class="script-section" id="section-main">Main discussion</h3>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Now, let&#x27;s get started.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">じゃあ、まずは論文の全体像からいきましょう。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">So, this study followed French patients with advanced CKD who were already taking an ACE inhibitor or an ARB. It compared stopping the drug with continuing it, using a method that mimics a trial. Stopping was linked to more major cardiovascular events and more starts of dialysis or transplant.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">フランスの、進行したCKDで、すでにACE阻害薬かARBを飲んでいる患者さんを追った研究です。薬を止める場合と続ける場合を、試験を真似た方法で比べていて、止めた方が主要な心血管イベントも、透析や移植の開始も多い、という関連が出ました。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">これは今年の九月にClinical Kidney Journalにオンラインで出た、フランスのトゥール大学病院、腎臓内科からの論文です。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And it&#x27;s a question we hear in clinic every week.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">だよね。で、ダニエル、そもそもなんでこの問い、まだ決着してないの？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Well, in advanced CKD, people often stop ACE inhibitors or ARBs because of potassium or AKI worries, or to push dialysis back. The STOP-ACEi trial looked at kidney function, but it wasn&#x27;t powered for hard outcomes.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">つまり、止める理由はいろいろあるけど、心血管イベントみたいな硬いアウトカムで見た答えは、まだ足りてないってことね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Right. And the authors point out that in real clinics, the stop-or-continue decision comes up far more often than the decision to start these drugs.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">たしかに。新しく始めるより、「続ける？やめる？」の方がずっと多いもんね。で、この論文の問いは、止める戦略と続ける戦略で、心血管イベントと腎代替療法の開始がどう変わるか、です。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ここから方法です。今日のメインなので、ゆっくりいきますね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">これはランダム化試験ではなく、フランスの前向きコホートCKD-REINのデータなんです。eGFRが30未満で、ACE阻害薬かARBを飲んでいた人を対象にしています。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Right, so let&#x27;s dig into who got in. There were two ways in. Some people were already below that eGFR cutoff when they joined the cohort, and others dropped below it later on. They also had to be on the drug for a while, not just briefly.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">フランス全国から代表的に選ばれた四十の腎臓内科外来で集めた人たちで、フランスの実臨床に近い集団なんです。で、アウトカムは何を見たの？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">The main outcome was a four-part cardiovascular composite: cardiovascular death, heart attack, stroke, or heart failure admission. Starting dialysis or a pre-emptive transplant was the secondary outcome.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">心臓側が主役で、腎臓側は副次なんですね。それと、心血管以外の死亡や腎代替療法の開始は、競合するイベントとして別に扱っています。心血管死は、循環器の専門医が判定しているのもポイント。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">で、ダニエル、「中止」ってどう決めたの？ここ、地味に大事だよね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Yeah, it&#x27;s trickier than it sounds. Doctors pause these drugs for short spells, for all kinds of reasons, so not every pause should count as stopping.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">「中止」と数えたのは、1か月を超える中断だけなんです。脱水のときの短い休薬などを除いて、逆の因果を減らす狙いでした。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Honestly, that cut-off is a judgment call. Wherever you draw the line, it shapes who lands in the stop group.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">そこなんだよね。だから著者らも、この線を動かした感度分析をやってます。それは結果のところで見ましょう。あと、二種類を一緒に使い始めた人は、その時点で追跡を打ち切ってますね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">いよいよ今日の山場、g-formula。ダニエル、なんでふつうの生存解析じゃダメなの？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">They framed it as an emulated target trial: stop versus keep going. The g-formula method can handle things like potassium and eGFR that both drive the decision and shift because of the drug.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Picture it as a loop. Low eGFR or high potassium pushes you to stop, and stopping then changes those same lab values. A standard model gets tangled up in that loop.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">あー、なるほど。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">要するに、カリウムやeGFRが「止める理由」でもあり、「止めた結果」でもある。そのぐるぐるを、毎月の値で更新しながら、シミュレーションで解きほぐすってことね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Here&#x27;s a stats detail worth knowing. The numbers are per-protocol style, comparing people who&#x27;d stop for good versus keep going, reported as three-year risk ratios, not hazard ratios.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ポイントは、これが「全員がずっと止めていたら」と「全員がずっと続けていたら」を、モデルの中で比べた仮想の比較だってこと。目の前の誰か一人の経過を、そのまま映した数字ではないんだよね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Right. And the upside is that this setup limits some classic traps of ordinary survival analyses, like immortal time bias.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">前向きに処方や副作用、イベントを集めて、時間で変わる因子を何度も測っている。デザインの強みは、まさにそこですね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">で、調整に使った因子って、具体的には何？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Two kinds. Fixed ones, like age, sex, diabetes, heart failure history and albuminuria. And changing ones, like eGFR, blood pressure, sodium, potassium and diuretics, updated month by month.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">外来で私たちが「止めようかな」と考えるときに見ている項目が、ほぼ入ってる感じですね。じゃあ、受診と受診の間で検査値が抜けてるところは？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">They carried the last known value forward. It&#x27;s practical, but it quietly assumes nothing much changed between measurements.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">じゃあ、結果を見ていきましょう。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">解析対象は1434人で、そのうち27%が経過中のどこかでRAS阻害薬を中止していたんです。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Eligible (RASi ≥3 months with eGFR &lt;30): 1604 (53%); analysed: 1434 (47%); discontinued: 386 (27%), 426 discontinuation episodes, 9.8 per 100 patient-years.)</p></details>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Mm-hm.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Side effects that might justify stopping, like AKI or high potassium, were rare overall. But they bunched up in the three months right before stopping, at almost 13 times the usual rate.</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Relevant ADRs overall: 70, 1.6 per 100 patient-years; ADRs in the 3 months before discontinuation: 23, 22 per 100 patient-years; most common ADR: AKI, 1.2 per 100 patient-years.)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ちなみに、どんな人が止めやすかったかというと、合併症が多い人、追跡の途中でeGFRが下がってきた人、教育歴が短い人で、中止が多めでした。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ここは外来の実感ともつながるところで、著者らは、AKIのような出来事が中止のきっかけになっていることが多いんだろう、と読んでいます。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ダニエルの bunched up、「ある時期にぎゅっと固まって起きる」って感じの言い方で、イベントの時期の偏りを言うときに便利なんですよ。で、肝心の心血管イベントはどうだった？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Here&#x27;s the headline. Stopping came with about twice the three-year risk of major cardiovascular events, a risk ratio of 2.02.</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 3-year MACE RR (discontinue vs continue) 2.02, 95% CI 1.62–2.47; median follow-up 35 (IQR 17–51) months; events: MACE 228, KRT initiation 399, non-cardiovascular death before KRT 144.)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">中止した場合、3年での主要心血管イベントのリスクは、続けた場合の2.02倍だったんです。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ただ、これはeGFRが下がった段階で、もともとRAS阻害薬を飲んでいた人たちの中での話。しかも観察データからの推定なので、「止めたから増えた」とまでは言い切れないんですよね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">透析や移植の開始も、止めた方が多かったんです。3年でのリスク比は1.34でした。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 3-year KRT initiation RR (discontinue vs continue) 1.34, 95% CI 1.14–1.60.)</p></details>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Honestly, that one goes against a common habit. Stopping is often meant to buy some time before dialysis, and here the association went the other way.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">それ、気になる。ラボの値はどう動いてたの？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">The simulation also tracked lab values. Continuing kept eGFR higher by about 1.25, and potassium higher by about 0.25 mmol per liter.</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Simulated at 3 years, continuation vs discontinuation: eGFR +1.25 ml/min/1.73 m2; serum potassium +0.25 mmol/l; discontinuation vs continuation: serum sodium +1 mmol/l; systolic BP +2.5 mm Hg.)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">なるほどね。ただ、なぜそうなったのか、仕組みまでは論文は書いていないので、ここは結果として受け取っておきたいところです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Fair. And what about the sensitivity checks you mentioned?</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">感度分析でも結果はほぼ同じでした。中止の定義を3か月に延ばすと、リスク比は1.80と少し下がったんです。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 3-month lag: MACE RR 1.80, 95% CI 1.44–2.20; censoring 12 months after last covariate measurement: MACE RR 2.13, 95% CI 1.58–2.82.)</p></details>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Good to see. But keep in mind, those checks all stay within the same g-formula approach, and like the main analysis, they assume every important confounder was measured.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ここからは、限界と、臨床でどう読むかです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Still, it&#x27;s observational. People who stopped had more diabetes and heart disease, and the authors admit some selection bias can&#x27;t be ruled out, even after adjusting for potassium and eGFR.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">うん。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">そこなんですよね。外来で薬を止めるときって、たいてい何か理由がある。その理由の中に測られていないものが混じっていたら、差の一部はそっちで説明できちゃうかもしれない。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">They only had prescriptions, not doses or whether pills were taken. And the model has to be specified right, yet its simulated loop diuretic use drifted from what was observed.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ループ利尿薬は、進行したCKDだと処方がしょっちゅう変わるので、モデルで再現しにくいんだろう、と著者らも書いてますね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">このデータはSGLT2阻害薬が広まる前のもので、使っていた人はゼロでした。今の診療にそのまま当てはめにくい面があるんです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Right, so for patients who are on one of those newer drugs today, this paper simply can&#x27;t tell us much.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">で、STOP-ACEiとの関係は、どう考えればいい？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">The authors frame this as adding to STOP-ACEi, not competing with it. The two differ in who they enrolled, how long they followed people, and what they counted as the main outcome.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">著者らは過去の主な観察研究も並べていて、心血管イベントはどれも止めた方で多い方向。ただ腎代替療法の方は、差があった研究と、なかった研究に分かれてるんですよね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">なるほど。勝ち負けじゃなくて、違う角度から同じ問いを照らしてる、ってイメージですね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ちょっと企画する側の目で見ると、私が気になるのは副作用の拾い方。病院の外で起きたものは取りこぼしたかもしれない、と著者ら自身が書いてるんだよね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">If I ran it, I&#x27;d give patients an easy way to log those events between visits. Just my opinion, but it would make the reasons for stopping much clearer.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">賛成。あと、処方を止めるたびに理由を一言残す欄があると、後から読み解きやすいよね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">じゃあダニエル、これで明日からの外来は変わると思う？</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Well, it can&#x27;t prove that stopping causes harm. But for patients like these, it makes stopping look less like the automatically safe choice.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">著者らは、AKIなどでいったん止めても、ずっと止めたままにする必要はないと言っています。落ち着いたら再開を考えよう、という立場なんです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">They also mention newer potassium binders as one possible way to make continuing easier for people whose potassium runs high.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">患者さん側には、熱や嘔吐のときに薬をどうするかを決めておく、シックデイルールの説明も役に立つかもしれない、と著者らは書いてますね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">まとめると、進行したCKDでのRAS阻害薬の中止を、「とりあえず止めておけば安全」とは考えにくくするデータ、ってところかな。ただ観察研究なので、診療の推奨が変わるかどうかは、これからの議論や研究しだいですね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Agreed. Next time that quick click comes up, I&#x27;ll at least pause and ask why.</div></div>
+<h3 class="script-section" id="section-words">Words and phrases</h3>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Now, today&#x27;s words and phrases.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">First, judgment call. A decision where there is no single right answer. For example, choosing the cut-off for stopping a drug is a judgment call.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">judgment call は「正解が一つに決まらない判断」のこと。方法の議論で「そこは判断が分かれるところだね」と言いたいときに使えます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Second, for good. Forever, or permanently. For example, she moved back to her hometown for good.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">for good は「ずっと」「永久に」。stop for good なら「きっぱりやめる」で、一時的な中断と区別したいときに便利です。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Third, dig into. To look at something closely and in detail. For example, let&#x27;s dig into the methods before we trust the results.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">dig into は「掘り下げる」。ざっと見るんじゃなくて、中身までじっくり調べるニュアンスです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Fourth, drifted from. Slowly moved away from something. For example, over the years, the team&#x27;s routine drifted from the original plan.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">drift from は「〜から少しずつずれていく」。急に外れるんじゃなくて、じわじわ離れていく感じです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Fifth, went the other way. Turned out opposite to what you expected. For example, we expected a benefit, but the result went the other way.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">went the other way は「逆の結果になった」。予想と反対だったときに、くだけた感じで言えます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Sixth, per-protocol. Looking at people who stuck to the plan they were given. For example, the per-protocol analysis gave a slightly different answer.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">per-protocol は、決められた方針どおりに続けた人で見る解析のこと。intention-to-treat と対になる言葉として覚えておくと便利です。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">That&#x27;s it for today&#x27;s words and phrases.</div></div>
+<h3 class="script-section" id="section-look-back">Look back</h3>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Before we wrap up, a quick look back at today&#x27;s episode.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">進行したCKDでRAS阻害薬を止めると、心血管イベントも、透析や移植の開始も増える関連がありました。著者らは、慎重に見ながら続ける方にリスクと利益のバランスが傾くと結論しています。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Thanks, Sara. Something to keep in mind the next time that question comes up.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Weekly Nephrology AI is made with AI and code: Python gathers the papers and runs the checks, Claude Opus 5.5 picks them and writes the script, Gemini 3.8 Flash TTS gives us our voices, and Lyria 3.5 made our music.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">今回も聞いてくださって、ありがとうございました。次回は土曜のケースレポーツです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Thanks for listening, and we&#x27;ll see you next time.</div></div></section>
+</div></main>
+<footer><div class="wrap">
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
+</div></footer>
+</body>
+</html>
