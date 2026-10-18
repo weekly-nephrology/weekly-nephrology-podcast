@@ -6,13 +6,31 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers, in Japanese and English: a Japanese host explains each paper, and an English co-host gives the key points in plain English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2026 02:38:13 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 20:44:37 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Weekly Summary 2026-10-19</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-10-19.html</link>
+      <description>• Dobutamine plus norepinephrine during septic shock surgery, an AKI prevention RCT
+• Intermittent versus continuous kidney replacement for ICU AKI, a noninferiority RCT
+• Arteriolar microangiopathy and immunosuppression response in IgA nephropathy, a cohort study
+• Lactoferrin added to oral iron for CKD anemia, a randomized trial
+• Urine tubular biomarkers for CKD progression prediction, an EMPA-KIDNEY secondary analysis
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-10-19.html</description>
+      <content:encoded><![CDATA[<ul><li>Dobutamine plus norepinephrine during septic shock surgery, an AKI prevention RCT</li><li>Intermittent versus continuous kidney replacement for ICU AKI, a noninferiority RCT</li><li>Arteriolar microangiopathy and immunosuppression response in IgA nephropathy, a cohort study</li><li>Lactoferrin added to oral iron for CKD anemia, a randomized trial</li><li>Urine tubular biomarkers for CKD progression prediction, an EMPA-KIDNEY secondary analysis</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-10-19.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-10-19.mp3" length="8368557" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-10-19.mp3</guid>
+      <pubDate>Mon, 19 Oct 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>17:26</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-10-17</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-10-17.html</link>
