@@ -6,13 +6,30 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers, in Japanese and English: a Japanese host explains each paper, and an English co-host gives the key points in plain English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Oct 2026 20:36:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 20:55:16 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Case Reports 2026-10-24</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-10-24.html</link>
+      <description>• Finerenone in a woman with genetic coenzyme Q-related FSGS
+• Primary hyperoxaluria type one found in an older woman on hemodialysis, with lumasiran
+• Podocyte infolding glomerulopathy-like changes on a repeat kidney biopsy
+• Uremic tumoral calcinosis on hemodialysis after a switch to etelcalcetide
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-10-24.html</description>
+      <content:encoded><![CDATA[<ul><li>Finerenone in a woman with genetic coenzyme Q-related FSGS</li><li>Primary hyperoxaluria type one found in an older woman on hemodialysis, with lumasiran</li><li>Podocyte infolding glomerulopathy-like changes on a repeat kidney biopsy</li><li>Uremic tumoral calcinosis on hemodialysis after a switch to etelcalcetide</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-10-24.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-10-24.mp3" length="9459117" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-10-24.mp3</guid>
+      <pubDate>Sat, 24 Oct 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>19:42</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-10-22</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-10-22.html</link>
