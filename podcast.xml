@@ -6,13 +6,30 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers, in Japanese and English: a Japanese host explains each paper, and an English co-host gives the key points in plain English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Nov 2026 20:39:14 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 02:00:51 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Case Reports 2026-11-07</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-11-07.html</link>
+      <description>• Genetic testing and the tolvaptan decision in atypical cystic kidney disease
+• Ravulizumab first for anti-CFH antibody aHUS in an older adult
+• AKI from biopsy-proven CLL infiltration of the kidney
+• Copper deficiency after zinc supplementation in a kidney transplant recipient
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-11-07.html</description>
+      <content:encoded><![CDATA[<ul><li>Genetic testing and the tolvaptan decision in atypical cystic kidney disease</li><li>Ravulizumab first for anti-CFH antibody aHUS in an older adult</li><li>AKI from biopsy-proven CLL infiltration of the kidney</li><li>Copper deficiency after zinc supplementation in a kidney transplant recipient</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-11-07.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-11-07.mp3" length="10358829" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-11-07.mp3</guid>
+      <pubDate>Sat, 07 Nov 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>21:35</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-11-05</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-11-05.html</link>
