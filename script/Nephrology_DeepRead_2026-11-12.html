@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<meta name="description" content="RAS inhibitor initiation and mortality in non-proteinuric CKD, a target trial emulation"/>
+<meta name="theme-color" content="#33452f"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Weekly Nephrology AI"/>
+<meta property="og:title" content="Deep Read 2026-11-12 — Weekly Nephrology AI"/>
+<meta property="og:description" content="RAS inhibitor initiation and mortality in non-proteinuric CKD, a target trial emulation"/>
+<meta property="og:url" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-11-12.html"/>
+<meta property="og:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
+<meta property="og:image:alt" content="Weekly Nephrology AI cover art"/>
+<meta name="twitter:image" content="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Deep Read 2026-11-12 — Weekly Nephrology AI"/>
+<meta name="twitter:description" content="RAS inhibitor initiation and mortality in non-proteinuric CKD, a target trial emulation"/>
+<title>Deep Read 2026-11-12 — Weekly Nephrology AI</title>
+<link rel="alternate" type="application/rss+xml" title="Weekly Nephrology AI" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml"/>
+<link rel="manifest" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/manifest.webmanifest"/>
+<link rel="apple-touch-icon" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/favicon.png"/>
+<meta name="apple-mobile-web-app-title" content="Nephrology AI"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"/>
+<style>
+  :root {
+    --accent:#a97f2f; --accent-deep:#7d5c1e;
+    --bg:#f5f1e3; --card:#fdfbf2; --ink:#26301f; --sub:#6f7863;
+    --line:rgba(38,48,31,.1); --bubble-b:#ecf0dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#161b12; --card:#20271a; --ink:#ece7d4; --sub:#a4ac93;
+      --line:rgba(236,231,212,.1); --bubble-b:#2a3321;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Avenir Next",-apple-system,
+      system-ui,sans-serif;
+    line-height:1.85; font-size:15.5px;
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px; }
+
+  header { color:#f3ebd2; padding:44px 0 34px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 160% at 85% -20%, #a97f2f 0%, transparent 55%),
+      linear-gradient(150deg,#2c3a28 20%, #7d5c1e 130%); }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:#f3ebd2;
+    background:rgba(243,235,210,.14); border:1px solid rgba(243,235,210,.3);
+    padding:4px 12px; border-radius:999px; margin-bottom:14px;
+    backdrop-filter:blur(4px); }
+  .eyebrow { display:block; color:#f3ebd2; opacity:.8; text-decoration:none;
+    font-family:"DM Serif Display",Georgia,serif; font-size:1.05rem;
+    margin-bottom:12px; }
+  .eyebrow:hover { opacity:1; text-decoration:underline; }
+  h1 { margin:0 0 6px; font-size:1.75rem; font-weight:400;
+    letter-spacing:.005em; line-height:1.15;
+    font-family:"DM Serif Display",Georgia,"Times New Roman","Hiragino Mincho ProN",
+      "Noto Serif JP",serif; }
+  .sub { opacity:.78; font-size:.88rem; }
+  audio { width:100%; margin-top:20px; border-radius:12px; display:block; }
+  @media (prefers-color-scheme: dark) {
+    audio { color-scheme:dark; }
+  }
+  .bar { margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+  .bar a { color:#f3ebd2; background:rgba(243,235,210,.12);
+    border:1px solid rgba(243,235,210,.28); text-decoration:none;
+    padding:7px 15px; border-radius:999px; font-size:.82rem;
+    transition:background .15s; }
+  .bar a:hover { background:rgba(243,235,210,.24); }
+
+  main { padding:30px 0 60px; }
+  .pilot-banner { background:rgba(215,171,82,.18); color:var(--ink); font-size:.86rem;
+    padding:10px 0; border-bottom:1px solid var(--line); }
+  .pilot-banner a { color:var(--accent); font-weight:650; }
+
+  .overview { background:var(--card); border:1px solid var(--line);
+    border-left:4px solid var(--accent); border-radius:16px;
+    box-shadow:0 8px 28px -18px rgba(0,0,0,.25);
+    padding:20px 22px; margin-bottom:22px; }
+  .overview .section-heading { margin-bottom:10px; }
+  .overview-heading { margin:5px 0; font-size:.96rem; line-height:1.65; }
+  .overview-topics { margin:5px 0; padding-left:1.3rem; }
+  .overview-topics li { margin:5px 0; font-size:.92rem; line-height:1.55; }
+
+  .collapsible { background:var(--card); border:1px solid var(--line);
+    border-radius:16px; box-shadow:0 8px 28px -18px rgba(0,0,0,.25); }
+  .papers { margin-bottom:34px; }
+  .models { margin-bottom:22px; }
+  .words { margin-bottom:34px; }
+  .collapsible > summary { cursor:pointer; list-style:none; padding:18px 22px;
+    position:relative; user-select:none; }
+  .collapsible > summary::-webkit-details-marker { display:none; }
+  .collapsible > summary:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    outline-offset:3px; border-radius:12px; }
+  .section-title { font-size:1.02rem; letter-spacing:.02em;
+    display:flex; align-items:center; gap:8px; }
+  .section-title::before { content:""; width:9px; height:9px; border-radius:3px;
+    background:var(--accent); display:inline-block; }
+  .collapsible > summary::after { content:"＋"; position:absolute; right:22px; top:50%;
+    transform:translateY(-50%); color:var(--accent); font-size:1.25rem; line-height:1; }
+  .collapsible[open] > summary::after { content:"−"; }
+  .collapsible-body { padding:0 22px 18px; }
+  .papers .collapsible-body { padding:0 24px 16px; }
+  .mlist { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+  .mlist li { display:grid; grid-template-columns:92px 1fr; gap:10px;
+    align-items:start; font-size:.82rem; border-top:1px solid var(--line);
+    padding-top:8px; }
+  .mlist li:first-child { border-top:0; padding-top:0; }
+  .mlist span { color:var(--sub); }
+  .mlist b { font-weight:650; overflow-wrap:anywhere; }
+  .phint { margin:2px 0 12px; font-size:.78rem; color:var(--sub); }
+  .plist { list-style:none; margin:0; padding:0; }
+  .plist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .pnum { flex:none; width:26px; height:26px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.8rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; margin-top:2px; }
+  .pbody { min-width:0; }
+  .ptitle { font-weight:650; font-size:.92rem; line-height:1.55;
+    color:var(--ink); text-decoration:none; }
+  a.ptitle:hover { color:var(--accent); text-decoration:underline; }
+  .pmeta { font-size:.76rem; color:var(--sub); margin-top:3px;
+    overflow-wrap:anywhere; }
+  .pmeta a { color:var(--accent); text-decoration:none; }
+  .pmeta a:hover { text-decoration:underline; }
+  .plicense { display:inline-block; margin-top:5px; font-size:.72rem;
+    font-weight:600; padding:1px 8px; border-radius:10px;
+    background:rgba(74,96,72,.12); color:var(--accent);
+    border:1px solid rgba(74,96,72,.28); }
+  .plicense a { color:inherit; text-decoration:none; }
+  .plicense a:hover { text-decoration:underline; }
+  .plicense.unknown { background:rgba(150,120,40,.12); color:#8a6d1f;
+    border-color:rgba(150,120,40,.30); }
+
+  .wlist { list-style:none; margin:0; padding:0; }
+  .wlist li { display:flex; gap:13px; padding:12px 0;
+    border-top:1px solid var(--line); }
+  .wnum { flex:none; width:26px; height:26px; border-radius:50%;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);
+    color:var(--accent); font-size:.78rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center; }
+  .wbody b { font-size:.94rem; }
+  .wbody p { margin:3px 0; font-size:.84rem; }
+  .wbody .example { color:var(--sub); font-style:italic; }
+  .wbody .ja { margin-top:6px; padding:6px 10px; border-radius:8px;
+    background:color-mix(in srgb, var(--accent) 8%, transparent); }
+  [lang="ja"] { font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",
+    "Noto Sans JP","Yu Gothic",sans-serif; }
+  .section-heading { margin:0 0 22px; font-size:1.08rem; font-weight:650;
+    display:flex; align-items:center; gap:8px; }
+  .section-heading::before { content:""; width:9px; height:9px;
+    border-radius:3px; background:var(--accent); display:inline-block; }
+
+  .turn { margin:18px 0; max-width:88%; }
+  .turn.b { margin-left:auto; }
+  .who { display:block; font-size:.7rem; font-weight:700;
+    letter-spacing:.08em; color:var(--sub); margin:0 6px 4px; }
+  .turn.a .who { color:var(--accent); }
+  .turn.b { text-align:right; }
+  .turn.b .bubble { text-align:left; }
+  .bubble { display:inline-block; background:var(--card);
+    border:1px solid var(--line); padding:12px 17px;
+    border-radius:4px 18px 18px 18px;
+    box-shadow:0 3px 14px -10px rgba(0,0,0,.35); }
+  .turn.b .bubble { background:var(--bubble-b);
+    border-radius:18px 4px 18px 18px; }
+  /* 1話者回は掛け合いがないので、吹き出しではなく記事本文として流す。
+     話者名は Script 直下の byline に一度だけ出す。 */
+  .byline { margin:-6px 0 22px; font-size:.72rem; font-weight:700;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:10px; }
+  .byline::after { content:""; flex:1; height:1px; background:var(--line); }
+  .monologue .say { margin:0 0 15px; }
+  .monologue .say:last-child { margin-bottom:0; }
+  .monologue .web-numbers { margin:-6px 0 18px; }
+  .note { color:var(--sub); font-size:.88rem; }
+  .script-nav { display:flex; flex-wrap:nowrap; gap:8px; overflow-x:auto;
+    position:sticky; top:0; z-index:5; margin:-8px -20px 8px; padding:10px 20px;
+    background:color-mix(in srgb, var(--bg) 92%, transparent);
+    -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line); scrollbar-width:none; }
+  .script-nav::-webkit-scrollbar { display:none; }
+  .script-nav a { flex:none; }
+  .script-nav a { font-size:.8rem; color:var(--accent); text-decoration:none;
+    border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    padding:3px 12px; border-radius:999px; }
+  .script-nav a:hover { background:color-mix(in srgb, var(--accent) 10%, transparent); }
+  .script-section { margin:40px 0 6px; font-size:.78rem; font-weight:700;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:12px; scroll-margin-top:64px; }
+  .script-section::after { content:""; flex:1; height:1px; background:var(--line); }
+  @media (prefers-color-scheme: dark) {
+    .script-nav a, .script-section { filter:brightness(1.7); }
+  }
+  .script-item { margin:26px 0 4px; font-size:.9rem; font-weight:650;
+    color:var(--ink); line-height:1.5; }
+  .web-numbers { color:var(--sub); font-size:.78rem; line-height:1.55;
+    margin:-10px 12px 18px; padding-left:12px;
+    border-left:2px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .web-numbers summary { cursor:pointer; font-weight:600; width:fit-content; }
+  .web-numbers p { margin:4px 0 0; }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+
+  footer { color:var(--sub); font-size:.78rem; text-align:center;
+    padding:26px 0 52px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header id="top"><div class="wrap">
+  <a class="eyebrow" href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology AI</a>
+  <span class="badge">Deep Read</span>
+  <h1>RAS inhibitor initiation and mortality in non-proteinuric CKD, a target trial emulation</h1>
+  <div class="sub">November 12, 2026 · Episode transcript · Educational use</div>
+  <audio controls preload="none" src="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-11-12.mp3"></audio>
+  <div class="bar">
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_DeepRead_2026-11-12.mp3">Download MP3</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml">Subscribe via RSS</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">All episodes</a>
+    <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/archive.html">Archive</a>
+  </div>
+</div></header>
+
+<main><div class="wrap">
+<section class="overview" aria-labelledby="episode-overview-title"><h2 id="episode-overview-title" class="section-heading">Episode overview</h2><p class="overview-heading">RAS inhibitor initiation and mortality in non-proteinuric CKD, a target trial emulation</p></section>
+<details class="collapsible models"><summary><span class="section-title">AI models and speakers</span></summary><div class="collapsible-body"><ul class="mlist">
+<li><span>AI model</span><b>Opus 5.5 (Claude)</b></li>
+<li><span>Agent team</span><b>Research Curator / Small Talk Scout / Episode Writer / Medical Reviewer</b></li>
+<li><span>TTS model</span><b>Gemini 3.8 Flash TTS</b></li>
+<li><span>Speakers</span><b>Sara (サラ) — Clinician, mid-career (Japanese host); Daniel — Statistician-minded clinician, mid-career (English co-host), English at CEFR B1-B2</b></li>
+</ul></div></details>
+<details class="collapsible papers"><summary><span class="section-title">Papers discussed</span></summary><div class="collapsible-body"><p class="phint">Select a title or DOI to open the original paper.</p><ol class="plist">
+<li><span class="pnum">1</span><div class="pbody"><a class="ptitle" href="https://doi.org/10.1093/ckj/sfag285" target="_blank" rel="noopener">Renin-angiotensin system inhibitors initiation and mortality in non-proteinuric chronic kidney disease: a target trial emulation</a><div class="pmeta"><span>Clin Kidney J (2026 Nov, Vol 19 Issue 11)</span> · <a href="https://doi.org/10.1093/ckj/sfag285" target="_blank" rel="noopener">DOI: 10.1093/ckj/sfag285</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42978858/" target="_blank" rel="noopener">PMID: 42978858</a></div><span class="plicense">License: <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span></div></li>
+</ol></div></details>
+<details class="collapsible words"><summary><span class="section-title">Today&#x27;s words and phrases</span></summary><div class="collapsible-body"><ol class="wlist"><li><span class="wnum">1</span><div class="wbody"><b>watch and wait</b><p>to hold off on acting and see how things go</p><p class="example">Example: We decided to watch and wait before booking the trip.</p><p class="ja" lang="ja">すぐには動かずに、様子を見る、という意味です。急いで決めずに経過を見る方針を、会話で短く言いたいときに使えます。</p></div></li>
+<li><span class="wnum">2</span><div class="wbody"><b>gut feeling</b><p>a sense about something that you can&#x27;t fully explain</p><p class="example">Example: My gut feeling says the meeting will run late.</p><p class="ja" lang="ja">理屈ではうまく説明できない直感、という意味です。データではなく感覚で決めている、と率直に言いたいときにぴったりです。</p></div></li>
+<li><span class="wnum">3</span><div class="wbody"><b>new-user design</b><p>a study plan that only follows people who are just starting a drug</p><p class="example">Example: The team chose a new-user design for their statin study.</p><p class="ja" lang="ja">薬を新しく始めた人だけを追いかける研究の組み方です。観察研究の方法を説明したり、論文の弱点を議論したりするときによく出てきます。</p></div></li>
+<li><span class="wnum">4</span><div class="wbody"><b>leaned the same way</b><p>pointed in the same direction as other results</p><p class="example">Example: Both surveys leaned the same way on the new schedule.</p><p class="ja" lang="ja">結果が同じ方向を向いていた、という意味です。はっきりした差とまでは言わずに、傾向がそろっていたことを伝えたいときに使えます。</p></div></li>
+<li><span class="wnum">5</span><div class="wbody"><b>leftover confounding</b><p>bias from other factors that remains even after adjustment</p><p class="example">Example: The authors warned about leftover confounding in their cohort.</p><p class="ja" lang="ja">補正をしたあとにも残ってしまう交絡のことです。観察研究の限界を、学会の質疑で指摘するときの言い方です。</p></div></li>
+<li><span class="wnum">6</span><div class="wbody"><b>fair test</b><p>a comparison set up so that each side has an equal chance</p><p class="example">Example: A fair test of the two recipes needs the same oven.</p><p class="ja" lang="ja">条件をそろえた公平な比較、という意味です。研究の組み方が妥当かどうかを話すときに使えます。</p></div></li></ol></div></details>
+
+<section class="script"><h2 class="section-heading">Script</h2><nav class="script-nav" aria-label="Transcript sections"><a href="#top">Top</a><a href="#section-opening">Opening</a><a href="#section-small-talk">Small Talk</a><a href="#section-main">Main discussion</a><a href="#section-words">Words and phrases</a><a href="#section-look-back">Look back</a></nav><h3 class="script-section" id="section-opening">Opening</h3>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">みなさん、こんにちは！</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Hi everyone, and welcome to Weekly Nephrology AI. It&#x27;s November 12, and this is Deep Read. One open-access paper, read closely from the verified full text.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">Weekly Nephrology AIは、腎臓内科の新しい論文を、日本語と英語で読んでいく番組です。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">New nephrology papers, in two languages, and how far the evidence actually goes.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">サラです。臨床研究を勉強中の腎臓内科医です。今日は1本の論文を、じっくり読んでいきます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And I&#x27;m Daniel. I&#x27;m the stats person here, and I&#x27;ll walk you through the methods in plain English.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Quick note: this show is made by AI and can get things wrong, so check the original paper before you act on anything.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ダニエル、今週もどうぞよろしくお願いします。聞いてくださっている皆さんも、手を動かしながらで大丈夫なので、気楽に聞いていってください。</div></div>
+<h3 class="script-section" id="section-small-talk">Small Talk</h3>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">さっそくですが、外来で、eGFRはゆっくり下がってきているのに、尿にはアルブミンがほとんど出ていない方を前にしたとき、皆さんはどうしていますか。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Yeah, that&#x27;s a very real clinic moment. Do you start an ACE inhibitor or an ARB, or do you watch and wait?</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">私は正直、毎回少し迷います。血圧の値だけで決めていいのかな、と考えてしまうところです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Same here. A lot of the time, I think it comes down to gut feeling more than anything written down.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">聞いている皆さんも、ご自分の決め手が何なのか、少し思い浮かべながら聞いていただけたらと思います。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Good idea. Hold on to your answer, and see if it shifts by the end.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">さて、今日はちょうどこの場面を扱った論文を、全文が公開されている原著論文の中から選びました。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And the full text really pays off this time. Most of the interesting choices are tucked away in the methods.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">蛋白尿のないCKDでRAS阻害薬を始めるかどうか、という外来の悩みに、大きな実臨床のデータで向き合った研究です。方法の工夫が多いので、今日はこれをじっくり読みます。</div></div>
+<h3 class="script-section" id="section-main">Main discussion</h3>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Now, let&#x27;s get started.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">まずは、この論文の全体像からお話しします。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">This study took real-world records from hospitals across China and set them up to mimic a trial. It asked whether starting an ACE inhibitor or an ARB in adults with CKD but without albuminuria goes along with a lower risk of death. Starters had lower mortality, kidney decline didn&#x27;t clearly differ, and it&#x27;s an association, not proof.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">中国各地の病院の実臨床の記録を使い、試験をまねる形に組み立てた研究です。アルブミン尿のないCKDの成人で、ACE阻害薬やARBを始めることが、死亡リスクの低さと関係するかを調べています。始めた人のほうが死亡は少なかったものの、腎機能の悪化にははっきりした差がなく、あくまで関連としての結果です。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">これは今年の十月の終わりにClinical Kidney Journalでオンライン公開された、中国・広州の南方医科大学 南方医院からの論文です。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">背景から入ると、蛋白尿のあるCKDなら、RAS阻害薬はまず考える薬ですよね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Right. With proteinuria, the trial evidence is strong. The open question is the group without it.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">CKDの約20%は蛋白尿がない人たちです。腎機能の悪化はゆっくりでも心血管や死亡のリスクは高く、治療の選択肢は限られているんですよ。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: nearly 20% of patients with CKD present without proteinuria.)</p></details>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Here&#x27;s the gap. KDIGO&#x27;s 2024 guideline says RAS inhibitors can be considered even without albuminuria, but the trials behind these drugs mostly left those patients out.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">そこで著者たちは、試験が手元にないなら、大きな診療データを使って試験に近い比較をしてみよう、と考えたわけですね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ここからが今日の主役、方法です。まずはデータの出どころから見ていきましょう。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">データは中国の28の基幹病院の記録をまとめた腎臓データベースです。死亡は、国の死因登録とつないで確認しています。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: China Renal Data System: 27 million individuals, 28 tertiary hospitals; death data linked to China CDC Cause of Death Reporting System.)</p></details>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And it covers both inpatient and outpatient care, with diagnoses, lab results and prescriptions, so there&#x27;s a lot to work with.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">では、ターゲット・トライアル・エミュレーションという手法を、ダニエル、かみ砕いてもらえますか。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Sure. You write down the trial you&#x27;d ideally run, like who&#x27;s eligible, what they start and when follow-up begins. Then you rebuild each piece from records that already exist.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">So, instead of a single comparison, they launched a fresh emulated trial every calendar month, 276 monthly trials in total, following the Hernán and Robins target trial framework.</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 276 consecutive monthly emulated trials; enrollment months January 2000 to December 2022.)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">各月の試験では、その月にRAS阻害薬を始めた人が開始群、始めなかった人が対照群になります。あとで薬を変えても、最初の群のまま解析しています。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">追跡は、薬を始めた人は始めた日から、始めなかった人はその月の最後の日から数えています。こうして、薬を始めるまでの「亡くなりようのない期間」が片方の群にだけ入るずれ、いわゆるイモータル・タイム・バイアスを避ける設計になっています。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Mm-hm.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Because a new trial opens every month, the same patient can appear in several trials, so the paper counts person-trials as well as individual patients.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ここは耳で聞くと混乱しやすいところですね。人数そのものと、「人・試験」の数は別のものとして聞いてください。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And it&#x27;s a new-user design. Nobody could have been prescribed these drugs before, so the comparison is starting versus not starting.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">対象は、eGFRが60以下で、尿アルブミンが30mg/g未満のCKDの成人です。RAS阻害薬は未使用で、CKDの支持療法をすでに受けている人に限っています。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Age &gt;=18 years; UACR &lt;30 mg/g (KDIGO A1); excluded eGFR &gt;60 ml/min/1.73 m2 at enrollment, KRT, suspected AKI, no supportive CKD care, dead at enrollment.)</p></details>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">They were strict about &#x27;no proteinuria&#x27;. Any positive urine test, even a trace on dipstick, kept someone out, and so did past proteinuria or steroid or immunosuppressant use.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">著者自身も、比較的保守的な定義だと書いています。ここで言う「蛋白尿なし」は、厳しくふるいにかけた集団だと考えて聞いてください。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">主要評価項目は全死亡、副次評価項目は心血管死です。効果は、3年間の累積リスクの「差」で示しています。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And a risk difference is easy to picture. It&#x27;s simply the gap in the share of people who died, not a ratio.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">外来で患者さんに話すときも、何倍というより、何ポイント違うかのほうが伝わりやすいですよね。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">腎臓のアウトカムは探索的な扱いです。eGFRが25%を超えて下がりステージが進むか、腎代替療法の開始を複合エンドポイントにしています。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">For the stats, they used pooled logistic regression with covariates updated every month, plus inverse probability of censoring weights to deal with people dropping out of follow-up.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">背景因子を毎月更新しているので、途中で血圧や検査値が変わったり、入院したりしても、それを解析に反映できるわけですね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Right. And the censoring weights matter because the people who leave follow-up early may not look like the ones who stay.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">欠けた検査値は直前の値や中央値で埋めて、欠測の印も入れています。多重代入法での確認もしています。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">They also ran a per-protocol analysis, cutting follow-up when someone stopped or switched treatment, then reweighting to correct for who deviated.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">主解析は最初に決めた群のまま比べる解析で、パー・プロトコル解析は、割り当てられた方針を守った人どうしに近い比較、という役割分担ですね。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Yeah, because real patients switch. Some starters stopped the drug, and some controls started it later, and that tends to shrink the gap in the main analysis.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">デザインとして見ると、RAS阻害薬を使ったことのない人に絞って、始めた人と始めなかった人を比べ、追跡の起点もそろえているので、観察研究としてはかなり丁寧な組み方です。ただ、誰に薬を出すかは主治医が決めているので、ランダム化のようには背景がそろいません。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">では、結果に進みましょう。まずは、どんな人たちが入ったかです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">In the end, 17,382 person-trials qualified, drawn from 10,101 adults with non-proteinuric CKD, and only a minority of those person-trials started a RAS inhibitor.</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Potential 50,555 person-trials (21,170 unique persons); enrolled 17,382 person-trials (10,101 unique persons); RASi initiation 2596 vs control 14,786 person-trials.)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">対象は高齢の方が中心で、年齢の中央値は75歳、eGFRの中央値は47でした。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Male 9502 (54.7%); median age 75 (IQR 66-82) years; median eGFR 47 (IQR 37-54) ml/min/1.73 m2.)</p></details>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">The groups weren&#x27;t balanced at baseline. RAS inhibitor starters had higher blood pressure and more hypertension, hospital stays and ICU care than controls.</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: Systolic BP 134 vs 125 mmHg (initiators vs controls).)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">薬を始めた側のほうが、むしろ具合の悪そうな人が多かったわけですね。著者は、この偏りはどちらかといえば薬に不利な方向に働きうる、と考察しています。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">That&#x27;s their argument, at least. The imbalance looks stacked against the starters, but we can only judge the things that were measured.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ダニエルの stacked against は、条件が最初から片方に不利になっている、という言い方です。研究の偏りがどちら向きかを議論するときに使えます。じゃあ、いちばん大事な結果を見ましょう。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">蛋白尿のないCKDの成人で、RAS阻害薬を始めた人は、始めなかった人より3年間の死亡リスクが約3.4ポイント低いという関連が見られました。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: ITT 3-year all-cause mortality risk difference -3.39% (95% CI, -4.71% to -2.07%).)</p></details>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">In absolute terms for this non-proteinuric CKD cohort, adjusted mortality at that same time point was roughly 15% among starters versus 18% among non-starters.</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 3-year adjusted all-cause mortality 14.88% (95% CI, 13.65%-16.51%) with RASi initiation vs 18.26% (95% CI, 17.67%-19.42%) in controls; deaths during follow-up 565 vs 2013.)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">外来の感覚でいうと、無視できない差に見えます。ただ観察研究なので、薬を始めたから死亡が減った、と言い切れる数字ではありません。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Cardiovascular death showed the same pattern in these adults with non-proteinuric CKD, with a three-year risk about 1.5 points lower among RAS inhibitor starters.</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 3-year CV mortality 7.70% (95% CI, 6.87%-9.00%) vs 9.17% (95% CI, 8.70%-10.15%); risk difference -1.46% (95% CI, -2.57% to -0.52%).)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">全死亡と心血管死が同じ向きにそろっている点は、読み手としては心強いところです。ダニエル、解析のやり方を変えたら、この関連が消えてしまう、ということはなかったんでしょうか。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">The sensitivity checks pointed the same way: propensity-score matching, separate emulations for ACE inhibitors and for ARBs, and multiple imputation all gave similar estimates.</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 1:2 PS-matched all-cause RD -3.56% (95% CI, -5.23% to -1.98%), CV RD -1.77% (95% CI, -3.52% to -0.22%); ACEI initiation all-cause RD -2.76% (95% CI, -4.75% to -0.83%); ARB initiation all-cause RD -4.12% (95% CI, -5.55% to -2.47%); multiple imputation all-cause RD -3.18% (95% CI, -4.70% to -1.69%), CV RD -1.45% (95% CI, -2.71% to -0.19%).)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ACE阻害薬とARBは、それぞれ別に試験をまねて解析したもので、どちらが優れているかを直接比べたわけではありません。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">And the pre-specified subgroups leaned the same way too, with no clear difference between them, including people with and without hypertension.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">高血圧があるかないかで向きが変わらなかったのは、血圧を手がかりに決めがちな外来の目線だと、気になるところです。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">それから、パー・プロトコル解析では、差はむしろ大きく出ていました。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Which sounds good, until you ask who got cut from follow-up along the way.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">著者は、差が広がったのは治療の違いがはっきりしたためと見ています。ただ打ち切りによる選択バイアスもありうるので、あくまで補助的な結果という位置づけです。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: PP 3-year all-cause mortality 9.44% (95% CI, 6.46%-13.65%) vs 18.13% (95% CI, 17.68%-19.13%), RD -8.69% (95% CI, -12.16% to -4.46%); PP CV RD -4.35% (95% CI, -6.82% to -1.01%).)</p></details>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Now, the kidney side. That analysis used a smaller slice of the same non-proteinuric cohort, people with enough kidney function and repeat creatinine tests during follow-up.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">eGFRが30を超える人で見た腎臓の複合アウトカムは、どちらの群も約5%で、有意な差はありませんでした。</div></div>
+<details class="web-numbers"><summary>Exact values</summary><p>(Exact values: 7273 person-trials (3608 unique persons), 1019 initiation vs 6254 control; 3-year composite kidney outcome ~5% in both groups; ITT RD -0.88% (95% CI, -2.42% to +1.40%); PP RD -0.36% (95% CI, -4.86% to +5.69%).)</p></details>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">これは、腎臓を守る効果がないと証明された、という意味ではありません。探索的な解析なので、差があるともないとも言い切れない、という読み方になります。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Why no kidney signal? The authors point to slow progression in this kind of CKD and possible heart protection that doesn&#x27;t rely entirely on slowing kidney decline, while noting follow-up was short.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ここからは、限界と、臨床でどう読むかを考えていきます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">It&#x27;s still observational, so leftover confounding and confounding by indication can&#x27;t be ruled out. Things like frailty or doctor preference simply weren&#x27;t measured.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">フレイルの程度や主治医の判断が、薬を始めるかどうかにも、その後の経過にも影響しうる、ということですね。記録に残らない部分なので、補正のしようがありません。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Then there&#x27;s the question of who really counts as non-proteinuric, and who really took the drug.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">誤分類の可能性もあります。蛋白尿の判定には試験紙などからの換算が含まれ、薬の情報も参加病院の処方記録だけでした。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Right.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">対象は主に中国の高齢者なので、若い人やアジア以外の人へそのまま当てはまるとは限りません。用量との関係も調べていません。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Still, the authors note that older people with CKD are understudied, so real-world data for this group fills a gap.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ここで少し、自分たちが研究を組む側だったら、という目線で見てみましょう。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">If I ran this, I&#x27;d want pharmacy refill data, since prescriptions alone don&#x27;t show who actually took the pills.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">私なら、フレイルの指標を最初から集めておきたいです。そうすれば、どちらの群が弱っていたかが分かり、偏りの向きをもう少しはっきりさせられます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Agreed. That&#x27;s the kind of thing a fair test would build in from the start.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">じゃあ、日々の診療にどうつながるか、ですね。この結果だけで、蛋白尿のない方の全員にRAS阻害薬を始める、という話にはなりません。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">The authors contrast this with an earlier cohort study of people already taking RAS inhibitors, which they say risked selection bias that a new-user design helps avoid.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">ガイドラインが「検討してよい」としている方向に、RAS阻害薬を使ったことのない人の中で、始めた人と始めなかった人を比べた研究から、観察研究としての裏づけが加わった、という位置づけだと思います。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Mm-hm.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Honestly, I&#x27;d call it a nudge, not a verdict. It doesn&#x27;t settle what to do for any single patient.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">そこは私も同じ意見です。迷う場面で判断の材料が少し増えた、というくらいの受け止め方がちょうどいいと思います。</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">本編はここまでです。ここからは、今日の会話に出てきた英語の表現を振り返っていきましょう。</div></div>
+<h3 class="script-section" id="section-words">Words and phrases</h3>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Now, today&#x27;s words and phrases.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">First, watch and wait. To hold off on acting and see how things go. For example, we decided to watch and wait before booking the trip.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">すぐには動かずに、様子を見る、という意味です。急いで決めずに経過を見る方針を、会話で短く言いたいときに使えます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Second, gut feeling. A sense about something that you can&#x27;t fully explain. For example, my gut feeling says the meeting will run late.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">理屈ではうまく説明できない直感、という意味です。データではなく感覚で決めている、と率直に言いたいときにぴったりです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Third, new-user design. A study plan that only follows people who are just starting a drug. For example, the team chose a new-user design for their statin study.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">薬を新しく始めた人だけを追いかける研究の組み方です。観察研究の方法を説明したり、論文の弱点を議論したりするときによく出てきます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Fourth, leaned the same way. Pointed in the same direction as other results. For example, both surveys leaned the same way on the new schedule.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">結果が同じ方向を向いていた、という意味です。はっきりした差とまでは言わずに、傾向がそろっていたことを伝えたいときに使えます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Fifth, leftover confounding. Bias from other factors that remains even after adjustment. For example, the authors warned about leftover confounding in their cohort.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">補正をしたあとにも残ってしまう交絡のことです。観察研究の限界を、学会の質疑で指摘するときの言い方です。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Sixth, fair test. A comparison set up so that each side has an equal chance. For example, a fair test of the two recipes needs the same oven.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">条件をそろえた公平な比較、という意味です。研究の組み方が妥当かどうかを話すときに使えます。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">That&#x27;s it for today&#x27;s words and phrases.</div></div>
+<h3 class="script-section" id="section-look-back">Look back</h3>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Before we wrap up, a quick look back at today&#x27;s episode.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">蛋白尿のないCKDでも、RAS阻害薬を始めることは死亡リスクの低さと関連していました。ただ腎臓の悪化を抑える関連は見えず、確かめるには臨床試験が必要です。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Something to keep in mind the next time that clinic question comes up.</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Weekly Nephrology AI is made with AI and code: Python gathers the papers and runs the checks, Claude Opus 5.5 picks them and writes the script, Gemini 3.8 Flash TTS gives us our voices, and Lyria 3.5 made our music.</div></div>
+<div class="turn a"><span class="who">Sara · Host</span><div class="bubble" lang="ja">今回も聞いてくださって、ありがとうございました。次回は土曜のケースレポーツです。</div></div>
+<div class="turn b"><span class="who">Daniel · Co-host</span><div class="bubble">Thanks for listening, and we&#x27;ll see you next time.</div></div></section>
+</div></main>
+<footer><div class="wrap">
+  AI-generated educational content. Verify the original papers before clinical or research use.<br/>
+  © 2026 Weekly Nephrology AI. All rights reserved.<br/>
+  This podcast, including its scripts, audio, and original presentation, is copyrighted by Weekly Nephrology AI.<br/>
+  <a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast">Weekly Nephrology</a>
+</div></footer>
+</body>
+</html>
