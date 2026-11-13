@@ -6,13 +6,30 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers, in Japanese and English: a Japanese host explains each paper, and an English co-host gives the key points in plain English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Nov 2026 10:13:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 23:58:51 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Case Reports 2026-11-14</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-11-14.html</link>
+      <description>• Teclistamab for refractory type I cryoglobulinemic glomerulonephritis
+• Crescentic glomerulonephritis after a switch to an infliximab biosimilar
+• Sarcoidosis mimicking bone malignancy with hypercalcemic AKI
+• Lumasiran rescue for primary hyperoxaluria type one diagnosed after kidney transplant
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-11-14.html</description>
+      <content:encoded><![CDATA[<ul><li>Teclistamab for refractory type I cryoglobulinemic glomerulonephritis</li><li>Crescentic glomerulonephritis after a switch to an infliximab biosimilar</li><li>Sarcoidosis mimicking bone malignancy with hypercalcemic AKI</li><li>Lumasiran rescue for primary hyperoxaluria type one diagnosed after kidney transplant</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-11-14.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-11-14.mp3" length="9636141" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Nephrology_CaseReports_2026-11-14.mp3</guid>
+      <pubDate>Sat, 14 Nov 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>20:04</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Deep Read 2026-11-12</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_DeepRead_2026-11-12.html</link>
