@@ -6,13 +6,31 @@
     <description>An AI-generated educational podcast reviewing recent nephrology papers, in Japanese and English: a Japanese host explains each paper, and an English co-host gives the key points in plain English.</description>
     <copyright>© 2026 Weekly Nephrology AI. All rights reserved.</copyright>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Nov 2026 23:58:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 20:38:58 +0000</lastBuildDate>
     <atom:link href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast.xml" rel="self" type="application/rss+xml"/>
     <itunes:image href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg"/>
     <image><url>https://weekly-nephrology.github.io/weekly-nephrology-podcast/podcast_cover.jpg</url><title>Weekly Nephrology AI</title><link>https://weekly-nephrology.github.io/weekly-nephrology-podcast</link></image>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"><itunes:category text="Medicine"/></itunes:category>
+    <item>
+      <title>Weekly Nephrology AI — Weekly Summary 2026-11-16</title>
+      <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-11-16.html</link>
+      <description>• Network meta-analysis of MRAs for albuminuria in CKD
+• Pre-biopsy score for bleeding risk after kidney biopsy
+• Ravulizumab and urinary biomarkers in IgA nephropathy
+• Case series of PGNMID with monotypic IgG subclass deposits
+• Apixaban versus warfarin in hemodialysis with new atrial fibrillation
+
+Read the transcript:
+https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-11-16.html</description>
+      <content:encoded><![CDATA[<ul><li>Network meta-analysis of MRAs for albuminuria in CKD</li><li>Pre-biopsy score for bleeding risk after kidney biopsy</li><li>Ravulizumab and urinary biomarkers in IgA nephropathy</li><li>Case series of PGNMID with monotypic IgG subclass deposits</li><li>Apixaban versus warfarin in hemodialysis with new atrial fibrillation</li></ul><p><a href="https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Weekly_Nephrology_2026-11-16.html">Read the transcript</a></p>]]></content:encoded>
+      <enclosure url="https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-11-16.mp3" length="8410605" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://weekly-nephrology.github.io/weekly-nephrology-podcast/audio/Weekly_Nephrology_2026-11-16.mp3</guid>
+      <pubDate>Mon, 16 Nov 2026 07:00:00 +0900</pubDate>
+      <itunes:duration>17:31</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
     <item>
       <title>Weekly Nephrology AI — Case Reports 2026-11-14</title>
       <link>https://weekly-nephrology.github.io/weekly-nephrology-podcast/script/Nephrology_CaseReports_2026-11-14.html</link>
